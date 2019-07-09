@@ -1,7 +1,7 @@
 # Личный проект «Погнали» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Дмитрий Бабаев](https://up.htmlacademy.ru/adaptive/17/user/1015745).
-* Наставник: `Неизвестно`.
+* Наставник: [Олег Сорокин] (https://htmlacademy.ru/profile/osorokin)
 
 ---
 
