@@ -187,117 +187,137 @@
         <a class="button button--more" href="#">Показать все</a>
       </div>
     </section>
-    <section class="companions">
+    <section class="companions-preview">
       <div class="container">
         <div class="wrap">
-          <h2 class="companions__title">Направления</h2>
-          <p class="companions__text">Мы не продаем туры
+          <h2 class="companions-preview__title">Направления</h2>
+          <p class="companions-preview__text">Мы не продаем туры
             и ничего не рекламируем.
             Люди сами пишут о странах, куда хотели бы отправиться
             и чем можно там заняться.</p>
         </div>
-        <ul class="companions__list">
-          <li class="companion companions__item">
-            <img class="companion__image" src="http://placehold.it/270x270" width="270" height="270"
-              alt="Фотография возможного попутчика">
-            <div class="comp-descript companion__description">
+        <ul class="companions-preview__list">
+          <li class="companion-preview companions-preview__item">
+            <img class="companion-preview__image" src="http://placehold.it/270x270" width="270"
+              height="270" alt="Фотография возможного попутчика">
+            <div class="comp-descript companion-preview__description">
+              <span class="live-status"></span>
               <h3 class="comp-descript__name"><a class="companion-link" href="#">Таня Фирсова</a>
               </h3>
-              <ul class="wishes comp-descript__wish-list">
-                <li class="wishes__item">
-                  <img class="wishes__image" src="http://placehold.it/35x24" width="35" height="24"
-                    alt="Желаемое направление - Шри-Ланка">
-                  <span class="popup-description">Шри-Ланка</span>
-                </li>
-                <li class="wishes__item">
-                  <img class="wishes__image" src="http://placehold.it/35x24" width="35" height="24"
-                    alt="Желаемое направление - Тайланд">
-                  <span class="popup-description">Тайланд</span>
-                </li>
-                <li class="wishes__item">
-                  <img class="wishes__image" src="http://placehold.it/35x24" width="35" height="24"
-                    alt="Желаемое направление - Сейшельские острова">
-                  <span class="popup-description">Сейшельские острова</span>
-                </li>
-              </ul>
-              <ul class="tags comp-descript__tags-list">
-                <li class="tags__item">ЗОЖ</li>
-                <li class="tags__item">ПП</li>
-                <li class="tags__item">Фитнес</li>
-                <li class="tags__item">пляж</li>
-                <li class="tags__item">авокадо</li>
-                <li class="tags__item">смузи</li>
-              </ul>
-              <ul class="transports comp-descript__transport-list">
-                <li class="transports__item">
-                  <svg class="transports__image transports__image--active"></svg>
-                  <span class="popup-description">Авиаперелёт</span>
-                </li>
-                <li class="transports__item">
-                  <svg class="transports__image"></svg>
-                  <span class="popup-description">Автотранспорт</span>
-                </li>
-                <li class="transports__item">
-                  <svg class="transports__image"></svg>
-                  <span class="popup-description">Велосипед</span>
-                </li>
-                <li class="transports__item">
-                  <svg class="transports__image"></svg>
-                  <span class="popup-description">Пешком</span>
-                </li>
-              </ul>
+              <div class="wishes comp-descript__wishes">
+                <h4 class="visually-hidden">хочет посетить</h4>
+                <ul class="wishes__list">
+                  <li class="wishes__item">
+                    <img class="wishes__image" src="http://placehold.it/35x24" width="35"
+                      height="24" alt="Желаемое направление - Шри-Ланка">
+                    <span class="popup-description">Шри-Ланка</span>
+                  </li>
+                  <li class="wishes__item">
+                    <img class="wishes__image" src="http://placehold.it/35x24" width="35"
+                      height="24" alt="Желаемое направление - Тайланд">
+                    <span class="popup-description">Тайланд</span>
+                  </li>
+                  <li class="wishes__item">
+                    <img class="wishes__image" src="http://placehold.it/35x24" width="35"
+                      height="24" alt="Желаемое направление - Сейшельские острова">
+                    <span class="popup-description">Сейшельские острова</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="tags comp-descript__tags">
+                <h4 class="visually-hidden">Сопутствующие теги</h4>
+                <ul class="tags__list">
+                  <li class="tags__item">ЗОЖ</li>
+                  <li class="tags__item">ПП</li>
+                  <li class="tags__item">Фитнес</li>
+                  <li class="tags__item">пляж</li>
+                  <li class="tags__item">авокадо</li>
+                  <li class="tags__item">смузи</li>
+                </ul>
+              </div>
+              <div class="transports comp-descript__transports">
+                <h4 class="transports__title">транспорт</h4>
+                <ul class="transports__list">
+                  <li class="transports__item">
+                    <svg class="transports__image transports__image--active"></svg>
+                    <span class="popup-description">Авиаперелёт</span>
+                  </li>
+                  <li class="transports__item">
+                    <svg class="transports__image"></svg>
+                    <span class="popup-description">Автотранспорт</span>
+                  </li>
+                  <li class="transports__item">
+                    <svg class="transports__image"></svg>
+                    <span class="popup-description">Велосипед</span>
+                  </li>
+                  <li class="transports__item">
+                    <svg class="transports__image"></svg>
+                    <span class="popup-description">Пешком</span>
+                  </li>
+                </ul>
+              </div>
             </div>
-            <div class="rating comp-descript__rating">
-              <span class="rating__value">99</span>
-              <span class="rating__text">level</span>
+            <div class="level comp-descript__level">
+              <span class="level__value">99</span>
+              <span class="level__text">level</span>
             </div>
           </li>
-          <li class="companion companions__item">
-            <img class="companion__image" src="http://placehold.it/270x270" width="270" height="270"
+          <li class="companions-preview companions-preview__item">
+            <img class="companions-preview__image" src="http://placehold.it/270x270" width="270" height="270"
               alt="Фотография возможного попутчика">
-            <div class="comp-descript companion__description">
+            <div class="comp-descript companions-preview__description">
+              <span class="live-status live-status--on"></span>
               <h3 class="comp-descript__name"><a class="companion-link" href="#">Петя Демин</a></h3>
-              <ul class="wishes comp-descript__wish-list">
-                <li class="wishes__item">
-                  <img class="wishes__image" src="http://placehold.it/35x24" width="35" height="24"
-                    alt="Желаемое направление - Бельгия>">
-                  <span class="popup-description">Бельгия</span>
-                </li>
-                <li class="wishes__item">
-                  <img class="wishes__image" src="http://placehold.it/35x24" width="35" height="24"
-                    alt="Желаемое направление - Чехия">
-                  <span class="popup-description">Чехия</span>
-                </li>
-              </ul>
-              <ul class="tags comp-descript__tags-list">
-                <li class="tags__item">бургер</li>
-                <li class="tags__item">бар</li>
-                <li class="tags__item">футбол</li>
-                <li class="tags__item">концерт</li>
-                <li class="tags__item">крафт</li>
-              </ul>
-              <ul class="transports comp-descript__transport-list">
-                <li class="transports__item">
-                  <svg class="transports__image transports__image--active"></svg>
-                  <span class="popup-description">Авиаперелёт</span>
-                </li>
-                <li class="transports__item">
-                  <svg class="transports__image transports__image--active"></svg>
-                  <span class="popup-description">Автотранспорт</span>
-                </li>
-                <li class="transports__item">
-                  <svg class="transports__image"></svg>
-                  <span class="popup-description">Велосипед</span>
-                </li>
-                <li class="transports__item">
-                  <svg class="transports__image transports__image--active"></svg>
-                  <span class="popup-description">Пешком</span>
-                </li>
-              </ul>
+              <div class="wishes comp-descript__wishes">
+                <h4 class="visually-hidden">хочет посетить</h4>
+                <ul class="wishes__list">
+                  <li class="wishes__item">
+                    <img class="wishes__image" src="http://placehold.it/35x24" width="35"
+                      height="24" alt="Желаемое направление - Бельгия>">
+                    <span class="popup-description">Бельгия</span>
+                  </li>
+                  <li class="wishes__item">
+                    <img class="wishes__image" src="http://placehold.it/35x24" width="35"
+                      height="24" alt="Желаемое направление - Чехия">
+                    <span class="popup-description">Чехия</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="tags comp-descript__tags">
+                <h4 class="visually-hidden">Сопутствующие теги</h4>
+                <ul class="tags__list">
+                  <li class="tags__item">бургер</li>
+                  <li class="tags__item">бар</li>
+                  <li class="tags__item">футбол</li>
+                  <li class="tags__item">концерт</li>
+                  <li class="tags__item">крафт</li>
+                </ul>
+              </div>
+              <div class="transports comp-descript__transports">
+                <h4 class="transports__title">транспорт</h4>
+                <ul class="transports__list">
+                  <li class="transports__item">
+                    <svg class="transports__image transports__image--active"></svg>
+                    <span class="popup-description">Авиаперелёт</span>
+                  </li>
+                  <li class="transports__item">
+                    <svg class="transports__image transports__image--active"></svg>
+                    <span class="popup-description">Автотранспорт</span>
+                  </li>
+                  <li class="transports__item">
+                    <svg class="transports__image"></svg>
+                    <span class="popup-description">Велосипед</span>
+                  </li>
+                  <li class="transports__item">
+                    <svg class="transports__image transports__image--active"></svg>
+                    <span class="popup-description">Пешком</span>
+                  </li>
+                </ul>
+              </div>
             </div>
-            <div class="comp-descript__rating">
-              <span class="rating__value">80</span>
-              <span class="rating__text">level</span>
+            <div class="level comp-descript__level">
+              <span class="level__value">80</span>
+              <span class="level__text">level</span>
             </div>
           </li>
         </ul>
