@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>HTML Academy: Погнали</title>
+  <title>HTML Academy: Погнали - Попутчики</title>
 </head>
 
 <body class="page">
@@ -75,6 +75,451 @@
 
   <main class="catalog">
 
+    <h1 class="catalog__name">Попутчики</h1>
+
+    <section class="country-filter">
+      <div class="container">
+        <header class="country-filter__header">
+          <h2 class="country-filter__title">Фильтрация по странам</h2>
+          <button class="button button-close"></button>
+        </header>
+        <div class="wrapper">
+          <ul class="regions country-filter__regions-list">
+            <li class="regions__item">
+              <button class="button button--region">Европа</button>
+            </li>
+            <li class="regions__item">
+              <button class="button button--region">Азия</button>
+            </li>
+            <li class="regions__item">
+              <button class="button button--region">Америка</button>
+            </li>
+            <li class="regions__item">
+              <button class="button button--region">Острова</button>
+            </li>
+          </ul>
+          <div class="letter-filter country-filter__letters">
+            <button class="button button--letter">а</button>
+            <button class="button button--letter">б</button>
+            <button class="button button--letter">в</button>
+            <button class="button button--letter">г</button>
+            <button class="button button--letter">д</button>
+            <button class="button button--letter">е</button>
+            <button class="button button--letter">ё</button>
+            <button class="button button--letter">ж</button>
+            <button class="button button--letter">з</button>
+            <button class="button button--letter">и</button>
+            <button class="button button--letter">й</button>
+            <button class="button button--letter">к</button>
+            <button class="button button--letter">л</button>
+            <button class="button button--letter">м</button>
+            <button class="button button--letter">н</button>
+            <button class="button button--letter">о</button>
+            <button class="button button--letter">п</button>
+            <button class="button button--letter">р</button>
+            <button class="button button--letter">с</button>
+            <button class="button button--letter">т</button>
+            <button class="button button--letter">у</button>
+            <button class="button button--letter">ф</button>
+            <button class="button button--letter">х</button>
+            <button class="button button--letter">ц</button>
+            <button class="button button--letter">ч</button>
+            <button class="button button--letter">ш</button>
+            <button class="button button--letter">щ</button>
+            <button class="button button--letter">э</button>
+            <button class="button button--letter">ю</button>
+            <button class="button button--letter">я</button>
+          </div>
+          <ul class="countries country-filter__contries-list">
+            <li class="countries__item">
+              <button class="button button--country">Афганистан</button>
+            </li>
+            <li class="countries__item">
+              <button class="button button--country">Албания</button>
+            </li>
+            <li class="countries__item">
+              <button class="button button--country">Алжир</button>
+            </li>
+            <li class="countries__item">
+              <button class="button button--country">Андорра</button>
+            </li>
+            <li class="countries__item">
+              <button class="button button--country">Аргентина</button>
+            </li>
+            <li class="countries__item">
+              <button class="button button--country">Армения</button>
+            </li>
+            <li class="countries__item">
+              <button class="button button--country">Австралия</button>
+            </li>
+            <li class="countries__item">
+              <button class="button button--country">Австрия</button>
+            </li>
+            <li class="countries__item">
+              <button class="button button--country">Азербайджан</button>
+            </li>
+          </ul>
+        </div>
+        <button class="button button--rollup">Свернуть</button>
+      </div>
+    </section>
+
+    <section class="companion-filter">
+      <h2 class="companion-filter__title">Подберите идеального попутчика</h2>
+      <form class="companion-form companion-filter__form" action="https://echo.htmlacademy.ru"
+        method="get">
+        <fieldset class="companion-form__item">
+          <legend class="companion-form__item-title">Хобби</legend>
+          <div class="companion-form__item-group">
+            <label class="companion-form__item-label"><input class="companion-form__checkbox-hobby"
+                type="checkbox" name="Excursions" checked>Экскурсии</label>
+            <label class="companion-form__item-label"><input class="companion-form__checkbox-hobby"
+                type="checkbox" name="Footbal">Футбол</label>
+            <label class="companion-form__item-label"><input class="companion-form__checkbox-hobby"
+                type="checkbox" name="Cooking">Кулинария</label>
+          </div>
+          <button class="button button--arrow companion-form__item-toggle"></button>
+        </fieldset>
+        <fieldset class="companion-form__item">
+          <legend class="companion-form__item-title">Музыка</legend>
+          <div class="companion-form__item-group">
+            <label class="companion-form__item-label"><input class="companion-form__checkbox-music"
+                type="checkbox" name="Hard rock" checked>Тяжелый рок</label>
+            <label class="companion-form__item-label"><input class="companion-form__checkbox-music"
+                type="checkbox" name="Russian rap">Русский рэп</label>
+            <label class="companion-form__item-label"><input class="companion-form__checkbox-music"
+                type="checkbox" name="Eurodance">Евроденс</label>
+          </div>
+          <button class="button button--arrow companion-form__item-toggle"></button>
+        </fieldset>
+        <fieldset class="companion-form__item">
+          <legend class="companion-form__item-title">Еда</legend>
+          <div class="companion-form__item-group">
+            <label class="companion-form__item-label"><input class="companion-form__checkbox-food"
+                type="checkbox" checked>Немецкая кухня</label>
+            <label class="companion-form__item-label"><input class="companion-form__checkbox-food"
+                type="checkbox">Японская кухня</label>
+            <label class="companion-form__item-label"><input class="companion-form__checkbox-food"
+                type="checkbox">Итальянская кухня</label>
+          </div>
+          <button class="button button--arrow companion-form__item-toggle"></button>
+        </fieldset>
+        <fieldset class="companion-form__item">
+          <p class="companion-form__item-title">Транспорт</p>
+          <div class="companion-form__item-group">
+            <label class="companion-form__item-label"><input
+                class="companion-form__checkbox-transport" type="checkbox"
+                checked>Авиаперелёт</label>
+            <label class="companion-form__item-label"><input
+                class="companion-form__checkbox-transport" type="checkbox"
+                checked>Автотранспорт</label>
+            <label class="companion-form__item-label"><input
+                class="companion-form__checkbox-transport" type="checkbox">Велосипед</label>
+            <label class="companion-form__item-label"><input
+                class="companion-form__checkbox-transport" type="checkbox" checked>Пешком</label>
+          </div>
+          <button class="button button--arrow companion-form__item-toggle"></button>
+        </fieldset>
+        <fieldset class="companion-form__item">
+          <legend class="companion-form__item-title">Левел</legend>
+          <div class="companion-form__item-group">
+            <input class="companion-form__number" type="text" pattern="\d{1,3}" value="30">
+            <input class="companion-form__number" type="text" pattern="\d{1,3}" value="100">
+            <div class="range companion-form__range">
+              <span class="range__bottom-line">
+                <span class="range__active-line">
+                  <button class="range__button range__button--from"></button>
+                  <button class="range__button range__button--to"></button>
+                </span>
+              </span>
+            </div>
+          </div>
+          <button class="button button--arrow companion-form__item-toggle"></button>
+        </fieldset>
+        <button class="button button--show" type="submit">Показать</button>
+      </form>
+    </section>
+
+    <section class="companions">
+      <h2 class="visually-hidden">Список попутчиков</h2>
+      <ul class="companions__list">
+        <li class="companion companions__item">
+          <div class="companion__head">
+            <p class="companion__picture">
+              <img class="companion__image" src="http://placehold.it/70x70" width="70" height="70"
+                alt="Фотография попутчика">
+              <div class="favourite-counter">
+                <div class="favourite-counter__wrap">
+                  <svg class="favourite-counter__image" width="13" height="11"></svg>
+                </div>
+                <span class="favourite-counter__counter">1,5 М</span>
+              </div>
+            </p>
+            <h3 class="companion__name">Таня Фирсова</h3>
+            <span class="live-status"></span>
+          </div>
+          <div class="tags companion__tags">
+            <h4 class="visually-hidden">Сопутствующие теги</h4>
+            <ul class="tags__list">
+              <li class="tags__item">ЗОЖ</li>
+              <li class="tags__item">ПП</li>
+              <li class="tags__item">Фитнес</li>
+              <li class="tags__item">пляж</li>
+              <li class="tags__item">авокадо</li>
+              <li class="tags__item">смузи</li>
+            </ul>
+          </div>
+          <div class="wishes companion__wishes">
+            <h4 class="wishes__title">хочет посетить</h4>
+            <ul class="wishes__list">
+              <li class="wishes__item">
+                <span class="country country--shri-lanka">Шри-Ланка</span>
+              </li>
+              <li class="wishes__item">
+                <span class="country country--thailand">Тайланд</span>
+              </li>
+              <li class="wishes__item">
+                <span class="country country--seyshelli">Сейшелы</span>
+              </li>
+            </ul>
+          </div>
+          <div class="companion__footer">
+            <div class="transports companion__transports">
+              <h4 class="transports__title">транспорт</h4>
+              <ul class="transports__list">
+                <li class="transports__item">
+                  <svg class="transports__image transports__image--active"></svg>
+                  <span class="popup-description">Авиаперелёт</span>
+                </li>
+                <li class="transports__item">
+                  <svg class="transports__image"></svg>
+                  <span class="popup-description">Автотранспорт</span>
+                </li>
+                <li class="transports__item">
+                  <svg class="transports__image"></svg>
+                  <span class="popup-description">Велосипед</span>
+                </li>
+                <li class="transports__item">
+                  <svg class="transports__image"></svg>
+                  <span class="popup-description">Пешком</span>
+                </li>
+              </ul>
+            </div>
+            <div class="level companion__level">
+              <h4 class="level__title">левел</h4>
+              <div class="level__value">99</div>
+            </div>
+          </div>
+          <a class="button button-call" href="call-form.html">Позвать!</a>
+        </li>
+        <li class="companion companions__item">
+          <div class="companion__head">
+            <p class="companion__picture">
+              <img class="companion__image" src="http://placehold.it/70x70" width="70" height="70"
+                alt="Фотография попутчика">
+              <div class="favourite-counter">
+                <div class="favourite-counter__wrap">
+                  <svg class="favourite-counter__image" width="13" height="11"></svg>
+                </div>
+                <span class="favourite-counter__counter">150</span>
+              </div>
+            </p>
+            <h3 class="companion__name">Петя Демин</h3>
+            <span class="live-status"></span>
+          </div>
+          <div class="tags companion__tags">
+            <h4 class="visually-hidden">Сопутствующие теги</h4>
+            <ul class="tags__list">
+              <li class="tags__item">бургер</li>
+              <li class="tags__item">бар</li>
+              <li class="tags__item">футбол</li>
+              <li class="tags__item">концерт</li>
+              <li class="tags__item">крафт</li>
+            </ul>
+          </div>
+          <div class="wishes companion__wishes">
+            <h4 class="wishes__title">хочет посетить</h4>
+            <ul class="wishes__list">
+              <li class="wishes__item">
+                <span class="country country--belgium">Бельгия</span>
+              </li>
+              <li class="wishes__item">
+                <span class="country country--czech">Чехия</span>
+              </li>
+            </ul>
+          </div>
+          <div class="companion__footer">
+            <div class="transports companion__transports">
+              <h4 class="transports__title">транспорт</h4>
+              <ul class="transports__list">
+                <li class="transports__item">
+                  <svg class="transports__image transports__image--active"></svg>
+                  <span class="popup-description">Авиаперелёт</span>
+                </li>
+                <li class="transports__item">
+                  <svg class="transports__image transports__image--active"></svg>
+                  <span class="popup-description">Автотранспорт</span>
+                </li>
+                <li class="transports__item">
+                  <svg class="transports__image"></svg>
+                  <span class="popup-description">Велосипед</span>
+                </li>
+                <li class="transports__item">
+                  <svg class="transports__image transports__image--active"></svg>
+                  <span class="popup-description">Пешком</span>
+                </li>
+              </ul>
+            </div>
+            <div class="level companion__level">
+              <h4 class="level__title">левел</h4>
+              <div class="level__value">80</div>
+            </div>
+          </div>
+          <a class="button button-call" href="call-form.html">Позвать!</a>
+        </li>
+        <li class="companion companions__item">
+          <div class="companion__head">
+            <p class="companion__picture">
+              <img class="companion__image" src="http://placehold.it/70x70" width="70" height="70"
+                alt="Фотография попутчика">
+              <div class="favourite-counter">
+                <div class="favourite-counter__wrap">
+                  <svg class="favourite-counter__image" width="13" height="11"></svg>
+                </div>
+                <span class="favourite-counter__counter">1700</span>
+              </div>
+            </p>
+            <h3 class="companion__name">Марк Смолов</h3>
+            <span class="live-status"></span>
+          </div>
+          <div class="tags companion__tags">
+            <h4 class="visually-hidden">Сопутствующие теги</h4>
+            <ul class="tags__list">
+              <li class="tags__item">рэп</li>
+              <li class="tags__item">тату</li>
+              <li class="tags__item">хафпбист</li>
+              <li class="tags__item">кроссовки</li>
+              <li class="tags__item">суприм</li>
+            </ul>
+          </div>
+          <div class="wishes companion__wishes">
+            <h4 class="wishes__title">хочет посетить</h4>
+            <ul class="wishes__list">
+              <li class="wishes__item">
+                <span class="country country--usa">США</span>
+              </li>
+              <li class="wishes__item">
+                <span class="country country--australia">Австралия</span>
+              </li>
+              <li class="wishes__item">
+                <span class="country country--dominikan">Доминикана</span>
+              </li>
+            </ul>
+          </div>
+          <div class="companion__footer">
+            <div class="transports companion__transports">
+              <h4 class="transports__title">транспорт</h4>
+              <ul class="transports__list">
+                <li class="transports__item">
+                  <svg class="transports__image transports__image--active"></svg>
+                  <span class="popup-description">Авиаперелёт</span>
+                </li>
+                <li class="transports__item">
+                  <svg class="transports__image"></svg>
+                  <span class="popup-description">Автотранспорт</span>
+                </li>
+                <li class="transports__item">
+                  <svg class="transports__image transports__image--active"></svg>
+                  <span class="popup-description">Велосипед</span>
+                </li>
+                <li class="transports__item">
+                  <svg class="transports__image"></svg>
+                  <span class="popup-description">Пешком</span>
+                </li>
+              </ul>
+            </div>
+            <div class="level companion__level">
+              <h4 class="level__title">левел</h4>
+              <div class="level__value">25</div>
+            </div>
+          </div>
+          <a class="button button-call" href="call-form.html">Позвать!</a>
+        </li>
+        <li class="companion companions__item">
+          <div class="companion__head">
+            <p class="companion__picture">
+              <img class="companion__image" src="http://placehold.it/70x70" width="70" height="70"
+                alt="Фотография попутчика">
+              <div class="favourite-counter">
+                <div class="favourite-counter__wrap">
+                  <svg class="favourite-counter__image" width="13" height="11"></svg>
+                </div>
+                <span class="favourite-counter__counter">23</span>
+              </div>
+            </p>
+            <h3 class="companion__name">Лариса Роговая</h3>
+            <span class="live-status live-status--on"></span>
+          </div>
+          <div class="tags companion__tags">
+            <h4 class="visually-hidden">Сопутствующие теги</h4>
+            <ul class="tags__list">
+              <li class="tags__item">образование</li>
+              <li class="tags__item">карьера</li>
+              <li class="tags__item">учеба</li>
+              <li class="tags__item">линкедин</li>
+            </ul>
+          </div>
+          <div class="wishes companion__wishes">
+            <h4 class="wishes__title">хочет посетить</h4>
+            <ul class="wishes__list">
+              <li class="wishes__item">
+                <span class="country country--uk">Великобритания</span>
+              </li>
+              <li class="wishes__item">
+                <span class="country country--germany">Германия</span>
+              </li>
+            </ul>
+          </div>
+          <div class="companion__footer">
+            <div class="transports companion__transports">
+              <h4 class="transports__title">транспорт</h4>
+              <ul class="transports__list">
+                <li class="transports__item">
+                  <svg class="transports__image transports__image--active"></svg>
+                  <span class="popup-description">Авиаперелёт</span>
+                </li>
+                <li class="transports__item">
+                  <svg class="transports__image transports__image--active"></svg>
+                  <span class="popup-description">Автотранспорт</span>
+                </li>
+                <li class="transports__item">
+                  <svg class="transports__image"></svg>
+                  <span class="popup-description">Велосипед</span>
+                </li>
+                <li class="transports__item">
+                  <svg class="transports__image"></svg>
+                  <span class="popup-description">Пешком</span>
+                </li>
+              </ul>
+            </div>
+            <div class="level companion__level">
+              <h4 class="level__title">левел</h4>
+              <div class="level__value">50</div>
+            </div>
+          </div>
+          <a class="button button-call" href="call-form.html">Позвать!</a>
+        </li>
+      </ul>
+      <a class="button button--more" href="companions#3.html">Показать еще</a>
+      <div class="paginator">
+        <a class="button button--page-back" href="companions#1.html"><span
+            class="button__hidden-title">Показать предыдущую страницу</span></a>
+        <a class="button button--page-next" href="companions#3.html"><span
+            class="button__hidden-title">Показать следующую страницу</span></a>
+      </div>
+
+    </section>
+
   </main>
 
   <footer class="footer page__footer">
@@ -106,3 +551,7 @@
       </div>
     </div>
   </footer>
+
+</body>
+
+</html>
