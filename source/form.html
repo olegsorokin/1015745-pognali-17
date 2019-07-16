@@ -71,18 +71,21 @@
 
     <section class="profile">
       <h2 class="visually-hidden">Базовые настройки профиля</h2>
-      <div class="profile__wrap">
-        <div class="level profile__level">
-          <span class="level__value">80</span>
-          <span class="level__text">level</span>
-        </div>
-        <img src="http://placehold.it/100x100" width="100" height="100" alt="Ваша фотография">
+      <div class="level profile__level">
+        <span class="level__value">80</span>
+        <span class="level__text">level</span>
       </div>
-      <a class="button button--change">Сменить фото</a>
+
+      <img class="personal-logo" src="http://placehold.it/100x100" width="100" height="100"
+        alt="Ваша фотография">
+
+      <a class="change-button">Сменить фото</a>
+
       <div class="tags-area profile__tags">
         <h3 class="tags-area__title">тэги</h3>
         <textarea class="tags-area__text">#бургер #бар #футбол #концерт #крафт</textarea>
       </div>
+
       <div class="transports profile__transports">
         <h3 class="transports__title">транспорт</h3>
         <ul class="transports__list">
@@ -132,7 +135,9 @@
 
     <section class="add-plan">
       <h2 class="add-plan__title">Добавить план:</h2>
+
       <form class="plan-form add-plan__form" action="https://echo.htmlacademy.ru" method="get">
+
         <fieldset class="form-step plan-form__step">
           <legend class="form-step__legend">
             <a class="form-step__legend-anchor" id="step-1">Шаг 1.</a>
@@ -140,29 +145,32 @@
           <h3 class="form-step__title-text">Даты пребывания</h3>
           <p class="form-step__description">Укажите предпочтительное количество попутчиков, которых
             вы хотели бы позвать в поездку и ее предполагаемую длительность.</p>
-          <div class="companions-count">
+
+          <div class="counter">
             <label for="companions-value" class="companions-count__title">Ищу попутчиков:</label>
-            <button class="button button--minus"></button>
-            <input class="companions-count__number" type="text" name="companions-value"
-              id="companions-value" value="2">
-            <button class="button button--plus"></button>
+            <button class="button-minus"></button>
+            <input class="input-count" type="text" name="companions-value" id="counter-value"
+              value="2">
+            <button class="button-plus"></button>
             <span class="companions-count__tip">чел.</span>
           </div>
-          <div class="days-count">
+
+          <div class="counter">
             <label for="days-value" class="days-count__title">Длительность:</label>
-            <button class="button button--minus"></button>
-            <input class="days-count__number" type="text" name="days-value" id="days-value"
-              value="2">
-            <button class="button button--plus"></button>
+            <button class="button-minus"></button>
+            <input class="input-count" type="text" name="days-value" id="days-value" value="2">
+            <button class="button-plus"></button>
             <span class="days-count__tip">дн.</span>
           </div>
-          <label class="form-step__check-label"><input class="form-step__checkbox" type="checkbox"
+
+          <label class="form-step__check-label"><input class="children-checkbox" type="checkbox"
               name="children-allow">Можно с детьми</label>
+
           <div class="calendar">
-            <div class="calendar__head">
-              <button class="button button--prev"></button>
+            <div class="calendar__header">
+              <button class="button-prev"></button>
               <p class="calendar__month">Март 2019</p>
-              <button class="button button--next"></button>
+              <button class="button-next"></button>
             </div>
             <table class="calendar__dates">
               <tr class="calendar__days-of-week">
@@ -230,8 +238,11 @@
               </tr>
             </table>
           </div>
+
           <a class="anchor-link" href="#step-2">Следующий шаг</a>
+
         </fieldset>
+
         <fieldset class="form-step plan-form__step">
           <legend class="form-step__legend">
             <a class="form-step__legend-anchor" id="step-2">Шаг 2.</a>
@@ -248,7 +259,7 @@
                 <option>Чехословакия</option>
               </select>
               <div class="add-country__flag"></div>
-              <button class="button button--close"></button>
+              <button class="button-skip"></button>
             </li>
             <li class="country-list__item">
               <select class="add-country__country">
@@ -257,7 +268,7 @@
                 <option selected>Чехословакия</option>
               </select>
               <div class="add-country__flag"></div>
-              <button class="button button--close"></button>
+              <button class="button-skip"></button>
             </li>
             <li class="country-list__item">
               <select class="add-country__country">
@@ -266,11 +277,11 @@
                 <option>Чехословакия</option>
               </select>
               <div class="add-country__flag"></div>
-              <button class="button button--close"></button>
+              <button class="button-skip"></button>
             </li>
             <li class="country-list__item country-list__item--default">
-              <button class="button button--add-country">Добавить страну</button>
-              <button class="button button--close"></button>
+              <button class="button-add-country">Добавить страну</button>
+              <button class="button-skip"></button>
             </li>
           </ul>
 
@@ -297,7 +308,7 @@
             <textarea class="country-plan__text"
               placeholder="План действий">Пить пиво и лазить по старым замкам, наслаждаться аритектурой и вот это все.</textarea>
           </div>
-          <button type="submit">Отправить</button>
+          <button class="submit-button" type="submit">Отправить</button>
           <a class="anchor-link anchor-link--back" href="#step-2">На шаг назад</a>
         </fieldset>
       </form>
