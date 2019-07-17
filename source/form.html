@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>HTML Academy: Погнали - Направления</title>
+</head>
+
+<body class="page">
+
+  <header class="header">
+    <div class="header__wrap">
+      <a class="logo-link" href="index.html">
+        <img class="logo-link__image" src="http://placehold.it/100x20" width="100" height="20"
+          alt="Логотип сайта 'Погнали?'">
+      </a>
+      <button class="menu-button"></button>
+    </div>
+
+    <section class="modal-menu">
+      <h2 class="visually-hidden">Информационное меню</h2>
+
+      <div class="modal-menu__wrap">
+
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav-link nav__link" href="#">О сервисе</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav-link nav__link" href="form.html">Направления</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav-link nav__link" href="catalog.html">Попутчики</a>
+            </li>
+          </ul>
+        </nav>
+
+        <a class="function-link" href="singin.html">Авторизация</a>
+
+        <ul class="contacts-list">
+          <li class="contacts-list__item">
+            <a class="contact-link contacts-list__link" href="tel:+78005558628">8 800 555-86-28</a>
+          </li>
+          <li class="contacts-list__item">
+            <a class="contact-link contacts-list__link"
+              href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          </li>
+        </ul>
+
+        <ul class="social-list">
+          <li class="social-list__item">
+            <a class="social-link social-list__link" href="#">
+              <svg class="social-link__icon" width="45" height="45"></svg>
+            </a>
+          </li>
+          <li class="social-list__item">
+            <a class="social-link social-list__link" href="#">
+              <svg class="social-link__icon" width="45" height="45"></svg>
+            </a></li>
+          <li class="social-list__item">
+            <a class="social-link social-list__link" href="#">
+              <svg class="social-link__icon" width="45" height="45"></svg>
+            </a>
+          </li>
+        </ul>
+
+      </div>
+    </section>
+  </header>
+
+  <main class="form">
+
+    <h1 class="form__title">Направления</h1>
+
+    <section class="profile">
+      <h2 class="visually-hidden">Базовые настройки профиля</h2>
+      <div class="level profile__level">
+        <span class="level__value">80</span>
+        <span class="level__text">level</span>
+      </div>
+
+      <img class="personal-logo" src="http://placehold.it/100x100" width="100" height="100"
+        alt="Ваша фотография">
+
+      <a class="change-button">Сменить фото</a>
+
+      <div class="tags-area profile__tags">
+        <h3 class="tags-area__title">тэги</h3>
+        <textarea class="tags-area__text">#бургер #бар #футбол #концерт #крафт</textarea>
+      </div>
+
+      <div class="transports profile__transports">
+        <h3 class="transports__title">транспорт</h3>
+        <ul class="transports__list">
+          <li class="transports__item">
+            <svg class="transports__image transports__image--active"></svg>
+            <span class="popup-description">Авиаперелёт</span>
+          </li>
+          <li class="transports__item">
+            <svg class="transports__image transports__image--active"></svg>
+            <span class="popup-description">Автотранспорт</span>
+          </li>
+          <li class="transports__item">
+            <svg class="transports__image"></svg>
+            <span class="popup-description">Велосипед</span>
+          </li>
+          <li class="transports__item">
+            <svg class="transports__image transports__image--active"></svg>
+            <span class="popup-description">Пешком</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="my-plans">
+      <h2 class="my-plans__title">Мои планы:</h2>
+      <ol class="plans">
+        <li class="plan plans__item">
+          <h3 class="plan__title">Франция, Италия</h3>
+          <p class="plan__companions">3 попутчика</p>
+          <p class="plan__dates">
+            <span class="plan__dates-from">26 МАР</span>
+            <span class="plan__dates-to">29 МАР</span>
+          </p>
+          <a class="button button--change-plan">Изменить</a>
+        </li>
+        <li class="plans__item">
+          <h3 class="plan__title">Тайланд, Индонезия</h3>
+          <p class="plan__companions">1 попутчик</p>
+          <p class="plan__dates">
+            <span class="plan__dates-from">1 ИЮЛ</span>
+            <span class="plan__dates-to">15 ИЮЛ</span>
+          </p>
+          <a class="button button--change-plan">Изменить</a>
+        </li>
+      </ol>
+    </section>
+
+    <section class="add-plan">
+      <h2 class="add-plan__title">Добавить план:</h2>
+
+      <form class="plan-form add-plan__form" action="https://echo.htmlacademy.ru" method="get">
+
+        <fieldset class="form-step plan-form__step">
+          <legend class="form-step__legend">
+            <a class="form-step__legend-anchor" id="step-1">Шаг 1.</a>
+          </legend>
+          <h3 class="form-step__title-text">Даты пребывания</h3>
+          <p class="form-step__description">Укажите предпочтительное количество попутчиков, которых
+            вы хотели бы позвать в поездку и ее предполагаемую длительность.</p>
+
+          <div class="counter">
+            <label for="companions-value" class="companions-count__title">Ищу попутчиков:</label>
+            <button class="button-minus"></button>
+            <input class="input-count" type="text" name="companions-value" id="counter-value"
+              value="2">
+            <button class="button-plus"></button>
+            <span class="companions-count__tip">чел.</span>
+          </div>
+
+          <div class="counter">
+            <label for="days-value" class="days-count__title">Длительность:</label>
+            <button class="button-minus"></button>
+            <input class="input-count" type="text" name="days-value" id="days-value" value="2">
+            <button class="button-plus"></button>
+            <span class="days-count__tip">дн.</span>
+          </div>
+
+          <label class="form-step__check-label"><input class="children-checkbox" type="checkbox"
+              name="children-allow">Можно с детьми</label>
+
+          <div class="calendar">
+            <div class="calendar__header">
+              <button class="button-prev"></button>
+              <p class="calendar__month">Март 2019</p>
+              <button class="button-next"></button>
+            </div>
+            <table class="calendar__dates">
+              <tr class="calendar__days-of-week">
+                <th class="calendar__day">П</th>
+                <th class="calendar__day">В</th>
+                <th class="calendar__day">С</th>
+                <th class="calendar__day">Ч</th>
+                <th class="calendar__day">П</th>
+                <th class="calendar__day">С</th>
+                <th class="calendar__day">В</th>
+              </tr>
+              <tr class="calendar__week">
+                <td class="calendar__date calendar__date--past">24</td>
+                <td class="calendar__date calendar__date--past">25</td>
+                <td class="calendar__date calendar__date--past">26</td>
+                <td class="calendar__date calendar__date--past">27</td>
+                <td class="calendar__date calendar__date--past">28</td>
+                <td class="calendar__date calendar__date--past">1</td>
+                <td class="calendar__date calendar__date--past">2</td>
+              </tr>
+              <tr class="calendar__week">
+                <td class="calendar__date calendar__date--past">3</td>
+                <td class="calendar__date calendar__date--past">4</td>
+                <td class="calendar__date calendar__date--past">5</td>
+                <td class="calendar__date calendar__date--past">6</td>
+                <td class="calendar__date calendar__date--past">7</td>
+                <td class="calendar__date calendar__date--past">8</td>
+                <td class="calendar__date calendar__date--past">9</td>
+              </tr>
+              <tr class="calendar__week">
+                <td class="calendar__date calendar__date--past">10</td>
+                <td class="calendar__date calendar__date--past">11</td>
+                <td class="calendar__date calendar__date--past">12</td>
+                <td class="calendar__date calendar__date--past">13</td>
+                <td class="calendar__date calendar__date--past">14</td>
+                <td class="calendar__date calendar__date--past">15</td>
+                <td class="calendar__date calendar__date--past">16</td>
+              </tr>
+              <tr class="calendar__week">
+                <td class="calendar__date calendar__date--past">17</td>
+                <td class="calendar__date calendar__date--past">18</td>
+                <td class="calendar__date calendar__date--past">19</td>
+                <td class="calendar__date calendar__date--past">20</td>
+                <td class="calendar__date calendar__date--past">21</td>
+                <td class="calendar__date calendar__date--past">22</td>
+                <td class="calendar__date calendar__date--past">23</td>
+              </tr>
+              <tr class="calendar__week">
+                <td class="calendar__date calendar__date--past">24</td>
+                <td class="calendar__date calendar__date--past">25</td>
+                <td class="calendar__date calendar__date--active">26</td>
+                <td class="calendar__date calendar__date--active">27</td>
+                <td class="calendar__date calendar__date--active">28</td>
+                <td class="calendar__date">29</td>
+                <td class="calendar__date">30</td>
+              </tr>
+              <tr class="calendar__week">
+                <td class="calendar__date">31</td>
+                <td class="calendar__date">1</td>
+                <td class="calendar__date">2</td>
+                <td class="calendar__date">3</td>
+                <td class="calendar__date">4</td>
+                <td class="calendar__date">5</td>
+                <td class="calendar__date">6</td>
+              </tr>
+            </table>
+          </div>
+
+          <a class="anchor-link" href="#step-2">Следующий шаг</a>
+
+        </fieldset>
+
+        <fieldset class="form-step plan-form__step">
+          <legend class="form-step__legend">
+            <a class="form-step__legend-anchor" id="step-2">Шаг 2.</a>
+          </legend>
+          <h3 class="form-step__title-text">Маршрут</h3>
+          <p class="form-step__description">Укажите страны, которые вы хотели по посетить. Это может
+            быть одна или сразу несколько.</p>
+
+          <ul class="country-list">
+            <li class="add-country country-list__item">
+              <select class="add-country__country">
+                <option>Выберите страну</option>
+                <option selected>Босния и Герцеговина</option>
+                <option>Чехословакия</option>
+              </select>
+              <div class="add-country__flag"></div>
+              <button class="button-skip"></button>
+            </li>
+            <li class="country-list__item">
+              <select class="add-country__country">
+                <option>Выберите страну</option>
+                <option>Босния и Герцеговина</option>
+                <option selected>Чехословакия</option>
+              </select>
+              <div class="add-country__flag"></div>
+              <button class="button-skip"></button>
+            </li>
+            <li class="country-list__item">
+              <select class="add-country__country">
+                <option>Выберите страну</option>
+                <option>Босния и Герцеговина</option>
+                <option>Чехословакия</option>
+              </select>
+              <div class="add-country__flag"></div>
+              <button class="button-skip"></button>
+            </li>
+            <li class="country-list__item country-list__item--default">
+              <button class="button-add-country">Добавить страну</button>
+              <button class="button-skip"></button>
+            </li>
+          </ul>
+
+          <a class="anchor-link" href="#step-3">Следующий шаг</a>
+          <a class="anchor-link anchor-link--back" href="#step-1">На шаг назад</a>
+        </fieldset>
+        <fieldset class="form-step plan-form__step">
+          <legend class="form-step__legend">
+            <a class="form-step__legend-anchor" id="step-3">Шаг 3.</a>
+          </legend>
+          <h3 class="form-step__title-text">Развлечения</h3>
+          <p class="form-step__description">Наконец, расскажите о своих планах времяпровождения.
+            Можно писать в свободной форме и ставить тэги.
+          </p>
+          <div class="country-plan">
+            <label class="country-plan__title"><span
+                class="country-plan__name country-plan__name--big">Босния и
+                герцеговина</span></label>
+            <textarea class="country-plan__text" placeholder="План действий"></textarea>
+          </div>
+          <div>
+            <label class="country-plan__title"><span
+                class="country-plan__name country-plan__name--czech">Чехословакия</span></label>
+            <textarea class="country-plan__text"
+              placeholder="План действий">Пить пиво и лазить по старым замкам, наслаждаться аритектурой и вот это все.</textarea>
+          </div>
+          <button class="submit-button" type="submit">Отправить</button>
+          <a class="anchor-link anchor-link--back" href="#step-2">На шаг назад</a>
+        </fieldset>
+      </form>
+    </section>
+
+  </main>
+
+  <footer class="footer page__footer">
+
+    <a class="logo-link" href="index.html">
+      <img class="logo-link__image" src="http://placehold.it/96x15" width="96" height="15"
+        alt="Логотип сайта 'Погнали?'">
+    </a>
+
+    <ul class="social-list">
+      <li class="social-list__item">
+        <a class="social-link social-list__link" href="#">
+          <svg class="social-link__icon" width="45" height="45"></svg>
+        </a>
+      </li>
+      <li class="social-list__item">
+        <a class="social-link social-list__link" href="#">
+          <svg class="social-link__icon" width="45" height="45"></svg>
+        </a></li>
+      <li class="social-list__item">
+        <a class="social-link social-list__link" href="#">
+          <svg class="social-link__icon" width="45" height="45"></svg>
+        </a>
+      </li>
+    </ul>
+
+    <div class="copyright">
+      <p class="copyright__text"></p>
+      <a class="copyright-link copyright__link" href="https://htmlacademy.ru/intensive/adaptive"
+        target="_blank"><svg class="copyright-link__icon"></svg></a>
+    </div>
+
+  </footer>
+
+</body>
+
+</html>
