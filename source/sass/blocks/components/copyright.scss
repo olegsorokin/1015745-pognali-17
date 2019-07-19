@@ -1,0 +1,20 @@
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 155px;
+  }
+}
+
+.copyright__text {
+  @include text("Blogger Sans", 16px, 22px, #444444);
+
+  @media (min-width: $tablet-width) {
+    @include text("Blogger Sans", 20px, 24px, #444444);
+  }
+}

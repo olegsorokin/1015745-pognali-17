@@ -1,0 +1,10 @@
+.page {
+  margin: 0;
+  padding: 0;
+  @include text("Blogger Sans", 16px, 22px, #444444);
+  background-color: $main-darkblue;
+
+  @media (min-width: $tablet-width) {
+    @include text("Blogger Sans", 20px, 24px, #444444);
+  }
+}

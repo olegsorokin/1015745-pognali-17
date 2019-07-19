@@ -1,0 +1,44 @@
+.social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+  background-color: $main-yellow;
+  border-radius: 50%;
+
+  @media (min-width: $tablet-width) {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+.social-link__icon--fb {
+  width: 11px;
+  height: 21px;
+
+  @media (min-width: $tablet-width) {
+    width: 14px;
+    height: 28px;
+  }
+}
+
+.social-link__icon--vk {
+  width: 23px;
+  height: 12px;
+
+  @media (min-width: $tablet-width) {
+    width: 31px;
+    height: 16px;
+  }
+}
+
+.social-link__icon--inst {
+  width: 18px;
+  height: 18px;
+
+  @media (min-width: $tablet-width) {
+    width: 24px;
+    height: 24px;
+  }
+}

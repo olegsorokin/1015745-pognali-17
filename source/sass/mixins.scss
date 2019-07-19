@@ -1,0 +1,7 @@
+/*Быстрые стили для шрифтов*/
+@mixin text ($textfamily: "Blogger Sans", $textsize:18px, $line-height:24px, $textcolor:#000000) {
+  font-family: $textfamily, arial, sans-serif;
+  font-size: $textsize;
+  line-height: $line-height;
+  color: $textcolor;
+}
