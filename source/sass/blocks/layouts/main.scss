@@ -1,7 +1,11 @@
 .main__prices {
   position: relative;
-  margin-bottom: -55px;
+  margin-bottom: -57px;
   z-index: 2;
+
+  @media (min-width:$tablet-width) {
+    margin-bottom: -108px;
+  }
 }
 
 

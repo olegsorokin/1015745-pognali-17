@@ -1,9 +1,36 @@
-.contact {
+.contact-link {
   display: flex;
   align-items: center;
+  @include link ("Blogger Sans Bold", 16px, 22px, $main-yellow);
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 28px;
+    line-height: 28px;
+  }
+
 }
 
-.contact__wrap {
+.contact-link[href] {
+  &:hover {
+    color: #ffbd30;
+
+    .contact-link__icon {
+      fill: #ffbd30;
+    }
+  }
+
+  &:active {
+    color: #ffbd30;
+    opacity: 0.3;
+
+    .contact-link__icon {
+      fill: #ffbd30;
+    }
+  }
+}
+
+.contact-link__wrap {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -27,12 +54,12 @@
   }
 }
 
-.contact__icon {
+.contact-link__icon {
   fill: $main-yellow;
   flex-shrink: 0;
 }
 
-.contact__icon--adress {
+.contact-link__icon--adress {
   width: 14px;
   height: 22px;
 
@@ -47,7 +74,7 @@
   }
 }
 
-.contact__icon--phone {
+.contact-link__icon--phone {
   width: 18px;
   height: 18px;
 
@@ -62,7 +89,7 @@
   }
 }
 
-.contact__icon--email {
+.contact-link__icon--email {
   width: 18px;
   height: 13px;
 
@@ -77,18 +104,14 @@
   }
 }
 
-.contact__text {
-  @include text ("Blogger Sans Bold", 16px, 22px, $icon-darkblue);
-  text-transform: uppercase;
+.contact-link__text {
   flex-basis: 145px;
 
   @media (min-width: $tablet-width) {
-    font-size: 28px;
-    line-height: 28px;
     flex-basis: auto;
   }
 }
 
-.contact__text--yellow {
-  color: $main-yellow;
+.contact-link__text-dark {
+  color: $main-darkblue;
 }

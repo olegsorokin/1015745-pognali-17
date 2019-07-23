@@ -406,20 +406,26 @@
         <h2 class="register__title">Заинтересовались?</h2>
         <p class="register__text register__text--register">Зарегистрируйтесь,<br> это быстро и
           бесплатно!</p>
-        <p class="register__text register__text--singin">Уже зарегистрированы? Тогда скорее <a
+        <p class="register__text register__text--login">Уже зарегистрированы? Тогда скорее <a
             class="singin-link" href="#">авторизуйтесь</a>.</p>
         <form class="register-form register__form" action="https://echo.htmlacademy.ru"
           method="post">
           <input class="register-form__input" type="email" placeholder="E-mail">
-          <button class="register-button register-form__button" type="submit"><span
-              class="register-button__title">Регистрация</span></button>
+          <button class="register-button register-form__button" type="submit">
+            <span class="register-button__text">Регистрация</span>
+            <svg class="register-button__icon" width="10" height="14" viewBox="0 0 10 14">
+              <polygon points="0,14 0,0.1 10,7.1 " />
+            </svg>
+          </button>
         </form>
-        <p class="register__text">Остались вопросы?<br> Мы с радостью на них ответим!</p>
-        <ul class="contact-list">
-          <li class="contact contact-list__item">
-            <p class="contact__wrap">
-              <svg class="contact__icon contact__icon--phone" viewBox="0 0 36 36">
-                <path d="M18,0C11.6,0,5.2,1.1,2.8,3.4C0.9,5.3,0.2,8.7,0,10.8c0,0,0,0.2,0,0.3c0,0.8,0.7,1.5,1.5,1.5
+        <p class="register__text register__text--contacts">Остались вопросы?<br> Мы с радостью на
+          них ответим!</p>
+        <ul class="contact-list register__contacts">
+          <li class="contact-list__item">
+            <a class="contact-link" href="tel:+78005558628">
+              <p class="contact-link__wrap">
+                <svg class="contact-link__icon contact-link__icon--phone" viewBox="0 0 36 36">
+                  <path d="M18,0C11.6,0,5.2,1.1,2.8,3.4C0.9,5.3,0.2,8.7,0,10.8c0,0,0,0.2,0,0.3c0,0.8,0.7,1.5,1.5,1.5
                 c0.1,0,3.7-0.3,5.9-0.5c0.1,0,0.1,0,0.2,0c0.8,0,1.5-0.7,1.5-1.5l0-3C9,6.7,9.7,6,10.7,6h14.7C26.2,6,27,6.7,27,7.7l0,3
                 c0,0.8,0.7,1.5,1.5,1.5c0.1,0,0.1,0,0.2,0c2.2,0.2,5.8,0.5,5.9,0.5c0.8,0,1.5-0.7,1.5-1.5c0-0.1,0-0.3,0-0.3
                 c-0.2-2.1-0.9-5.5-2.8-7.4C30.8,1.1,24.4,0,18,0z M18,19.5c-1.7,0-3,1.3-3,3s1.3,3,3,3c1.7,0,3-1.3,3-3S19.7,19.5,18,19.5z
@@ -427,21 +433,24 @@
                 c0,1,0.8,1.9,1.9,1.9s1.9-0.8,1.9-1.9v-1.9h19.5v1.9c0,1,0.8,1.9,1.9,1.9c1,0,1.9-0.8,1.9-1.9v-1.9h0.8c1.7,0,3-1.3,3-3v-3
                 c0-1.1-0.4-2-1.1-2.7L24,12.7v-1.9c0-1-0.8-1.9-1.9-1.9s-1.9,0.8-1.9,1.9v1.9H15.7z M18,16.5c3.3,0,6,2.7,6,6c0,3.3-2.7,6-6,6
                 c-3.3,0-6-2.7-6-6C12,19.2,14.7,16.5,18,16.5z" />
-              </svg>
-            </p>
-            <span class="contact__text contact__text--yellow">8 800 555-86-28</span>
+                </svg>
+              </p>
+              <span class="contact-link__text">8 800 555-86-28</span>
+            </a>
           </li>
           <li class="contact contact-list__item">
-            <p class="contact__wrap">
-              <svg class="contact__icon contact__icon--email" viewBox="0 0 36 26">
-                <path class="st0"
-                  d="M0,23c0,1.6,1.3,3,3,3h30c1.7,0,3-1.3,3-3V3c0-1.6-1.3-3-3-3H3C1.3,0,0,1.3,0,3L0,23L0,23z M11,13L4.2,6.2
+            <a class="contact-link" href="mailto:mail@htmlacademy.ru">
+              <p class="contact-link__wrap">
+                <svg class="contact-link__icon contact-link__icon--email" viewBox="0 0 36 26">
+                  <path class="st0"
+                    d="M0,23c0,1.6,1.3,3,3,3h30c1.7,0,3-1.3,3-3V3c0-1.6-1.3-3-3-3H3C1.3,0,0,1.3,0,3L0,23L0,23z M11,13L4.2,6.2
                 c-0.6-0.6-0.6-1.5,0-2c0.6-0.6,1.5-0.6,2.1,0l11,10.9c0.4,0.4,1.2,0.4,1.6,0l11-10.9c0.6-0.6,1.5-0.6,2.1,0c0.6,0.6,0.6,1.5,0,2
                 L25,13l6.9,6.8c0.6,0.6,0.6,1.5,0,2c-0.6,0.6-1.5,0.6-2.1,0l-6.9-6.8c0,0-2.1,2.2-2.5,2.5c-0.6,0.6-1.4,1-2.4,1
                 c-0.9,0-1.8-0.4-2.4-1c-0.4-0.4-2.5-2.5-2.5-2.5l-6.9,6.8c-0.6,0.6-1.5,0.6-2.1,0c-0.6-0.6-0.6-1.5,0-2L11,13z" />
-              </svg>
-            </p>
-            <span class="contact__text contact__text--yellow">mail@htmlacademy.ru</span>
+                </svg>
+              </p>
+              <span class="contact-link__text">mail@htmlacademy.ru</span>
+            </a>
           </li>
         </ul>
       </div>
@@ -450,9 +459,9 @@
     <section class="map main__map">
       <div class="map__inner">
         <h2 class="visually-hidden">Адрес организации</h2>
-        <div class="contact map__contact">
-          <p class="contact__wrap">
-            <svg class="contact__icon contact__icon--adress" viewBox="0 0 28 43">
+        <a class="contact-link map__contact">
+          <p class="contact-link__wrap">
+            <svg class="contact-link__icon contact-link__icon--adress" viewBox="0 0 28 43">
               <path
                 d="M11.7,13.9c0-1.2,1-2.2,2.3-2.2s2.3,1,2.3,2.2c0,1.2-1,2.2-2.3,2.2C12.8,16.1,11.7,15.1,11.7,13.9z M14,8.1
                   c-3.2,0-5.9,2.6-5.9,5.8s2.6,5.8,5.9,5.8c3.2,0,5.9-2.6,5.9-5.8C19.9,10.7,17.2,8.1,14,8.1z M0,13.6c0,9.1,10.9,16.2,11.7,26.7v0.4
@@ -460,12 +469,12 @@
                   c5.2,0,9.5,4.2,9.5,9.4c0,5.2-4.2,9.4-9.5,9.4s-9.5-4.2-9.5-9.4C4.5,8.7,8.8,4.5,14,4.5z" />
             </svg>
           </p>
-          <span class="contact__text">ул. Большая Конюшенная, 19/8</span>
-        </div>
+          <span class="contact-link__text contact-link__text-dark">ул. Большая Конюшенная, 19/8</span>
+        </a>
         <a class="route-link" href="#">
           <span class="route-link__text">Проложить маршрут</span>
           <svg class="route-link__icon" width="10" height="14" viewBox="0 0 10 14">
-              <polygon points="0,14 0,0.1 10,7.1 "/>
+            <polygon points="0,14 0,0.1 10,7.1 " />
           </svg>
         </a>
       </div>

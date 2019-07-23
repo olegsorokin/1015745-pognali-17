@@ -1,3 +1,9 @@
+.register {
+  max-width: $desktop-width;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .register__wrap {
   box-sizing: border-box;
   display: flex;
@@ -9,60 +15,77 @@
 
   @media (min-width: $tablet-width) {
     min-height: 822px;
-    padding: 0 75px;
+    padding: 185px 75px 60px;
     border-radius: 0 0 50px 50px;
   }
 
   @media (min-width: $desktop-width) {
     min-height: 840px;
-    padding: 0 133px;
+    padding: 200px 133px 105px;
     border-radius: 0 0 60px 60px;
   }
 }
 
 .register__title {
   @include section-title;
+  margin: 0;
   margin-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 60px;
+  }
 }
 
 .register__text {
+  width: 215px;
   margin: 0;
-  margin-bottom: 35px;
   padding: 0;
-  max-width: 215px;
   text-align: center;
 
   @include text ("Blogger Sans Light", 16px, 22px, $main-white);
 
   @media (min-width: $tablet-width) {
-    max-width: 610px;
+    width: auto;
     font-size: 28px;
     line-height: 33px;
   }
 }
 
-.register__text--register {
-  margin: 0;
+.register__text--login {
+  margin-bottom: 32px;
 
   @media (min-width: $tablet-width) {
-    max-width: 610px;
+    margin-bottom: 65px;
   }
 }
 
-.register__text--singin {
+.register__text--contacts {
+  margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
-    max-width: 610px;
+    margin-bottom: 40px;
   }
 }
 
 .register__form {
   position: relative;
-  margin-bottom: 35px;
+  margin-bottom: 32px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 60px;
+  }
 }
 
 .register br {
   @media (min-width: $tablet-width) {
     display: none;
+  }
+}
+
+.register__contacts {
+  align-self: flex-start;
+
+  @media (min-width: $desktop-width) {
+    align-self: auto;
   }
 }
