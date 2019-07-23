@@ -1,10 +1,18 @@
 .page {
-  margin: 0;
+  position: relative;
+  min-width: 320px;
   padding: 0;
-  @include text("Blogger Sans", 16px, 22px, #444444);
-  background-color: $main-darkblue;
+  margin:0;
+  @include text ("Blogger Sans", 16px, 22px, #444444);
 
   @media (min-width: $tablet-width) {
-    @include text("Blogger Sans", 20px, 24px, #444444);
+    @include text ("Blogger Sans", 20px, 24px, #444444);
   }
+}
+
+.page__footer {
+  position: absolute;
+  bottom: 0;
+  left:50%;
+  transform: translateX(-50%);
 }

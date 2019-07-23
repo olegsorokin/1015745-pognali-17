@@ -1,0 +1,38 @@
+.register-form {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.register-form__input {
+  box-sizing: border-box;
+  flex-basis: 210px;
+  flex-grow: 1;
+  padding: 22px 24px;
+  border: none;
+  border-radius: 10px;
+
+  @include text ("Blogger Sans Bold", 18px, 18px, $placeholder-grey);
+
+  @media (min-width:$tablet-width) {
+    padding: 28px 24px;
+    font-size: 24px;
+    line-height: 24px;
+    border-radius: 10px 0 0 10px;
+  }
+
+  @media (min-width:$desktop-width) {
+    border-radius: 20px 0 0 20px;
+  }
+}
+
+.register-form__button {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  @media (min-width:$tablet-width) {
+    position: static;
+  }
+}

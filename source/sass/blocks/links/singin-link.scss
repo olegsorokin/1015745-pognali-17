@@ -1,0 +1,8 @@
+.singin-link {
+  @include link ("Blogger Sans Light", 16px, 22px, $main-yellow);
+
+  @media (min-width: $tablet-width) {
+    font-size: 28px;
+    line-height: 33px;
+  }
+}

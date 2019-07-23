@@ -1,0 +1,25 @@
+.main__prices {
+  position: relative;
+  margin-bottom: -55px;
+  z-index: 2;
+}
+
+
+.main__register {
+  position: relative;
+  margin-bottom: -75px;
+  z-index: 1;
+
+  @media (min-width:$tablet-width) {
+    margin-bottom: -62px;
+  }
+
+  @media (min-width:$desktop-width) {
+    margin-bottom: -60px;
+  }
+}
+
+.main__map {
+  position: relative;
+  z-index: 0;
+}

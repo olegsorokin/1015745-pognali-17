@@ -1,0 +1,56 @@
+.prices {
+  box-sizing: border-box;
+  background-color: $main-grey;
+  border-radius: 0 0 25px 25px;
+
+  @media (min-width: $tablet-width) {
+    border-radius: 0 0 50px 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    border-radius: 0 0 60px 60px;
+  }
+}
+
+.prices__wrap {
+  padding: 70px 25px 30px 50px;
+  background-image: url("../../../img/rates@1x.png");
+  background-repeat: no-repeat;
+  background-size: 99px 99px;
+  background-position: top right;
+  background-origin: content-box;
+
+  @media (min-width: $tablet-width) {
+    padding: 230px 75px 70px 130px;
+    width: auto;
+    background-position: 100% 110%;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 188px 404px 188px 224px;
+    background-size: 198px 198px;
+    background-position: 145% 65%;
+  }
+}
+
+.prices__title {
+  @include section-title;
+
+  width: 100px;
+  margin-bottom: 45px;
+
+  @media (min-width: $tablet-width) {
+    text-align: center;
+    width: auto;
+    margin-bottom: 75px;
+  }
+}
+
+.prices__list {
+  position: relative;
+  margin-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 60px;
+  }
+}

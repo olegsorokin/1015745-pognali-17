@@ -1,0 +1,32 @@
+.price-link {
+  position: relative;
+
+  @include link ("Blogger Sans Bold", 16px, 16px, $main-darkblue);
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    color: #132576;
+
+  }
+}
+
+.price-link__wrap {
+  margin: 0;
+  padding: 0;
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 67px;
+    height: 67px;
+    background-color: #e2e5f2;
+    border-radius: 50%;
+  }
+}

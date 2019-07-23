@@ -1,0 +1,42 @@
+.route-link {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-basis: 100%;
+  padding: 19px 24px;
+  background-color: $main-yellow;
+  border: 3px solid $main-darkblue;
+
+  @include link ("Blogger Sans Bold", 18px, 18px, $link-darkblue);
+  border-radius: 10px;
+
+  @media (min-width: $tablet-width) {
+    padding: 26px 37px;
+    @include link ("Blogger Sans Bold", 24px, 24px, $link-darkblue);
+    border-radius: 20px;
+    flex-basis: 324px;
+  }
+
+  &:hover {
+    background-color: $main-darkblue;
+    color: rgba(255, 255, 255, 1);
+
+    .route-link__icon {
+      fill: rgba(255, 255, 255, 1);
+    }
+  }
+
+  &:active {
+    background-color: $main-darkblue;
+    color: rgba(255, 255, 255, 0.3);
+
+    .route-link__icon {
+      fill: rgba(255, 255, 255, 0.3);
+    }
+  }
+}
+
+.route-link__icon {
+  fill: $main-darkblue;
+}
