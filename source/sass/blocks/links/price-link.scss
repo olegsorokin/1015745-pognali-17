@@ -20,7 +20,7 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    left: -90px;
+    left: -40px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -28,5 +28,9 @@
     height: 67px;
     background-color: #e2e5f2;
     border-radius: 50%;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 0;
   }
 }

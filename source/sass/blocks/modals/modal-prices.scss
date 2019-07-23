@@ -1,3 +1,45 @@
 .modal-prices {
+  box-sizing: border-box;
   display: none;
+  width: 270px;
+  min-height: 440px;
+  padding: 33px 25px;
+  background-color: $main-white;
+  border-radius: 20px;
+
+  @media (min-width:$tablet-width) {
+    width: 690px;
+    min-height: 525px;
+    padding: 50px 90px;
+  }
+
+  @media (min-width:$desktop-width) {
+    width: 750px;
+    min-height: 525px;
+    padding: 50px 90px;
+  }
+}
+
+.modal-prices__title {
+  @include section-title;
+  text-align: center;
+  margin-bottom: 30px;
+
+  @media (min-width:$tablet-width) {
+    margin-bottom: 47px;
+  }
+}
+
+.modal-prices__list {
+  margin-bottom: 30px;
+}
+
+.modal-prices__close {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.modal-show {
+  display: block;
 }

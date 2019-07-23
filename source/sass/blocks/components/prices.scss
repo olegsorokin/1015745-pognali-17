@@ -1,5 +1,5 @@
 .prices {
-  box-sizing: border-box;
+  max-width: $desktop-width;
   background-color: $main-grey;
   border-radius: 0 0 25px 25px;
 
@@ -13,23 +13,23 @@
 }
 
 .prices__wrap {
-  padding: 70px 25px 30px 50px;
+  padding: 80px 25px 40px 50px;
+  background-origin: content-box;
   background-image: url("../../../img/rates@1x.png");
   background-repeat: no-repeat;
   background-size: 99px 99px;
   background-position: top right;
-  background-origin: content-box;
 
   @media (min-width: $tablet-width) {
-    padding: 230px 75px 70px 130px;
+    padding: 230px 80px 70px;
     width: auto;
     background-position: 100% 110%;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 188px 404px 188px 224px;
+    padding: 188px 132px 187px;
     background-size: 198px 198px;
-    background-position: 145% 65%;
+    background-position: 100% 65%;
   }
 }
 
@@ -53,4 +53,23 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 60px;
   }
+}
+
+.prices__link {
+  @media (min-width: $tablet-width) {
+    padding-left: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 90px;
+  }
+}
+
+
+.prices__modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
 }
