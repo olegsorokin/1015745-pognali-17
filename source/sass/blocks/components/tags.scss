@@ -1,0 +1,25 @@
+.tags__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.tags__item {
+  @include text ("Blogger Sans", 16px, 18px, $text-dark);
+
+  &::before {
+    content: "#";
+  }
+
+  &::after {
+    content: " ";
+  }
+
+  @media (min-width:$tablet-width) {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}

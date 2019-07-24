@@ -7,8 +7,13 @@
 @import "blocks/layouts/footer.scss";
 @import "blocks/components/visually-hidden.scss";
 @import "blocks/components/about.scss";
-@import "blocks/components/companions.scss";
 @import "blocks/components/routes.scss";
+@import "blocks/components/companions.scss";
+@import "blocks/components/companion.scss";
+@import "blocks/components/wishes.scss";
+@import "blocks/components/tags.scss";
+@import "blocks/components/transports.scss";
+@import "blocks/components/level.scss";
 @import "blocks/components/price-list.scss";
 @import "blocks/components/prices.scss";
 @import "blocks/components/register.scss";
@@ -20,6 +25,7 @@
 @import "blocks/modals/modal-menu.scss";
 @import "blocks/modals/modal-prices.scss";
 @import "blocks/links/social-link.scss";
+@import "blocks/links/more-link.scss";
 @import "blocks/links/price-link.scss";
 @import "blocks/links/singin-link.scss";
 @import "blocks/links/copyright-link.scss";

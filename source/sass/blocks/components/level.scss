@@ -1,0 +1,47 @@
+level {
+  display:inline;
+}
+
+.level__wrap {
+  position:relative;
+  box-sizing: border-box;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.level__info {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  border-radius:50%;
+}
+
+.level__value {
+  @include text ("Blogger SansBold", 24px, 24px, $main-white);
+  border-bottom: 1px solid rgba(255,255,255,0.3);
+}
+
+.level__text {
+  @include text ("Blogger SansBold", 14px, 14px, $main-white);
+}
+
+.level__progress {
+  position:absolute;
+  top:0;
+  left:0;
+}
+
+.half {
+  position:absolute;
+  border-radius: 50%;
+}
+
+.level--80 {
+  @include round-progress (80, 54px, 3px, orange, black);
+}
+
+.level--99 {
+  @include round-progress (99, 54px, 3px, orange, black);
+}

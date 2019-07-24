@@ -1,3 +1,19 @@
+.main__companions {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: -30px;
+  z-index: 15;
+
+  @media (min-width:$tablet-width) {
+    margin-bottom: -182px;
+  }
+
+  @media (min-width:$desktop-width) {
+    margin-bottom: -80px;
+  }
+}
+
 .main__prices {
   position: relative;
   margin-left: auto;

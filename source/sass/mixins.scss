@@ -50,3 +50,41 @@
     line-height: 33px;
   }
 }
+
+/*-----Уровень попутчика-----*/
+@mixin round-progress ($level: 50, $size: 65px, $border-width: 5px, $border-color: orange, $bg-color: rgba(0,0,0,0.3)) {
+
+  $full-size: $size + $border-width * 2;
+
+  .level__wrap {
+    width: $full-size;
+    height: $full-size;
+  }
+
+  .level__info {
+    width: $full-size;
+    height: $full-size;
+    background-color: $bg-color;
+  }
+
+  .half {
+    width: $size;
+    height: $size;
+    border: $border-width solid $border-color;
+    clip: rect(auto, ($full-size), ($full-size), ($full-size/2));
+  }
+
+  .left-half {
+    transform:rotate(180 + $level * 3.6deg);
+  }
+
+  @if $level <= 50 {
+    .level__progress {
+       clip: rect(auto, ($full-size), ($full-size), ($full-size/2));
+     }
+    .right-half {
+      display:none;
+    }
+  }
+
+}

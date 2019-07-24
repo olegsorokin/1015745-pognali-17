@@ -1,3 +1,95 @@
 .companions {
+  box-sizing: border-box;
+  max-width: $desktop-width;
+  padding: 120px 25px 30px;
   background-color: $main-darkblue;
+  border-radius: 0 0 25px 25px;
+
+  @media (min-width: $tablet-width) {
+    padding: 225px 75px 90px;
+    border-radius: 0 0 60px 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-height: 840px;
+    padding: 220px 60px 135px 130px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-between;
+  }
+}
+
+.companions__title {
+  @include section-title;
+  margin: 0;
+  margin-bottom: 23px;
+  padding: 0 25px;
+
+  @media (min-width:$tablet-width) {
+    margin-bottom: 60px;
+    padding: 0;
+  }
+}
+
+.companions__text {
+  @include text-light;
+  margin: 0;
+  margin-bottom: 27px;
+  padding: 0 25px;
+
+  @media (min-width:$tablet-width) {
+    width: 425px;
+    margin-bottom: 45px;
+    padding: 0;
+  }
+}
+
+.companions__slogan {
+  @include text-light;
+  font-family: "Blogger Sans Bold", Arial, sans-serif;
+  margin: 0;
+  margin-bottom: 60px;
+  padding: 0 25px;
+
+  @media (min-width:$tablet-width) {
+    margin-bottom: 60px;
+    padding: 0;
+  }
+}
+
+.companions__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  margin-bottom: 20px;
+
+  @media (min-width:$tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 80px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 630px;
+    order: 1;
+    margin-bottom: 0px;
+  }
+}
+
+.companions__item {
+  position: relative;
+  margin-bottom: 10px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0px;
+  }
+}
+
+.companions br {
+  display: none;
+
+  @media (min-width:$tablet-width) {
+    display: inline;
+  }
 }
