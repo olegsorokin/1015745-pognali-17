@@ -1,7 +1,5 @@
 .contact-list {
-  margin:0;
-  padding: 0;
-  list-style-type: none;
+  @include list-reset;
 
   @media (min-width: $desktop-width) {
     min-width: 870px;

@@ -18,7 +18,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 280px;
+    flex-basis: 280px;
+    margin-top: -80px;
   }
 
   &:hover {
@@ -38,4 +39,12 @@
 
 .more-link__icon {
   fill: $main-darkblue;
+}
+
+.more-link--routes {
+  @media (min-width: $desktop-width) {
+    flex-basis: 275px;
+    margin-top: -80px;
+    margin-right: 60px;
+  }
 }

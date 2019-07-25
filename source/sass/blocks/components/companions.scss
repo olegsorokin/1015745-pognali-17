@@ -1,7 +1,7 @@
 .companions {
   box-sizing: border-box;
   max-width: $desktop-width;
-  padding: 120px 25px 30px;
+  padding: 110px 25px 30px;
   background-color: $main-darkblue;
   border-radius: 0 0 25px 25px;
 
@@ -11,12 +11,10 @@
   }
 
   @media (min-width: $desktop-width) {
-    max-height: 840px;
     padding: 220px 60px 135px 130px;
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     flex-wrap: wrap;
-    align-content: space-between;
   }
 }
 
@@ -59,9 +57,7 @@
 }
 
 .companions__list {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
+  @include list-reset;
   margin-bottom: 20px;
 
   @media (min-width:$tablet-width) {
@@ -72,7 +68,6 @@
 
   @media (min-width: $desktop-width) {
     min-width: 630px;
-    order: 1;
     margin-bottom: 0px;
   }
 }

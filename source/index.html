@@ -190,44 +190,107 @@
       <a class="button" href="#">Подробнее</a>
     </section>
 
-    <section class="routes">
-      <h2 class="section-title">Направления</h2>
-      <p class="section-preview section-preview--dark">Мы не продаем туры
-        и ничего не рекламируем.
-        Люди сами пишут о странах, куда хотели бы отправиться
-        и чем можно там заняться.</p>
+    <section class="routes main__routes">
+      <div class="routes__wrap">
+        <h2 class="routes__title">Направления</h2>
+        <p class="routes__text">Мы не продаем туры<br>
+          и ничего не рекламируем.
+          Люди сами пишут о странах, куда хотели бы отправиться
+          и чем можно там заняться.</p>
+      </div>
       <ul class="routes__list">
         <li class="route routes__item">
-          <div class="route__wrap">
+          <img class="route__image"
+            srcset="img/thailand-mobile@1x.jpg 270w, img/thailand-desktop@1x.jpg 186w"
+            sizes="(min-width: 768px) 186px, 270px" src="img/thailand-mobile@1x.jpg"
+            alt="Фотография острова в Тайланде">
+          <div class="route__info">
             <h3 class="route__name">Тайланд</h3>
+            <div class="route__counter">
+              <svg class="route__counter-icon" width="11" height="11" viewBox="0 0 20 20">
+                <g id="user">
+                  <ellipse cx="10" cy="6" rx="5" ry="6" />
+                  <path
+                    d="M19.8,17.1c-0.9-1.8-2.6-3.3-4.8-4.2c-0.6-0.2-1.3-0.2-1.8,0.1c-1,0.6-2,0.9-3.2,0.9S7.8,13.6,6.8,13
+                          c-0.5-0.2-1.2-0.3-1.8,0c-2.2,0.9-3.9,2.4-4.8,4.2C-0.5,18.5,0.6,20,2.1,20h15.8C19.4,20,20.5,18.5,19.8,17.1z" />
+                </g>
+              </svg>
+              <span class="route__counter-value">18321</span>
+            </div>
             <p class="route__slogan">Джугли зовут!</p>
-            <span class="route__counter">18321</span>
+            <img class="route__flag"
+              srcset="http://placehold.it/35x24 35w, http://placehold.it/70x47 70w"
+              sizes="(min-width: 768px) 70px, 35px" src="http://placehold.it/35x24"
+              alt="Флаг Тайланда">
           </div>
         </li>
         <li class="route routes__item">
-          <div class="route__wrap">
+          <img class="route__image"
+            srcset="img/france-mobile@1x.jpg 270w, img/france-desktop@1x.jpg 186w"
+            sizes="(min-width: 768px) 186px, 270px" src="img/france-mobile@1x.jpg"
+            alt="Фотография города во Франции">
+          <div class="route__info">
             <h3 class="route__name">Франция</h3>
+            <div class="route__counter">
+              <svg class="route__counter-icon" width="11" height="11" viewBox="0 0 20 20">
+                <g id="user">
+                  <ellipse cx="10" cy="6" rx="5" ry="6" />
+                  <path
+                    d="M19.8,17.1c-0.9-1.8-2.6-3.3-4.8-4.2c-0.6-0.2-1.3-0.2-1.8,0.1c-1,0.6-2,0.9-3.2,0.9S7.8,13.6,6.8,13
+                        c-0.5-0.2-1.2-0.3-1.8,0c-2.2,0.9-3.9,2.4-4.8,4.2C-0.5,18.5,0.6,20,2.1,20h15.8C19.4,20,20.5,18.5,19.8,17.1z" />
+                </g>
+              </svg>
+              <span class="route__counter-value">12518</span>
+            </div>
             <p class="route__slogan">Трэ бьен, манифик!</p>
-            <span class="route__counter">12518</span>
+            <img class="route__flag"
+              srcset="http://placehold.it/35x24 35w, http://placehold.it/70x47 70w"
+              sizes="(min-width: 768px) 70px, 35px" src="http://placehold.it/35x24"
+              src="http://placehold.it/35x24" alt="Флаг Франции">
           </div>
         </li>
         <li class="route routes__item">
-          <div class="route__wrap">
+          <img class="route__image"
+            srcset="img/czech-mobile@1x.jpg 270w, img/czech-desktop@1x.jpg 186w"
+            sizes="(min-width: 768px) 186px, 270px" src="img/czech-mobile@1x.jpg"
+            alt="Фотография города в Чехии">
+          <div class="route__info">
             <h3 class="route__name">Чехия</h3>
+            <div class="route__counter">
+              <svg class="route__counter-icon" width="11" height="11" viewBox="0 0 20 20">
+                <g id="user">
+                  <ellipse cx="10" cy="6" rx="5" ry="6" />
+                  <path
+                    d="M19.8,17.1c-0.9-1.8-2.6-3.3-4.8-4.2c-0.6-0.2-1.3-0.2-1.8,0.1c-1,0.6-2,0.9-3.2,0.9S7.8,13.6,6.8,13
+                          c-0.5-0.2-1.2-0.3-1.8,0c-2.2,0.9-3.9,2.4-4.8,4.2C-0.5,18.5,0.6,20,2.1,20h15.8C19.4,20,20.5,18.5,19.8,17.1z" />
+                </g>
+              </svg>
+              <span class="route__counter-value">5326</span>
+            </div>
             <p class="route__slogan">Закоулки старой Европы</p>
-            <span class="route__counter">5326</span>
+            <img class="route__flag"
+              srcset="http://placehold.it/35x24 35w, http://placehold.it/70x47 70w"
+              sizes="(min-width: 768px) 70px, 35px" src="http://placehold.it/35x24"
+              src="http://placehold.it/35x24" alt="Флаг Чехии">
           </div>
         </li>
       </ul>
-      <a class="button" href="#">Показать все</a>
+      <a class="more-link more-link--routes" href="form.html">
+        <span class="more-link__text">Показать все</span>
+        <svg class="more-link__icon" width="10" height="14" viewBox="0 0 10 14">
+          <polygon points="0,14 0,0.1 10,7.1 " />
+        </svg>
+      </a>
     </section>
 
     <section class="companions main__companions">
-      <h2 class="companions__title">Попутчики</h2>
-      <p class="companions__text">Все мы индивидуальны и у каждого свой взгляд на идеальный
-        отдых. Одному нужен пляж и коктейль,<br> а другому маршрут для хайкинга.
-      </p>
-      <p class="companions__slogan">Теперь можно легко<br> найти единомышленников!</p>
+      <div class="companions__wrap">
+        <h2 class="companions__title">Попутчики</h2>
+        <p class="companions__text">Все мы индивидуальны и у каждого свой взгляд на идеальный
+          отдых. Одному нужен пляж и коктейль,<br> а другому маршрут для хайкинга.
+        </p>
+        <p class="companions__slogan">Теперь можно легко<br> найти единомышленников!</p>
+      </div>
       <ul class="companions__list">
         <li class="companion companions__item">
           <p class="companion__image-wrap">

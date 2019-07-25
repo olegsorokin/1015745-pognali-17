@@ -1,7 +1,5 @@
 .transports__list {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
+  @include list-reset;
   display: flex;
   justify-content: space-between;
   width: 120px;
@@ -19,7 +17,7 @@
 
 .transports__popup {
   position: absolute;
-  left:50%;
+  left: 50%;
   transform: translateX(-50%);
   display: none;
   @include text ("Blogger Sans", 20px, 24px, $main-white);
@@ -32,8 +30,8 @@
 .transports__popup::before {
   content: "";
   position: absolute;
-  top:-8px;
-  left:50%;
+  top: -8px;
+  left: 50%;
   transform: translateX(-50%);
   display: block;
   width: 0px;
