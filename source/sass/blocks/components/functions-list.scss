@@ -1,0 +1,7 @@
+.functions-list {
+  display: flex;
+
+  @media (min-width:$tablet-width) {
+    display: none;
+  }
+}

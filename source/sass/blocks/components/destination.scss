@@ -1,0 +1,41 @@
+.destination {
+  padding: 105px 25px 35px;
+  background-color: $main-yellow;
+  border-radius: 0 0 25px 25px;
+
+  @media (min-width: $tablet-width) {
+    padding: 110px 40px 85px;
+    border-radius: 0 0 60px 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+
+    padding: 115px 60px 55px;
+  }
+}
+
+.destination__inner {
+  @media (min-width: $tablet-width) {
+    padding: 0 35px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 75px;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.destination__contact {
+  margin-bottom: 32px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-grow: 1;
+    justify-content: center;
+    margin-bottom: 0;
+  }
+}

@@ -48,3 +48,17 @@
     margin-right: 60px;
   }
 }
+
+
+.more-link--about {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    width: 275px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 0;
+  }
+}

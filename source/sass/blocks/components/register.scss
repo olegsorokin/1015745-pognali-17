@@ -1,25 +1,32 @@
 .register {
-  max-width: $desktop-width;
-}
-
-.register__wrap {
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   padding: 130px 25px 30px;
   background-color: $main-darkblue;
   border-radius: 0 0 25px 25px;
 
   @media (min-width: $tablet-width) {
-    min-height: 822px;
-    padding: 185px 75px 60px;
+    padding: 185px 40px 60px;
     border-radius: 0 0 60px 60px;
   }
 
   @media (min-width: $desktop-width) {
-    min-height: 840px;
-    padding: 200px 133px 105px;
+    padding: 200px 60px 105px;
+  }
+}
+
+.register__inner {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 0 0 25px 25px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 35px;
+    border-radius: 0 0 60px 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 73px;
   }
 }
 

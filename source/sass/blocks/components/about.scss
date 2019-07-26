@@ -1,3 +1,89 @@
 .about {
+  padding: 280px 10px 0px 20px;
   background-color: $main-darkblue;
+  border-radius: 0 0 25px 25px;
+  background-image: url(../../../img/about-mobile@1x.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+
+  @media (min-width: $tablet-width) {
+    padding: 235px 40px 88px;
+    border-radius: 0 0 60px 60px;
+    background-image: url(../../../img/about-tablet@1x.png), url(../../../img/blue-back-tablet.png);
+    background-position: 120% 100%, 0% 0%;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 160px 60px 0px;
+    background-image: url(../../../img/about-desktop@1x.png), url(../../../img/blue-back.png);
+    background-position: 100% 0%, 0% 0%;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+  }
+
+}
+
+.about__inner {
+  padding: 32px 32px 85px;
+
+  @media (min-width: $tablet-width) {
+    padding-top:45px;
+    padding-left: 35px;
+    padding-bottom: 0px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 60px 70px 145px;
+  }
+}
+
+
+.about__title {
+  @include section-title;
+  margin: 0;
+  margin-bottom: 20px;
+
+  @media (min-width:$tablet-width) {
+    margin-bottom: 43px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 61px;
+  }
+}
+
+.about__text {
+  @include text-light;
+  margin: 0;
+  margin-bottom: 20px;
+
+  @media (min-width:$tablet-width) {
+    width: 300px;
+    margin-bottom: 40px;
+  }
+
+  @media (min-width:$desktop-width) {
+    width: 611px;
+    margin-bottom: 45px;
+  }
+}
+
+.about__slogan {
+  @include text-light;
+  font-family: "Blogger Sans Bold", Arial, sans-serif;
+  margin: 0;
+
+  @media (min-width:$tablet-width) {
+    width: 300px;
+    margin-bottom: 50px;
+    font-size: 21px;
+    line-height: 25px;
+  }
+
+  @media (min-width:$desktop-width) {
+    width: 410px;
+    margin-bottom: 85px;
+  }
 }

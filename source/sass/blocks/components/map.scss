@@ -1,61 +1,23 @@
 .map {
-  max-width: $desktop-width;
-  height: 790px;
-  margin: 0 auto;
-
-  @media (min-width: $tablet-width) {
-    height: 1000px;
-  }
-
-  @media (min-width: $desktop-width) {
-    height: 810px;
-  }
+  overflow: hidden;
 }
 
-.map__inner {
-  padding: 106px 25px 35px;
-  background-color: $main-yellow;
-  border-radius: 0 0 25px 25px;
-
-  @media (min-width: $tablet-width) {
-    padding: 109px 75px 85px;
-    border-radius: 0 0 50px 50px;
-  }
-
-  @media (min-width: $desktop-width) {
-    display: flex;
-    align-items: center;
-    padding: 114px 133px 56px;
-    border-radius: 0 0 60px 60px;
-  }
-}
-
-.map__contact {
-
-  margin-bottom: 32px;
-
-  @media (min-width: $tablet-width) {
-    margin-bottom: 45px;
-  }
-
-  @media (min-width: $desktop-width) {
-    flex-grow: 1;
-    justify-content: center;
-    margin-bottom: 0;
-  }
+.map__image {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
 }
 
 .map__real {
-  position: absolute;
-  bottom: 0;
-  z-index: -1;
-  height:730px;
+  height: 770px;
 
   @media (min-width: $tablet-width) {
-    height:750px;
+    height: 800px;
   }
 
   @media (min-width: $desktop-width) {
-    height:700px;
+    height: 754px;
   }
 }

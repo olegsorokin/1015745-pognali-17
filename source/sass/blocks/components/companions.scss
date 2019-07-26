@@ -1,20 +1,52 @@
 .companions {
-  box-sizing: border-box;
-  max-width: $desktop-width;
-  padding: 110px 25px 30px;
+  padding: 85px 25px 30px 0;
   background-color: $main-darkblue;
   border-radius: 0 0 25px 25px;
+  background-image: url("../../../img/blue-back.png"), url("../../../img/smolov-back-desktop@1x.png"), url("../../../img/rogovaya-back-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-position: 0% 0%, 100% 0%, 0% 25%;
+  background-size: 113px 113px, auto, auto;
+  background-origin: content-box;
 
   @media (min-width: $tablet-width) {
-    padding: 225px 75px 90px;
+    padding: 160px 75px 90px 40px;
+    background-image: url("../../../img/blue-back.png"), url("../../../img/rogovaya-back-desktop@1x.png"), url("../../../img/smolov-back-desktop@1x.png");
+    background-position: 0% 0%, 100% 0%, 0% 40%;
+    background-size: auto;
     border-radius: 0 0 60px 60px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 220px 60px 135px 130px;
+    padding: 160px 60px 80px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    background-position: 0% 0%, 130px 100%, 487px 65px;
+  }
+}
+
+.companions__inner {
+  padding: 35px 0 0 25px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 65px;
+    padding-left: 35px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 70px;
+    padding-bottom: 55px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+
+.companions__wrap {
+  padding: 0 35px;
+
+  @media (min-width:$tablet-width) {
+    padding: 0;
   }
 }
 
@@ -22,11 +54,9 @@
   @include section-title;
   margin: 0;
   margin-bottom: 23px;
-  padding: 0 25px;
 
   @media (min-width:$tablet-width) {
     margin-bottom: 60px;
-    padding: 0;
   }
 }
 
@@ -34,12 +64,10 @@
   @include text-light;
   margin: 0;
   margin-bottom: 27px;
-  padding: 0 25px;
 
   @media (min-width:$tablet-width) {
     width: 425px;
     margin-bottom: 45px;
-    padding: 0;
   }
 }
 
@@ -48,11 +76,9 @@
   font-family: "Blogger Sans Bold", Arial, sans-serif;
   margin: 0;
   margin-bottom: 60px;
-  padding: 0 25px;
 
   @media (min-width:$tablet-width) {
     margin-bottom: 60px;
-    padding: 0;
   }
 }
 

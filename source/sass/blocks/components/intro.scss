@@ -1,0 +1,78 @@
+.intro {
+  display: flex;
+  flex-direction: column;
+  min-height: 550px;
+  padding: 97px 25px 113px;
+  background-color: #192144;
+  background-image: url("../../../img/blue-back-square.png"), url("../../../img/traveller-illustration-mobile@1x.png"), url("../../../img/globe-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom center, 60% 44%, top left;
+
+  @media (min-width: $tablet-width) {
+    min-height: 470px;
+    justify-content: space-between;
+    padding: 170px 40px 350px;
+    background-image: url("../../../img//traveller-illustration-tablet@1x.png"), url("../../../img/globe-back-tablet@1x.jpg");
+    background-position: 72% 74%, bottom center;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: auto;
+    flex-direction: row;
+    padding: 217px 60px 340px;
+    background-image: url("../../../img//traveller-illustration-desktop@1x.png"), url("../../../img/globe-back-desktop@1x.jpg");
+    background-position: 60% bottom, bottom center;
+    background-color: #141b3b;
+    border-radius: 0 0 60px 60px;
+  }
+}
+
+.intro__slogan {
+  margin: 0;
+  @include text ("Blogger Sans Bold", 36px, 38px, #ffffff);
+  text-align: center;
+  padding: 0 15px;
+
+  @media (min-width:$tablet-width) {
+    width: 395px;
+    font-size: 60px;
+    line-height: 70px;
+    align-self: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    align-self: auto;
+    text-align: left;
+  }
+}
+
+.intro__functions {
+  margin-top: auto;
+}
+
+.intro__reviews {
+  margin-top: 30px;
+
+  @media (min-width: $desktop-width) {
+    margin-top: 0;
+  }
+}
+
+.intro__stages {
+  position: absolute;
+  bottom: -240px;
+  right: 25px;
+  left: 25px;
+
+  @media (min-width:$tablet-width) {
+    bottom: -140px;
+    right: 40px;
+    left: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    bottom: 125px;
+    right: 60px;
+    left: 60px;
+  }
+}
