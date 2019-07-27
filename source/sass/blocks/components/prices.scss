@@ -1,6 +1,6 @@
 .prices {
   padding: 80px 25px 40px;
-  background-image: url("../../../img/rates@1x.png");
+  background-image: url("../img/rates@1x.png");
   background-size: 99px 99px;
   background-origin: content-box;
   background-repeat: no-repeat;
@@ -10,7 +10,7 @@
 
   @media (min-width: $tablet-width) {
     padding: 255px 40px 85px;
-    background-image: url("../../../img/rates@1x.png"), url("../../../img/light-back.png");
+    background-image: url("../img/rates@1x.png"), url("../img/light-back.png");
     background-position: 93% 112%, 100% 66%;
     background-size: 99px 99px, auto;
     border-radius: 0 0 60px 60px;
@@ -18,7 +18,7 @@
 
   @media (min-width: $desktop-width) {
     padding: 190px 60px 190px;
-    background-image: url("../../../img/rates@1x.png"), url("../../../img/light-back-desktop.png");
+    background-image: url("../img/rates@1x.png"), url("../img/light-back-desktop.png");
     background-position: 93% 70%, 78% 80%;
     background-size: auto, auto;
   }
