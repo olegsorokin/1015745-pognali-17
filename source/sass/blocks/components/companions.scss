@@ -45,7 +45,7 @@
 .companions__wrap {
   padding: 0 35px;
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     padding: 0;
   }
 }
@@ -55,7 +55,7 @@
   margin: 0;
   margin-bottom: 23px;
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     margin-bottom: 60px;
   }
 }
@@ -65,7 +65,7 @@
   margin: 0;
   margin-bottom: 27px;
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     width: 425px;
     margin-bottom: 45px;
   }
@@ -73,11 +73,11 @@
 
 .companions__slogan {
   @include text-light;
-  font-family: "Blogger Sans Bold", Arial, sans-serif;
+  font-family: "Blogger Sans Bold", "Arial", sans-serif;
   margin: 0;
   margin-bottom: 60px;
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     margin-bottom: 60px;
   }
 }
@@ -86,7 +86,7 @@
   @include list-reset;
   margin-bottom: 20px;
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
     margin-bottom: 80px;
@@ -94,7 +94,7 @@
 
   @media (min-width: $desktop-width) {
     min-width: 630px;
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
 }
 
@@ -103,14 +103,14 @@
   margin-bottom: 10px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
 }
 
 .companions br {
   display: none;
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     display: inline;
   }
 }

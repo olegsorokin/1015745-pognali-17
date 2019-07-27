@@ -1,5 +1,6 @@
 .stages-list {
   width: 270px;
+
   @include list-reset;
   counter-reset: num;
   border-radius: 10px;
@@ -40,7 +41,7 @@
   margin-top: -10px;
 
   @media (min-width: $tablet-width) {
-    margin-top: 0px;
+    margin-top: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -81,6 +82,7 @@
   content: counter(num);
   counter-increment: num;
   color: #ffffff;
+
   @include text ("Blogger Sans Bold", 18px, 18px, #ffffff);
 
   @media (min-width: $tablet-width) {
@@ -97,6 +99,7 @@
 .stages-list__item-text {
   width: 150px;
   margin: 0;
+
   @include text ("Blogger Sans Bold", 18px, 18px, #161c35);
 
   @media (min-width: $tablet-width) {

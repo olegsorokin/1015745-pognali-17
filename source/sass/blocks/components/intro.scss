@@ -29,11 +29,12 @@
 
 .intro__slogan {
   margin: 0;
+
   @include text ("Blogger Sans Bold", 36px, 38px, #ffffff);
   text-align: center;
   padding: 0 15px;
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     width: 395px;
     font-size: 60px;
     line-height: 70px;
@@ -64,7 +65,7 @@
   right: 25px;
   left: 25px;
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     bottom: -140px;
     right: 40px;
     left: 40px;

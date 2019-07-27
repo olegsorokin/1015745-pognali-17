@@ -20,6 +20,7 @@
   left: 50%;
   transform: translateX(-50%);
   display: none;
+
   @include text ("Blogger Sans", 20px, 24px, $main-white);
   padding: 20px 23px;
   background-color: #101d41;
@@ -34,8 +35,6 @@
   left: 50%;
   transform: translateX(-50%);
   display: block;
-  width: 0px;
-  height: 0px;
   border-left: 8px solid transparent;
   border-right: 8px solid transparent;
   border-bottom: 8px solid #101d41;
@@ -49,5 +48,4 @@
   &--active {
     opacity: 1;
   }
-
 }

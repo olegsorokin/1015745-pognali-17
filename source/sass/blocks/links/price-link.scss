@@ -1,5 +1,6 @@
 .price-link {
   display: block;
+
   @include link ("Blogger Sans Bold", 16px, 16px, $main-darkblue);
 
   @media (min-width: $tablet-width) {

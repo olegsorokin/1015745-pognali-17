@@ -1,6 +1,7 @@
 .contact-link {
   display: flex;
   align-items: center;
+
   @include link ("Blogger Sans Bold", 16px, 22px, $main-yellow);
   text-transform: uppercase;
 
@@ -8,7 +9,6 @@
     font-size: 28px;
     line-height: 28px;
   }
-
 }
 
 .contact-link[href] {
@@ -65,7 +65,7 @@
 
   @media (min-width: $tablet-width) {
     width: 21px;
-    height: 31px
+    height: 31px;
   }
 
   @media (min-width: $desktop-width) {
@@ -80,7 +80,7 @@
 
   @media (min-width: $tablet-width) {
     width: 27px;
-    height: 27px
+    height: 27px;
   }
 
   @media (min-width: $desktop-width) {
@@ -95,7 +95,7 @@
 
   @media (min-width: $tablet-width) {
     width: 27px;
-    height: 19px
+    height: 19px;
   }
 
   @media (min-width: $desktop-width) {

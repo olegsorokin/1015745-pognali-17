@@ -10,6 +10,7 @@
   margin: 0;
   margin-bottom: 25px;
   width: 170px;
+
   @include text ("Blogger Sans Light", 16px, 19px, #ffffff);
 
   &::before {
@@ -20,7 +21,7 @@
     content: "»";
   }
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     width: 260px;
     font-size: 28px;
     line-height: 33px;
@@ -31,9 +32,10 @@
 .reviews__item-description {
   margin: 0;
   width: 165px;
+
   @include text ("Blogger Sans Bold", 16px, 20px, #ffffff);
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     width: 245px;
     font-size: 21px;
     line-height: 25px;

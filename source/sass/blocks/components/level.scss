@@ -1,13 +1,13 @@
-level {
-  display:inline;
+.level {
+  display: inline;
 }
 
 .level__wrap {
-  position:relative;
+  position: relative;
   box-sizing: border-box;
-  display:flex;
-  justify-content:center;
-  align-items:center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .level__info {
@@ -15,12 +15,12 @@ level {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  border-radius:50%;
+  border-radius: 50%;
 }
 
 .level__value {
   @include text ("Blogger SansBold", 24px, 24px, $main-white);
-  border-bottom: 1px solid rgba(255,255,255,0.3);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .level__text {
@@ -28,13 +28,13 @@ level {
 }
 
 .level__progress {
-  position:absolute;
-  top:0;
-  left:0;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .half {
-  position:absolute;
+  position: absolute;
   border-radius: 50%;
 }
 

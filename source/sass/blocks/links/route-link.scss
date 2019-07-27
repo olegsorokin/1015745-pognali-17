@@ -13,6 +13,7 @@
 
   @media (min-width: $tablet-width) {
     padding: 26px 37px;
+
     @include link ("Blogger Sans Bold", 24px, 24px, $link-darkblue);
     border-radius: 20px;
     flex-basis: 324px;

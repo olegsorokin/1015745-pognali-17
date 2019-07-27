@@ -3,7 +3,7 @@
   border-radius: 10px;
   overflow: hidden;
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     min-height: 140px;
     display: flex;
     border-radius: 20px;
@@ -14,7 +14,7 @@
   width: 100%;
   height: auto;
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     flex-basis: 186px;
   }
 }
@@ -31,7 +31,7 @@
   background-color: $main-white;
   border-radius: 10px;
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     order: -1;
     flex-grow: 1;
     flex-direction: column;
@@ -47,14 +47,14 @@
 
   @include text ("Blogger Sans Bold", 21px, 21px, #161c35);
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     font-size: 24px;
     line-height: 24px;
   }
 }
 
 .route__counter {
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     order: 1;
     margin-top: auto;
   }
@@ -63,7 +63,7 @@
 .route__counter-icon {
   fill: #edeff6;
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     width: 21px;
     height: 20px;
   }
@@ -72,7 +72,7 @@
 .route__counter-value {
   @include text ("Blogger Sans Medium", 16px, 30px, rgba(68, 68, 68, 0.3));
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
   }
@@ -84,7 +84,7 @@
 
   @include text ("Blogger Sans Medium", 16px, 18px, rgba(68, 68, 68, 0.3));
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 17.7px;
   }
@@ -94,7 +94,7 @@
   position: absolute;
   top: -12px;
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     top: 30px;
     right: -35px;
   }

@@ -3,21 +3,21 @@
   display: flex;
   flex-direction: column;
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     width: 285px;
   }
 
   &:hover {
-    box-shadow: 0px 6px 21px 0 rgba(0, 0, 0, 0.08);
+    box-shadow: 0 6px 21px rgba(0, 0, 0, 0.08);
 
     .companion__image {
-     transform: scale(1.1);
+      transform: scale(1.1);
     }
   }
 }
 
 .companion__image-wrap {
-  margin:0;
+  margin: 0;
   overflow: hidden;
   border-radius: 20px 20px 0 0;
 }
@@ -37,7 +37,7 @@
   align-items: center;
   border-radius: 0 0 20px 20px;
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     padding: 30px;
   }
 }
@@ -56,6 +56,7 @@
 
 .companion__link {
   position: relative;
+
   @include link ("Blogger Sans Bold", 21px, 21px, $link-darkblue);
 
   &::before {
@@ -71,7 +72,7 @@
     background-color: #f97676;
   }
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     font-size: 24px;
     line-height: 24px;
   }

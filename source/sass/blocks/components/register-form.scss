@@ -15,14 +15,14 @@
 
   @include text ("Blogger Sans Bold", 18px, 18px, $placeholder-grey);
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     padding: 28px 24px;
     font-size: 24px;
     line-height: 24px;
     border-radius: 10px 0 0 10px;
   }
 
-  @media (min-width:$desktop-width) {
+  @media (min-width: $desktop-width) {
     border-radius: 20px 0 0 20px;
   }
 
@@ -51,7 +51,7 @@
   top: 0;
   right: 0;
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     position: static;
   }
 }
