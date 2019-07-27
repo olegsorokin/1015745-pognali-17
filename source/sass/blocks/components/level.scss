@@ -19,12 +19,12 @@
 }
 
 .level__value {
-  @include text ("Blogger SansBold", 24px, 24px, $main-white);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  @include text ("Verdana", 40px, 40px, $main-white);
 }
 
 .level__text {
-  @include text ("Blogger SansBold", 14px, 14px, $main-white);
+  @include text ("Verdana", 30px, 30px, $main-white);
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .level__progress {
@@ -33,7 +33,7 @@
   left: 0;
 }
 
-.half {
+.level__half {
   position: absolute;
   border-radius: 50%;
 }

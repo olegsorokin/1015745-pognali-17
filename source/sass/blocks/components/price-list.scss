@@ -12,6 +12,22 @@
   }
 }
 
+.price-list--modal {
+  padding-left: 0;
+
+  &::after {
+    display: none;
+  }
+
+  .price-list__service,
+  .price-list__value {
+    @media (min-width: $tablet-width) {
+      font-size: 22px;
+      line-height: 28px;
+    }
+  }
+}
+
 .price-list__item {
   position: relative;
   display: flex;
@@ -26,10 +42,6 @@
     width: auto;
     padding: 16px 0;
   }
-}
-
-.price-list__item:first-child {
-  border-top: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 .price-list__item::before {
@@ -59,6 +71,25 @@
   }
 }
 
+.price-list__item--modal {
+  flex-direction: column;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    padding: 13px 0;
+  }
+}
+
+.price-list__item--modal::before {
+  display: none;
+}
+
+.price-list__item:first-child {
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+
 .price-list__item:nth-child(2)::before {
   background-color: #ffbd30;
 }
@@ -73,33 +104,3 @@
 }
 
 /*--Стили для модального окна---*/
-.price-list--modal {
-  padding-left: 0;
-
-  &::after {
-    display: none;
-  }
-
-  .price-list__service,
-  .price-list__value {
-    @media (min-width: $tablet-width) {
-      font-size: 22px;
-      line-height: 28px;
-    }
-  }
-}
-
-
-.price-list__item--modal {
-  flex-direction: column;
-  width: 100%;
-
-  @media (min-width: $tablet-width) {
-    flex-direction: row;
-    padding: 13px 0;
-  }
-}
-
-.price-list__item--modal::before {
-  display: none;
-}

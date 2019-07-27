@@ -76,14 +76,14 @@
     background-color: $bg-color;
   }
 
-  .half {
+  .level__half {
     width: $size;
     height: $size;
     border: $border-width solid $border-color;
     clip: rect(auto, ($full-size), ($full-size), ($full-size/2));
   }
 
-  .left-half {
+  .level__half--left {
     transform: rotate(180 + $level * 3.6deg);
   }
 
@@ -92,7 +92,7 @@
       clip: rect(auto, ($full-size), ($full-size), ($full-size/2));
     }
 
-    .right-half {
+    .level__half--right {
       display: none;
     }
   }

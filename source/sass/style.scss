@@ -29,7 +29,6 @@
 @import "blocks/components/social-list.scss";
 @import "blocks/components/register-form.scss";
 @import "blocks/components/contact-list.scss";
-@import "blocks/components/contact.scss";
 
 /*---Основные разделы страницы---*/
 @import "blocks/layouts/page.scss";
@@ -40,11 +39,13 @@
 /*---Модальные окна---*/
 @import "blocks/modals/modal-menu.scss";
 @import "blocks/modals/modal-prices.scss";
+@import "blocks/modals/modal-show.scss";
 
 /*---Ссылки---*/
 @import "blocks/links/logo-link.scss";
 @import "blocks/links/function-link.scss";
 @import "blocks/links/social-link.scss";
+@import "blocks/components/contact-link.scss";
 @import "blocks/links/more-link.scss";
 @import "blocks/links/price-link.scss";
 @import "blocks/links/singin-link.scss";
