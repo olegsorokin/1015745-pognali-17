@@ -9,6 +9,18 @@
   border-radius: 20px;
 }
 
+.function-link--hide {
+  display: none;
+}
+
+.function-link--hide-header {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
+}
+
 .function-link--phone {
   background-color: #ff8d30;
 }
@@ -20,4 +32,12 @@
 .function-link--singin {
   flex-grow: 1;
   background-color: #ffd74b;
+}
+
+.function-link__icon-hide {
+  display: none;
+}
+
+.function-link__text--hide {
+  display: none;
 }

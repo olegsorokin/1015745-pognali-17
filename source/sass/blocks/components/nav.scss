@@ -1,0 +1,32 @@
+.nav__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    min-width: 390px;
+    justify-content: space-between;
+
+  }
+}
+
+.nav__link {
+  @include link ("Blogger Sans Bold", 30px, 36px, #192144);
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 71px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}

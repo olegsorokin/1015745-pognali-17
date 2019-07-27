@@ -11,6 +11,13 @@
   }
 }
 
+.page__header {
+  position: relative;
+  top: 0;
+  z-index: 40;
+}
+
+
 .page__footer {
   position: absolute;
   bottom: 0;

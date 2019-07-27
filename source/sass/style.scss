@@ -4,12 +4,6 @@
 @import "mixins.scss";
 @import "blocks/components/visually-hidden.scss";
 
-/*---Основные разделы страницы---*/
-@import "blocks/layouts/page.scss";
-@import "blocks/layouts/header.scss";
-@import "blocks/layouts/main.scss";
-@import "blocks/layouts/footer.scss";
-
 /*---Глобальные блоки страницы---*/
 @import "blocks/components/intro.scss";
 @import "blocks/components/about.scss";
@@ -22,6 +16,7 @@
 @import "blocks/components/map.scss";
 
 /*---Внутренние блоки страницы---*/
+@import "blocks/components/nav.scss";
 @import "blocks/components/functions-list.scss";
 @import "blocks/components/reviews.scss";
 @import "blocks/components/stages-list.scss";
@@ -36,11 +31,18 @@
 @import "blocks/components/contact-list.scss";
 @import "blocks/components/contact.scss";
 
+/*---Основные разделы страницы---*/
+@import "blocks/layouts/page.scss";
+@import "blocks/layouts/header.scss";
+@import "blocks/layouts/main.scss";
+@import "blocks/layouts/footer.scss";
+
 /*---Модальные окна---*/
 @import "blocks/modals/modal-menu.scss";
 @import "blocks/modals/modal-prices.scss";
 
 /*---Ссылки---*/
+@import "blocks/links/logo-link.scss";
 @import "blocks/links/function-link.scss";
 @import "blocks/links/social-link.scss";
 @import "blocks/links/more-link.scss";
@@ -50,5 +52,6 @@
 @import "blocks/links/route-link.scss";
 
 /*---Кнопки---*/
+@import "blocks/buttons/menu-button.scss";
 @import "blocks/buttons/close-button.scss";
 @import "blocks/buttons/register-button.scss";

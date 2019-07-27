@@ -1,7 +1,9 @@
 .functions-list {
   display: flex;
+}
 
-  @media (min-width:$tablet-width) {
+.intro .functions-list {
+  @media (min-width: $tablet-width) {
     display: none;
   }
 }
