@@ -19,11 +19,11 @@
 }
 
 .level__value {
-  @include text ("Verdana", 40px, 40px, $main-white);
+  @include text ("Verdana", 24px, 24px, $main-white);
 }
 
 .level__text {
-  @include text ("Verdana", 30px, 30px, $main-white);
+  @include text ("Verdana", 14px, 14px, $main-white);
   border-top: 1px solid rgba(255, 255, 255, 0.3);
 }
 
