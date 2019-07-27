@@ -1,0 +1,22 @@
+.copyright-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @include link ("Blogger Sans", 16px, 22px, #444444);
+
+  @media (min-width: $tablet-width) {
+    width: 155px;
+
+    @include link ("Blogger Sans", 20px, 24px, #444444);
+  }
+}

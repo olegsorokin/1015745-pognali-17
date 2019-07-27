@@ -1,3 +1,58 @@
-body {
-  background-color: blue;
-}
+/*---Базовые элементы---*/
+@import "fonts.scss";
+@import "variables.scss";
+@import "mixins.scss";
+@import "blocks/components/visually-hidden.scss";
+
+/*---Глобальные блоки страницы---*/
+@import "blocks/components/intro.scss";
+@import "blocks/components/about.scss";
+@import "blocks/components/routes.scss";
+@import "blocks/components/companions.scss";
+@import "blocks/components/wishes.scss";
+@import "blocks/components/prices.scss";
+@import "blocks/components/register.scss";
+@import "blocks/components/destination.scss";
+@import "blocks/components/map.scss";
+
+/*---Внутренние блоки страницы---*/
+@import "blocks/components/nav.scss";
+@import "blocks/components/functions-list.scss";
+@import "blocks/components/reviews.scss";
+@import "blocks/components/stages-list.scss";
+@import "blocks/components/route.scss";
+@import "blocks/components/companion.scss";
+@import "blocks/components/tags.scss";
+@import "blocks/components/transports.scss";
+@import "blocks/components/level.scss";
+@import "blocks/components/price-list.scss";
+@import "blocks/components/social-list.scss";
+@import "blocks/components/register-form.scss";
+@import "blocks/components/contact-list.scss";
+
+/*---Основные разделы страницы---*/
+@import "blocks/layouts/page.scss";
+@import "blocks/layouts/header.scss";
+@import "blocks/layouts/main.scss";
+@import "blocks/layouts/footer.scss";
+
+/*---Модальные окна---*/
+@import "blocks/modals/modal-menu.scss";
+@import "blocks/modals/modal-prices.scss";
+@import "blocks/modals/modal-show.scss";
+
+/*---Ссылки---*/
+@import "blocks/links/logo-link.scss";
+@import "blocks/links/function-link.scss";
+@import "blocks/links/social-link.scss";
+@import "blocks/links/contact-link.scss";
+@import "blocks/links/more-link.scss";
+@import "blocks/links/price-link.scss";
+@import "blocks/links/singin-link.scss";
+@import "blocks/links/copyright-link.scss";
+@import "blocks/links/route-link.scss";
+
+/*---Кнопки---*/
+@import "blocks/buttons/menu-button.scss";
+@import "blocks/buttons/close-button.scss";
+@import "blocks/buttons/register-button.scss";

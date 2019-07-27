@@ -1,0 +1,99 @@
+/* stylelint-disable */
+/*Сброс стилей списков*/
+@mixin list-reset {
+  // margin:0;
+  padding: 0;
+  list-style-type: none;
+}
+
+/*Быстрые стили для шрифтов*/
+@mixin text ($textfamily: "Blogger Sans", $textsize:18px, $line-height:24px, $textcolor:#000000) {
+  font-family: $textfamily, "arial", sans-serif;
+  font-size: $textsize;
+  line-height: $line-height;
+  color: $textcolor;
+}
+
+/*Быстрые стили для ссылок*/
+@mixin link ($linkfamily: "Blogger Sans", $linksize:18px, $line-height:24px, $linkcolor:#000000) {
+  font-family: $linkfamily, "arial", sans-serif;
+  font-size: $linksize;
+  line-height: $line-height;
+  color: $linkcolor;
+  text-decoration: none;
+}
+
+/*Заголовок секции*/
+@mixin section-title {
+  font-family: "Blogger Sans Bold", "arial", sans-serif;
+  font-size: 24px;
+  line-height: 24px;
+  color: $title-orange;
+
+  @media (min-width: $tablet-width) {
+    font-size: 45px;
+    line-height: 45px;
+  }
+}
+
+@mixin text-dark {
+  font-family: "Blogger Sans Light", "arial", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  color: $text-dark;
+
+  @media (min-width: $tablet-width) {
+    font-size: 28px;
+    line-height: 33px;
+  }
+}
+
+@mixin text-light {
+  font-family: "Blogger Sans Light", "arial", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  color: $text-light;
+
+  @media (min-width: $tablet-width) {
+    font-size: 28px;
+    line-height: 33px;
+  }
+}
+
+/*-----Уровень попутчика-----*/
+@mixin round-progress ($level: 50, $size: 65px, $border-width: 5px, $border-color: orange, $bg-color: rgba(0, 0, 0, 0.3)) {
+
+  $full-size: $size + $border-width * 2;
+
+  .level__wrap {
+    width: $full-size;
+    height: $full-size;
+  }
+
+  .level__info {
+    width: $full-size;
+    height: $full-size;
+    background-color: $bg-color;
+  }
+
+  .level__half {
+    width: $size;
+    height: $size;
+    border: $border-width solid $border-color;
+    clip: rect(auto, ($full-size), ($full-size), ($full-size/2));
+  }
+
+  .level__half--left {
+    transform: rotate(180 + $level * 3.6deg);
+  }
+
+  @if $level <=50 {
+    .level__progress {
+      clip: rect(auto, ($full-size), ($full-size), ($full-size/2));
+    }
+
+    .level__half--right {
+      display: none;
+    }
+  }
+}

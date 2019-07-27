@@ -1,0 +1,18 @@
+.singin-link {
+  @include link ("Blogger Sans Light", 16px, 22px, $main-yellow);
+  text-decoration: underline;
+
+  @media (min-width: $tablet-width) {
+    font-size: 28px;
+    line-height: 33px;
+  }
+
+  &:hover {
+    color: #ff8d30;
+  }
+
+  &:active {
+    color: #ff8d30;
+    opacity: 0.3;
+  }
+}

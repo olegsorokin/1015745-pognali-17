@@ -1,0 +1,23 @@
+.map {
+  overflow: hidden;
+}
+
+.map__image {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+}
+
+.map__real {
+  height: 770px;
+
+  @media (min-width: $tablet-width) {
+    height: 800px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 754px;
+  }
+}

@@ -1,0 +1,101 @@
+.route {
+  min-height: 200px;
+  border-radius: 10px;
+  overflow: hidden;
+
+  @media (min-width: $tablet-width) {
+    min-height: 140px;
+    display: flex;
+    border-radius: 20px;
+  }
+}
+
+.route__image {
+  width: 100%;
+  height: auto;
+
+  @media (min-width: $tablet-width) {
+    flex-basis: 186px;
+  }
+}
+
+.route__info {
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 28px 25px 23px;
+  background-color: $main-white;
+  border-radius: 10px;
+
+  @media (min-width: $tablet-width) {
+    order: -1;
+    flex-grow: 1;
+    flex-direction: column;
+    position: relative;
+    padding: 32px 30px 23px;
+    border-radius: 0;
+  }
+}
+
+.route__name {
+  margin: 0;
+  margin-bottom: 5px;
+
+  @include text ("Blogger Sans Bold", 21px, 21px, #161c35);
+
+  @media (min-width: $tablet-width) {
+    font-size: 24px;
+    line-height: 24px;
+  }
+}
+
+.route__counter {
+  @media (min-width: $tablet-width) {
+    order: 1;
+    margin-top: auto;
+  }
+}
+
+.route__counter-icon {
+  fill: #edeff6;
+
+  @media (min-width: $tablet-width) {
+    width: 21px;
+    height: 20px;
+  }
+}
+
+.route__counter-value {
+  @include text ("Blogger Sans Medium", 16px, 30px, rgba(68, 68, 68, 0.3));
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.route__slogan {
+  width: 100%;
+  margin: 0;
+
+  @include text ("Blogger Sans Medium", 16px, 18px, rgba(68, 68, 68, 0.3));
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 17.7px;
+  }
+}
+
+.route__flag {
+  position: absolute;
+  top: -12px;
+
+  @media (min-width: $tablet-width) {
+    top: 30px;
+    right: -35px;
+  }
+}

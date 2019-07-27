@@ -1,0 +1,27 @@
+.footer {
+  background-color: $main-white;
+  border-radius: 25px 25px 0 0;
+  padding: 38px 25px 15px;
+
+  @media (min-width: $tablet-width) {
+    border-radius: 60px 60px 0 0;
+    padding: 47px 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 47px 60px;
+  }
+}
+
+.footer__inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 186px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    min-height: auto;
+  }
+}

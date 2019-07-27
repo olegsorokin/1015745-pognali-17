@@ -1,0 +1,10 @@
+.contact-list {
+  padding: 0;
+  list-style-type: none;
+
+  @media (min-width: $desktop-width) {
+    min-width: 870px;
+    display: flex;
+    justify-content: space-between;
+  }
+}

@@ -1,0 +1,12 @@
+.social-list {
+  display: flex;
+  padding: 0;
+  list-style-type: none;
+  justify-content: center;
+}
+
+.header .social-list {
+  @media (min-width: $tablet-width) {
+    justify-content: flex-start;
+  }
+}

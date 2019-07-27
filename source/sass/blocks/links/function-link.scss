@@ -1,0 +1,43 @@
+.function-link {
+  @include link ("Blogger Sans Bold", 17px, 30px, #161c35);
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 40px;
+  height: 40px;
+  border-radius: 20px;
+}
+
+.function-link--hide {
+  display: none;
+}
+
+.function-link--hide-header {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
+}
+
+.function-link--phone {
+  background-color: #ff8d30;
+}
+
+.function-link--mail {
+  background-color: #ffbd30;
+}
+
+.function-link--singin {
+  flex-grow: 1;
+  background-color: #ffd74b;
+}
+
+.function-link__icon-hide {
+  display: none;
+}
+
+.function-link__text--hide {
+  display: none;
+}

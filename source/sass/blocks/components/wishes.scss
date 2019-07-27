@@ -1,0 +1,12 @@
+.wishes__list {
+  @include list-reset;
+  display: flex;
+}
+
+.wishes__item {
+  margin: 0 9px;
+}
+
+.wishes__popup {
+  display: none;
+}
