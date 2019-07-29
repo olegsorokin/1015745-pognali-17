@@ -11,7 +11,9 @@
 }
 
 .map__real {
+  width: 100%;
   height: 770px;
+  border: 0;
 
   @media (min-width: $tablet-width) {
     height: 800px;
