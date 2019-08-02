@@ -1,0 +1,61 @@
+.companion-card {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  padding: 15px 20px 20px;
+
+  background-color: $main-white;
+
+  border-radius: 20px;
+
+  overflow: hidden;
+}
+
+.companion-card__image {
+  margin-right: 15px;
+  margin-bottom: 15px;
+  border-radius: 50%;
+}
+
+.companion-card__name {
+  position: relative;
+  margin: 0;
+  flex-grow: 1;
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    display: block;
+    width: 6px;
+    height: 6px;
+
+    background-color: $status-offline;
+
+    border-radius: 50%;
+  }
+}
+
+.companion-card__name--online {
+  &::after {
+    background-color: $status-online;
+  }
+}
+
+.companion-card__link {
+  display: block;
+  width: 70px;
+
+  @include link ("Blogger Sans Bold", 20px, 20px, $link-darkblue);
+}
+
+
+.companion-card__tags {
+  width: 170px;
+  margin-bottom: 20px;
+  text-align: left;
+}

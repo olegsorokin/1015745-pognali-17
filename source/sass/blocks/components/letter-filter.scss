@@ -1,0 +1,84 @@
+.letter-filter {
+  display: flex;
+  flex-wrap: wrap;
+
+  @include list-reset;
+
+  @media (min-width: $tablet-width) {
+    justify-content: space-between;
+    min-height: 460px;
+    width: 350px;
+    padding-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+  }
+}
+
+.letter-filter__item {
+  @media (min-width: $desktop-width) {
+    flex-basis: 185px;
+    margin-top: 75px;
+  }
+}
+
+.letter-filter__item--mobile-only {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.letter-filter__item--no-desktop {
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.letter-filter__item-title {
+
+  box-sizing: border-box;
+  width: 44px;
+  height: 42px;
+  padding: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include text ("Blogger Sans Medium", 14px, 18px, $link-darkblue);
+  text-transform: uppercase;
+
+  background-color: $main-white;
+
+  border: 1px solid #cbced9;
+
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    width: 60px;
+    height: 60px;
+
+    background-color: transparent;
+    border: none;
+
+    @include text ("Blogger Sans Bold", 60px, 60px, rgba(25, 33, 68, 0.2));
+  }
+
+  @media (min-width: $desktop-width) {
+    width: auto;
+    height: auto;
+    margin-bottom: 35px;
+    color: $link-darkblue;
+  }
+}
+
+.letter-filter__item-title--current {
+  background-color: $main-darkblue;
+  color: $main-white;
+
+  @media (min-width: $tablet-width) {
+    background-color: transparent;
+    color: $link-darkblue;
+  }
+}

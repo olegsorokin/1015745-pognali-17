@@ -1,0 +1,11 @@
+.companions-list__item {
+  position: relative;
+}
+
+.companions-list__more-link {
+  margin: 25px 0;
+}
+
+.companions-list__list {
+  @include list-reset;
+}

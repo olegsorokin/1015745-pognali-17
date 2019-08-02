@@ -1,0 +1,27 @@
+.show-more-link {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background-color: transparent;
+
+  @include link ("Blogger Sans Bold", 17px, 30px, $link-darkblue);
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.show-more-link__icon {
+  fill: $link-darkblue;
+  margin-right: 15px;
+
+  @media (min-width: $tablet-width) {
+    width: 27px;
+    height: 27px;
+    margin-right: 25px;
+  }
+}

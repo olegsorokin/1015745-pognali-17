@@ -91,6 +91,8 @@
   align-self: flex-start;
 
   @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
     align-self: auto;
   }
 }

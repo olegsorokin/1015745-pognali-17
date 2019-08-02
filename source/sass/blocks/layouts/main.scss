@@ -1,7 +1,18 @@
+.main__title {
+  position: relative;
+  z-index: 100;
+}
+
 .main__intro {
   position: relative;
   z-index: 35;
   margin-bottom: -90px;
+}
+
+.main__country-filter {
+  position: relative;
+  z-index: 35;
+  margin-top: -15px;
 }
 
 .main__about {

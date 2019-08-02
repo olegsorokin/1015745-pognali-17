@@ -1,8 +1,11 @@
 .tags__list {
   @include list-reset;
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
+}
+
+.tags__list--centered {
+  justify-content: center;
 }
 
 .tags__item {
@@ -10,10 +13,6 @@
 
   &::before {
     content: "#";
-  }
-
-  &::after {
-    content: " ";
   }
 
   @media (min-width: $tablet-width) {

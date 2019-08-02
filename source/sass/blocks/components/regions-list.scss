@@ -1,0 +1,29 @@
+.regions-list {
+  @include list-reset;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.regions-list__link {
+  margin: 15px 25px;
+
+  @include link ("Blogger Sans Bold", 16px, 20px, rgba(25, 33, 68, 0.3));
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+.regions-list__link:last-child {
+  margin-bottom: 0;
+}
+
+.regions-list__link--current {
+  color: $main-darkblue;
+}
