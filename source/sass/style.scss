@@ -27,10 +27,12 @@
 /*---Внутренние блоки страницы---*/
 @import "blocks/components/companion.scss";
 @import "blocks/components/companion-card.scss";
+@import "blocks/components/companions-filter.scss";
 @import "blocks/components/companions-list.scss";
 @import "blocks/components/contact-list.scss";
 @import "blocks/components/countries-list.scss";
 @import "blocks/components/country-filter.scss";
+@import "blocks/components/form-line.scss";
 @import "blocks/components/functions-list.scss";
 @import "blocks/components/letter-filter.scss";
 @import "blocks/components/level.scss";
@@ -71,3 +73,4 @@
 @import "blocks/buttons/close-button.scss";
 @import "blocks/buttons/menu-button.scss";
 @import "blocks/buttons/register-button.scss";
+@import "blocks/buttons/submit-button.scss";
