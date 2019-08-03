@@ -20,4 +20,11 @@
 
 .catalog__companions {
   padding: 27px 25px 45px;
+
+  @media (min-width: $desktop-width) {
+    padding: 75px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
 }
