@@ -35,13 +35,12 @@
 
   @media (min-width: $desktop-width) {
     justify-content: space-between;
-    font-family: "Blogger Sans Medium", arial, sans-serif;
+    font-family: "Blogger Sans Medium", "arial", sans-serif;
     margin: 0;
     margin-bottom: 25px;
   }
 
   &::after {
-
     @media (min-width: $tablet-width) {
       content: ":";
     }
@@ -137,7 +136,7 @@
   display: none;
 }
 
-.form-line__checkbox+.form-line__label::before {
+.form-line__checkbox + .form-line__label::before {
   content: "";
   position: absolute;
   left: 0;
@@ -156,7 +155,7 @@
   }
 }
 
-.form-line__checkbox:checked+.form-line__label::before {
+.form-line__checkbox:checked + .form-line__label::before {
   content: url("../../../img/tick.svg");
   position: absolute;
   left: 0;
@@ -175,12 +174,12 @@
   }
 }
 
-.form-line__checkbox+.form-line__transport .form-line__transport-icon {
+.form-line__checkbox + .form-line__transport .form-line__transport-icon {
   opacity: 0.15;
 }
 
 
-.form-line__checkbox:checked+.form-line__transport .form-line__transport-icon {
+.form-line__checkbox:checked + .form-line__transport .form-line__transport-icon {
   opacity: 1;
 }
 

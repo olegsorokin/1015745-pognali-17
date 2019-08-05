@@ -19,12 +19,29 @@
 }
 
 .level__value {
-  @include text ("Verdana", 24px, 24px, $main-white);
+  @include text ("Blogger Sans Bold", 24px, 24px, $link-darkblue);
 }
 
 .level__text {
-  @include text ("Verdana", 14px, 14px, $main-white);
-  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  display: none;
+
+  @include text ("Blogger Sans", 14px, 14px, rgba(68, 68, 68, 0.4));
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+
+  @media (min-width: $tablet-width) {
+    display: inline;
+  }
+}
+
+.level--home {
+  .level__value {
+    color: $main-white;
+  }
+
+  .level__text {
+    display: inline;
+    color: $main-white;
+  }
 }
 
 .level__progress {
@@ -38,10 +55,42 @@
   border-radius: 50%;
 }
 
+.level--25 {
+  @include round-progress (25, 42px, 3px, orange);
+
+  @media (min-width: $tablet-width) {
+    @include round-progress (25, 57px, 3px, orange);
+  }
+}
+
+.level--50 {
+  @include round-progress (50, 42px, 3px, orange);
+
+  @media (min-width: $tablet-width) {
+    @include round-progress (50, 57px, 3px, orange);
+  }
+}
+
 .level--80 {
-  @include round-progress (80, 54px, 3px, orange, black);
+  @include round-progress (80, 42px, 3px, orange);
+
+  @media (min-width: $tablet-width) {
+    @include round-progress (80, 57px, 3px, orange);
+  }
+}
+
+.level--80-home {
+  @include round-progress (80, 57px, 3px, orange, rgba(0, 0, 0, 0.5));
 }
 
 .level--99 {
-  @include round-progress (99, 54px, 3px, orange, black);
+  @include round-progress (99, 42px, 3px, orange);
+
+  @media (min-width: $tablet-width) {
+    @include round-progress (99, 57px, 3px, orange);
+  }
+}
+
+.level--99-home {
+  @include round-progress (99, 57px, 3px, orange, rgba(0, 0, 0, 0.5));
 }

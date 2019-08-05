@@ -8,6 +8,12 @@
   justify-content: center;
 }
 
+.tags__list--catalog {
+  @media (min-width: $tablet-width) {
+    width: 215px;
+  }
+}
+
 .tags__item {
   @include text ("Blogger Sans", 16px, 18px, $text-dark);
 
@@ -19,4 +25,8 @@
     font-size: 20px;
     line-height: 24px;
   }
+}
+
+.tags__item:not(:first-child) {
+  margin-left: 2px;
 }

@@ -33,6 +33,7 @@
 @import "blocks/components/contact-list.scss";
 @import "blocks/components/countries-list.scss";
 @import "blocks/components/country-filter.scss";
+@import "blocks/components/current-level.scss";
 @import "blocks/components/form-line.scss";
 @import "blocks/components/functions-list.scss";
 @import "blocks/components/letter-filter.scss";
@@ -58,6 +59,7 @@
 
 /*---Ссылки---*/
 @import "blocks/links/back-link.scss";
+@import "blocks/links/call-link.scss";
 @import "blocks/links/contact-link.scss";
 @import "blocks/links/copyright-link.scss";
 @import "blocks/links/function-link.scss";
@@ -72,6 +74,7 @@
 /*---Кнопки---*/
 @import "blocks/buttons/button-hide.scss";
 @import "blocks/buttons/close-button.scss";
+@import "blocks/buttons/like-button.scss";
 @import "blocks/buttons/menu-button.scss";
 @import "blocks/buttons/register-button.scss";
 @import "blocks/buttons/submit-button.scss";

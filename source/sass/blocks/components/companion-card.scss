@@ -3,25 +3,57 @@
   justify-content: space-between;
   flex-wrap: wrap;
 
-  padding: 15px 20px 20px;
+  padding: 15px 20px 90px;
 
   background-color: $main-white;
 
   border-radius: 20px;
 
-  overflow: hidden;
+  @media (min-width: $tablet-width) {
+    flex-direction: column;
+    align-content: flex-start;
+    max-height: 190px;
+    padding: 35px 35px 105px;
+  }
 }
 
 .companion-card__image {
   margin-right: 15px;
   margin-bottom: 15px;
   border-radius: 50%;
+
+  @media (min-width: $tablet-width) {
+    width: 190px;
+    margin: 0;
+    margin-right: 30px;
+    border-radius: 20px;
+  }
 }
 
 .companion-card__name {
   position: relative;
   margin: 0;
   flex-grow: 1;
+
+  @media (min-width: $tablet-width) {
+    flex-grow: 0;
+    margin-bottom: 20px;
+  }
+}
+
+.companion-card__link {
+  display: block;
+  width: 70px;
+
+  @include link ("Blogger Sans Bold", 20px, 20px, $link-darkblue);
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 30px;
+    width: auto;
+    display: flex;
+    align-items: center;
+  }
 
   &::after {
     content: "";
@@ -37,25 +69,87 @@
     background-color: $status-offline;
 
     border-radius: 50%;
+
+    @media (min-width: $tablet-width) {
+      position: static;
+      margin-left: 23px;
+      width: 7px;
+      height: 7px;
+    }
   }
 }
 
-.companion-card__name--online {
+.companion-card__link--online {
   &::after {
     background-color: $status-online;
   }
 }
 
-.companion-card__link {
-  display: block;
-  width: 70px;
-
-  @include link ("Blogger Sans Bold", 20px, 20px, $link-darkblue);
-}
-
-
 .companion-card__tags {
   width: 170px;
   margin-bottom: 20px;
   text-align: left;
+}
+
+.companion-card__functions {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    margin-top: auto;
+  }
+}
+
+.companion-card__wishes {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    bottom: 25px;
+  }
+}
+
+.companion-card__footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    right: 35px;
+    width: auto;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.companion-card__transports {
+  flex-grow: 1;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 0;
+  }
+}
+
+.companion-card__level {
+  @media (min-width: $tablet-width) {
+    margin-top: 13px;
+  }
+}
+
+.companion-card__call {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+
+  @media (min-width: $tablet-width) {
+    position: static;
+  }
+}
+
+.companion-card__like {
+  position: absolute;
+  top: 55px;
+  left: 67px;
+
+  @media (min-width: $tablet-width) {
+    position: static;
+  }
 }
