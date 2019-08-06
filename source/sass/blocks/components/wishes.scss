@@ -4,6 +4,11 @@
   margin-bottom: 20px;
 
   @include text ("Blogger Sans", 15px, 18px, #444444);
+
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 }
 
 .wishes__list {
@@ -18,12 +23,20 @@
     flex-direction: row;
   }
 
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+  }
+
   .wishes__item {
     margin: 0;
     margin-bottom: 10px;
 
     @media (min-width: $tablet-width) {
       margin: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 10px;
     }
   }
 
