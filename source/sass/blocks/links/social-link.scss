@@ -11,6 +11,12 @@
   }
 }
 
+.social-link--header {
+  .social-link__icon {
+    fill: #cccccc;
+  }
+}
+
 .social-link--footer {
   background-color: $main-yellow;
   border-radius: 50%;

@@ -27,7 +27,9 @@ gulp.task("css", function () {
     .pipe(postcss([
       autoprefixer()
     ]))
-    .pipe(csso())
+    .pipe(csso({
+      comments: false
+    }))
     .pipe(rename("style.min.css"))
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("build/css"))
@@ -51,7 +53,7 @@ gulp.task("webp", function () {
     .pipe(webp({
       quality: 90
     }))
-    .pipe(gulp.dest("source/img"));
+    .pipe(gulp.dest("build/img"));
 });
 gulp.task("sprite", function () {
   return gulp.src("source/img/*.svg")
@@ -100,6 +102,7 @@ gulp.task("server", function () {
 gulp.task("build", gulp.series(
   "clean",
   "copy",
+  "webp",
   "css",
   "sprite",
   "html"
