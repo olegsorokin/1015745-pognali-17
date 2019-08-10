@@ -5,11 +5,7 @@
 
   @media (min-width: $tablet-width) {
     border-radius: 60px 60px 0 0;
-    padding: 47px 40px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding: 47px 60px;
+    padding: 50px 40px;
   }
 }
 
@@ -31,8 +27,16 @@
   justify-content: center;
   margin: 0;
   margin-top: 32px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+  }
 }
 
 .footer__copyright {
   margin-top: auto;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+  }
 }

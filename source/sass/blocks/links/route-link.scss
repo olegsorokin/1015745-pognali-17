@@ -12,7 +12,7 @@
   border-radius: 10px;
 
   @media (min-width: $tablet-width) {
-    padding: 26px 37px;
+    padding: 26px 33px;
 
     @include link ("Blogger Sans Bold", 24px, 24px, $link-darkblue);
     border-radius: 20px;

@@ -40,7 +40,7 @@
     flex-grow: 1;
     flex-direction: column;
     position: relative;
-    padding: 32px 30px 23px;
+    padding: 30px 30px 23px;
     border-radius: 0;
   }
 }
@@ -52,8 +52,8 @@
   @include text ("Blogger Sans Bold", 21px, 21px, #161c35);
 
   @media (min-width: $tablet-width) {
-    font-size: 21px;
-    line-height: 21px;
+    font-size: 23px;
+    line-height: 23px
   }
 }
 
@@ -81,8 +81,8 @@
   @include text ("Blogger Sans Medium", 16px, 17px, rgba(68, 68, 68, 0.3));
 
   @media (min-width: $tablet-width) {
-    font-size: 16px;
-    line-height: 16px;
+    font-size: 20px;
+    line-height: 20px;
   }
 }
 
@@ -93,8 +93,8 @@
   @include text ("Blogger Sans Medium", 16px, 20px, rgba(68, 68, 68, 0.3));
 
   @media (min-width: $tablet-width) {
-    font-size: 19px;
-    line-height: 19px;
+    font-size: 20px;
+    line-height: 20px;
   }
 }
 
@@ -103,7 +103,7 @@
   top: -12px;
 
   @media (min-width: $tablet-width) {
-    top: 30px;
+    top: 17px;
     right: -35px;
     width: 70px;
     height: 47px;

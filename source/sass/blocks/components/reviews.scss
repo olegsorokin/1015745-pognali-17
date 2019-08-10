@@ -1,5 +1,10 @@
 .reviews {
   padding: 0 25px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    padding-left: 33px;
+  }
 }
 
 .reviews__item {
@@ -25,7 +30,7 @@
     width: 260px;
     font-size: 28px;
     line-height: 33px;
-    margin-bottom: 52px;
+    margin-bottom: 44px;
   }
 }
 

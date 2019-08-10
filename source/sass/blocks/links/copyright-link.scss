@@ -15,8 +15,17 @@
   @include link ("Blogger Sans", 16px, 22px, #444444);
 
   @media (min-width: $tablet-width) {
-    width: 155px;
+    flex-basis: 166px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
 
     @include link ("Blogger Sans", 20px, 24px, #444444);
+  }
+}
+
+.copyright-link__text {
+  @media (min-width: $tablet-width) {
+    margin-right: 25px;
   }
 }

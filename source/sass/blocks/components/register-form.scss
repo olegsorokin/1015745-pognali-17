@@ -8,7 +8,7 @@
   box-sizing: border-box;
   flex-basis: 210px;
   flex-grow: 1;
-  padding: 21px 24px;
+  padding: 23px 24px;
   border: none;
   border-radius: 10px;
 
@@ -18,7 +18,7 @@
     padding: 29px 24px;
     font-size: 24px;
     line-height: 24px;
-    border-radius: 10px 0 0 10px;
+    border-radius: 20px 0 0 20px;
   }
 
   @media (min-width: $desktop-width) {

@@ -14,11 +14,16 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding: 255px 40px 85px;
+    padding: 251px 40px 89px;
     background-image: url("../img/rates@1x.png"), url("../img/light-back.png");
-    background-position: 93% 112%, 100% 66%;
+    background-position: 92% 113%,100% 69%;
     background-size: 99px 99px, auto;
     border-radius: 0 0 60px 60px;
+  }
+
+  @media (min-width: $tablet-width) and (min-resolution: $retina-dpi),
+  (min-width: $tablet-width) and (min-resolution: $retina-dppx) {
+    background-image: url("../img/rates@2x.png"), url("../img/light-back.png");
   }
 
   @media (min-width: $desktop-width) {
@@ -53,7 +58,7 @@
   @media (min-width: $tablet-width) {
     text-align: center;
     width: auto;
-    margin-bottom: 75px;
+    margin-bottom: 76px;
   }
 
   @media (min-width: $desktop-width) {
@@ -66,7 +71,7 @@
   margin-bottom: 32px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 60px;
+    margin-bottom: 58px;
   }
 }
 
@@ -75,8 +80,7 @@
   margin-top: 30px;
 
   @media (min-width: $tablet-width) {
-    margin-top: 60px;
-    padding-left: 50px;
+    padding-left: 62px;
   }
 
   @media (min-width: $desktop-width) {
