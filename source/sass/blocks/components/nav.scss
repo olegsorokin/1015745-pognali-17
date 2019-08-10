@@ -1,16 +1,25 @@
 .nav {
   display: flex;
   align-items: center;
+  justify-content: center;
+
+  @media (min-width: $tablet-width) {
+    justify-content: flex-start;
+  }
 }
 
 .nav::before {
   content: "";
-  display: inline-block;
+  display: none;
   width: 60px;
   height: 2px;
   border-radius: 1px;
   background-color: $main-darkblue;
   margin-right: 40px;
+
+  @media (min-width: $desktop-width) {
+    display: inline-block;
+  }
 }
 
 .nav__list {

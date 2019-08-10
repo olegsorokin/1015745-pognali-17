@@ -226,6 +226,12 @@
     width: 19px;
     height: 21px;
   }
+
+  &:hover {
+    .form-line__transport-text {
+      display: block;
+    }
+  }
 }
 
 .form-line__transport-text {

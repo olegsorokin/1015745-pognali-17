@@ -5,6 +5,18 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="preload" href="fonts/bloggersans-bold.woff2" as="font" type="font/woff2"
+    crossorigin="anonymous">
+  <link rel="preload" href="fonts/bloggersans-bold.woff" as="font" type="font/woff"
+    crossorigin="anonymous">
+  <link rel="preload" href="fonts/bloggersans-medium.woff2" as="font" type="font/woff2"
+    crossorigin="anonymous">
+  <link rel="preload" href="fonts/bloggersans-medium.woff" as="font" type="font/woff"
+    crossorigin="anonymous">
+  <link rel="preload" href="fonts/bloggersans.woff2" as="font" type="font/woff2"
+    crossorigin="anonymous">
+  <link rel="preload" href="fonts/bloggersans.woff" as="font" type="font/woff"
+    crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.min.css">
   <script src="js/picturefill.min.js" async=""></script>
   <title>HTML Academy: Погнали - Попутчики</title>
@@ -18,117 +30,117 @@
 
   <header class="header catalog__header">
 
-      <a class="logo-link header__logo" href="index.html">
-        <picture class="logo-link__image">
-          <source type="image/webp" media="(min-width: 1440px)"
-            srcset="img/logo-desktop-blue@1x.webp 1x, img/logo-desktop-blue@2x.webp 2x">
-          <source type="image/webp" media="(min-width: 768px)"
-            srcset="img/logo-tablet-blue@1x.webp 1x, img/logo-tablet-blue@2x.webp 2x">
-          <source type="image/webp"
-            srcset="img/logo-mobile-blue@1x.webp 1x, img/logo-mobile-blue@2x.webp 2x">
-          <source media="(min-width: 1440px)"
-            srcset="img/logo-desktop-blue@1x.png 1x, img/logo-desktop-blue@2x.png 2x">
-          <source media="(min-width: 768px)"
-            srcset="img/logo-tablet-blue@1x.png 1x, img/logo-tablet-blue@2x.png 2x">
-          <img src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png 2x"
-            alt="Логотип сайта 'Погнали?'">
-        </picture>
+    <a class="logo-link header__logo" href="index.html">
+      <picture class="logo-link__image">
+        <source type="image/webp" media="(min-width: 1440px)"
+          srcset="img/logo-desktop-blue@1x.webp 1x, img/logo-desktop-blue@2x.webp 2x">
+        <source type="image/webp" media="(min-width: 768px)"
+          srcset="img/logo-tablet-blue@1x.webp 1x, img/logo-tablet-blue@2x.webp 2x">
+        <source type="image/webp"
+          srcset="img/logo-mobile-blue@1x.webp 1x, img/logo-mobile-blue@2x.webp 2x">
+        <source media="(min-width: 1440px)"
+          srcset="img/logo-desktop-blue@1x.png 1x, img/logo-desktop-blue@2x.png 2x">
+        <source media="(min-width: 768px)"
+          srcset="img/logo-tablet-blue@1x.png 1x, img/logo-tablet-blue@2x.png 2x">
+        <img src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png 2x"
+          alt="Логотип сайта 'Погнали?'">
+      </picture>
+    </a>
+
+    <button class="menu-button header__menu-button"></button>
+
+    <nav class="nav header__nav">
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a class="nav__link" href="#">
+            <span class="nav__link-text" data-hover="О сервисе">О сервисе</span>
+          </a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="form.html">
+            <span class="nav__link-text" data-hover="Направления">Направления</span></a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="catalog.html">
+            <span class="nav__link-text" data-hover="Попутчики">Попутчики</span></a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="functions-list header__functions">
+      <a class="function-link function-link--phone functions-list__link function-link--hide-header"
+        href="tel:+78005558628">
+        <svg class="function-link__icon" width="18" height="18">
+          <use xlink:href="#topmenu-phone"></use>
+        </svg>
+        <span class="function-link__text function-link__text--hide">Позвоните нам по номеру
+          88005558628</span>
       </a>
+      <a class="function-link function-link--mail functions-list__link function-link--hide-header"
+        href="mailto:mail@htmlacademy.ru">
+        <svg class="function-link__icon" width="18" height="14">
+          <use xlink:href="#topmenu-mail"></use>
+        </svg>
+        <span class="function-link__text function-link__text--hide">Напишите нам на электронную
+          почту по адресу
+          mail@htmlacademy.ru</span>
+      </a>
+      <a class="function-link function-link--singin functions-list__link" href="singin.html">
+        <svg class="function-link__icon function-link__icon-hide" width="20" height="20">
+          <use xlink:href="#user"></use>
+        </svg>
+        <span class="function-link__text">Авторизация</span>
+      </a>
+    </div>
 
-      <button class="menu-button header__menu-button"></button>
-
-      <nav class="nav header__nav">
-        <ul class="nav__list">
-          <li class="nav__item">
-            <a class="nav__link" href="#">
-              <span class="nav__link-text" data-hover="О сервисе">О сервисе</span>
-            </a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="form.html">
-              <span class="nav__link-text" data-hover="Направления">Направления</span></a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="catalog.html">
-              <span class="nav__link-text" data-hover="Попутчики">Попутчики</span></a>
-          </li>
-        </ul>
-      </nav>
-
-      <div class="functions-list header__functions">
-        <a class="function-link function-link--phone functions-list__link function-link--hide-header"
-          href="tel:+78005558628">
-          <svg class="function-link__icon" width="18" height="18">
-            <use xlink:href="#topmenu-phone"></use>
-          </svg>
-          <span class="function-link__text function-link__text--hide">Позвоните нам по номеру
-            88005558628</span>
-        </a>
-        <a class="function-link function-link--mail functions-list__link function-link--hide-header"
-          href="mailto:mail@htmlacademy.ru">
-          <svg class="function-link__icon" width="18" height="14">
-            <use xlink:href="#topmenu-mail"></use>
-          </svg>
-          <span class="function-link__text function-link__text--hide">Напишите нам на электронную
-            почту по адресу
-            mail@htmlacademy.ru</span>
-        </a>
-        <a class="function-link function-link--singin functions-list__link" href="singin.html">
-          <svg class="function-link__icon function-link__icon-hide" width="20" height="20">
-            <use xlink:href="#user"></use>
-          </svg>
-          <span class="function-link__text">Авторизация</span>
-        </a>
-      </div>
-
-      <ul class="contact-list header__contacts">
-        <li class="contact-list__item">
-          <a class="contact-link" href="tel:+78005558628">
-            <p class="contact-link__wrap">
-              <svg class="contact-link__icon contact-link__icon--phone" width="18" height="18">
-                <use xlink:href="#contacts-phone"></use>
-              </svg>
-            </p>
-            <span class="contact-link__text contact-link__text-dark">8 800 555-86-28</span>
-          </a>
-        </li>
-        <li class="contact-list__item">
-          <a class="contact-link" href="mailto:mail@htmlacademy.ru">
-            <p class="contact-link__wrap">
-              <svg class="contact-link__icon contact-link__icon--email" width="18" height="13">
-                <use xlink:href="#contacts-mail"></use>
-              </svg>
-            </p>
-            <span class="contact-link__text contact-link__text-dark">mail@htmlacademy.ru</span>
-          </a>
-        </li>
-      </ul>
-
-      <ul class="social-list header__socials">
-        <li class="social-list__item">
-          <a class="social-link social-link--header social-list__link" href="#">
-            <svg class="social-link__icon social-link__icon--fb" width="11" height="21">
-              <use xlink:href="#facebook"></use>
+    <ul class="contact-list header__contacts">
+      <li class="contact-list__item">
+        <a class="contact-link" href="tel:+78005558628">
+          <p class="contact-link__wrap">
+            <svg class="contact-link__icon contact-link__icon--phone" width="18" height="18">
+              <use xlink:href="#contacts-phone"></use>
             </svg>
-          </a>
-        </li>
-        <li class="social-list__item">
-          <a class="social-link social-link--header social-list__link" href="#">
-            <svg class="social-link__icon social-link__icon--vk" width="23" height="12">
-              <use xlink:href="#vk"></use>
+          </p>
+          <span class="contact-link__text contact-link__text-dark">8 800 555-86-28</span>
+        </a>
+      </li>
+      <li class="contact-list__item">
+        <a class="contact-link" href="mailto:mail@htmlacademy.ru">
+          <p class="contact-link__wrap">
+            <svg class="contact-link__icon contact-link__icon--email" width="18" height="13">
+              <use xlink:href="#contacts-mail"></use>
             </svg>
-          </a>
-        </li>
-        <li class="social-list__item">
-          <a class="social-link social-link--header social-list__link" href="#">
-            <svg class="social-link__icon social-link__icon--inst" width="18" height="18">
-              <use xlink:href="#instagram"></use>
-            </svg>
-          </a>
-        </li>
-      </ul>
+          </p>
+          <span class="contact-link__text contact-link__text-dark">mail@htmlacademy.ru</span>
+        </a>
+      </li>
+    </ul>
 
-    </header>
+    <ul class="social-list header__socials">
+      <li class="social-list__item">
+        <a class="social-link social-link--header social-list__link" href="#">
+          <svg class="social-link__icon social-link__icon--fb" width="11" height="21">
+            <use xlink:href="#facebook"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="social-list__item">
+        <a class="social-link social-link--header social-list__link" href="#">
+          <svg class="social-link__icon social-link__icon--vk" width="23" height="12">
+            <use xlink:href="#vk"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="social-list__item">
+        <a class="social-link social-link--header social-list__link" href="#">
+          <svg class="social-link__icon social-link__icon--inst" width="18" height="18">
+            <use xlink:href="#instagram"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+
+  </header>
 
   <main class="main catalog__main">
 
@@ -136,11 +148,8 @@
       <h1 class="page-title__title">Попутчики</h1>
       <a class="back-link page-title__back">
         <span class="back-link__text">На главную</span>
-        <svg class="back-link__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 16.1"
-          width="32" height="16">
-          <path
-            d="M27.6,2.1H10L10,0L0,3l10,2.9l0-1.8h17.6c0.4,0,2.4,0,2.4,2v6.1c0,0.5-0.1,0.9-0.4,1.2C29,14,28,14.1,27.6,14.1H4v2h23.6c0,0,0,0,0.1,0c0.4,0,2.1-0.1,3.2-1.2c0.7-0.7,1.1-1.6,1.1-2.7V6.1C32,4.1,29.4,2.1,27.6,2.1z">
-          </path>
+        <svg class="back-link__icon" width="32" height="16">
+          <use xlink:href="#return"></use>
         </svg>
       </a>
     </div>
@@ -170,12 +179,8 @@
 
         <button class="close-button">
           <span class="close-button__text">Свернуть</span>
-          <svg class="close-button__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.6 18.6"
-            width="12" height="12">
-            <path
-              d="M11.4,9.3l6.7-6.7c0.6-0.6,0.6-1.5,0-2.1s-1.5-0.6-2.1,0L9.3,7.2L2.6,0.4C2-0.1,1-0.1,0.4,0.4C-0.1,1-0.1,2,0.4,2.6l6.7,6.7
-            L0.4,16c-0.6,0.6-0.6,1.5,0,2.1s1.5,0.6,2.1,0l6.7-6.7l6.7,6.7c0.6,0.6,1.5,0.6,2.1,0s0.6-1.5,0-2.1L11.4,9.3z">
-            </path>
+          <svg class="close-button__icon" width="12" height="12">
+            <use xlink:href="#close"></use>
           </svg>
         </button>
 
@@ -911,12 +916,8 @@
 
       <button class="close-button close-button--bottom">
         <span class="close-button__text close-button__text--bottom">Свернуть</span>
-        <svg class="close-button__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.6 18.6"
-          width="12" height="12">
-          <path
-            d="M11.4,9.3l6.7-6.7c0.6-0.6,0.6-1.5,0-2.1s-1.5-0.6-2.1,0L9.3,7.2L2.6,0.4C2-0.1,1-0.1,0.4,0.4C-0.1,1-0.1,2,0.4,2.6l6.7,6.7
-            L0.4,16c-0.6,0.6-0.6,1.5,0,2.1s1.5,0.6,2.1,0l6.7-6.7l6.7,6.7c0.6,0.6,1.5,0.6,2.1,0s0.6-1.5,0-2.1L11.4,9.3z">
-          </path>
+        <svg class="close-button__icon" width="12" height="12">
+          <use xlink:href="#close"></use>
         </svg>
       </button>
 
@@ -934,9 +935,8 @@
             <div class="form-line companion-form__item">
               <div class="form-line__title">
                 <p class="form-line__title-text">Хобби</p>
-                <svg class="form-line__title-toggle" xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 10 5" width="10" height="5">
-                  <polygon points="5,5 0,0 10,0 "></polygon>
+                <svg class="form-line__title-toggle" width="10" height="5">
+                  <use xlink:href="#dropdown"></use>
                 </svg>
               </div>
               <div class="form-line__wrap">
@@ -958,9 +958,8 @@
             <div class="form-line companion-form__item">
               <div class="form-line__title">
                 <p class="form-line__title-text">Музыка</p>
-                <svg class="form-line__title-toggle" xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 10 5" width="10" height="5">
-                  <polygon points="5,5 0,0 10,0 "></polygon>
+                <svg class="form-line__title-toggle" width="10" height="5">
+                  <use xlink:href="#dropdown"></use>
                 </svg>
               </div>
               <div class="form-line__wrap">
@@ -984,9 +983,8 @@
             <div class="form-line companion-form__item">
               <div class="form-line__title">
                 <p class="form-line__title-text">Еда</p>
-                <svg class="form-line__title-toggle" xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 10 5" width="10" height="5">
-                  <polygon points="5,5 0,0 10,0 "></polygon>
+                <svg class="form-line__title-toggle" width="10" height="5">
+                  <use xlink:href="#dropdown"></use>
                 </svg>
               </div>
               <div class="form-line__wrap">
@@ -1009,9 +1007,8 @@
             <div class="form-line companion-form__item-transport">
               <div class="form-line__title">
                 <p class="form-line__title-text">Транспорт</p>
-                <svg class="form-line__title-toggle" xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 10 5" width="10" height="5">
-                  <polygon points="5,5 0,0 10,0 "></polygon>
+                <svg class="form-line__title-toggle" width="10" height="5">
+                  <use xlink:href="#dropdown"></use>
                 </svg>
               </div>
               <div class="form-line__wrap-transport">
@@ -1019,17 +1016,8 @@
                   <input class="form-line__checkbox" type="checkbox" name="Plane" id="avia"
                     checked="">
                   <label for="avia" class="form-line__transport">
-                    <svg class="form-line__transport-icon" xmlns="http://www.w3.org/2000/svg"
-                      width="14" height="16" viewBox="0 0 19 21">
-                      <path
-                        d="M18.9,18.9c-0.1-0.3-3.7-10.1-3.7-10.1c0,0,0,0,0,0c-0.1-0.5,0.1-0.7,0.3-1.1c0,0,2.1-3.5,2.8-4.6c0.7-1.2,0.6-2.3-0.1-2.8
-  c-0.7-0.5-1.7-0.1-2.5,1c-0.8,1.1-3,4.5-3,4.5c-0.3,0.4-0.4,0.7-0.9,0.8c0,0,0,0,0,0C11.7,6.5,1.5,7,1.2,7c-0.3,0-0.7,0.1-1,0.6
-  C-0.2,8.3,0,8.5,0.4,8.6c0,0,8,2.6,8.3,2.7C9,11.3,9,11.5,8.9,11.9c-0.2,0.4-1.4,2.3-1.6,2.6c-0.1,0.2-0.2,0.2-0.4,0.3l-2.8,1
-  c-0.1,0-0.3,0.1-0.4,0.3c0,0-0.2,0.3-0.4,0.6c-0.2,0.3-0.1,0.5,0.2,0.5c0.3,0.1,2.1,0.2,2.1,0.2c0,0,0.3,0.1,0.4,0.1
-  c0.2,0.1,0.4,0.3,0.2,0.6c-0.3,0.6-0.4,1.2-0.2,1.3s0.6-0.2,1-0.7c0.2-0.3,0.4-0.2,0.6,0C7.8,18.6,8,18.8,8,18.8c0,0,0.8,1.6,1,1.9
-  c0.2,0.3,0.4,0.3,0.6,0c0.2-0.3,0.4-0.6,0.4-0.6c0.1-0.1,0.1-0.3,0.1-0.5l-0.3-3.1c0-0.2,0-0.2,0.1-0.5c0.1-0.2,1.4-2.2,1.6-2.5
-  c0.2-0.3,0.4-0.3,0.6-0.1c0.2,0.2,5.7,6.7,5.7,6.7c0.3,0.3,0.5,0.4,0.9-0.2C19.1,19.5,19,19.1,18.9,18.9z">
-                      </path>
+                    <svg class="form-line__transport-icon" width="14" height="16">
+                      <use xlink:href="#plane"></use>
                     </svg>
                     <span class="form-line__transport-text">Авиаперелёт</span>
                   </label>
@@ -1037,15 +1025,8 @@
                 <div class="form-line__wrap-check form-line__wrap-check--transport">
                   <input class="form-line__checkbox" type="checkbox" name="Bus" id="bus" checked="">
                   <label for="bus" class="form-line__transport">
-                    <svg class="form-line__transport-icon" width="13" height="16"
-                      viewBox="0 0 17 21">
-                      <path
-                        d="M16.2,3.1c-0.2-1.2-1-1.6-2.1-2.1C13,0.6,10.4,0,8.5,0C6.6,0,4,0.6,2.9,1C1.8,1.5,1.1,1.9,0.8,3.1L0,9.5v8.8h1.4v1.4
-      c0,1.7,2.5,1.7,2.5,0v-1.4h4.5h0h4.7v1.4c0,1.7,2.5,1.7,2.5,0v-1.4H17V9.5L16.2,3.1z M5,1.6h3.4H12c0.7,0,0.7,1,0,1H8.4H5
-      C4.3,2.7,4.3,1.6,5,1.6z M2.7,15.6c-0.6,0-1.2-0.5-1.2-1.2c0-0.7,0.5-1.2,1.2-1.2c0.6,0,1.2,0.5,1.2,1.2C3.8,15,3.3,15.6,2.7,15.6z
-      M8.4,10.2H2.2c-0.6,0-0.7-0.4-0.7-0.9l0.6-4.7c0.1-0.6,0.3-0.9,1-0.9h5.3h5.4c0.7,0,0.9,0.4,1,0.9l0.6,4.7c0.1,0.4-0.1,0.9-0.7,0.9
-      H8.4z M14.3,15.6c-0.6,0-1.2-0.5-1.2-1.2c0-0.7,0.5-1.2,1.2-1.2c0.6,0,1.2,0.5,1.2,1.2C15.5,15,15,15.6,14.3,15.6z">
-                      </path>
+                    <svg class="form-line__transport-icon" width="13" height="16">
+                      <use xlink:href="#bus"></use>
                     </svg>
                     <span class="form-line__transport-text">Автотранспорт</span>
                   </label>
@@ -1053,13 +1034,8 @@
                 <div class="form-line__wrap-check form-line__wrap-check--transport">
                   <input class="form-line__checkbox" type="checkbox" name="Cycle" id="cycle">
                   <label for="cycle" class="form-line__transport">
-                    <svg class="form-line__transport-icon" width="19" height="17"
-                      viewBox="0 0 24 21">
-                      <path d="M16,3.6c1,0,1.8-0.8,1.8-1.8S17,0,16,0s-1.8,0.8-1.8,1.8S15,3.6,16,3.6z M19,11c-2.8,0-5,2.3-5,5s2.2,5,5,5s5-2.3,5-5
-      S21.8,11,19,11z M19,19.6c-1.9,0-3.5-1.6-3.5-3.5s1.6-3.5,3.5-3.5s3.5,1.6,3.5,3.5S20.9,19.6,19,19.6z M14.8,8.9H19V7.1h-3.2
-      l-1.9-3.3C13.6,3.3,13.1,3,12.4,3c-0.5,0-0.9,0.2-1.2,0.5L7.5,7.2C7.2,7.5,7,7.9,7,8.4C7,9,7.3,9.6,7.8,9.9l3.3,2v5H13v-6.5
-      l-2.2-1.7l2.3-2.4L14.8,8.9z M5,11c-2.8,0-5,2.3-5,5s2.2,5,5,5s5-2.3,5-5S7.8,11,5,11z M5,19.6c-1.9,0-3.5-1.6-3.5-3.5
-      s1.6-3.5,3.5-3.5s3.5,1.5,3.5,3.5S6.9,19.6,5,19.6z"></path>
+                    <svg class="form-line__transport-icon" width="19" height="17">
+                      <use xlink:href="#bike"></use>
                     </svg>
                     <span class="form-line__transport-text">Велосипед</span>
                   </label>
@@ -1068,14 +1044,8 @@
                   <input class="form-line__checkbox" type="checkbox" name="Walk" id="walk"
                     checked="">
                   <label for="walk" class="form-line__transport">
-                    <svg class="form-line__transport-icon" width="15" height="17"
-                      viewBox="0 0 20 21">
-                      <g>
-                        <ellipse cx="14.3" cy="2" rx="2.1" ry="2"></ellipse>
-                        <path
-                          d="M19.4,4.6c-0.5-0.2-1.2-0.1-1.4,0.4l-0.9,1.6L13,4.3c-0.2-0.1-0.3-0.1-0.6-0.1H7.9C7.5,4.2,7.2,4.3,7,4.7L5.3,7.6C5,8.1,5.2,8.7,5.7,8.9C5.9,9,6.1,9,6.2,9C6.6,9,7,8.8,7.2,8.5l1.4-2.4h1.6l-4.7,8.1H1.1c-0.6,0-1.1,0.4-1.1,1s0.5,1,1.1,1h5c0.4,0,0.7-0.2,0.9-0.5l1.9-3.2l3,2.6L11.7,20c-0.1,0.5,0.4,1,1,1c0,0,0,0,0.1,0c0.6,0,1-0.4,1.1-0.9l0.3-5.4c0-0.3-0.1-0.6-0.3-0.8l-2.6-2.2l2.7-4.6l3.1,1.8C17.1,9,17.5,9.1,17.7,9c0.3-0.1,0.5-0.2,0.7-0.5L19.9,6C20.2,5.5,20,4.9,19.4,4.6z">
-                        </path>
-                      </g>
+                    <svg class="form-line__transport-icon" width="15" height="17">
+                      <use xlink:href="#run"></use>
                     </svg>
                     <span class="form-line__transport-text">Пешком</span>
                   </label>
@@ -1085,9 +1055,8 @@
             <div class="form-line companion-form__item-level">
               <div class="form-line__title">
                 <p class="form-line__title-text">Левел</p>
-                <svg class="form-line__title-toggle" xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 10 5" width="10" height="5">
-                  <polygon points="5,5 0,0 10,0 "></polygon>
+                <svg class="form-line__title-toggle" width="10" height="5">
+                  <use xlink:href="#dropdown"></use>
                 </svg>
               </div>
               <div class="form-line__wrap form-line__wrap--level">
@@ -1116,10 +1085,20 @@
 
           <li class="companion-card companions-list__item">
 
-            <img class="companion-card__image" src="../source/img/firsova-mobile@1x.jpg"
-              srcset="img/firsova-mobile@1x.jpg 70w, img/firsova-tablet@1x.jpg 190w, img/firsova-desktop@1x.jpg 285w"
-              sizes="(min-width: 768px) and (max-width: 1439px) 190px, (min-width: 1440px) 285px, 70px"
-              alt="Фотография возможного попутчика">
+            <picture>
+              <source type="image/webp" media="(min-width: 1440px)"
+                srcset="img/firsova-desktop@1x.webp 1x, img/firsova-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="img/firsova-tablet@1x.webp 1x, img/firsova-tablet@2x.webp 2x">
+              <source type="image/webp"
+                srcset="img/firsova-mobile@1x.webp 1x, img/firsova-mobile@2x.webp 2x">
+              <source media="(min-width: 1440px)"
+                srcset="img/firsova-desktop@1x.jpg 1x, img/firsova-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)"
+                srcset="img/firsova-tablet@1x.jpg 1x, img/firsova-tablet@2x.jpg 2x">
+              <img class="companion-card__image" src="img/firsova-mobile@1x.jpg"
+                srcset="img/firsova-mobile@2x.jpg 2x" alt="Фотография возможного попутчика">
+            </picture>
 
             <h3 class="companion-card__name">
               <a class="companion-card__link" href="#">Таня Фирсова</a>
@@ -1143,7 +1122,7 @@
               <a class="like-button like-button--active companion-card__like" href="#">
                 <div class="like-button__icon-wrap">
                   <svg class="like-button__icon" width="13" height="11">
-                    <use xlink:href="../img/sprite.svg#heart-active"></use>
+                    <use xlink:href="#heart-active"></use>
                   </svg>
                 </div>
                 <span class="like-button__counter">1,5 М</span>
@@ -1157,7 +1136,7 @@
                 <li class="wishes__item">
                   <a class="wishes__link" href="#">
                     <svg class="wishes__link-icon" width="26" height="18">
-                      <use xlink:href="../img/sprite.svg#sri-lanka"></use>
+                      <use xlink:href="#flag-sri-lanka"></use>
                     </svg>
                     <span class="wishes__link-text">Шри-Ланка</span>
                   </a>
@@ -1165,7 +1144,7 @@
                 <li class="wishes__item">
                   <a class="wishes__link" href="#">
                     <svg class="wishes__link-icon" width="26" height="18">
-                      <use xlink:href="../img/sprite.svg#thailand"></use>
+                      <use xlink:href="#flag-thailand"></use>
                     </svg>
                     <span class="wishes__link-text">Тайланд</span>
                   </a>
@@ -1173,7 +1152,7 @@
                 <li class="wishes__item">
                   <a class="wishes__link" href="#">
                     <svg class="wishes__link-icon" width="26" height="18">
-                      <use xlink:href="../img/sprite.svg#seychelles"></use>
+                      <use xlink:href="#flag-seychelles"></use>
                     </svg>
                     <span class="wishes__link-text">Сейшелы</span>
                   </a>
@@ -1188,25 +1167,25 @@
                 <ul class="transports__list transports__list--catalog">
                   <li class="transports__item transports__item--catalog">
                     <svg class="transports__image transports__image--active" width="14" height="16">
-                      <use xlink:href="../img/sprite.svg#plane"></use>
+                      <use xlink:href="#plane"></use>
                     </svg>
                     <span class="transports__popup">Авиаперелёт</span>
                   </li>
                   <li class="transports__item transports__item--catalog">
                     <svg class="transports__image" width="13" height="16">
-                      <use xlink:href="../img/sprite.svg#bus"></use>
+                      <use xlink:href="#bus"></use>
                     </svg>
                     <span class="transports__popup">Автотранспорт</span>
                   </li>
                   <li class="transports__item transports__item--catalog">
                     <svg class="transports__image" width="19" height="17">
-                      <use xlink:href="../img/sprite.svg#cycle"></use>
+                      <use xlink:href="#bike"></use>
                     </svg>
                     <span class="transports__popup">Велосипед</span>
                   </li>
                   <li class="transports__item transports__item--catalog">
                     <svg class="transports__image" width="15" height="17">
-                      <use xlink:href="../img/sprite.svg#run"></use>
+                      <use xlink:href="#run"></use>
                     </svg>
                     <span class="transports__popup">Пешком</span>
                   </li>
@@ -1235,10 +1214,20 @@
 
           <li class="companion-card companions-list__item">
 
-            <img class="companion-card__image" src="../source/img/demin-mobile@1x.jpg"
-              srcset="img/demin-mobile@1x.jpg 70w, img/demin-tablet@1x.jpg 190w, img/demin-desktop@1x.jpg 285w"
-              sizes="(min-width: 768px) and (max-width: 1439px) 190px, (min-width: 1440px) 285px, 70px"
-              alt="Фотография возможного попутчика">
+            <picture>
+              <source type="image/webp" media="(min-width: 1440px)"
+                srcset="img/demin-desktop@1x.webp 1x, img/demin-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="img/demin-tablet@1x.webp 1x, img/demin-tablet@2x.webp 2x">
+              <source type="image/webp"
+                srcset="img/demin-mobile@1x.webp 1x, img/demin-mobile@2x.webp 2x">
+              <source media="(min-width: 1440px)"
+                srcset="img/demin-desktop@1x.jpg 1x, img/demin-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)"
+                srcset="img/demin-tablet@1x.jpg 1x, img/demin-tablet@2x.jpg 2x">
+              <img class="companion-card__image" src="img/demin-mobile@1x.jpg"
+                srcset="img/demin-mobile@2x.jpg 2x" alt="Фотография возможного попутчика">
+            </picture>
 
             <h3 class="companion-card__name">
               <a class="companion-card__link" href="#">Петя Демин</a>
@@ -1261,7 +1250,7 @@
               <a class="like-button companion-card__like" href="#">
                 <div class="like-button__icon-wrap">
                   <svg class="like-button__icon" width="13" height="11">
-                    <use xlink:href="../img/sprite.svg#heart"></use>
+                    <use xlink:href="#heart"></use>
                   </svg>
                 </div>
                 <span class="like-button__counter">150</span>
@@ -1275,14 +1264,14 @@
                 <li class="wishes__item">
                   <a class="wishes__link" href="#">
                     <svg class="wishes__link-icon" width="26" height="18">
-                      <use xlink:href="../img/sprite.svg#belguim"></use>
+                      <use xlink:href="#flag-belgium"></use>
                     </svg> <span class="wishes__link-text">Бельгия</span>
                   </a>
                 </li>
                 <li class="wishes__item">
                   <a class="wishes__link" href="#">
                     <svg class="wishes__link-icon" width="26" height="18">
-                      <use xlink:href="../img/sprite.svg#czech"></use>
+                      <use xlink:href="#flag-czech"></use>
                     </svg>
                     <span class="wishes__link-text">Чехия</span>
                   </a>
@@ -1297,27 +1286,25 @@
                 <ul class="transports__list transports__list--catalog">
                   <li class="transports__item transports__item--catalog">
                     <svg class="transports__image transports__image--active" width="14" height="16">
-                      <use xlink:href="../img/sprite.svg#plane"></use>
+                      <use xlink:href="#plane"></use>
                     </svg>
                     <span class="transports__popup">Авиаперелёт</span>
                   </li>
                   <li class="transports__item transports__item--catalog">
-                    <svg class="transports__image transports__image--active" width="13" height="16"
-                      viewBox="0 0 17 21">
-                      <use xlink:href="../img/sprite.svg#bus"></use>
+                    <svg class="transports__image transports__image--active" width="13" height="16">
+                      <use xlink:href="#bus"></use>
                     </svg>
                     <span class="transports__popup">Автотранспорт</span>
                   </li>
                   <li class="transports__item transports__item--catalog">
-                    <svg class="transports__image" width="19" height="17" viewBox="0 0 24 21">
-                      <use xlink:href="../img/sprite.svg#cycle"></use>
+                    <svg class="transports__image" width="19" height="17">
+                      <use xlink:href="#bike"></use>
                     </svg>
                     <span class="transports__popup">Велосипед</span>
                   </li>
                   <li class="transports__item transports__item--catalog">
-                    <svg class="transports__image transports__image--active" width="15" height="17"
-                      viewBox="0 0 20 21">
-                      <use xlink:href="../img/sprite.svg#run"></use>
+                    <svg class="transports__image transports__image--active" width="15" height="17">
+                      <use xlink:href="#run"></use>
                     </svg>
                     <span class="transports__popup">Пешком</span>
                   </li>
@@ -1346,10 +1333,20 @@
 
           <li class="companion-card companions-list__item">
 
-            <img class="companion-card__image" src="../source/img/smolov-mobile@1x.jpg"
-              srcset="img/smolov-mobile@1x.jpg 70w, img/smolov-tablet@1x.jpg 190w, img/smolov-desktop@1x.jpg 285w"
-              sizes="(min-width: 768px) and (max-width: 1439px) 190px, (min-width: 1440px) 285px, 70px"
-              alt="Фотография возможного попутчика">
+            <picture>
+              <source type="image/webp" media="(min-width: 1440px)"
+                srcset="img/smolov-desktop@1x.webp 1x, img/smolov-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="img/smolov-tablet@1x.webp 1x, img/smolov-tablet@2x.webp 2x">
+              <source type="image/webp"
+                srcset="img/smolov-mobile@1x.webp 1x, img/smolov-mobile@2x.webp 2x">
+              <source media="(min-width: 1440px)"
+                srcset="img/smolov-desktop@1x.jpg 1x, img/smolov-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)"
+                srcset="img/smolov-tablet@1x.jpg 1x, img/smolov-tablet@2x.jpg 2x">
+              <img class="companion-card__image" src="img/smolov-mobile@1x.jpg"
+                srcset="img/smolov-mobile@2x.jpg 2x" alt="Фотография возможного попутчика">
+            </picture>
 
             <h3 class="companion-card__name">
               <a class="companion-card__link" href="#">Марк Смолов</a>
@@ -1372,7 +1369,7 @@
               <a class="like-button companion-card__like" href="#">
                 <div class="like-button__icon-wrap">
                   <svg class="like-button__icon" width="13" height="11">
-                    <use xlink:href="../img/sprite.svg#heart"></use>
+                    <use xlink:href="#heart"></use>
                   </svg>
                 </div>
                 <span class="like-button__counter">150</span>
@@ -1386,14 +1383,14 @@
                 <li class="wishes__item">
                   <a class="wishes__link" href="#">
                     <svg class="wishes__link-icon" width="26" height="18">
-                      <use xlink:href="../img/sprite.svg#usa"></use>
+                      <use xlink:href="#flag-usa"></use>
                     </svg> <span class="wishes__link-text">США</span>
                   </a>
                 </li>
                 <li class="wishes__item">
                   <a class="wishes__link" href="#">
                     <svg class="wishes__link-icon" width="26" height="18">
-                      <use xlink:href="../img/sprite.svg#australia"></use>
+                      <use xlink:href="#flag-australia"></use>
                     </svg>
                     <span class="wishes__link-text">Австралия</span>
                   </a>
@@ -1401,7 +1398,7 @@
                 <li class="wishes__item">
                   <a class="wishes__link" href="#">
                     <svg class="wishes__link-icon" width="26" height="18">
-                      <use xlink:href="../img/sprite.svg#dominica"></use>
+                      <use xlink:href="#flag-dominica"></use>
                     </svg>
                     <span class="wishes__link-text">Доминикана</span>
                   </a>
@@ -1416,25 +1413,25 @@
                 <ul class="transports__list transports__list--catalog">
                   <li class="transports__item transports__item--catalog">
                     <svg class="transports__image transports__image--active" width="14" height="16">
-                      <use xlink:href="../img/sprite.svg#plane"></use>
+                      <use xlink:href="#plane"></use>
                     </svg>
                     <span class="transports__popup">Авиаперелёт</span>
                   </li>
                   <li class="transports__item transports__item--catalog">
                     <svg class="transports__image" width="13" height="16">
-                      <use xlink:href="../img/sprite.svg#bus"></use>
+                      <use xlink:href="#bus"></use>
                     </svg>
                     <span class="transports__popup">Автотранспорт</span>
                   </li>
                   <li class="transports__item transports__item--catalog">
                     <svg class="transports__image transports__image--active" width="19" height="17">
-                      <use xlink:href="../img/sprite.svg#cycle"></use>
+                      <use xlink:href="#bike"></use>
                     </svg>
                     <span class="transports__popup">Велосипед</span>
                   </li>
                   <li class="transports__item transports__item--catalog">
                     <svg class="transports__image" width="15" height="17">
-                      <use xlink:href="../img/sprite.svg#run"></use>
+                      <use xlink:href="#run"></use>
                     </svg>
                     <span class="transports__popup">Пешком</span>
                   </li>
@@ -1463,10 +1460,20 @@
 
           <li class="companion-card companions-list__item">
 
-            <img class="companion-card__image" src="../source/img/rogovaya-mobile@1x.jpg"
-              srcset="img/rogovaya-mobile@1x.jpg 70w, img/rogovaya-tablet@1x.jpg 190w, img/rogovaya-desktop@1x.jpg 285w"
-              sizes="(min-width: 768px) and (max-width: 1439px) 190px, (min-width: 1440px) 285px, 70px"
-              alt="Фотография возможного попутчика">
+            <picture>
+              <source type="image/webp" media="(min-width: 1440px)"
+                srcset="img/rogovaya-desktop@1x.webp 1x, img/rogovaya-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="img/rogovaya-tablet@1x.webp 1x, img/rogovaya-tablet@2x.webp 2x">
+              <source type="image/webp"
+                srcset="img/rogovaya-mobile@1x.webp 1x, img/rogovaya-mobile@2x.webp 2x">
+              <source media="(min-width: 1440px)"
+                srcset="img/rogovaya-desktop@1x.jpg 1x, img/rogovaya-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)"
+                srcset="img/rogovaya-tablet@1x.jpg 1x, img/rogovaya-tablet@2x.jpg 2x">
+              <img class="companion-card__image" src="img/rogovaya-mobile@1x.jpg"
+                srcset="img/rogovaya-mobile@2x.jpg 2x" alt="Фотография возможного попутчика">
+            </picture>
 
             <h3 class="companion-card__name">
               <a class="companion-card__link companion-card__link--online" href="#">Лариса
@@ -1489,7 +1496,7 @@
               <a class="like-button companion-card__like" href="#">
                 <div class="like-button__icon-wrap">
                   <svg class="like-button__icon" width="13" height="11">
-                    <use xlink:href="../img/sprite.svg#heart"></use>
+                    <use xlink:href="#heart"></use>
                   </svg>
                 </div>
                 <span class="like-button__counter">23</span>
@@ -1503,14 +1510,14 @@
                 <li class="wishes__item">
                   <a class="wishes__link" href="#">
                     <svg class="wishes__link-icon" width="26" height="18">
-                      <use xlink:href="../img/sprite.svg#uk"></use>
+                      <use xlink:href="#flag-united-kingdom"></use>
                     </svg> <span class="wishes__link-text">Великобритания</span>
                   </a>
                 </li>
                 <li class="wishes__item">
                   <a class="wishes__link" href="#">
                     <svg class="wishes__link-icon" width="26" height="18">
-                      <use xlink:href="../img/sprite.svg#germany"></use>
+                      <use xlink:href="#flag-germany"></use>
                     </svg>
                     <span class="wishes__link-text">Германия</span>
                   </a>
@@ -1525,25 +1532,25 @@
                 <ul class="transports__list transports__list--catalog">
                   <li class="transports__item transports__item--catalog">
                     <svg class="transports__image transports__image--active" width="14" height="16">
-                      <use xlink:href="../img/sprite.svg#plane"></use>
+                      <use xlink:href="#plane"></use>
                     </svg>
                     <span class="transports__popup">Авиаперелёт</span>
                   </li>
                   <li class="transports__item transports__item--catalog">
                     <svg class="transports__image transports__image--active" width="13" height="16">
-                      <use xlink:href="../img/sprite.svg#bus"></use>
+                      <use xlink:href="#bus"></use>
                     </svg>
                     <span class="transports__popup">Автотранспорт</span>
                   </li>
                   <li class="transports__item transports__item--catalog">
                     <svg class="transports__image" width="19" height="17">
-                      <use xlink:href="../img/sprite.svg#cycle"></use>
+                      <use xlink:href="#bike"></use>
                     </svg>
                     <span class="transports__popup">Велосипед</span>
                   </li>
                   <li class="transports__item transports__item--catalog">
                     <svg class="transports__image" width="15" height="17">
-                      <use xlink:href="../img/sprite.svg#run"></use>
+                      <use xlink:href="#run"></use>
                     </svg>
                     <span class="transports__popup">Пешком</span>
                   </li>
@@ -1573,9 +1580,8 @@
         </ul>
 
         <a class="show-more-link companions-list__more-link" href="#">
-          <svg class="show-more-link__icon" viewBox="0 0 20 20" width="18" height="18">
-            <polygon class="st0"
-              points="20,9 11,9 11,0 9,0 9,9 0,9 0,11 9,11 9,20 11,20 11,11 20,11 "></polygon>
+          <svg class="show-more-link__icon" width="18" height="18">
+            <use xlink:href="#show-more-plus"></use>
           </svg>
           <span class="show-more-link__text">Показать еще</span>
         </a>
@@ -1597,14 +1603,14 @@
           </ul>
 
           <a class="paginator__link paginator__link--prev" href="companions#1.html">
-            <svg class="paginator__link-icon" viewBox="0 0 10 14" width="10" height="20">
-              <polygon points="0,7.1 10,0.1 10,14"></polygon>
+            <svg class="paginator__link-icon" width="10" height="20">
+              <use xlink:href="#triangle-arrow-left"></use>
             </svg>
             <span class="paginator__link-title visually-hidden">Показать предыдущую страницу</span>
           </a>
           <a class="paginator__link paginator__link--next" href="companions#3.html">
-            <svg class="paginator__link-icon" viewBox="0 0 10 14" width="10" height="20">
-              <polygon points="0,14 0,0.1 10,7.1"></polygon>
+            <svg class="paginator__link-icon" width="10" height="20">
+              <use xlink:href="#triangle-arrow-right"></use>
             </svg>
             <span class="paginator__link-title visually-hidden">Показать следующую страницу</span>
           </a>
@@ -1618,59 +1624,60 @@
 
   <footer class="footer catalog__footer">
 
-      <div class="footer__inner">
+    <div class="footer__inner">
 
-        <a class="logo-link footer__logo" href="index.html">
-          <picture class="logo-link__image">
-            <source type="image/webp" media="(min-width: 1440px)"
-              srcset="img/logo-desktop-blue@1x.webp 1x, img/logo-desktop-blue@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 768px)"
-              srcset="img/logo-tablet-blue@1x.webp 1x, img/logo-tablet-blue@2x.webp 2x">
-            <source type="image/webp"
-              srcset="img/logo-mobile-blue@1x.webp 1x, img/logo-mobile-blue@2x.webp 2x">
-            <source media="(min-width: 1440px)"
-              srcset="img/logo-desktop-blue@1x.png 1x, img/logo-desktop-blue@2x.png 2x">
-            <source media="(min-width: 768px)"
-              srcset="img/logo-tablet-blue@1x.png 1x, img/logo-tablet-blue@2x.png 2x">
-            <img src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png 2x"
-              alt="Логотип сайта 'Погнали?'">
-          </picture>
-        </a>
+      <a class="logo-link footer__logo" href="index.html">
+        <picture class="logo-link__image">
+          <source type="image/webp" media="(min-width: 1440px)"
+            srcset="img/logo-desktop-blue@1x.webp 1x, img/logo-desktop-blue@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)"
+            srcset="img/logo-tablet-blue@1x.webp 1x, img/logo-tablet-blue@2x.webp 2x">
+          <source type="image/webp"
+            srcset="img/logo-mobile-blue@1x.webp 1x, img/logo-mobile-blue@2x.webp 2x">
+          <source media="(min-width: 1440px)"
+            srcset="img/logo-desktop-blue@1x.png 1x, img/logo-desktop-blue@2x.png 2x">
+          <source media="(min-width: 768px)"
+            srcset="img/logo-tablet-blue@1x.png 1x, img/logo-tablet-blue@2x.png 2x">
+          <img src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png 2x"
+            alt="Логотип сайта 'Погнали?'">
+        </picture>
+      </a>
 
-        <ul class="social-list footer__socials">
-          <li class="social-list__item">
-            <a class="social-link social-link--footer social-list__link" href="#">
-              <svg class="social-link__icon social-link__icon--fb" width="11" height="21">
-                <use xlink:href="#facebook"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social-list__item">
-            <a class="social-link social-link--footer social-list__link" href="#">
-              <svg class="social-link__icon social-link__icon--vk" width="23" height="12">
-                <use xlink:href="#vk"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social-list__item">
-            <a class="social-link social-link--footer social-list__link" href="#">
-              <svg class="social-link__icon social-link__icon--inst" width="18" height="18">
-                <use xlink:href="#instagram"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
+      <ul class="social-list footer__socials">
+        <li class="social-list__item">
+          <a class="social-link social-link--footer social-list__link" href="#">
+            <svg class="social-link__icon social-link__icon--fb" width="11" height="21">
+              <use xlink:href="#facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-link social-link--footer social-list__link" href="#">
+            <svg class="social-link__icon social-link__icon--vk" width="23" height="12">
+              <use xlink:href="#vk"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-link social-link--footer social-list__link" href="#">
+            <svg class="social-link__icon social-link__icon--inst" width="18" height="18">
+              <use xlink:href="#instagram"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
 
-        <a class="copyright-link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
-          <span class="copyright-link__text">Разработано</span>
-          <svg class="copyright-link__icon" width="27" height="34">
-            <use xlink:href="#htmlacademy"></use>
-          </svg>
-        </a>
+      <a class="copyright-link footer__copyright" href="https://htmlacademy.ru/intensive/adaptive"
+        target="_blank">
+        <span class="copyright-link__text">Разработано</span>
+        <svg class="copyright-link__icon" width="27" height="34">
+          <use xlink:href="#htmlacademy"></use>
+        </svg>
+      </a>
 
-      </div>
+    </div>
 
-    </footer>
+  </footer>
 
 </body>
 
