@@ -1,15 +1,15 @@
 .about {
-  padding: 280px 10px 0 20px;
+  padding: 275px 10px 0 20px;
   background-color: $main-darkblue;
-  border-radius: 0 0 25px 25px;
+  border-radius: 0 0 30px 30px;
   background-image: url("../img/about-mobile@1x.png");
+  background-size: 91% auto;
   background-repeat: no-repeat;
   background-position: bottom;
 
   @media (min-resolution: $retina-dpi),
   (min-resolution: $retina-dppx) {
     background-image: url("../img/about-mobile@2x.png");
-    background-size: 100% auto;
   }
 
   @media (min-width: $tablet-width) {
@@ -43,7 +43,7 @@
 }
 
 .about__inner {
-  padding: 100px 32px 85px;
+  padding: 123px 29px 80px;
 
   @media (min-width: $tablet-width) {
     padding-top: 45px;
@@ -72,9 +72,11 @@
 }
 
 .about__text {
-  @include text-light;
+  width: 210px;
   margin: 0;
   margin-bottom: 20px;
+
+  @include text-light;
 
   @media (min-width: $tablet-width) {
     width: 300px;

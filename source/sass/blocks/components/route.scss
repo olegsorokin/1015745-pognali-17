@@ -1,5 +1,5 @@
 .route {
-  min-height: 200px;
+  min-height: 190px;
   border-radius: 10px;
   overflow: hidden;
 
@@ -17,6 +17,10 @@
   @media (min-width: $tablet-width) {
     flex-basis: 186px;
   }
+
+  img {
+    vertical-align: middle;
+  }
 }
 
 .route__info {
@@ -27,7 +31,7 @@
   justify-content: space-between;
   flex-wrap: wrap;
   width: 100%;
-  padding: 28px 25px 23px;
+  padding: 23px 24px 23px;
   background-color: $main-white;
   border-radius: 10px;
 
@@ -43,17 +47,20 @@
 
 .route__name {
   margin: 0;
-  margin-bottom: 5px;
+  margin-bottom: 4px;
 
   @include text ("Blogger Sans Bold", 21px, 21px, #161c35);
 
   @media (min-width: $tablet-width) {
-    font-size: 24px;
-    line-height: 24px;
+    font-size: 21px;
+    line-height: 21px;
   }
 }
 
 .route__counter {
+  display: flex;
+  align-items: center;
+
   @media (min-width: $tablet-width) {
     order: 1;
     margin-top: auto;
@@ -62,6 +69,7 @@
 
 .route__counter-icon {
   fill: #edeff6;
+  margin-right: 5px;
 
   @media (min-width: $tablet-width) {
     width: 21px;
@@ -70,11 +78,11 @@
 }
 
 .route__counter-value {
-  @include text ("Blogger Sans Medium", 16px, 30px, rgba(68, 68, 68, 0.3));
+  @include text ("Blogger Sans Medium", 16px, 17px, rgba(68, 68, 68, 0.3));
 
   @media (min-width: $tablet-width) {
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 16px;
+    line-height: 16px;
   }
 }
 
@@ -82,11 +90,11 @@
   width: 100%;
   margin: 0;
 
-  @include text ("Blogger Sans Medium", 16px, 18px, rgba(68, 68, 68, 0.3));
+  @include text ("Blogger Sans Medium", 16px, 20px, rgba(68, 68, 68, 0.3));
 
   @media (min-width: $tablet-width) {
-    font-size: 20px;
-    line-height: 17.7px;
+    font-size: 19px;
+    line-height: 19px;
   }
 }
 

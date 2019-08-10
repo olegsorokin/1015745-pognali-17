@@ -75,7 +75,7 @@
   @include round-progress (80, 42px, 3px, orange);
 
   @media (min-width: $tablet-width) {
-    @include round-progress (80, 57px, 3px, orange);
+    @include round-progress (80, 54px, 3px, orange);
   }
 }
 
@@ -92,5 +92,5 @@
 }
 
 .level--99-home {
-  @include round-progress (99, 57px, 3px, orange, rgba(0, 0, 0, 0.5));
+  @include round-progress (99, 54px, 3px, orange, rgba(0, 0, 0, 0.5));
 }

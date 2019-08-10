@@ -1,5 +1,6 @@
 .stages-list {
   width: 270px;
+  margin: 0;
 
   @include list-reset;
   counter-reset: num;
@@ -21,7 +22,7 @@
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;
-  padding: 23px 25px 25px;
+  padding: 24px 21px 25px 25px;
   border-radius: 10px 10px 0 0;
 
   @media (min-width: $tablet-width) {
@@ -97,7 +98,7 @@
 }
 
 .stages-list__item-text {
-  width: 150px;
+  width: 140px;
   margin: 0;
 
   @include text ("Blogger Sans Bold", 18px, 18px, #161c35);

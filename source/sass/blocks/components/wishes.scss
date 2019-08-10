@@ -47,11 +47,43 @@
 }
 
 .wishes__item {
+  position: relative;
   margin: 0 9px;
+
+  &:hover {
+    .wishes__popup {
+      display: block;
+    }
+  }
 }
 
 .wishes__popup {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
   display: none;
+  min-width: 95px;
+
+  @include text ("Blogger Sans", 20px, 24px, $main-white);
+  text-align: center;
+  padding: 20px 23px;
+  background-color: #101d41;
+  border-radius: 4px;
+  z-index: 1;
+}
+
+.wishes__popup::before {
+  content: "";
+  position: absolute;
+  top: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: block;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 8px solid #101d41;
+  z-index: 1;
 }
 
 .wishes__link {

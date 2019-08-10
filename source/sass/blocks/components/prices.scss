@@ -6,7 +6,12 @@
   background-repeat: no-repeat;
   background-position: 100% -5%;
   background-color: $main-grey;
-  border-radius: 0 0 25px 25px;
+  border-radius: 0 0 30px 30px;
+
+  @media (min-resolution: $retina-dpi),
+  (min-resolution: $retina-dppx) {
+    background-image: url("../img/rates@2x.png");
+  }
 
   @media (min-width: $tablet-width) {
     padding: 255px 40px 85px;
@@ -58,7 +63,7 @@
 
 .prices__list {
   position: relative;
-  margin-bottom: 30px;
+  margin-bottom: 32px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 60px;
