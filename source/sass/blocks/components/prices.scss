@@ -9,27 +9,27 @@
   border-radius: 0 0 30px 30px;
 
   @media (min-resolution: $retina-dpi),
-  (min-resolution: $retina-dppx) {
+    (min-resolution: $retina-dppx) {
     background-image: url("../img/rates@2x.png");
   }
 
   @media (min-width: $tablet-width) {
     padding: 251px 40px 89px;
     background-image: url("../img/rates@1x.png"), url("../img/light-back.png");
-    background-position: 92% 113%,100% 69%;
+    background-position: 92% 113%, 100% 69%;
     background-size: 99px 99px, auto;
     border-radius: 0 0 60px 60px;
   }
 
   @media (min-width: $tablet-width) and (min-resolution: $retina-dpi),
-  (min-width: $tablet-width) and (min-resolution: $retina-dppx) {
+    (min-width: $tablet-width) and (min-resolution: $retina-dppx) {
     background-image: url("../img/rates@2x.png"), url("../img/light-back.png");
   }
 
   @media (min-width: $desktop-width) {
     padding: 182px 60px 190px;
     background-image: url("../img/rates@1x.png"), url("../img/light-back-desktop.png");
-    background-position: 93.5% 70%,78% 80%;
+    background-position: 93.5% 70%, 78% 80%;
     background-size: auto, auto;
   }
 }

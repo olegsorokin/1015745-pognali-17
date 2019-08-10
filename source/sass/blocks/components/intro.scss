@@ -9,8 +9,7 @@
   background-position: bottom center, 60% 44%, top left;
   background-size: auto, 192px 255px, 100% auto;
 
-  @media (min-resolution: $retina-dpi),
-  (min-resolution: $retina-dppx) {
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/blue-back-square.png"), url("../img/traveller-illustration-mobile@2x.png"), url("../img/globe-back-mobile@2x.jpg");
     background-repeat: no-repeat;
   }
@@ -25,7 +24,7 @@
   }
 
   @media (min-width: $tablet-width) and (min-resolution: $retina-dpi),
-  (min-width: $tablet-width) and (min-resolution: $retina-dppx) {
+    (min-width: $tablet-width) and (min-resolution: $retina-dppx) {
     background-image: url("../img/traveller-illustration-tablet@2x.png"), url("../img/globe-back-tablet@2x.jpg");
   }
 
@@ -42,7 +41,7 @@
   }
 
   @media (min-width: $desktop-width) and (min-resolution: $retina-dpi),
-  (min-width: $desktop-width) and (min-resolution: $retina-dppx) {
+    (min-width: $desktop-width) and (min-resolution: $retina-dppx) {
     background-image: url("../img//traveller-illustration-desktop@2x.png"), url("../img/globe-back-desktop@2x.jpg");
   }
 }
@@ -75,7 +74,6 @@
 }
 
 .intro__reviews {
-
   @media (min-width: $desktop-width) {
     margin-top: 78px;
     margin-right: 26px;
