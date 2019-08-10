@@ -43,6 +43,10 @@
     padding: 30px 30px 23px;
     border-radius: 0;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 20px 30px 25px;
+  }
 }
 
 .route__name {
@@ -54,6 +58,10 @@
   @media (min-width: $tablet-width) {
     font-size: 23px;
     line-height: 23px
+  }
+
+  @media (min-width: $desktop-width) {
+    line-height: 26px;
   }
 }
 
@@ -74,6 +82,10 @@
   @media (min-width: $tablet-width) {
     width: 21px;
     height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 10px;
   }
 }
 
@@ -108,5 +120,9 @@
     width: 70px;
     height: 47px;
     ;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 23px;
   }
 }

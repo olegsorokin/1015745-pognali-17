@@ -13,9 +13,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 20px 60px;
+    padding: 20px 60px 0px;
     flex-wrap: nowrap;
-    justify-content: space-between;
+    justify-content: flex-start;
   }
 }
 
@@ -55,7 +55,7 @@
   @media (min-width: $desktop-width) {
     width: auto;
     order: 1;
-    margin: 0;
+    margin: 4px 0 0 40px;
   }
 }
 
@@ -73,6 +73,7 @@
 
   @media (min-width: $desktop-width) {
     flex-basis: 290px;
+    margin-left: auto;
   }
 }
 

@@ -9,7 +9,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 200px 60px 105px;
+    padding: 211px 60px 105px;
   }
 }
 
@@ -61,12 +61,20 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 65px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 60px;
+  }
 }
 
 .register__text--contacts {
   margin-bottom: 18px;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 44px;
+  }
+
+  @media (min-width: $desktop-width) {
     margin-bottom: 44px;
   }
 }
@@ -78,11 +86,35 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 55px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 65px;
+  }
+}
+
+.register__help {
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    display: inline;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 }
 
 .register br {
   @media (min-width: $tablet-width) {
     display: none;
+  }
+}
+
+.register__help--desktop {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: inline;
   }
 }
 

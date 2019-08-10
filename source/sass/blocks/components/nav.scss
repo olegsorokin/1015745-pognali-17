@@ -1,3 +1,18 @@
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav::before {
+  content: "";
+  display: inline-block;
+  width: 60px;
+  height: 2px;
+  border-radius: 1px;
+  background-color: $main-darkblue;
+  margin-right: 40px;
+}
+
 .nav__list {
   list-style-type: none;
   margin: 0;
@@ -10,8 +25,9 @@
 
   @media (min-width: $desktop-width) {
     display: flex;
-    min-width: 390px;
+    min-width: 400px;
     justify-content: space-between;
+    align-items: center;
   }
 }
 

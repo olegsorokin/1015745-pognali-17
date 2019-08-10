@@ -22,6 +22,10 @@
 
     @include link ("Blogger Sans", 20px, 24px, #444444);
   }
+
+  @media (min-width: $desktop-width) {
+    flex-basis: 200px;
+  }
 }
 
 .copyright-link__text {
