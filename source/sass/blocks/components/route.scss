@@ -10,17 +10,16 @@
   }
 }
 
-.route__image {
-  width: 100%;
-  height: auto;
-
+.route__wrap-image {
   @media (min-width: $tablet-width) {
     flex-basis: 186px;
   }
+}
 
-  img {
-    vertical-align: middle;
-  }
+.route__image {
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
 }
 
 .route__info {
@@ -42,6 +41,7 @@
     position: relative;
     padding: 30px 30px 23px;
     border-radius: 0;
+    width: auto;
   }
 
   @media (min-width: $desktop-width) {
