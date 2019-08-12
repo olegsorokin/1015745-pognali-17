@@ -4,7 +4,7 @@
   justify-content: space-between;
   align-items: center;
   flex-basis: 100%;
-  padding: 19px 24px;
+  padding: 20px 21px;
   background-color: $main-yellow;
   border: 3px solid $main-darkblue;
 
@@ -12,7 +12,7 @@
   border-radius: 10px;
 
   @media (min-width: $tablet-width) {
-    padding: 26px 37px;
+    padding: 26px 33px;
 
     @include link ("Blogger Sans Bold", 24px, 24px, $link-darkblue);
     border-radius: 20px;

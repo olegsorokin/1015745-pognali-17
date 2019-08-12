@@ -6,7 +6,14 @@
   align-items: center;
   flex-basis: 40px;
   height: 40px;
-  border-radius: 20px;
+  border-radius: 50%;
+
+  @media (min-width: $desktop-width) {
+    flex-basis: 50px;
+    height: 50px;
+    font-size: 20px;
+    line-height: 25px;
+  }
 }
 
 .function-link--hide {
@@ -23,15 +30,58 @@
 
 .function-link--phone {
   background-color: #ff8d30;
+
+  &:hover {
+    background-color: #f26926;
+  }
+
+  &:active {
+    .function-link__icon {
+      opacity: 0.3;
+    }
+
+    .function-link__text {
+      opacity: 0.3;
+    }
+  }
 }
 
 .function-link--mail {
   background-color: #ffbd30;
+
+  &:hover {
+    background-color: #ff8d30;
+  }
+
+  &:active {
+    .function-link__icon {
+      opacity: 0.3;
+    }
+
+    .function-link__text {
+      opacity: 0.3;
+    }
+  }
 }
 
 .function-link--singin {
   flex-grow: 1;
   background-color: #ffd74b;
+  border-radius: 25px;
+
+  &:hover {
+    background-color: #ffbd30;
+  }
+
+  &:active {
+    .function-link__icon {
+      opacity: 0.3;
+    }
+
+    .function-link__text {
+      opacity: 0.3;
+    }
+  }
 }
 
 .function-link__icon-hide {

@@ -3,7 +3,7 @@
   counter-reset: num;
 
   @media (min-width: $tablet-width) {
-    padding-left: 50px;
+    padding-left: 65px;
   }
 
   @media (min-width: $desktop-width) {
@@ -49,6 +49,7 @@
   counter-increment: num;
   box-sizing: border-box;
   position: absolute;
+  top: 3px;
   right: -45px;
   display: flex;
   justify-content: center;
@@ -62,6 +63,7 @@
   color: white;
 
   @media (min-width: $tablet-width) {
+    top: 0;
     left: -90px;
     flex-grow: 1;
     width: 67px;

@@ -1,0 +1,26 @@
+.page-list {
+  display: none;
+
+  @include list-reset;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+}
+
+.page-list__link {
+  width: 50px;
+  height: 50px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include link ("Blogger Sans Bold", 20px, 30px, #161c35);
+
+  border-radius: 50%;
+}
+
+.page-list__link--current {
+  background-color: $main-yellow;
+}

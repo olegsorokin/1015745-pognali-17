@@ -1,0 +1,108 @@
+.country-filter {
+  padding: 35px 25px 25px;
+  background-color: #e2e5f2;
+  border-radius: 0 0 25px 25px;
+
+  @media (min-width: $tablet-width) {
+    padding: 75px;
+    border-radius: 0 0 60px 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 75px 60px;
+  }
+}
+
+.country-filter__header {
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+  flex-wrap: wrap;
+
+  @media (min-width: $desktop-width) {
+    justify-content: flex-start;
+  }
+}
+
+.country-filter__title {
+  display: flex;
+  align-items: center;
+  margin: 0;
+
+  @include text ("Blogger Sans Bold", 16px, 22px, $main-darkblue);
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: inline;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  &::before {
+    content: url("../img/filter.svg");
+    display: inline-block;
+    width: 15px;
+    margin-right: 10px;
+
+    @media (min-width: $desktop-width) {
+      width: 23px;
+      height: 15px;
+      margin-right: 20px;
+    }
+  }
+
+  &::after {
+    @media (min-width: $desktop-width) {
+      content: ":";
+    }
+  }
+}
+
+.country-filter__regions {
+  order: 1;
+  margin-top: 35px;
+  margin-bottom: 0;
+
+  @media (min-width: $tablet-width) {
+    order: 0;
+    margin: 0;
+    flex-basis: 350px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 35px;
+  }
+}
+
+.country-filter__inner {
+  position: relative;
+  margin: 25px;
+  padding-bottom: 210px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    margin-top: 70px;
+    margin-bottom: 75px;
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 65px 90px;
+  }
+}
+
+.country-filter__letters {
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    margin-top: 70px;
+    margin-bottom: 75px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 0;
+  }
+}

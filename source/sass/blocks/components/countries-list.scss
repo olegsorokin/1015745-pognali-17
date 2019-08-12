@@ -1,0 +1,52 @@
+.countries-list {
+  display: none;
+
+  @include list-reset;
+  @include text ("Blogger Sans", 16px, 22px, $text-dark);
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
+
+
+.countries-list--current {
+  position: absolute;
+  bottom: 0;
+  display: block;
+  height: 195px;
+  width: 100%;
+  overflow: scroll;
+
+  @media (min-width: $tablet-width) {
+    top: 0;
+    right: 0;
+    width: 175px;
+    height: auto;
+    overflow: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: static;
+    width: auto;
+  }
+}
+
+.countries-list__button {
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+
+  @include text ("Blogger Sans", 16px, 22px, $text-dark);
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}

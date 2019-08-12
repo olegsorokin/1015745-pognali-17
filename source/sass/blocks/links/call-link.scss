@@ -1,0 +1,16 @@
+.call-link {
+  padding: 5px 0;
+
+  @include link ("Blogger Sans Bold", 17px, 30px, $link-darkblue);
+  text-align: center;
+  text-transform: uppercase;
+  background-color: $main-yellow;
+  border-radius: 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    padding: 10px 32px;
+    border-radius: 25px;
+  }
+}

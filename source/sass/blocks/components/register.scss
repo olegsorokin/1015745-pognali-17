@@ -1,15 +1,15 @@
 .register {
-  padding: 130px 25px 30px;
+  padding: 127px 25px 30px;
   background-color: $main-darkblue;
-  border-radius: 0 0 25px 25px;
+  border-radius: 0 0 30px 30px;
 
   @media (min-width: $tablet-width) {
-    padding: 185px 40px 60px;
+    padding: 179px 40px 60px;
     border-radius: 0 0 60px 60px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 200px 60px 105px;
+    padding: 211px 60px 105px;
   }
 }
 
@@ -33,10 +33,10 @@
 .register__title {
   @include section-title;
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 60px;
+    margin-bottom: 58px;
   }
 }
 
@@ -56,27 +56,51 @@
 }
 
 .register__text--login {
-  margin-bottom: 32px;
+  margin-bottom: 30px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 65px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 60px;
+  }
 }
 
 .register__text--contacts {
-  margin-bottom: 20px;
+  margin-bottom: 18px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 40px;
+    margin-bottom: 44px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 44px;
   }
 }
 
 .register__form {
   position: relative;
-  margin-bottom: 32px;
+  margin-bottom: 27px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 60px;
+    margin-bottom: 55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 65px;
+  }
+}
+
+.register__help {
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    display: inline;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
   }
 }
 
@@ -86,11 +110,21 @@
   }
 }
 
+.register__help--desktop {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: inline;
+  }
+}
+
 .register__contacts {
   margin: 0;
   align-self: flex-start;
 
   @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
     align-self: auto;
   }
 }

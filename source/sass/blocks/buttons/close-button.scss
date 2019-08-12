@@ -1,26 +1,44 @@
 .close-button {
-  width: 100%;
-  margin: 0;
-  background-color: #f3f4f8;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   border: none;
-  border-radius: 0 0 20px 20px;
-  padding: 23px 0;
-
-  @include text ("Blogger Sans Bold", 16px, 24px, $main-darkblue);
-  text-transform: uppercase;
+  background-color: transparent;
   cursor: pointer;
 
   @media (min-width: $tablet-width) {
-    font-size: 24px;
+    flex-basis: 175px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: auto;
+    margin-right: 70px;
+  }
+}
+
+.close-button--bottom {
+  width: 100%;
+  justify-content: center;
+  padding: 15px 0;
+  border-radius: 20px;
+  background-color: #d6daed;
+}
+
+.close-button__text {
+  display: none;
+
+  @include text ("Blogger Sans Bold", 16px, 16px, $main-darkblue);
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    font-size: 20px;
     line-height: 24px;
-    text-transform: unset;
   }
+}
 
-  &:hover {
-    background-color: #edeff6;
-  }
-
-  &:active {
-    color: rgba(29, 46, 91, 0.3);
-  }
+.close-button__text--bottom {
+  display: block;
+  order: 1;
+  margin-left: 10px;
 }

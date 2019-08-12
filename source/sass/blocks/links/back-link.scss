@@ -1,0 +1,19 @@
+.back-link {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    flex-basis: 175px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.back-link__text {
+  @include text ("Blogger Sans Bold", 20px, 24px, $main-white);
+  text-transform: uppercase;
+}
+
+.back-link__icon {
+  fill: $main-white;
+}

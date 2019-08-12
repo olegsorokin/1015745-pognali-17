@@ -1,4 +1,4 @@
-.page {
+.home {
   position: relative;
   min-width: 320px;
   max-width: $desktop-width;
@@ -12,14 +12,14 @@
   }
 }
 
-.page__header {
+.home__header {
   position: relative;
   top: 0;
   z-index: 40;
 }
 
 
-.page__footer {
+.home__footer {
   position: absolute;
   bottom: 0;
   left: 0;

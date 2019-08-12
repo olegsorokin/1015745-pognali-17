@@ -1,0 +1,331 @@
+.form-line {
+  border-top: 1px solid #f3c72b;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: center;
+    border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
+
+.form-line__title {
+  margin: 13px 0;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @include text ("Blogger Sans Bold", 13px, 18px, $link-darkblue);
+  text-transform: uppercase;
+
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    flex-basis: 110px;
+    justify-content: flex-start;
+    margin: 0;
+    margin-right: 20px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-content: space-between;
+    font-family: "Blogger Sans Medium", "arial", sans-serif;
+    margin: 0;
+    margin-bottom: 25px;
+  }
+
+  &::after {
+    @media (min-width: $tablet-width) {
+      content: ":";
+    }
+
+    @media (min-width: $desktop-width) {
+      display: none;
+    }
+  }
+}
+
+.form-line__title-text {
+  margin: 0;
+}
+
+.form-line__title-toggle {
+  transform: rotate(180deg);
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
+
+.form-line__wrap {
+  margin-top: 5px;
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
+
+.form-line__wrap-transport {
+  display: flex;
+}
+
+.form-line__wrap-check {
+  cursor: pointer;
+}
+
+.form-line__wrap-check:not(:last-child) {
+  margin-bottom: 12px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    margin-right: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    margin-bottom: 15px;
+  }
+}
+
+.form-line__wrap-check--transport:not(:last-child) {
+  @media (min-width: $tablet-width) {
+    margin-right: 15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
+}
+
+.form-line__wrap--level {
+  @media (min-width: $tablet-width) {
+    justify-content: space-between;
+  }
+}
+
+.form-line__label,
+.form-line__transport {
+  @include text ("Blogger Sans", 15px, 18px, $text-dark);
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+.form-line__checkbox {
+  display: none;
+}
+
+.form-line__checkbox + .form-line__label::before {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  display: block;
+  padding: 0 5px;
+  width: 18px;
+  height: 18px;
+  border-radius: 4px;
+  background-color: #ffffff;
+
+  @media (min-width: $tablet-width) {
+    width: 24px;
+    height: 24px;
+    padding: 2px 5px;
+  }
+}
+
+.form-line__checkbox:checked + .form-line__label::before {
+  content: url("../img/tick.svg");
+}
+
+.form-line__checkbox + .form-line__transport .form-line__transport-icon {
+  opacity: 0.15;
+}
+
+
+.form-line__checkbox:checked + .form-line__transport .form-line__transport-icon {
+  opacity: 1;
+}
+
+.form-line__label {
+  position: relative;
+  padding-left: 27px;
+  display: flex;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 40px;
+    min-width: 115px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 35px;
+  }
+}
+
+.form-line__transport {
+  position: relative;
+  width: 33px;
+  height: 33px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $main-white;
+  border-radius: 50%;
+
+  &:hover .form-line__transport-text {
+    display: block;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 43px;
+    height: 43px;
+  }
+}
+
+.form-line__transport-icon {
+  fill: $link-darkblue;
+
+  @media (min-width: $tablet-width) {
+    width: 19px;
+    height: 21px;
+  }
+
+  &:hover {
+    .form-line__transport-text {
+      display: block;
+    }
+  }
+}
+
+.form-line__transport-text {
+  position: absolute;
+  top: 100%;
+  display: none;
+
+  @include text ("Blogger Sans", 20px, 24px, $main-white);
+  padding: 20px 25px;
+  background-color: $main-darkblue;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid #101d41;
+    z-index: 1;
+  }
+}
+
+.form-line__level {
+  display: flex;
+  margin-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    order: 1;
+    flex-basis: 150px;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 35px;
+  }
+}
+
+.form-line__level-input {
+  width: 50%;
+  padding: 10px 0;
+
+  @include text ("blogger Sans Medium", 15px, 15px, $link-darkblue);
+  text-align: center;
+
+  border: 1px solid rgb(203, 206, 217);
+
+  &:first-child {
+    border-right: none;
+    border-radius: 5px 0 0 5px;
+  }
+
+  &:last-child {
+    border-radius: 0 5px 5px 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+.form-line__range {
+  position: relative;
+  height: 10px;
+
+  @media (min-width: $tablet-width) {
+    flex-basis: 274px;
+  }
+}
+
+.form-line__range-bottom {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  height: 2px;
+  background-color: $main-darkblue;
+  opacity: 0.2;
+}
+
+.form-line__range-active {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 30%;
+  right: 0;
+  background-color: $main-darkblue;
+  height: 2px;
+  z-index: 1;
+}
+
+.form-line__range-button {
+  position: absolute;
+  display: block;
+  width: 10px;
+  height: 10px;
+  background-color: $main-darkblue;
+  border: none;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.form-line__range-button--left {
+  left: 30%;
+}
+
+.form-line__range-button--right {
+  right: 0;
+}

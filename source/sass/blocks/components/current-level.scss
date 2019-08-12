@@ -1,0 +1,8 @@
+.current-level__title {
+  margin: 0;
+  margin-bottom: 10px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}

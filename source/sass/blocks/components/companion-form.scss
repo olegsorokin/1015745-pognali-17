@@ -1,0 +1,37 @@
+.companion-form__inner {
+  @media (min-width: $tablet-width) {
+    padding: 35px 0;
+    border-top: 1px solid #f3c72b;
+    border-bottom: 1px solid #f3c72b;
+    margin-bottom: 35px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    margin-bottom: 45px;
+    border: none;
+  }
+}
+
+.companion-form__item {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 35px;
+  }
+}
+
+
+.companion-form__item-transport {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 35px;
+  }
+}
+
+.companion-form__item-level {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+}

@@ -1,0 +1,17 @@
+.submit-button {
+  width: 100%;
+  padding: 13px 0;
+  cursor: pointer;
+
+  @include text ("Blogger Sans Bold", 17px, 30px, #161c35);
+  text-align: center;
+  text-transform: uppercase;
+  background-color: $main-white;
+  border: none;
+  border-radius: 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    border-radius: 25px;
+  }
+}

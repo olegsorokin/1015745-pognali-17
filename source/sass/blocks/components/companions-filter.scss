@@ -1,0 +1,29 @@
+.companions-filter {
+  background-color: $main-yellow;
+  border-radius: 20px;
+  padding: 25px 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 35px 35px 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 50px 50px 45px;
+    flex-basis: 285px;
+    order: 1;
+    box-sizing: border-box;
+  }
+}
+
+.companion-filter__title {
+  margin: 0;
+  margin-bottom: 20px;
+
+  @include text ("Blogger Sans Bold", 22.5px, 22.5px, $link-darkblue);
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 30px;
+    margin-bottom: 35px;
+  }
+}

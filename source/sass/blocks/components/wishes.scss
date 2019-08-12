@@ -1,12 +1,109 @@
+.wishes__title {
+  position: relative;
+  margin: 0;
+  margin-bottom: 20px;
+
+  @include text ("Blogger Sans", 15px, 18px, #444444);
+
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
 .wishes__list {
   @include list-reset;
   display: flex;
 }
 
+.wishes__list--catalog {
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+  }
+
+  .wishes__item {
+    margin: 0;
+    margin-bottom: 10px;
+
+    @media (min-width: $tablet-width) {
+      margin: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 10px;
+    }
+  }
+
+  .wishes__link-icon {
+    width: 35px;
+    height: 24px;
+  }
+}
+
 .wishes__item {
+  position: relative;
   margin: 0 9px;
+
+  &:hover {
+    .wishes__popup {
+      display: block;
+    }
+  }
 }
 
 .wishes__popup {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
   display: none;
+  min-width: 95px;
+
+  @include text ("Blogger Sans", 20px, 24px, $main-white);
+  text-align: center;
+  padding: 20px 23px;
+  background-color: #101d41;
+  border-radius: 4px;
+  z-index: 1;
+}
+
+.wishes__popup::before {
+  content: "";
+  position: absolute;
+  top: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: block;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 8px solid #101d41;
+  z-index: 1;
+}
+
+.wishes__link {
+  display: flex;
+  align-items: center;
+
+  @include link ("Blogger Sans Medium", 15px, 18px, $link-darkblue);
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    margin-right: 30px;
+  }
+}
+
+.wishes__link-icon {
+  margin-right: 15px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 10px;
+  }
 }

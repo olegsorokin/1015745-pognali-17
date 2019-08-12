@@ -61,7 +61,7 @@
 }
 
 /*-----Уровень попутчика-----*/
-@mixin round-progress ($level: 50, $size: 65px, $border-width: 5px, $border-color: orange, $bg-color: rgba(0, 0, 0, 0.3)) {
+@mixin round-progress ($level: 50, $size: 65px, $border-width: 5px, $border-color: orange, $bg-color: transparent) {
 
   $full-size: $size + $border-width * 2;
 

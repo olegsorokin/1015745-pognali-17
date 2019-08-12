@@ -1,5 +1,5 @@
 .route {
-  min-height: 200px;
+  min-height: 190px;
   border-radius: 10px;
   overflow: hidden;
 
@@ -10,13 +10,16 @@
   }
 }
 
-.route__image {
-  width: 100%;
-  height: auto;
-
+.route__wrap-image {
   @media (min-width: $tablet-width) {
     flex-basis: 186px;
   }
+}
+
+.route__image {
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
 }
 
 .route__info {
@@ -27,7 +30,7 @@
   justify-content: space-between;
   flex-wrap: wrap;
   width: 100%;
-  padding: 28px 25px 23px;
+  padding: 23px 24px 23px;
   background-color: $main-white;
   border-radius: 10px;
 
@@ -36,24 +39,36 @@
     flex-grow: 1;
     flex-direction: column;
     position: relative;
-    padding: 32px 30px 23px;
+    padding: 30px 30px 23px;
     border-radius: 0;
+    width: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 20px 30px 25px;
   }
 }
 
 .route__name {
   margin: 0;
-  margin-bottom: 5px;
+  margin-bottom: 4px;
 
   @include text ("Blogger Sans Bold", 21px, 21px, #161c35);
 
   @media (min-width: $tablet-width) {
-    font-size: 24px;
-    line-height: 24px;
+    font-size: 23px;
+    line-height: 23px;
+  }
+
+  @media (min-width: $desktop-width) {
+    line-height: 26px;
   }
 }
 
 .route__counter {
+  display: flex;
+  align-items: center;
+
   @media (min-width: $tablet-width) {
     order: 1;
     margin-top: auto;
@@ -62,19 +77,24 @@
 
 .route__counter-icon {
   fill: #edeff6;
+  margin-right: 5px;
 
   @media (min-width: $tablet-width) {
     width: 21px;
     height: 20px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 10px;
+  }
 }
 
 .route__counter-value {
-  @include text ("Blogger Sans Medium", 16px, 30px, rgba(68, 68, 68, 0.3));
+  @include text ("Blogger Sans Medium", 16px, 17px, rgba(68, 68, 68, 0.3));
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
-    line-height: 30px;
+    line-height: 20px;
   }
 }
 
@@ -82,11 +102,11 @@
   width: 100%;
   margin: 0;
 
-  @include text ("Blogger Sans Medium", 16px, 18px, rgba(68, 68, 68, 0.3));
+  @include text ("Blogger Sans Medium", 16px, 20px, rgba(68, 68, 68, 0.3));
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
-    line-height: 17.7px;
+    line-height: 20px;
   }
 }
 
@@ -95,7 +115,13 @@
   top: -12px;
 
   @media (min-width: $tablet-width) {
-    top: 30px;
+    top: 17px;
     right: -35px;
+    width: 70px;
+    height: 47px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 23px;
   }
 }

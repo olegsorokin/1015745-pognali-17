@@ -13,10 +13,14 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 20px 60px;
+    padding: 20px 60px 0;
     flex-wrap: nowrap;
-    justify-content: space-between;
+    justify-content: flex-start;
   }
+}
+
+.header--dark {
+  background-color: #161c35;
 }
 
 .header--hide {
@@ -51,7 +55,7 @@
   @media (min-width: $desktop-width) {
     width: auto;
     order: 1;
-    margin: 0;
+    margin: 4px 0 0 40px;
   }
 }
 
@@ -69,6 +73,7 @@
 
   @media (min-width: $desktop-width) {
     flex-basis: 290px;
+    margin-left: auto;
   }
 }
 
@@ -89,11 +94,14 @@
 }
 
 .header__socials {
+  display: flex;
+  justify-content: center;
   width: 100%;
   margin-top: 40px;
   order: 5;
 
   @media (min-width: $tablet-width) {
+    justify-content: flex-start;
     margin-top: 120px;
     margin-left: 60px;
   }

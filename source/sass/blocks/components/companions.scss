@@ -1,19 +1,28 @@
 .companions {
-  padding: 85px 25px 30px 0;
+  padding: 82px 25px 30px 0;
   background-color: $main-darkblue;
-  border-radius: 0 0 25px 25px;
+  border-radius: 0 0 30px 30px;
   background-image: url("../img/blue-back.png"), url("../img/smolov-back-desktop@1x.png"), url("../img/rogovaya-back-mobile@1x.png");
   background-repeat: no-repeat;
-  background-position: 0% 0%, 100% 0%, 0% 25%;
-  background-size: 113px 113px, auto, auto;
+  background-position: 0% 0%, 100% 0%, -3% 23%;
+  background-size: 113px 113px, 143px 143px, 71px 71px;
   background-origin: content-box;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/blue-back.png"), url("../img/smolov-back-desktop@2x.png"), url("../img/rogovaya-back-mobile@2x.png");
+  }
 
   @media (min-width: $tablet-width) {
     padding: 160px 75px 90px 40px;
     background-image: url("../img/blue-back.png"), url("../img/rogovaya-back-desktop@1x.png"), url("../img/smolov-back-desktop@1x.png");
-    background-position: 0% 0%, 100% 0%, 0% 40%;
-    background-size: auto;
+    background-position: 0% 0%, 100% 0%, 0% 37%;
+    background-size: 213px 213px, 285px 285px, 143px 143px;
     border-radius: 0 0 60px 60px;
+  }
+
+  @media (min-width: $tablet-width) and (min-resolution: $retina-dpi),
+    (min-width: $tablet-width) and (min-resolution: $retina-dppx) {
+    background-image: url("../img/blue-back.png"), url("../img/rogovaya-back-desktop@2x.png"), url("../img/smolov-back-desktop@2x.png");
   }
 
   @media (min-width: $desktop-width) {
@@ -25,17 +34,31 @@
   }
 }
 
-.companions__inner {
-  padding: 35px 0 0 25px;
+
+.companions__item {
+  position: relative;
+}
+
+.companions__item:not(:first-child) {
+  margin-top: 12px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 65px;
-    padding-left: 35px;
+    margin-top: 0;
+  }
+}
+
+.companions__inner {
+  padding: 30px 0 0 25px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 57px;
+    padding-left: 34px;
   }
 
   @media (min-width: $desktop-width) {
     padding-left: 70px;
     padding-bottom: 55px;
+    padding-top: 54px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -43,7 +66,7 @@
 }
 
 .companions__wrap {
-  padding: 0 35px;
+  padding: 0 23px;
 
   @media (min-width: $tablet-width) {
     padding: 0;
@@ -53,21 +76,34 @@
 .companions__title {
   @include section-title;
   margin: 0;
-  margin-bottom: 23px;
+  margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 60px;
+    font-size: 45px;
+    line-height: 45px;
+    margin-bottom: 58px;
   }
 }
 
 .companions__text {
+  width: 215px;
+
   @include text-light;
-  margin: 0;
-  margin-bottom: 27px;
+  margin: 0 0 20px;
 
   @media (min-width: $tablet-width) {
+    font-size: 28px;
+    line-height: 33px;
     width: 425px;
-    margin-bottom: 45px;
+    margin-bottom: 40px;
+  }
+}
+
+.companions br {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: inline;
   }
 }
 
@@ -75,16 +111,19 @@
   @include text-light;
   font-family: "Blogger Sans Bold", "Arial", sans-serif;
   margin: 0;
-  margin-bottom: 60px;
+  margin-bottom: 57px;
 
   @media (min-width: $tablet-width) {
+    font-size: 21px;
+    line-height: 25px;
     margin-bottom: 60px;
   }
 }
 
 .companions__list {
   @include list-reset;
-  margin-bottom: 20px;
+  margin: 0;
+  margin-bottom: 22px;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -95,22 +134,6 @@
   @media (min-width: $desktop-width) {
     min-width: 630px;
     margin-bottom: 0;
-  }
-}
-
-.companions__item {
-  position: relative;
-  margin-bottom: 10px;
-
-  @media (min-width: $tablet-width) {
-    margin-bottom: 0;
-  }
-}
-
-.companions br {
-  display: none;
-
-  @media (min-width: $tablet-width) {
-    display: inline;
+    margin-top: 9px;
   }
 }

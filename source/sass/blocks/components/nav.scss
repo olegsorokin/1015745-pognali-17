@@ -1,3 +1,27 @@
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media (min-width: $tablet-width) {
+    justify-content: flex-start;
+  }
+}
+
+.nav::before {
+  content: "";
+  display: none;
+  width: 60px;
+  height: 2px;
+  border-radius: 1px;
+  background-color: $main-darkblue;
+  margin-right: 40px;
+
+  @media (min-width: $desktop-width) {
+    display: inline-block;
+  }
+}
+
 .nav__list {
   list-style-type: none;
   margin: 0;
@@ -10,14 +34,32 @@
 
   @media (min-width: $desktop-width) {
     display: flex;
-    min-width: 390px;
+    min-width: 400px;
     justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.nav__list--dark {
+  .nav__link {
+    color: $main-white;
+
+    &:hover {
+      color: $main-yellow;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 }
 
 .nav__link {
   @include link ("Blogger Sans Bold", 30px, 36px, #192144);
   text-transform: uppercase;
+  display: inline-block;
+  overflow: hidden;
+  padding: 0 4px;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
@@ -27,5 +69,34 @@
   @media (min-width: $desktop-width) {
     font-size: 20px;
     line-height: 30px;
+  }
+
+  &:hover {
+    .nav__link-text {
+      transform: translateY(-100%);
+    }
+  }
+}
+
+.nav__link-text {
+  position: relative;
+  display: inline-block;
+  transition: transform 0.3s;
+
+  &::before {
+    position: absolute;
+    top: 100%;
+    content: attr(data-hover);
+    font-weight: 700;
+    transform: translate3d(0, 0, 0);
+    font-size: 29px;
+
+    @media (min-width: $tablet-width) {
+      font-size: 58px;
+    }
+
+    @media (min-width: $desktop-width) {
+      font-size: 19px;
+    }
   }
 }

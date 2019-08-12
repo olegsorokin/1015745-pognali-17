@@ -1,5 +1,6 @@
 .stages-list {
   width: 270px;
+  margin: 0;
 
   @include list-reset;
   counter-reset: num;
@@ -21,13 +22,13 @@
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;
-  padding: 23px 25px 25px;
+  padding: 24px 21px 25px 25px;
   border-radius: 10px 10px 0 0;
 
   @media (min-width: $tablet-width) {
     flex-direction: column;
     min-height: 140px;
-    padding: 31px 34px 28px;
+    padding: 29px 34px 28px;
   }
 
   @media (min-width: $desktop-width) {
@@ -72,6 +73,10 @@
 .stages-list__item:not(:last-child) {
   padding-bottom: 30px;
 
+  @media (min-width: $tablet-width) {
+    padding-bottom: 24px;
+  }
+
   @media (min-width: $desktop-width) {
     padding-right: 60px;
   }
@@ -97,13 +102,13 @@
 }
 
 .stages-list__item-text {
-  width: 150px;
+  width: 140px;
   margin: 0;
 
   @include text ("Blogger Sans Bold", 18px, 18px, #161c35);
 
   @media (min-width: $tablet-width) {
-    width: 200px;
+    width: 190px;
     font-size: 24px;
     line-height: 24px;
   }

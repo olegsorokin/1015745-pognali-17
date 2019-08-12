@@ -1,8 +1,17 @@
 .tags__list {
   @include list-reset;
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
+}
+
+.tags__list--centered {
+  justify-content: center;
+}
+
+.tags__list--catalog {
+  @media (min-width: $tablet-width) {
+    width: 215px;
+  }
 }
 
 .tags__item {
@@ -12,12 +21,12 @@
     content: "#";
   }
 
-  &::after {
-    content: " ";
-  }
-
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 24px;
   }
+}
+
+.tags__item:not(:first-child) {
+  margin-left: 2px;
 }

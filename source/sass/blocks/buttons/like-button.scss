@@ -1,0 +1,51 @@
+.like-button {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.like-button--active {
+  .like-button__icon-wrap {
+    background-color: #f9eaea;
+  }
+
+  .like-button__icon {
+    fill: #f02323;
+    opacity: 1;
+  }
+}
+
+.like-button__icon-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 31px;
+  height: 31px;
+  margin-right: 7px;
+  border-radius: 50%;
+  background-color: #edeff6;
+
+  @media (min-width: $tablet-width) {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+.like-button__icon {
+  fill: #192144;
+  opacity: 0.3;
+
+  @media (min-width: $tablet-width) {
+    width: 20px;
+    height: 17px;
+  }
+}
+
+.like-button__counter {
+  @include text ("Blogger Sans Bold", 14px, 21px, #161c35);
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}

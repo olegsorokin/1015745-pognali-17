@@ -1,0 +1,19 @@
+.companions-list {
+  @media (min-width: $desktop-width) {
+    flex-basis: 950px;
+  }
+}
+
+.companions-list__item {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.companions-list__more-link {
+  margin: 25px 0;
+}
+
+.companions-list__list {
+  @include list-reset;
+  margin: 0;
+}
