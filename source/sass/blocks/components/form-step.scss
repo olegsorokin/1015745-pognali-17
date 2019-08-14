@@ -1,0 +1,101 @@
+.form-step {
+  max-width: 220px;
+  padding: 25px;
+  background-color: $main-white;
+  border: 0;
+  border-radius: 10px;
+}
+
+.form-step__title {
+  margin: 0;
+  margin-bottom: 18px;
+}
+
+.form-step__description {
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+.form-step__counter {
+  margin-bottom: 20px;
+}
+
+.form-step__days {
+  margin-bottom: 20px;
+}
+
+.form-step__check {
+  display: none;
+}
+
+.form-step__checkbox {
+  margin-bottom: 20px;
+}
+
+.form-step__check-label {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 40px;
+  cursor: pointer;
+
+  &::before {
+    position: absolute;
+    left: 0;
+    box-sizing: border-box;
+    content: "";
+    padding: 0 8px;
+    width: 26px;
+    height: 26px;
+    border: 1px solid #cbced9;
+    border-radius: 4px;
+  }
+}
+
+.form-step__check:checked+.form-step__check-label {
+  &::before {
+    content: url(../img/tick.svg);
+  }
+}
+
+.form-step__calendar {
+  margin-bottom: 23px;
+}
+
+.form-step__button-next {
+  display: block;
+  max-width: 100%;
+  padding: 10px 0;
+  @include link ("Blogger Sans Bold", 17px, 20px, #161c35);
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 20px;
+  background-color: $main-yellow;
+}
+
+.form-step__button-prev {
+  display: block;
+  max-width: 100%;
+  margin-top: 20px;
+  @include link ("Blogger Sans Bold", 17px, 20px, #161c35);
+  text-align: center;
+  text-transform: uppercase;
+  background-color: transparent;
+}
+
+.form-step__routes {
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+.form-step__button-submit {
+  display: block;
+  width: 100%;
+  padding: 10px 0;
+  @include link ("Blogger Sans Bold", 17px, 20px, #161c35);
+  text-align: center;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 20px;
+  background-color: $main-yellow;
+}

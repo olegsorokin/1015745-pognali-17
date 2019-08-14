@@ -1,0 +1,105 @@
+.route-list {
+  @include list-reset;
+}
+
+.route-list__item {
+  position: relative;
+  display: flex;
+}
+
+.route-list__item:not(:first-child) {
+  margin-top: 22px;
+
+  &::before {
+    position: absolute;
+    top: -22px;
+    right: 53px;
+    content: url("../img/small-arrow.svg");
+    width: 5px;
+    height: 10px;
+    opacity: 0.3;
+  }
+}
+
+.route-list__item--add {
+  .route-list__country-wrap {
+    background-color: #edeff6;
+    border: none;
+    border-radius: 4px;
+  }
+}
+
+.route-list__country-wrap {
+  position: relative;
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  padding: 11px 9px;
+  border: 1px solid #cbced9;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.route-list__country-name {
+  flex-grow: 1;
+  @include text ("Blogger Sans Medium", 14px, 18px, $link-darkblue);
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.route-list__button-dropdown {
+  position: absolute;
+  right: 9px;
+  padding: 0;
+  border: none;
+  background-color: white;
+  box-shadow: 0px 0px 15px 20px white;
+  cursor: pointer;
+}
+
+.route-list__dropdown-icon {
+  opacity: 0.3;
+}
+
+.route-list__flag-wrap {
+  padding: 8px 9px;
+  border: 1px solid #cbced9;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.route-list__flag-wrap--hide {
+  display: none;
+}
+
+.route-list__button-skip {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  width: 21px;
+  height: 21px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background-color: #edeff6;
+  cursor: pointer;
+}
+
+.route-list__skip-icon {
+  opacity: 0.3;
+}
+
+.route-list__button-add {
+  position: absolute;
+  right: 9px;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+}
+
+.route-list__add-icon {
+  opacity: 0.3;
+}

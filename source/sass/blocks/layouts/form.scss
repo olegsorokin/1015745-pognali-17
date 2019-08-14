@@ -1,0 +1,21 @@
+.form {
+  position: relative;
+  min-width: 320px;
+  max-width: $desktop-width;
+  padding: 0;
+  margin: 0 auto;
+  background-color: #edeff6;
+
+  @include text ("Blogger Sans", 16px, 22px, #444444);
+
+  @media (min-width: $tablet-width) {
+    @include text ("Blogger Sans", 20px, 24px, #444444);
+  }
+}
+
+.form__footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}

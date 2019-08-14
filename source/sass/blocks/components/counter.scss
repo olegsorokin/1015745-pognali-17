@@ -1,0 +1,55 @@
+.counter__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 100%;
+  margin-bottom: 10px;
+  @include text ("Blogger Sans Medium", 16px, 16px, $link-darkblue);
+  text-transform: uppercase;
+  letter-spacing: 1.6px;
+}
+
+.counter__title--companions {
+  &::after {
+    content: "чел.";
+    opacity: 0.3;
+  }
+}
+
+.counter__title--days {
+  &::after {
+    content: "дн.";
+    opacity: 0.3;
+  }
+}
+
+.counter__wrap {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border: 1px solid #cbced9;
+  border-radius: 4px;
+}
+
+.counter__input {
+  width: 130px;
+  @include text ("Blogger Sans Medium", 15px, 13.5px, $link-darkblue);
+  letter-spacing: 1.5px;
+  text-align: center;
+  border: none;
+}
+
+.counter__button-minus {
+  padding: 0;
+  background: transparent;
+  border: none;
+}
+
+.counter__button-plus {
+  padding: 0;
+  background: transparent;
+  border: none;
+}

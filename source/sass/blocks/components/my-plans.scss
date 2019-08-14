@@ -1,0 +1,142 @@
+.my-plans {
+  padding: 30px 25px 55px;
+  background-color: #dfe3f0;
+  border-radius: 25px 25px 0 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 60px 75px 120px;
+  }
+}
+
+.my-plans__title {
+  margin: 0;
+  margin-bottom: 35px;
+
+  @include text ("Blogger Sans Bold", 24px, 24px, $main-darkblue);
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 55px;
+    font-size: 36px;
+    line-height: 50px;
+  }
+}
+
+.my-plans__list {
+  margin: 0;
+
+  @include list-reset;
+  counter-reset: num;
+}
+
+.my-plans__item {
+  padding: 0 24px;
+  background-color: $main-white;
+  border-radius: 10px;
+
+  @include text ("Blogger Sans Medium", 14px, 14px, $main-darkblue);
+  text-transform: uppercase;
+  letter-spacing: 1.4px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
+
+.my-plans__item::before {
+  content: counter(num) ".";
+  counter-increment: num;
+
+  @media (min-width: $tablet-width) {
+    font-size: 24px;
+    line-height: 50px;
+  }
+}
+
+.my-plans__item:not(:first-child) {
+  margin-top: 10px;
+}
+
+.my-plans__item-title {
+  padding: 24px 0;
+  display: inline-block;
+  margin: 0;
+
+  @include text ("Blogger Sans Bold", 16px, 16px, $main-darkblue);
+  text-transform: capitalize;
+  letter-spacing: normal;
+
+  @media (min-width: $tablet-width) {
+    order: -1;
+    margin: 0;
+    font-size: 24px;
+    line-height: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    order: 0;
+  }
+}
+
+.my-plans__item-wrap {
+  padding-bottom: 24px;
+
+  @media (min-width: $tablet-width) {
+    padding: 20px 0;
+    flex-basis: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #dfe3f0;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-basis: 50%;
+    border: none;
+  }
+}
+
+.my-plans__item-companions {
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    font-size: 20px;
+    line-height: 18px;
+    letter-spacing: 2px;
+  }
+}
+
+.my-plans__item-dates {
+  margin: 0;
+  margin-top: 7px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    font-size: 20px;
+    line-height: 18px;
+    letter-spacing: 2px;
+  }
+}
+
+.my-plans__item-dates-to {
+  &::before {
+    content: "-";
+    margin-right: 5px;
+  }
+}
+
+.my-plans__item-change-plan {
+  display: block;
+  margin-top: 27px;
+  color: rgba(0, 0, 0, 0.3);
+  text-decoration: none;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    font-size: 20px;
+    line-height: 18px;
+    letter-spacing: 2px;
+  }
+}

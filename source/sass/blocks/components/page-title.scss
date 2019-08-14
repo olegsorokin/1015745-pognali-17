@@ -20,7 +20,6 @@
   }
 }
 
-
 .page-title__title {
   margin: 0;
 
@@ -30,4 +29,22 @@
     font-size: 60px;
     line-height: 70px;
   }
+}
+
+.page-title__profile-wrap {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    right: 155px;
+    bottom: 0;
+    width: 330px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.page-title__photo {
+  position: relative;
 }

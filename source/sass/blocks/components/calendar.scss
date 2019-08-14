@@ -1,0 +1,50 @@
+ .calendar {
+   width: 100%;
+ }
+
+ .calendar__header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-bottom: 15px;
+   padding: 13px 0;
+   border-top: 1px solid #d4d9eb;
+   border-bottom: 1px solid #d4d9eb;
+ }
+
+ .calendar__button {
+   background-color: transparent;
+   border: none;
+   opacity: 0.3;
+ }
+
+ .calendar__period {
+   @include text ("Blogger Sans Bold", 20px, 20px, $link-darkblue);
+ }
+
+ .calendar__dates {
+   width: 100%;
+   border-collapse: collapse;
+
+ }
+
+ .calendar__date {
+   box-sizing: border-box;
+   width: 30px;
+   height: 30px;
+   margin: 0;
+   @include text ("Blogger Sans", 14px, 18px, $text-dark);
+   text-align: center;
+   vertical-align: middle;
+   background-color: #edeff6;
+   border: 1px solid #d4d9eb;
+ }
+
+ .calendar__date--past {
+   opacity: 0.3;
+ }
+
+ .calendar__date--active {
+   color: $main-white;
+   background-color: $main-darkblue;
+ }

@@ -1,0 +1,12 @@
+.plan-form {
+  max-width: 270px;
+  margin: 0 auto;
+}
+
+.plan-form__title {
+  margin-bottom: 30px;
+}
+
+.plan-form__step:not(:first-child) {
+  margin-top: 10px;
+}

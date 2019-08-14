@@ -1,6 +1,6 @@
-.level {
-  display: inline;
-}
+// .level {
+//   display: inline;
+// }
 
 .level__wrap {
   position: relative;
@@ -44,6 +44,25 @@
   }
 }
 
+.level--profile {
+  .level__value {
+    @include text ("Blogger Sans Bold", 38px, 38px, $main-darkblue);
+
+    @media (min-width: $desktop-width) {
+      color: $main-white;
+    }
+  }
+
+  .level__text {
+    display: inline;
+    @include text ("Blogger Sans", 18px, 22px, #444444);
+
+    @media (min-width: $desktop-width) {
+      color: $main-white;
+    }
+  }
+}
+
 .level__progress {
   position: absolute;
   top: 0;
@@ -76,6 +95,14 @@
 
   @media (min-width: $tablet-width) {
     @include round-progress (80, 54px, 3px, orange);
+  }
+}
+
+.level--80-profile {
+  @include round-progress (80, 94px, 3px, orange);
+
+  @media (min-width: $tablet-width) {
+    @include round-progress (80, 88px, 3px, orange);
   }
 }
 
