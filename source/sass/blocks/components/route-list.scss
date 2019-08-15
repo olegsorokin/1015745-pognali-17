@@ -17,6 +17,10 @@
       height: 100%;
       background-color: #d6d9e6;
     }
+
+    @media (min-width: $desktop-width) {
+      right: 222px;
+    }
   }
 }
 
@@ -58,6 +62,10 @@
         right: -35px;
         transform: translate(0, -50%);
       }
+
+      @media (min-width: $desktop-width) {
+        right: -55px;
+      }
     }
   }
 }
@@ -76,6 +84,10 @@
       @media (min-width: $tablet-width) {
         right: -35px;
         transform: translate(0, -50%);
+      }
+
+      @media (min-width: $desktop-width) {
+        right: -55px;
       }
     }
   }
@@ -99,6 +111,10 @@
     overflow: visible;
   }
 
+  @media (min-width: $desktop-width) {
+    flex-basis: 730px;
+  }
+
   &::after {
     position: absolute;
     top: 50%;
@@ -117,6 +133,10 @@
       height: 14px;
       right: -35px;
       transform: translate(0, -50%);
+    }
+
+    @media (min-width: $desktop-width) {
+      right: -55px;
     }
   }
 }
@@ -164,6 +184,10 @@
     margin-right: 40px;
   }
 
+  @media (min-width: $desktop-width) {
+    margin-right: 115px;
+  }
+
   &::before {
     position: absolute;
     top: 50%;
@@ -183,6 +207,10 @@
       right: auto;
       width: 14px;
       height: 14px;
+    }
+
+    @media (min-width: $desktop-width) {
+      left: -46px;
     }
   }
 }

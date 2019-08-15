@@ -1,0 +1,41 @@
+.indicate-list {
+  display: none;
+  flex-basis: 225px;
+  @include list-reset;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
+}
+
+.indicate-list__item {
+  position: relative;
+  @include text ("Blogger Sans", 20px, 13.8px, $link-darkblue);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  opacity: 0.6;
+
+  &::before {
+    position: absolute;
+    top: 50%;
+    left: -40px;
+    transform: translateY(-50%);
+    content: "";
+    display: block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #808285;
+  }
+}
+
+.indicate-list__item--current {
+  opacity: 1;
+
+  &::before {
+    background-color: $link-darkblue;
+  }
+}

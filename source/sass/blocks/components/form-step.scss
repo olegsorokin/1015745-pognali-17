@@ -13,6 +13,30 @@
     padding: 50px 45px 55px;
     border-radius: 30px;
   }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1000px;
+    padding: 100px 160px 105px;
+    border-radius: 60px;
+  }
+}
+
+.form-step__header {
+  flex-basis: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 42px;
+  }
+}
+
+.form-step__header-wrap {
+  @media (min-width: $desktop-width) {
+    flex-basis: 580px;
+  }
 }
 
 .form-step__title {
@@ -26,16 +50,20 @@
     font-size: 36px;
     line-height: 36px;
   }
+
+  br {
+    @media (min-width: $desktop-width) {
+      display: none;
+    }
+  }
 }
 
 .form-step__description {
   margin: 0;
-  margin-bottom: 25px;
 
   @media (min-width: $tablet-width) {
     order: 1;
     flex-basis: 500px;
-    margin-bottom: 42px;
   }
 }
 
@@ -57,12 +85,37 @@
   }
 }
 
-.form-step__counter {
+.form-step__indicators {
+  margin: 0;
+}
+
+.form-step__parametrs {
+
+  @media (min-width: $tablet-width) {
+    flex-basis: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 30px 0;
+    border-top: 1px solid #d6d9e6;
+  }
+}
+
+.form-step__companions {
   margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
     flex-basis: 100%;
-    order: 2;
+    order: -2;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-basis: 480px;
+    margin-bottom: 15px;
   }
 }
 
@@ -71,7 +124,11 @@
 
   @media (min-width: $tablet-width) {
     flex-basis: 100%;
-    order: 4;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-basis: 480px;
+    margin: 0;
   }
 }
 
@@ -83,8 +140,11 @@
   margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
-    flex-basis: 100%;
-    order: 3;
+    order: -1;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
   }
 }
 
@@ -135,7 +195,6 @@
 
   @media (min-width: $tablet-width) {
     flex-basis: 100%;
-    order: 5;
   }
 }
 
@@ -179,7 +238,7 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  padding: 30px 34px;
+  padding: 10px 0;
   border: none;
   border-radius: 20px;
   background-color: $main-yellow;
@@ -189,6 +248,7 @@
     width: auto;
     flex-basis: 285px;
     order: 11;
+    padding: 30px 34px;
   }
 }
 

@@ -6,4 +6,9 @@
   @media (min-width: $tablet-width) {
     padding: 57px 0 217px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 57px 0 225px;
+    border-radius: 60px 60px 0 0;
+  }
 }

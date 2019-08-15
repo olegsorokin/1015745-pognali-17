@@ -295,55 +295,76 @@
 
         <div class="form-step plan-form__step">
 
-          <h3 class="form-step__title">
-            <a class="form-step__title-text" id="step-1">Шаг 1.<br>Даты пребывания</a>
-          </h3>
+          <div class="form-step__header">
 
-          <p class="form-step__description form-step__description--dates">Укажите предпочтительное
-            количество попутчиков, которых
-            вы хотели бы позвать в поездку и ее предполагаемую длительность.</p>
+            <div class="form-step__header-wrap">
 
-          <div class="counter form-step__counter">
-            <label class="counter__title counter__title--companions" for="counter-value">Ищу
-              попутчиков:</label>
-            <div class="counter__wrap">
-              <button class="counter__button-minus">
-                <svg class="counter__button-icon" width="14" height="14">
-                  <use xlink:href="#qty-minus-mobile"></use>
-                </svg>
-              </button>
-              <input class="counter__input" type="text" name="companions-value" id="counter-value"
-                value="2">
-              <button class="counter__button-plus">
-                <svg class="counter__button-icon" width="14" height="14">
-                  <use xlink:href="#qty-plus-mobile"></use>
-                </svg>
-              </button>
+              <h3 class="form-step__title">
+                <a class="form-step__title-text" id="step-1">Шаг 1.<br> Даты пребывания</a>
+              </h3>
+
+              <p class="form-step__description form-step__description--dates">Укажите
+                предпочтительное
+                количество попутчиков, которых
+                вы хотели бы позвать в поездку и ее предполагаемую длительность.</p>
+
             </div>
+
+            <ul class="indicate-list form-step__indicators">
+              <li class="indicate-list__item indicate-list__item--current">Даты</li>
+              <li class="indicate-list__item">Маршрут</li>
+              <li class="indicate-list__item">Развлечения</li>
+            </ul>
+
           </div>
 
-          <div class="counter form-step__days">
-            <label class="counter__title counter__title--days"
-              for="days-value">Длительность:</label>
-            <div class="counter__wrap">
-              <button class="counter__button-minus">
-                <svg class="counter__button-icon" width="14" height="14">
-                  <use xlink:href="#qty-minus-mobile"></use>
-                </svg>
-              </button>
-              <input class="counter__input" type="text" name="days-value" id="days-value" value="2">
-              <button class="counter__button-plus">
-                <svg class="counter__button-icon" width="14" height="14">
-                  <use xlink:href="#qty-plus-mobile"></use>
-                </svg>
-              </button>
-            </div>
-          </div>
+          <div class="form-step__parametrs">
 
-          <div class="form-step__checkbox">
-            <input class="form-step__check" type="checkbox" name="children-allow"
-              id="children-allow">
-            <label class="form-step__check-label" for="children-allow">Можно с детьми</label>
+            <div class="counter form-step__companions">
+              <label class="counter__title" for="companions-value">Ищу
+                попутчиков:</label>
+              <span class="counter__tip">чел.</span>
+              <div class="counter__wrap">
+                <button class="counter__button-minus">
+                  <svg class="counter__button-icon" width="14" height="14">
+                    <use xlink:href="#qty-minus-mobile"></use>
+                  </svg>
+                </button>
+                <input class="counter__input" type="text" name="companions-value"
+                  id="companions-value" value="2">
+                <button class="counter__button-plus">
+                  <svg class="counter__button-icon" width="14" height="14">
+                    <use xlink:href="#qty-plus-mobile"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+
+            <div class="counter form-step__days">
+              <label class="counter__title" for="days-value">Длительность:</label>
+              <span class="counter__tip">дн.</span>
+              <div class="counter__wrap">
+                <button class="counter__button-minus">
+                  <svg class="counter__button-icon" width="14" height="14">
+                    <use xlink:href="#qty-minus-mobile"></use>
+                  </svg>
+                </button>
+                <input class="counter__input" type="text" name="days-value" id="days-value"
+                  value="2">
+                <button class="counter__button-plus">
+                  <svg class="counter__button-icon" width="14" height="14">
+                    <use xlink:href="#qty-plus-mobile"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+
+            <div class="form-step__checkbox">
+              <input class="form-step__check" type="checkbox" name="children-allow"
+                id="children-allow" checked>
+              <label class="form-step__check-label" for="children-allow">Можно с детьми</label>
+            </div>
+
           </div>
 
           <div class="calendar form-step__calendar">
@@ -380,58 +401,101 @@
                 <th class="calendar__day calendar__day--weekend">Вс</th>
               </tr>
               <tr class="calendar__week">
-                <td class="calendar__date calendar__date--past">24</td>
-                <td class="calendar__date calendar__date--past">25</td>
-                <td class="calendar__date calendar__date--past">26</td>
-                <td class="calendar__date calendar__date--past">27</td>
-                <td class="calendar__date calendar__date--past">28</td>
-                <td class="calendar__date calendar__date--past">1</td>
-                <td class="calendar__date calendar__date--past">2</td>
+                <td class="calendar__date calendar__date--disabled"><span
+                    class="calendar__date-inner">24</span>
+                </td>
+                <td class="calendar__date calendar__date--disabled"><span
+                    class="calendar__date-inner">25</span>
+                </td>
+                <td class="calendar__date calendar__date--disabled"><span
+                    class="calendar__date-inner">26</span>
+                </td>
+                <td class="calendar__date calendar__date--disabled"><span
+                    class="calendar__date-inner">27</span>
+                </td>
+                <td class="calendar__date calendar__date--disabled"><span
+                    class="calendar__date-inner">28</span>
+                </td>
+                <td class="calendar__date calendar__date--disabled"><span
+                    class="calendar__date-inner">1 <span
+                      class="calendar__full-date">мар</span></span>
+                </td>
+                <td class="calendar__date calendar__date--disabled"><span
+                    class="calendar__date-inner">2</span>
+                </td>
               </tr>
               <tr class="calendar__week">
-                <td class="calendar__date calendar__date--past">3</td>
-                <td class="calendar__date calendar__date--past">4</td>
-                <td class="calendar__date calendar__date--past">5</td>
-                <td class="calendar__date calendar__date--past">6</td>
-                <td class="calendar__date calendar__date--past">7</td>
-                <td class="calendar__date calendar__date--past">8</td>
-                <td class="calendar__date calendar__date--past">9</td>
+                <td class="calendar__date calendar__date--disabled"><span
+                    class="calendar__date-inner">3</span></td>
+                <td class="calendar__date calendar__date--disabled"><span
+                    class="calendar__date-inner">4</span></td>
+                <td class="calendar__date calendar__date--disabled"><span
+                    class="calendar__date-inner">5</span></td>
+                <td class="calendar__date calendar__date--disabled"><span
+                    class="calendar__date-inner">6</span></td>
+                <td class="calendar__date calendar__date--disabled"><span
+                    class="calendar__date-inner">7</span></td>
+                <td class="calendar__date calendar__date--disabled"><span
+                    class="calendar__date-inner">8</span></td>
+                <td class="calendar__date calendar__date--disabled"><span
+                    class="calendar__date-inner">9</span></td>
               </tr>
               <tr class="calendar__week">
-                <td class="calendar__date calendar__date--past">10</td>
-                <td class="calendar__date calendar__date--past">11</td>
-                <td class="calendar__date calendar__date--past">12</td>
-                <td class="calendar__date calendar__date--past">13</td>
-                <td class="calendar__date calendar__date--past">14</td>
-                <td class="calendar__date calendar__date--past">15</td>
-                <td class="calendar__date calendar__date--past">16</td>
+                <td class="calendar__date calendar__date--disabled"><span
+                    class="calendar__date-inner">10</span></td>
+                <td class="calendar__date calendar__date--disabled"><span
+                    class="calendar__date-inner">11</span></td>
+                <td class="calendar__date calendar__date--disabled"><span
+                    class="calendar__date-inner">12</span></td>
+                <td class="calendar__date calendar__date--disabled"><span
+                    class="calendar__date-inner">13</span></td>
+                <td class="calendar__date calendar__date--disabled"><span
+                    class="calendar__date-inner">14</span></td>
+                <td class="calendar__date calendar__date--disabled"><span
+                    class="calendar__date-inner">15</span></td>
+                <td class="calendar__date calendar__date--disabled"><span
+                    class="calendar__date-inner">16</span></td>
               </tr>
               <tr class="calendar__week">
-                <td class="calendar__date calendar__date--past">17</td>
-                <td class="calendar__date calendar__date--past">18</td>
-                <td class="calendar__date calendar__date--past">19</td>
-                <td class="calendar__date calendar__date--past">20</td>
-                <td class="calendar__date calendar__date--past">21</td>
-                <td class="calendar__date calendar__date--past">22</td>
-                <td class="calendar__date calendar__date--past">23</td>
+                <td class="calendar__date calendar__date--disabled"><span
+                    class="calendar__date-inner">17</span></td>
+                <td class="calendar__date calendar__date--disabled"><span
+                    class="calendar__date-inner">18</span></td>
+                <td class="calendar__date calendar__date--disabled"><span
+                    class="calendar__date-inner">19</span></td>
+                <td class="calendar__date calendar__date--disabled"><span
+                    class="calendar__date-inner">20</span></td>
+                <td class="calendar__date calendar__date--disabled"><span
+                    class="calendar__date-inner">21</span></td>
+                <td class="calendar__date calendar__date--disabled"><span
+                    class="calendar__date-inner">22</span></td>
+                <td class="calendar__date calendar__date--disabled"><span
+                    class="calendar__date-inner">23</span></td>
               </tr>
               <tr class="calendar__week">
-                <td class="calendar__date calendar__date--past">24</td>
-                <td class="calendar__date calendar__date--past">25</td>
-                <td class="calendar__date calendar__date--past">26</td>
-                <td class="calendar__date calendar__date--today calendar__date--active">27</td>
-                <td class="calendar__date calendar__date--active">28</td>
-                <td class="calendar__date calendar__date--active">29</td>
-                <td class="calendar__date">30</td>
+                <td class="calendar__date calendar__date--disabled"><span
+                    class="calendar__date-inner">24</span></td>
+                <td class="calendar__date calendar__date--disabled"><span
+                    class="calendar__date-inner">25</span></td>
+                <td class="calendar__date calendar__date--disabled"><span
+                    class="calendar__date-inner">26</span></td>
+                <td class="calendar__date calendar__date--active calendar__date--in"><span
+                    class="calendar__date-inner">27</span></td>
+                <td class="calendar__date calendar__date--active"><span
+                    class="calendar__date-inner">28</span></td>
+                <td class="calendar__date calendar__date--active calendar__date--out"><span
+                    class="calendar__date-inner">29</span></td>
+                <td class="calendar__date"><span class="calendar__date-inner">30</span></td>
               </tr>
               <tr class="calendar__week">
-                <td class="calendar__date">31</td>
-                <td class="calendar__date">1</td>
-                <td class="calendar__date">2</td>
-                <td class="calendar__date">3</td>
-                <td class="calendar__date">4</td>
-                <td class="calendar__date">5</td>
-                <td class="calendar__date">6</td>
+                <td class="calendar__date"><span class="calendar__date-inner">31</span></td>
+                <td class="calendar__date"><span class="calendar__date-inner">1 <span
+                      class="calendar__full-date">апр</span></span></td>
+                <td class="calendar__date"><span class="calendar__date-inner">2</span></td>
+                <td class="calendar__date"><span class="calendar__date-inner">3</span></td>
+                <td class="calendar__date"><span class="calendar__date-inner">4</span></td>
+                <td class="calendar__date"><span class="calendar__date-inner">5</span></td>
+                <td class="calendar__date"><span class="calendar__date-inner">6</span></td>
               </tr>
             </table>
           </div>
@@ -447,13 +511,28 @@
 
         <div class="form-step plan-form__step">
 
-          <h3 class="form-step__title">
-            <a class="form-step__title-text" id="step-2">Шаг 2.<br>Маршрут</a>
-          </h3>
+          <div class="form-step__header">
 
-          <p class="form-step__description form-step__description--routes">Укажите страны, которые
-            вы хотели по посетить. Это может
-            быть одна или сразу несколько.</p>
+            <div class="form-step__header-wrap">
+
+              <h3 class="form-step__title">
+                <a class="form-step__title-text" id="step-2">Шаг 2. <br>Маршрут</a>
+              </h3>
+
+              <p class="form-step__description form-step__description--routes">Укажите страны,
+                которые
+                вы хотели по посетить. Это может
+                быть одна или сразу несколько.</p>
+
+            </div>
+
+            <ul class="indicate-list form-step__indicators">
+              <li class="indicate-list__item">Даты</li>
+              <li class="indicate-list__item indicate-list__item--current">Маршрут</li>
+              <li class="indicate-list__item">Развлечения</li>
+            </ul>
+
+          </div>
 
           <ul class="route-list form-step__routes">
             <li class="route-list__item">
@@ -546,23 +625,39 @@
 
         <div class="form-step plan-form__step">
 
-          <h3 class="form-step__title">
-            <a class="form-step__legend-anchor" id="step-3">Шаг 3.<br>Развлечения</a>
-          </h3>
+          <div class="form-step__header">
 
-          <p class="form-step__description form-step__description--events">Наконец, расскажите о
-            своих планах времяпровождения.
-            Можно писать в свободной форме и ставить тэги.
-          </p>
+            <div class="form-step__header-wrap">
+
+              <h3 class="form-step__title">
+                <a class="form-step__legend-anchor" id="step-3">Шаг 3. <br>Развлечения</a>
+              </h3>
+
+              <p class="form-step__description form-step__description--events">Наконец, расскажите о
+                своих планах времяпровождения.
+                Можно писать в свободной форме и ставить тэги.
+              </p>
+
+            </div>
+
+            <ul class="indicate-list form-step__indicators">
+              <li class="indicate-list__item">Даты</li>
+              <li class="indicate-list__item">Маршрут</li>
+              <li class="indicate-list__item indicate-list__item--current">Развлечения</li>
+            </ul>
+
+          </div>
 
           <ul class="route-events form-step__route-events">
 
             <li class="route-events__item">
               <div class="route-events__title">
                 <span class="route-events__country">Босния и герцеговина</span>
-                <svg class="route-events__flag" width="35" height="24">
-                  <use xlink:href="#flag-bosnia"></use>
-                </svg>
+                <div class="route-events__flag-wrap">
+                  <svg class="route-events__flag" width="35" height="24">
+                    <use xlink:href="#flag-bosnia"></use>
+                  </svg>
+                </div>
               </div>
               <textarea class="route-events__text" placeholder="План действий"></textarea>
             </li>
@@ -570,9 +665,11 @@
             <li class="route-events__item">
               <div class="route-events__title">
                 <span class="route-events__country">Чехословакия</span>
-                <svg class="route-events__flag" width="35" height="24">
-                  <use xlink:href="#flag-czech"></use>
-                </svg>
+                <div class="route-events__flag-wrap">
+                  <svg class="route-events__flag" width="35" height="24">
+                    <use xlink:href="#flag-czech"></use>
+                  </svg>
+                </div>
               </div>
               <textarea class="route-events__text"
                 placeholder="План действий">Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
