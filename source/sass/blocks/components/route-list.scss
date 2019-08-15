@@ -1,10 +1,32 @@
 .route-list {
   @include list-reset;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 40px;
+    border-top: 1px solid #d6d9e6;
+  }
+
+  &::before {
+    @media (min-width: $tablet-width) {
+      position: absolute;
+      top: 0;
+      right: 131px;
+      content: "";
+      display: block;
+      width: 1px;
+      height: 100%;
+      background-color: #d6d9e6;
+    }
+  }
 }
 
 .route-list__item {
   position: relative;
   display: flex;
+
+  @media (min-width: $tablet-width) {
+    justify-content: space-between;
+  }
 }
 
 .route-list__item:not(:first-child) {
@@ -18,6 +40,25 @@
     width: 5px;
     height: 10px;
     opacity: 0.3;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
+}
+
+.route-list__item--new {
+  .route-list__country-wrap {
+    &::after {
+      right: 50px;
+      transform: translate(0%, -50%);
+      background-color: $main-white;
+
+      @media (min-width: $tablet-width) {
+        right: -35px;
+        transform: translate(0, -50%);
+      }
+    }
   }
 }
 
@@ -26,6 +67,17 @@
     background-color: #edeff6;
     border: none;
     border-radius: 4px;
+
+    &::after {
+      right: 50px;
+      transform: translate(0%, -50%);
+      background-color: #edeff6;
+
+      @media (min-width: $tablet-width) {
+        right: -35px;
+        transform: translate(0, -50%);
+      }
+    }
   }
 }
 
@@ -34,10 +86,39 @@
   display: flex;
   flex-grow: 1;
   align-items: center;
-  padding: 11px 9px;
+  padding: 12px 15px 12px 12px;
   border: 1px solid #cbced9;
   border-radius: 4px;
   overflow: hidden;
+
+  @media (min-width: $tablet-width) {
+    box-sizing: border-box;
+    flex-basis: 370px;
+    flex-grow: 0;
+    padding: 27px;
+    overflow: visible;
+  }
+
+  &::after {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(50%, -50%);
+    z-index: 5;
+    content: "";
+    display: block;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    border: 1px solid #cbced9;
+
+    @media (min-width: $tablet-width) {
+      width: 14px;
+      height: 14px;
+      right: -35px;
+      transform: translate(0, -50%);
+    }
+  }
 }
 
 .route-list__country-name {
@@ -46,11 +127,17 @@
   letter-spacing: 1.4px;
   text-transform: uppercase;
   white-space: nowrap;
+  overflow: hidden;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    letter-spacing: 2px;
+  }
 }
 
 .route-list__button-dropdown {
-  position: absolute;
-  right: 9px;
+  width: 15px;
+  height: 15px;
   padding: 0;
   border: none;
   background-color: white;
@@ -63,12 +150,48 @@
 }
 
 .route-list__flag-wrap {
+  position: relative;
   padding: 8px 9px;
   border: 1px solid #cbced9;
   border-radius: 4px;
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+    padding: 0;
+    margin-right: 40px;
+  }
+
+  &::before {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 50px;
+    z-index: 6;
+    content: "";
+    display: block;
+    width: 7px;
+    height: 7px;
+    background-color: $link-darkblue;
+    border-radius: 50%;
+    border: 1px solid $link-darkblue;
+
+    @media (min-width: $tablet-width) {
+      left: -30px;
+      right: auto;
+      width: 14px;
+      height: 14px;
+    }
+  }
+}
+
+.route-list__flag-icon {
+  @media (min-width: $tablet-width) {
+    width: 70px;
+    height: 47px;
+  }
 }
 
 .route-list__flag-wrap--hide {
@@ -86,15 +209,29 @@
   border-radius: 50%;
   background-color: #edeff6;
   cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    width: 17px;
+    height: 17px;
+    background-color: transparent;
+    opacity: 0.3;
+  }
 }
 
 .route-list__skip-icon {
   opacity: 0.3;
+
+
+  @media (min-width: $tablet-width) {
+    width: 17px;
+    height: 17px;
+  }
 }
 
 .route-list__button-add {
-  position: absolute;
-  right: 9px;
   padding: 0;
   border: none;
   cursor: pointer;

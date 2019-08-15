@@ -299,7 +299,8 @@
             <a class="form-step__title-text" id="step-1">Шаг 1.<br>Даты пребывания</a>
           </h3>
 
-          <p class="form-step__description">Укажите предпочтительное количество попутчиков, которых
+          <p class="form-step__description form-step__description--dates">Укажите предпочтительное
+            количество попутчиков, которых
             вы хотели бы позвать в поездку и ее предполагаемую длительность.</p>
 
           <div class="counter form-step__counter">
@@ -360,7 +361,7 @@
               </button>
             </div>
             <table class="calendar__dates">
-              <tr class="calendar__days-of-week">
+              <tr class="calendar__days calendar__days--mobile">
                 <th class="calendar__day">П</th>
                 <th class="calendar__day">В</th>
                 <th class="calendar__day">С</th>
@@ -368,6 +369,15 @@
                 <th class="calendar__day">П</th>
                 <th class="calendar__day calendar__day--weekend">С</th>
                 <th class="calendar__day calendar__day--weekend">В</th>
+              </tr>
+              <tr class="calendar__days calendar__days--full">
+                <th class="calendar__day">Пн</th>
+                <th class="calendar__day">Вт</th>
+                <th class="calendar__day">Ср</th>
+                <th class="calendar__day">Чт</th>
+                <th class="calendar__day">Пт</th>
+                <th class="calendar__day calendar__day--weekend">Сб</th>
+                <th class="calendar__day calendar__day--weekend">Вс</th>
               </tr>
               <tr class="calendar__week">
                 <td class="calendar__date calendar__date--past">24</td>
@@ -408,10 +418,10 @@
               <tr class="calendar__week">
                 <td class="calendar__date calendar__date--past">24</td>
                 <td class="calendar__date calendar__date--past">25</td>
-                <td class="calendar__date calendar__date--active">26</td>
-                <td class="calendar__date calendar__date--active">27</td>
+                <td class="calendar__date calendar__date--past">26</td>
+                <td class="calendar__date calendar__date--today calendar__date--active">27</td>
                 <td class="calendar__date calendar__date--active">28</td>
-                <td class="calendar__date">29</td>
+                <td class="calendar__date calendar__date--active">29</td>
                 <td class="calendar__date">30</td>
               </tr>
               <tr class="calendar__week">
@@ -426,7 +436,12 @@
             </table>
           </div>
 
-          <a class="form-step__button-next" href="#step-2">Следующий шаг</a>
+          <a class="form-next-link form-step__button-next" href="#step-2">
+            <span class="form-next-link__text">Следующий шаг</span>
+            <svg class="form-next-link__icon" width="10" height="14">
+              <use xlink:href="#triangle-arrow-right"></use>
+            </svg>
+          </a>
 
         </div>
 
@@ -436,7 +451,8 @@
             <a class="form-step__title-text" id="step-2">Шаг 2.<br>Маршрут</a>
           </h3>
 
-          <p class="form-step__description">Укажите страны, которые вы хотели по посетить. Это может
+          <p class="form-step__description form-step__description--routes">Укажите страны, которые
+            вы хотели по посетить. Это может
             быть одна или сразу несколько.</p>
 
           <ul class="route-list form-step__routes">
@@ -480,7 +496,7 @@
                 </svg>
               </button>
             </li>
-            <li class="route-list__item">
+            <li class="route-list__item route-list__item--new">
               <div class="route-list__country-wrap">
                 <span class="route-list__country-name">Выберите страну</span>
                 <button class="route-list__button-dropdown">
@@ -512,8 +528,20 @@
             </li>
           </ul>
 
-          <a class="form-step__button-next" href="#step-3">Следующий шаг</a>
-          <a class="form-step__button-prev" href="#step-1">На шаг назад</a>
+          <a class="form-next-link form-step__button-next" href="#step-3">
+            <span class="form-next-link__text">Следующий шаг</span>
+            <svg class="form-next-link__icon" width="10" height="14">
+              <use xlink:href="#triangle-arrow-right"></use>
+            </svg>
+          </a>
+
+          <a class="form-prev-link form-step__button-prev" href="#step-1">
+            <svg class="form-next-link__icon" width="10" height="14">
+              <use xlink:href="#triangle-arrow-left"></use>
+            </svg>
+            <span class="form-next-link__text">На шаг назад</span>
+          </a>
+
         </div>
 
         <div class="form-step plan-form__step">
@@ -522,11 +550,12 @@
             <a class="form-step__legend-anchor" id="step-3">Шаг 3.<br>Развлечения</a>
           </h3>
 
-          <p class="form-step__description">Наконец, расскажите о своих планах времяпровождения.
+          <p class="form-step__description form-step__description--events">Наконец, расскажите о
+            своих планах времяпровождения.
             Можно писать в свободной форме и ставить тэги.
           </p>
 
-          <ul class="route-events">
+          <ul class="route-events form-step__route-events">
 
             <li class="route-events__item">
               <div class="route-events__title">
@@ -546,14 +575,24 @@
                 </svg>
               </div>
               <textarea class="route-events__text"
-                placeholder="План действий">Пить пиво и лазить по старым замкам, наслаждаться аритектурой и вот это все.</textarea>
+                placeholder="План действий">Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
             </li>
 
           </ul>
 
-          <button class="form-step__button-submit" type="submit">Отправить</button>
+          <button class="form-step__submit" type="submit">
+            <span class="form-step__submit-text">Отправить</span>
+            <svg class="form-step__submit-icon" width="10" height="14">
+              <use xlink:href="#triangle-arrow-right"></use>
+            </svg>
+          </button>
 
-          <a class="form-step__button-prev" href="#step-2">На шаг назад</a>
+          <a class="form-prev-link form-step__button-prev" href="#step-2">
+            <svg class="form-next-link__icon" width="10" height="14">
+              <use xlink:href="#triangle-arrow-left"></use>
+            </svg>
+            <span class="form-next-link__text">На шаг назад</span>
+          </a>
 
         </div>
 

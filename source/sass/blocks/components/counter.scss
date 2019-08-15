@@ -2,12 +2,20 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-
   width: 100%;
   margin-bottom: 10px;
   @include text ("Blogger Sans Medium", 16px, 16px, $link-darkblue);
   text-transform: uppercase;
   letter-spacing: 1.6px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+    padding: 25px 0;
+    font-size: 20px;
+    line-height: 18px;
+    letter-spacing: 2px;
+    border-top: 1px solid #d6d9e6;
+  }
 }
 
 .counter__title--companions {
@@ -32,6 +40,10 @@
   padding: 15px;
   border: 1px solid #cbced9;
   border-radius: 4px;
+
+  @media (min-width: $tablet-width) {
+    padding: 25px 20px;
+  }
 }
 
 .counter__input {
@@ -40,16 +52,24 @@
   letter-spacing: 1.5px;
   text-align: center;
   border: none;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 18px;
+    letter-spacing: 2px;
+  }
 }
 
 .counter__button-minus {
   padding: 0;
   background: transparent;
   border: none;
+  opacity: 0.2;
 }
 
 .counter__button-plus {
   padding: 0;
   background: transparent;
   border: none;
+  opacity: 0.2;
 }

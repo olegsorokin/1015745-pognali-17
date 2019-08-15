@@ -10,6 +10,10 @@
    padding: 13px 0;
    border-top: 1px solid #d4d9eb;
    border-bottom: 1px solid #d4d9eb;
+
+   @media (min-width: $tablet-width) {
+     padding: 30px 0;
+   }
  }
 
  .calendar__button {
@@ -18,14 +22,52 @@
    opacity: 0.3;
  }
 
+ .calendar__button-icon {
+   @media (min-width: $tablet-width) {
+     width: 15px;
+     height: 28px;
+   }
+ }
+
  .calendar__period {
    @include text ("Blogger Sans Bold", 20px, 20px, $link-darkblue);
+
+   @media (min-width: $tablet-width) {
+     font-size: 36px;
+   }
  }
 
  .calendar__dates {
    width: 100%;
    border-collapse: collapse;
+ }
 
+ .calendar__days--mobile {
+   @media (min-width: $tablet-width) {
+     display: none;
+   }
+ }
+
+ .calendar__days--full {
+   display: none;
+
+   @media (min-width: $tablet-width) {
+     display: table-row;
+   }
+ }
+
+ .calendar__day {
+   @include text ("Blogger Sans", 14px, 18px, $text-dark);
+
+   @media (min-width: $tablet-width) {
+     font-size: 18px;
+     line-height: 30px;
+     letter-spacing: 1.8px;
+   }
+ }
+
+ .calendar__day--weekend {
+   color: #ff5c23;
  }
 
  .calendar__date {
@@ -33,15 +75,32 @@
    width: 30px;
    height: 30px;
    margin: 0;
-   @include text ("Blogger Sans", 14px, 18px, $text-dark);
+
+   @include text ("Blogger Sans", 14px, 18px, $link-darkblue);
    text-align: center;
    vertical-align: middle;
    background-color: #edeff6;
    border: 1px solid #d4d9eb;
+
+   @media (min-width: $tablet-width) {
+     width: 77px;
+     height: 70px;
+     font-size: 20px;
+     line-height: 18px;
+     letter-spacing: 2px;
+   }
  }
 
  .calendar__date--past {
    opacity: 0.3;
+ }
+
+ .calendar__date--today {
+   border: 2px solid #ff5c23;
+
+   @media (min-width: $tablet-width) {
+     border-width: 4px;
+   }
  }
 
  .calendar__date--active {

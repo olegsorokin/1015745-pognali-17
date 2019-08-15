@@ -4,24 +4,75 @@
   background-color: $main-white;
   border: 0;
   border-radius: 10px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 528px;
+    padding: 50px 45px 55px;
+    border-radius: 30px;
+  }
 }
 
 .form-step__title {
   margin: 0;
   margin-bottom: 18px;
+
+  @include text ("Blogger Sans Bold", 20px, 20px, $link-darkblue);
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 37px;
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
 .form-step__description {
   margin: 0;
   margin-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    order: 1;
+    flex-basis: 500px;
+    margin-bottom: 42px;
+  }
+}
+
+.form-step__description--dates {
+  @media (min-width: $tablet-width) {
+    flex-basis: 500px;
+  }
+}
+
+.form-step__description--routes {
+  @media (min-width: $tablet-width) {
+    flex-basis: 410px;
+  }
+}
+
+.form-step__description--events {
+  @media (min-width: $tablet-width) {
+    flex-basis: 475px;
+  }
 }
 
 .form-step__counter {
   margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    flex-basis: 100%;
+    order: 2;
+  }
 }
 
 .form-step__days {
   margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    flex-basis: 100%;
+    order: 4;
+  }
 }
 
 .form-step__check {
@@ -30,6 +81,11 @@
 
 .form-step__checkbox {
   margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    flex-basis: 100%;
+    order: 3;
+  }
 }
 
 .form-step__check-label {
@@ -37,18 +93,34 @@
   display: flex;
   align-items: center;
   padding-left: 40px;
+  @include text ("Blogger Sans", 15px, 15px, $text-dark);
+
+
   cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 60px;
+    @include text ("Blogger Sans", 20px, 18px, $link-darkblue);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
 
   &::before {
     position: absolute;
     left: 0;
     box-sizing: border-box;
     content: "";
-    padding: 0 8px;
+    padding: 2px 8px;
     width: 26px;
     height: 26px;
     border: 1px solid #cbced9;
     border-radius: 4px;
+
+    @media (min-width: $tablet-width) {
+      width: 36px;
+      height: 36px;
+      padding: 8px 10px;
+    }
   }
 }
 
@@ -60,42 +132,81 @@
 
 .form-step__calendar {
   margin-bottom: 23px;
-}
 
-.form-step__button-next {
-  display: block;
-  max-width: 100%;
-  padding: 10px 0;
-  @include link ("Blogger Sans Bold", 17px, 20px, #161c35);
-  text-align: center;
-  text-transform: uppercase;
-  border-radius: 20px;
-  background-color: $main-yellow;
-}
-
-.form-step__button-prev {
-  display: block;
-  max-width: 100%;
-  margin-top: 20px;
-  @include link ("Blogger Sans Bold", 17px, 20px, #161c35);
-  text-align: center;
-  text-transform: uppercase;
-  background-color: transparent;
+  @media (min-width: $tablet-width) {
+    flex-basis: 100%;
+    order: 5;
+  }
 }
 
 .form-step__routes {
+  position: relative;
   margin: 0;
   margin-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    flex-basis: 100%;
+    order: 6;
+  }
 }
 
-.form-step__button-submit {
-  display: block;
+.form-step__route-events {
+  @media (min-width: $tablet-width) {
+    flex-basis: 100%;
+    order: 6;
+  }
+}
+
+.form-step__button-next {
+  @media (min-width: $tablet-width) {
+    flex-basis: 285px;
+    order: 10;
+  }
+}
+
+.form-step__button-prev {
+  margin-top: 20px;
+
+  @media (min-width: $tablet-width) {
+    flex-basis: 180px;
+    order: 12;
+    margin-top: 0;
+  }
+}
+
+.form-step__submit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
-  padding: 10px 0;
-  @include link ("Blogger Sans Bold", 17px, 20px, #161c35);
-  text-align: center;
-  text-transform: uppercase;
+  padding: 30px 34px;
   border: none;
   border-radius: 20px;
   background-color: $main-yellow;
+
+  @media (min-width: $tablet-width) {
+    justify-content: space-between;
+    width: auto;
+    flex-basis: 285px;
+    order: 11;
+  }
+}
+
+.form-step__submit-text {
+  @include link ("Blogger Sans Bold", 17px, 20px, #161c35);
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 24px;
+    line-height: 24px;
+    text-transform: unset;
+  }
+}
+
+.form-step__submit-icon {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: inline;
+  }
 }

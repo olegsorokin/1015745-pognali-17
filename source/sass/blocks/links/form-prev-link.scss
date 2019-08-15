@@ -1,0 +1,28 @@
+.form-prev-link {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+
+  @include link ("Blogger Sans Bold", 17px, 20px, #161c35);
+  text-align: center;
+  text-transform: uppercase;
+  background-color: transparent;
+
+  @media (min-width: $tablet-width) {
+    justify-content: space-between;
+    flex-basis: 185px;
+    font-size: 24px;
+    line-height: 24px;
+    text-transform: unset;
+  }
+}
+
+.form-prev-link__icon {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: inline;
+  }
+}
