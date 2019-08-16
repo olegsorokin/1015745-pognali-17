@@ -1,27 +1,23 @@
-/*---Открытие/закрытие меню в header---*/
-var menuButton = document.querySelector(".header__menu-button");
+var modalShowHide = function (buttonOpen, buttonClose, modalBlock, classToggle) {
+  var linkOpen = document.querySelector(buttonOpen);
+  var linkClose = document.querySelector(buttonClose);
+  var modal = document.querySelector(modalBlock);
 
-menuButton.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  if (menuButton.classList.contains("menu-button--close") == true) {
-    menuButton.classList.remove("menu-button--close");
-  } else {
-    menuButton.classList.add("menu-button--close");
-  }
-});
+  linkOpen.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    modal.classList.add(classToggle);
+  });
 
+  linkClose.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    modal.classList.remove(classToggle);
+  });
+}
 
-/*---Открытие/закрытие прайса с бизнес-тарифами---*/
-var priceLink = document.querySelector(".prices__link");
-var priceModal = document.querySelector(".modal-prices");
-var priceClose = document.querySelector(".modal-prices__close");
+if (document.querySelector(".modal-prices") !== null) {
+  modalShowHide(".prices__link", ".modal-prices__close", ".modal-prices", "modal-show");
+}
 
-priceLink.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  priceModal.classList.add("modal-show");
-});
-
-priceClose.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  priceModal.classList.remove("modal-show");
-});
+if (document.querySelector(".route-list__item--new") !== null) {
+  modalShowHide(".route-list__item--new .route-list__button-dropdown", ".modal-add-country__close-button", ".route-list__item--new", "route-list__item--modal-show");
+}

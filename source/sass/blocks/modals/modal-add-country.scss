@@ -1,0 +1,137 @@
+.modal-add-country {
+  display: none;
+  width: 100%;
+  box-shadow: 0px 20px 50px 0 rgba(29, 46, 91, 0.1);
+  border-radius: 0 0 10px 10px;
+
+  @media (min-width: $tablet-width) {
+    width: calc(100% + 45px);
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    max-width: 730px;
+  }
+}
+
+.modal-add-country__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 13px;
+  background-color: $main-darkblue;
+
+  @media (min-width: $tablet-width) {
+    padding: 27px;
+    max-width: 315px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 100%;
+  }
+}
+
+.modal-add-country__title {
+  @include text ("Blogger Sans Medium", 14px, 18px, $main-white);
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 18px;
+    letter-spacing: 2px;
+  }
+}
+
+.modal-add-country__close-button {
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.modal-add-country__close-icon {
+  fill: $main-white;
+
+  @media (min-width: $tablet-width) {
+    width: 17px;
+    height: 17px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+.modal-add-country__wrap {
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+}
+
+.modal-add-country__letter-list {
+  @include list-reset;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: $main-white;
+
+  @media (min-width: $tablet-width) {
+    flex-basis: 315px;
+    padding: 34px 27px 96px;
+    border-right: 1px solid #cbced9;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-basis: 415px;
+    min-height: 475px;
+    justify-content: space-between;
+    align-content: stretch;
+    padding: 34px 27px;
+  }
+}
+
+.modal-add-country__letter-item-button {
+  width: 44px;
+  height: 42px;
+  @include text ("Blogger Sans Medium", 14px, 18px, $link-darkblue);
+  letter-spacing: 1.4px;
+  background-color: $main-white;
+  border: 1px solid #cbced9;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    width: 52px;
+    height: 70px;
+    font-size: 20px;
+    line-height: 18px;
+    letter-spacing: 2px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 60px;
+    border-radius: 4px;
+  }
+}
+
+.modal-add-country__letter-item-button--current {
+  background-color: #edeff6;
+}
+
+.modal-add-country__country-list {
+  @include list-reset;
+  @include text ("Blogger Sans", 16px, 22px, $text-dark);
+  padding: 20px;
+  background-color: $main-white;
+  border: 1px solid #cbced9;
+
+  @media (min-width: $tablet-width) {
+    flex-grow: 1;
+    padding: 34px 25px;
+    font-size: 20px;
+    line-height: 30px;
+    border: none;
+  }
+}

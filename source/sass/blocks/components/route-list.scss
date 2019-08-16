@@ -53,6 +53,8 @@
 
 .route-list__item--new {
   .route-list__country-wrap {
+    overflow: visible;
+
     &::after {
       right: 50px;
       transform: translate(0%, -50%);
@@ -120,7 +122,7 @@
     top: 50%;
     right: 0;
     transform: translate(50%, -50%);
-    z-index: 5;
+    z-index: 2;
     content: "";
     display: block;
     width: 7px;
@@ -161,7 +163,7 @@
   padding: 0;
   border: none;
   background-color: white;
-  box-shadow: 0px 0px 15px 20px white;
+  box-shadow: 0 0 9px 7px #fff;
   cursor: pointer;
 }
 
@@ -267,4 +269,21 @@
 
 .route-list__add-icon {
   opacity: 0.3;
+}
+
+.route-list__item--modal-show {
+
+  .route-list__button-skip {
+    display: none;
+  }
+
+  .modal-add-country {
+    display: block;
+  }
+}
+
+.route-list__modal-add-country {
+  position: absolute;
+  top: 0;
+  z-index: 15;
 }

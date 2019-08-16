@@ -23,6 +23,10 @@
   }
 }
 
+.plan-form__step {
+  position: relative;
+}
+
 .plan-form__step:not(:first-child) {
   margin-top: 10px;
 

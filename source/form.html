@@ -325,14 +325,14 @@
                 попутчиков:</label>
               <span class="counter__tip">чел.</span>
               <div class="counter__wrap">
-                <button class="counter__button-minus">
+                <button class="counter__button-minus" type="button">
                   <svg class="counter__button-icon" width="14" height="14">
                     <use xlink:href="#qty-minus-mobile"></use>
                   </svg>
                 </button>
                 <input class="counter__input" type="text" name="companions-value"
                   id="companions-value" value="2">
-                <button class="counter__button-plus">
+                <button class="counter__button-plus" type="button">
                   <svg class="counter__button-icon" width="14" height="14">
                     <use xlink:href="#qty-plus-mobile"></use>
                   </svg>
@@ -344,14 +344,14 @@
               <label class="counter__title" for="days-value">Длительность:</label>
               <span class="counter__tip">дн.</span>
               <div class="counter__wrap">
-                <button class="counter__button-minus">
+                <button class="counter__button-minus" type="button">
                   <svg class="counter__button-icon" width="14" height="14">
                     <use xlink:href="#qty-minus-mobile"></use>
                   </svg>
                 </button>
                 <input class="counter__input" type="text" name="days-value" id="days-value"
                   value="2">
-                <button class="counter__button-plus">
+                <button class="counter__button-plus" type="button">
                   <svg class="counter__button-icon" width="14" height="14">
                     <use xlink:href="#qty-plus-mobile"></use>
                   </svg>
@@ -369,13 +369,13 @@
 
           <div class="calendar form-step__calendar">
             <div class="calendar__header">
-              <button class="calendar__button">
+              <button class="calendar__button" type="button">
                 <svg class="calendar__button-icon" width="9" height="17">
                   <use xlink:href="#month-arrow-left"></use>
                 </svg>
               </button>
               <span class="calendar__period">Март 2019</span>
-              <button class="calendar__button">
+              <button class="calendar__button" type="button">
                 <svg class="calendar__button-icon" width="9" height="17">
                   <use xlink:href="#month-arrow-right"></use>
                 </svg>
@@ -538,7 +538,7 @@
             <li class="route-list__item">
               <div class="route-list__country-wrap">
                 <span class="route-list__country-name">Босния и Герцеговина</span>
-                <button class="route-list__button-dropdown">
+                <button class="route-list__button-dropdown" type="button">
                   <svg class="route-list__dropdown-icon" width="12" height="7">
                     <use xlink:href="#dropdown-form"></use>
                   </svg>
@@ -549,7 +549,7 @@
                   <use xlink:href="#flag-bosnia"></use>
                 </svg>
               </div>
-              <button class="route-list__button-skip">
+              <button class="route-list__button-skip" type="button">
                 <svg class="route-list__skip-icon" width="9" height="9">
                   <use xlink:href="#small-cross"></use>
                 </svg>
@@ -558,7 +558,7 @@
             <li class="route-list__item">
               <div class="route-list__country-wrap">
                 <span class="route-list__country-name">Чехословакия</span>
-                <button class="route-list__button-dropdown">
+                <button class="route-list__button-dropdown" type="button">
                   <svg class="route-list__dropdown-icon" width="12" height="7">
                     <use xlink:href="#dropdown-form"></use>
                   </svg>
@@ -569,16 +569,16 @@
                   <use xlink:href="#flag-czech"></use>
                 </svg>
               </div>
-              <button class="route-list__button-skip">
+              <button class="route-list__button-skip" type="button">
                 <svg class="route-list__skip-icon" width="9" height="9">
                   <use xlink:href="#small-cross"></use>
                 </svg>
               </button>
             </li>
-            <li class="route-list__item route-list__item--new">
+            <li class="route-list__item route-list__item--new route-list__item--modal-show">
               <div class="route-list__country-wrap">
                 <span class="route-list__country-name">Выберите страну</span>
-                <button class="route-list__button-dropdown">
+                <button class="route-list__button-dropdown" type="button">
                   <svg class="route-list__dropdown-icon" width="12" height="7">
                     <use xlink:href="#dropdown-form"></use>
                   </svg>
@@ -589,16 +589,102 @@
                   <use xlink:href="#flag-czech"></use>
                 </svg>
               </div>
-              <button class="route-list__button-skip">
+              <button class="route-list__button-skip" type="button">
                 <svg class="route-list__skip-icon" width="9" height="9">
                   <use xlink:href="#small-cross"></use>
                 </svg>
               </button>
+              <section class="modal-add-country route-list__modal-add-country">
+                <header class="modal-add-country__header">
+                  <span class="modal-add-country__title">Выберите страну</span>
+                  <button class="modal-add-country__close-button" type="button">
+                    <svg class="modal-add-country__close-icon" width="9" height="9">
+                      <use xlink:href="#close"></use>
+                    </svg>
+                  </button>
+                </header>
+                <div class="modal-add-country__wrap">
+                  <ul class="modal-add-country__letter-list">
+                    <li class="modal-add-country__letter-item"><button
+                        class="modal-add-country__letter-item-button modal-add-country__letter-item-button--current">А</button>
+                    </li>
+                    <li class="modal-add-country__letter-item"><button
+                        class="modal-add-country__letter-item-button">Б</button></li>
+                    <li class="modal-add-country__letter-item"><button
+                        class="modal-add-country__letter-item-button">В</button></li>
+                    <li class="modal-add-country__letter-item"><button
+                        class="modal-add-country__letter-item-button">Г</button></li>
+                    <li class="modal-add-country__letter-item"><button
+                        class="modal-add-country__letter-item-button">Д</button></li>
+                    <li class="modal-add-country__letter-item"><button
+                        class="modal-add-country__letter-item-button">Е</button></li>
+                    <li class="modal-add-country__letter-item"><button
+                        class="modal-add-country__letter-item-button">Ё</button></li>
+                    <li class="modal-add-country__letter-item"><button
+                        class="modal-add-country__letter-item-button">Ж</button></li>
+                    <li class="modal-add-country__letter-item"><button
+                        class="modal-add-country__letter-item-button">З</button></li>
+                    <li class="modal-add-country__letter-item"><button
+                        class="modal-add-country__letter-item-button">И</button></li>
+                    <li class="modal-add-country__letter-item"><button
+                        class="modal-add-country__letter-item-button">Й</button></li>
+                    <li class="modal-add-country__letter-item"><button
+                        class="modal-add-country__letter-item-button">К</button></li>
+                    <li class="modal-add-country__letter-item"><button
+                        class="modal-add-country__letter-item-button">Л</button></li>
+                    <li class="modal-add-country__letter-item"><button
+                        class="modal-add-country__letter-item-button">М</button></li>
+                    <li class="modal-add-country__letter-item"><button
+                        class="modal-add-country__letter-item-button">Н</button></li>
+                    <li class="modal-add-country__letter-item"><button
+                        class="modal-add-country__letter-item-button">О</button></li>
+                    <li class="modal-add-country__letter-item"><button
+                        class="modal-add-country__letter-item-button">П</button></li>
+                    <li class="modal-add-country__letter-item"><button
+                        class="modal-add-country__letter-item-button">Р</button></li>
+                    <li class="modal-add-country__letter-item"><button
+                        class="modal-add-country__letter-item-button">С</button></li>
+                    <li class="modal-add-country__letter-item"><button
+                        class="modal-add-country__letter-item-button">Т</button></li>
+                    <li class="modal-add-country__letter-item"><button
+                        class="modal-add-country__letter-item-button">У</button></li>
+                    <li class="modal-add-country__letter-item"><button
+                        class="modal-add-country__letter-item-button">Ф</button></li>
+                    <li class="modal-add-country__letter-item"><button
+                        class="modal-add-country__letter-item-button">Х</button></li>
+                    <li class="modal-add-country__letter-item"><button
+                        class="modal-add-country__letter-item-button">Ц</button></li>
+                    <li class="modal-add-country__letter-item"><button
+                        class="modal-add-country__letter-item-button">Ч</button></li>
+                    <li class="modal-add-country__letter-item"><button
+                        class="modal-add-country__letter-item-button">Ш</button></li>
+                    <li class="modal-add-country__letter-item"><button
+                        class="modal-add-country__letter-item-button">Щ</button></li>
+                    <li class="modal-add-country__letter-item"><button
+                        class="modal-add-country__letter-item-button">Э</button></li>
+                    <li class="modal-add-country__letter-item"><button
+                        class="modal-add-country__letter-item-button">Ю</button></li>
+                    <li class="modal-add-country__letter-item"><button
+                        class="modal-add-country__letter-item-button">Я</button></li>
+                  </ul>
+                  <ul class="modal-add-country__country-list">
+                    <li class="modal-add-country__country-item">Афганистан</li>
+                    <li class="modal-add-country__country-item">Албания</li>
+                    <li class="modal-add-country__country-item">Алжир</li>
+                    <li class="modal-add-country__country-item">Андорра</li>
+                    <li class="modal-add-country__country-item">Аргентина</li>
+                    <li class="modal-add-country__country-item">Армения</li>
+                    <li class="modal-add-country__country-item">Австралия</li>
+                    <li class="modal-add-country__country-item">Австрия</li>
+                    <li class="modal-add-country__country-item">Азербайджан</li>
+                  </ul>
+                </div>
+              </section>
             </li>
             <li class="route-list__item route-list__item--add">
               <div class="route-list__country-wrap">
                 <span class="route-list__country-name">Добавить страну</span>
-                <button class="route-list__button-add">
+                <button class="route-list__button-add" type="button">
                   <svg class="route-list__add-icon" width="14" height="14">
                     <use xlink:href="#qty-plus-mobile"></use>
                   </svg>
@@ -755,6 +841,8 @@
     </div>
 
   </footer>
+
+  <script src="js/script.min.js"></script>
 
 </body>
 
