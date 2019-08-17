@@ -8,6 +8,7 @@
 .counter__title {
   flex-basis: 150px;
   flex-grow: 1;
+
   @include text ("Blogger Sans Medium", 16px, 16px, $link-darkblue);
   text-transform: uppercase;
   letter-spacing: 1.6px;
@@ -29,6 +30,7 @@
 
 .counter__tip {
   flex-basis: 35px;
+
   @include text ("Blogger Sans Medium", 16px, 16px, $link-darkblue);
   text-transform: uppercase;
   letter-spacing: 1.6px;
@@ -72,6 +74,7 @@
 
 .counter__input {
   max-width: 130px;
+
   @include text ("Blogger Sans Medium", 15px, 13.5px, $link-darkblue);
   letter-spacing: 1.5px;
   text-align: center;

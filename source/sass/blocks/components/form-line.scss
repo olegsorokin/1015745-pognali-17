@@ -154,7 +154,7 @@
   display: none;
 }
 
-.form-line__checkbox+.form-line__label::before {
+.form-line__checkbox + .form-line__label::before {
   content: "";
   box-sizing: border-box;
   position: absolute;
@@ -173,16 +173,16 @@
   }
 }
 
-.form-line__checkbox:checked+.form-line__label::before {
+.form-line__checkbox:checked + .form-line__label::before {
   content: url("../img/tick.svg");
 }
 
-.form-line__checkbox+.form-line__transport .form-line__transport-icon {
+.form-line__checkbox + .form-line__transport .form-line__transport-icon {
   opacity: 0.15;
 }
 
 
-.form-line__checkbox:checked+.form-line__transport .form-line__transport-icon {
+.form-line__checkbox:checked + .form-line__transport .form-line__transport-icon {
   opacity: 1;
 }
 

@@ -7,7 +7,6 @@
   border-radius: 10px;
 
   @media (min-width: $tablet-width) {
-    // display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     max-width: 528px;
@@ -99,7 +98,6 @@
 }
 
 .form-step__parametrs {
-
   @media (min-width: $tablet-width) {
     flex-basis: 100%;
     display: flex;
@@ -162,13 +160,13 @@
   display: flex;
   align-items: center;
   padding-left: 40px;
-  @include text ("Blogger Sans", 15px, 15px, $text-dark);
-
-
   cursor: pointer;
+
+  @include text ("Blogger Sans", 15px, 15px, $text-dark);
 
   @media (min-width: $tablet-width) {
     padding-left: 60px;
+
     @include text ("Blogger Sans", 20px, 18px, $link-darkblue);
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -193,9 +191,9 @@
   }
 }
 
-.form-step__check:checked+.form-step__check-label {
+.form-step__check:checked + .form-step__check-label {
   &::before {
-    content: url(../img/tick.svg);
+    content: url("../img/tick.svg");
   }
 }
 

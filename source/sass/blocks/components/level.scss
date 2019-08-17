@@ -1,7 +1,3 @@
-// .level {
-//   display: inline;
-// }
-
 .level__wrap {
   position: relative;
   box-sizing: border-box;
@@ -55,6 +51,7 @@
 
   .level__text {
     display: inline;
+
     @include text ("Blogger Sans", 18px, 22px, #444444);
 
     @media (min-width: $desktop-width) {

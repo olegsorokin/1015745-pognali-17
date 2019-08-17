@@ -145,6 +145,7 @@
 
 .route-list__country-name {
   flex-grow: 1;
+
   @include text ("Blogger Sans Medium", 14px, 18px, $link-darkblue);
   letter-spacing: 1.4px;
   text-transform: uppercase;
@@ -163,7 +164,7 @@
   padding: 0;
   border: none;
   background-color: white;
-  box-shadow: 0 0 9px 7px #fff;
+  box-shadow: 0 0 9px 7px white;
   cursor: pointer;
 }
 
@@ -272,7 +273,6 @@
 }
 
 .route-list__item--modal-show {
-
   .route-list__button-skip {
     display: none;
   }

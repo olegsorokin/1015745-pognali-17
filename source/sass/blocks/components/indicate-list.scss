@@ -1,6 +1,7 @@
 .indicate-list {
   display: none;
   flex-basis: 225px;
+
   @include list-reset;
   height: 100%;
   flex-direction: column;
@@ -13,6 +14,7 @@
 
 .indicate-list__item {
   position: relative;
+
   @include text ("Blogger Sans", 20px, 13.8px, $link-darkblue);
   text-transform: uppercase;
   letter-spacing: 2px;

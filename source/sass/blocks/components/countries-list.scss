@@ -14,7 +14,6 @@
   }
 }
 
-
 .countries-list--current {
   position: absolute;
   left: 0;
@@ -26,7 +25,7 @@
 
   @media (min-width: $tablet-width) {
     top: 0;
-    left:auto;
+    left: auto;
     right: 0;
     width: 175px;
     height: auto;
