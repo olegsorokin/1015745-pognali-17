@@ -17,6 +17,7 @@
 
 .countries-list--current {
   position: absolute;
+  left: 0;
   bottom: 0;
   display: block;
   height: 195px;
@@ -25,6 +26,7 @@
 
   @media (min-width: $tablet-width) {
     top: 0;
+    left:auto;
     right: 0;
     width: 175px;
     height: auto;
@@ -43,7 +45,7 @@
   background-color: transparent;
   cursor: pointer;
 
-  @include text ("Blogger Sans", 16px, 22px, $text-dark);
+  @include link ("Blogger Sans", 16px, 22px, $text-dark);
 
   @media (min-width: $tablet-width) {
     font-size: 20px;

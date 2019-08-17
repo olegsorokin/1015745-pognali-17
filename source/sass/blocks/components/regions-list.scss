@@ -7,6 +7,14 @@
   }
 }
 
+.regions-list--hide {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+}
+
 .regions-list__link {
   margin: 15px 25px;
 

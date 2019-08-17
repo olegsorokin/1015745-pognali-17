@@ -9,11 +9,10 @@
   @media (min-width: $tablet-width) {
     flex-basis: 175px;
   }
+}
 
-  @media (min-width: $desktop-width) {
-    margin-left: auto;
-    margin-right: 70px;
-  }
+.close-button--hide {
+  display: none;
 }
 
 .close-button--bottom {

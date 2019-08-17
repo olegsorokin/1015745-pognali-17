@@ -1,4 +1,5 @@
 .form-step {
+  display: none;
   max-width: 220px;
   padding: 25px;
   background-color: $main-white;
@@ -6,7 +7,7 @@
   border-radius: 10px;
 
   @media (min-width: $tablet-width) {
-    display: flex;
+    // display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     max-width: 528px;
@@ -18,6 +19,14 @@
     max-width: 1000px;
     padding: 100px 160px 105px;
     border-radius: 60px;
+  }
+}
+
+.form-step--current {
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
   }
 }
 
@@ -242,6 +251,7 @@
   border: none;
   border-radius: 20px;
   background-color: $main-yellow;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     justify-content: space-between;

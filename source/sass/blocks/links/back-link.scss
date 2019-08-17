@@ -1,5 +1,6 @@
 .back-link {
   display: none;
+  text-decoration: none;
 
   @media (min-width: $tablet-width) {
     flex-basis: 175px;

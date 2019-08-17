@@ -2,6 +2,14 @@
   display: flex;
 }
 
+.functions-list--hide {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+}
+
 .intro .functions-list {
   @media (min-width: $tablet-width) {
     display: none;

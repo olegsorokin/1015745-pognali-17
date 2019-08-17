@@ -1,14 +1,14 @@
 .page-title {
   position: relative;
 
-  padding: 20px 27px 12px;
+  padding: 65px 27px 12px;
 
   background-color: $main-darkblue;
 
   border-radius: 0 0 25px 25px;
 
   @media (min-width: $tablet-width) {
-    padding: 50px 75px 70px;
+    padding: 125px 75px 70px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -16,7 +16,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 50px 130px 65px;
+    padding: 170px 130px 65px;
   }
 }
 

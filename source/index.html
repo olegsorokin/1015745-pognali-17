@@ -35,7 +35,7 @@
   <header class="header home__header">
 
     <a class="logo-link header__logo" href="index.html">
-      <picture>
+      <picture class="logo-link__wrap-image">
         <source type="image/webp" media="(min-width: 1440px)"
           srcset="img/logo-desktop-blue@1x.webp 1x, img/logo-desktop-blue@2x.webp 2x">
         <source type="image/webp" media="(min-width: 768px)"
@@ -46,17 +46,17 @@
           srcset="img/logo-desktop-blue@1x.png 1x, img/logo-desktop-blue@2x.png 2x">
         <source media="(min-width: 768px)"
           srcset="img/logo-tablet-blue@1x.png 1x, img/logo-tablet-blue@2x.png 2x">
-        <img class="logo-link__image" src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png 2x"
-          alt="Логотип сайта 'Погнали?'">
+        <img class="logo-link__image" src="img/logo-mobile-blue@1x.png"
+          srcset="img/logo-mobile-blue@2x.png 2x" alt="Логотип сайта 'Погнали?'">
       </picture>
     </a>
 
-    <button class="menu-button header__menu-button"></button>
+    <button class="menu-button header__menu-button menu-button--hide"></button>
 
     <nav class="nav header__nav">
       <ul class="nav__list">
         <li class="nav__item">
-          <a class="nav__link" href="#">
+          <a class="nav__link" href="about.html">
             <span class="nav__link-text" data-hover="О сервисе">О сервисе</span>
           </a>
         </li>
@@ -246,8 +246,8 @@
                 srcset="img/thailand-mobile@1x.webp 1x, img/thailand-mobile@2x.webp 2x">
               <source media="(min-width: 768px)"
                 srcset="img/thailand-desktop@1x.jpg 1x, img/thailand-desktop@2x.jpg 2x">
-              <img class="route__image" src="img/thailand-mobile@1x.jpg" srcset="img/thailand-mobile@2x.jpg 2x"
-                alt="Логотип сайта 'Погнали?'">
+              <img class="route__image" src="img/thailand-mobile@1x.jpg"
+                srcset="img/thailand-mobile@2x.jpg 2x" alt="Логотип сайта 'Погнали?'">
             </picture>
             <div class="route__info">
               <h3 class="route__name">Тайланд</h3>
@@ -271,8 +271,8 @@
                 srcset="img/france-mobile@1x.webp 1x, img/france-mobile@2x.webp 2x">
               <source media="(min-width: 768px)"
                 srcset="img/france-desktop@1x.jpg 1x, img/france-desktop@2x.jpg 2x">
-              <img class="route__image" src="img/france-mobile@1x.jpg" srcset="img/france-mobile@2x.jpg 2x"
-                alt="Логотип сайта 'Погнали?'">
+              <img class="route__image" src="img/france-mobile@1x.jpg"
+                srcset="img/france-mobile@2x.jpg 2x" alt="Логотип сайта 'Погнали?'">
             </picture>
             <div class="route__info">
               <h3 class="route__name">Франция</h3>
@@ -296,8 +296,8 @@
                 srcset="img/czech-mobile@1x.webp 1x, img/czech-mobile@2x.webp 2x">
               <source media="(min-width: 768px)"
                 srcset="img/czech-desktop@1x.jpg 1x, img/czech-desktop@2x.jpg 2x">
-              <img class="route__image" src="img/czech-mobile@1x.jpg" srcset="img/czech-mobile@2x.jpg 2x"
-                alt="Логотип сайта 'Погнали?'">
+              <img class="route__image" src="img/czech-mobile@1x.jpg"
+                srcset="img/czech-mobile@2x.jpg 2x" alt="Логотип сайта 'Погнали?'">
             </picture>
             <div class="route__info">
               <h3 class="route__name">Чехия</h3>
@@ -338,8 +338,8 @@
               <picture>
                 <source type="image/webp"
                   srcset="img/firsova-desktop@1x.webp 1x, img/firsova-desktop@2x.webp 2x">
-                <img class="companion__image" src="img/firsova-desktop@1x.jpg" srcset="img/firsova-desktop@2x.jpg 2x"
-                  alt="Фотография попутчика">
+                <img class="companion__image" src="img/firsova-desktop@1x.jpg"
+                  srcset="img/firsova-desktop@2x.jpg 2x" alt="Фотография попутчика">
               </picture>
             </p>
             <div class="companion__info-wrap">
@@ -428,8 +428,8 @@
               <picture>
                 <source type="image/webp"
                   srcset="img/demin-desktop@1x.webp 1x, img/demin-desktop@2x.webp 2x">
-                <img class="companion__image" src="img/demin-desktop@1x.jpg" srcset="img/demin-desktop@2x.jpg 2x"
-                  alt="Фотография попутчика">
+                <img class="companion__image" src="img/demin-desktop@1x.jpg"
+                  srcset="img/demin-desktop@2x.jpg 2x" alt="Фотография попутчика">
               </picture>
             </p>
             <div class="companion__info-wrap">
@@ -576,7 +576,7 @@
         <p class="register__text register__text--register">Зарегистрируйтесь,<br> это быстро и
           бесплатно!</p>
         <p class="register__text register__text--login">Уже зарегистрированы? Тогда скорее <a
-            class="singin-link" href="#">авторизуйтесь</a>.</p>
+            class="singin-link" href="singin.html">авторизуйтесь</a>.</p>
         <form class="register-form register__form" action="https://echo.htmlacademy.ru"
           method="post">
           <input class="register-form__input" type="email" placeholder="E-mail">
@@ -628,7 +628,7 @@
           <span class="contact-link__text contact-link__text-dark">ул. Большая Конюшенная,
             19/8</span>
         </a>
-        <a class="route-link" href="#">
+        <a class="route-link" href="https://yandex.ru/maps/-/CGvBiCpl" target="_blank">
           <span class="route-link__text">Проложить маршрут</span>
           <svg class="route-link__icon" width="10" height="14">
             <use xlink:href="#triangle-arrow-right"></use>
@@ -642,7 +642,10 @@
       <h2 class="visually-hidden">Адрес организации</h2>
       <img class="map__image" src="img/map.png"
         alt="Схема расположения офиса 'Погнали?' на интерактивной карте">
-      <iframe class="map__real" src="https://yandex.ru/map-widget/v1/-/CCtMu4P2"></iframe>
+      <iframe class="map__real" src="https://yandex.ru/map-widget/v1/-/CGvByRZI"></iframe>
+      <svg class="map__marker" width="41" height="41">
+        <use xlink:href="#map-marker"></use>
+      </svg>
     </section>
 
   </main>
@@ -663,8 +666,8 @@
             srcset="img/logo-desktop-blue@1x.png 1x, img/logo-desktop-blue@2x.png 2x">
           <source media="(min-width: 768px)"
             srcset="img/logo-tablet-blue@1x.png 1x, img/logo-tablet-blue@2x.png 2x">
-          <img class="logo-link__image" src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png 2x"
-            alt="Логотип сайта 'Погнали?'">
+          <img class="logo-link__image" src="img/logo-mobile-blue@1x.png"
+            srcset="img/logo-mobile-blue@2x.png 2x" alt="Логотип сайта 'Погнали?'">
         </picture>
       </a>
 
