@@ -1,0 +1,28 @@
+.show-more-button {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.show-more-button--hide {
+  display: none;
+}
+
+.show-more-button__text {
+  display: none;
+
+  @include text ("Blogger Sans Bold", 20px, 24px, $link-darkblue);
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    display: inline;
+  }
+}
+
+.show-more-button__icon {
+  @media (min-width: $tablet-width) {
+    margin-left: 20px;
+  }
+}

@@ -51,6 +51,12 @@
   }
 }
 
+.form-line__title--close {
+  .form-line__title-toggle {
+    transform: none;
+  }
+}
+
 .form-line__title-text {
   margin: 0;
 }
@@ -83,7 +89,19 @@
   }
 }
 
-.form-line__wrap-transport {
+.form-line__wrap--close {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.form-line__wrap-inner {
   display: flex;
 }
 

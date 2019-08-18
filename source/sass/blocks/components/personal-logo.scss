@@ -1,0 +1,39 @@
+.personal-logo__image {
+  width: 100px;
+  height: auto;
+  border-radius: 50%;
+  vertical-align: middle;
+
+  @media (min-width: $tablet-width) {
+    width: 94px;
+    border-radius: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 190px;
+    border-radius: 0;
+  }
+}
+
+.personal-logo__change-button {
+  display: none;
+
+  width: 100%;
+
+  padding: 15px 0;
+
+  @include link ("Blogger Sans Bold", 16px, 18px, $main-darkblue);
+  text-align: center;
+  text-transform: uppercase;
+
+  background-color: #dfe3f0;
+
+  border-radius: 0 0 10px 10px;
+
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 100%;
+    display: block;
+  }
+}

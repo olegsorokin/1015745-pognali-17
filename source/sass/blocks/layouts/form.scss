@@ -1,4 +1,4 @@
-.catalog {
+.form {
   position: relative;
   min-width: 320px;
   max-width: $desktop-width;
@@ -13,22 +13,15 @@
   }
 }
 
-.catalog__header {
+.form__header {
   position: relative;
+  top: 0;
   z-index: 70;
 }
 
-.catalog__companions {
-  padding: 27px 25px 45px;
-
-  @media (min-width: $desktop-width) {
-    padding: 75px 60px;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-  }
-}
-
-.catalog__filter {
-  margin-bottom: 10px;
+.form__footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }

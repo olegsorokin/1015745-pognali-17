@@ -1,19 +1,37 @@
 .menu-button {
   width: 25px;
-  height: 11px;
+  height: 19px;
   border: none;
   background-color: transparent;
   cursor: pointer;
+
+  &::before,
+  &::after {
+    content: "";
+    top: 50%;
+    left: 50%;
+    display: block;
+    width: 25px;
+    height: 2px;
+    transform: translate(-50%, -50%) rotate(45deg);
+    background-color: #192144;
+  }
+
+  &::after {
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
+}
+
+.menu-button--close {
+  height: 11px;
 
   &::before {
     content: "";
     position: absolute;
     top: 0;
     left: 0;
-    display: block;
     width: 25px;
-    height: 2px;
-    background-color: #192144;
+    transform: none;
   }
 
   &::after {
@@ -21,30 +39,11 @@
     position: absolute;
     bottom: 0;
     left: 0;
-    display: block;
     width: 25px;
-    height: 2px;
-    background-color: #192144;
+    transform: none;
   }
 }
 
-.menu-button--close {
-  width: 19px;
-  height: 19px;
-
-  &::before {
-    content: "";
-    top: 50%;
-    left: 50%;
-    width: 27px;
-    transform: translate(-50%, -50%) rotate(45deg);
-  }
-
-  &::after {
-    content: "";
-    top: 50%;
-    left: 50%;
-    width: 27px;
-    transform: translate(-50%, -50%) rotate(-45deg);
-  }
+.menu-button--hide {
+  display: none;
 }

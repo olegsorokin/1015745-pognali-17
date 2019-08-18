@@ -16,6 +16,10 @@
   }
 }
 
+.letter-filter--hide {
+  display: none;
+}
+
 .letter-filter__item {
   @media (min-width: $desktop-width) {
     flex-basis: 185px;

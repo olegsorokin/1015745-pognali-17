@@ -31,7 +31,7 @@
   <header class="header catalog__header">
 
     <a class="logo-link header__logo" href="index.html">
-      <picture>
+      <picture class="logo-link__wrap-image">
         <source type="image/webp" media="(min-width: 1440px)"
           srcset="img/logo-desktop-blue@1x.webp 1x, img/logo-desktop-blue@2x.webp 2x">
         <source type="image/webp" media="(min-width: 768px)"
@@ -42,17 +42,17 @@
           srcset="img/logo-desktop-blue@1x.png 1x, img/logo-desktop-blue@2x.png 2x">
         <source media="(min-width: 768px)"
           srcset="img/logo-tablet-blue@1x.png 1x, img/logo-tablet-blue@2x.png 2x">
-        <img class="logo-link__image" src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png 2x"
-          alt="Логотип сайта 'Погнали?'">
+        <img class="logo-link__image" src="img/logo-mobile-blue@1x.png"
+          srcset="img/logo-mobile-blue@2x.png 2x" alt="Логотип сайта 'Погнали?'">
       </picture>
     </a>
 
-    <button class="menu-button header__menu-button"></button>
+    <button class="menu-button header__menu-button menu-button--hide"></button>
 
     <nav class="nav header__nav">
       <ul class="nav__list">
         <li class="nav__item">
-          <a class="nav__link" href="#">
+          <a class="nav__link" href="about.html">
             <span class="nav__link-text" data-hover="О сервисе">О сервисе</span>
           </a>
         </li>
@@ -146,7 +146,7 @@
 
     <div class="page-title main__title">
       <h1 class="page-title__title">Попутчики</h1>
-      <a class="back-link page-title__back">
+      <a class="back-link page-title__back" href="index.html">
         <span class="back-link__text">На главную</span>
         <svg class="back-link__icon" width="32" height="16">
           <use xlink:href="#return"></use>
@@ -175,9 +175,14 @@
           </li>
         </ul>
 
-        <button class="more-button button-hide">Показать всё</button>
+        <button class="show-more-button show-more-button--hide country-filter__button-show">
+          <span class="show-more-button__text">Показать всё</span>
+          <svg class="show-more-button__icon" width="17" height="3">
+            <use xlink:href="#dots"></use>
+          </svg>
+        </button>
 
-        <button class="close-button">
+        <button class="close-button country-filter__button-close">
           <span class="close-button__text">Свернуть</span>
           <svg class="close-button__icon" width="12" height="12">
             <use xlink:href="#close"></use>
@@ -193,37 +198,37 @@
             <button class="letter-filter__item-title letter-filter__item-title--current">а</button>
             <ul class="countries-list countries-list--current letter-filter__item-list">
               <li class="countries-list__item">
-                <button class="countries-list__button">Австралия</button>
+                <a class="countries-list__button">Австралия</a>
               </li>
               <li class="countries-list__item">
-                <button class="countries-list__button">Австрия</button>
+                <a class="countries-list__button">Австрия</a>
               </li>
               <li class="countries-list__item">
-                <button class="countries-list__button">Азербайджан</button>
+                <a class="countries-list__button">Азербайджан</a>
               </li>
               <li class="countries-list__item">
-                <button class="countries-list__button">Албания</button>
+                <a class="countries-list__button">Албания</a>
               </li>
               <li class="countries-list__item">
-                <button class="countries-list__button">Алжир</button>
+                <a class="countries-list__button">Алжир</a>
               </li>
               <li class="countries-list__item">
-                <button class="countries-list__button">Ангола</button>
+                <a class="countries-list__button">Ангола</a>
               </li>
               <li class="countries-list__item">
-                <button class="countries-list__button">Андорра</button>
+                <a class="countries-list__button">Андорра</a>
               </li>
               <li class="countries-list__item">
-                <button class="countries-list__button">Антигуа и Барбуда</button>
+                <a class="countries-list__button">Антигуа и Барбуда</a>
               </li>
               <li class="countries-list__item">
-                <button class="countries-list__button">Аргентина</button>
+                <a class="countries-list__button">Аргентина</a>
               </li>
               <li class="countries-list__item">
-                <button class="countries-list__button">Армения</button>
+                <a class="countries-list__button">Армения</a>
               </li>
               <li class="countries-list__item">
-                <button class="countries-list__button">Афганистан</button>
+                <a class="countries-list__button">Афганистан</a>
               </li>
             </ul>
           </li>
@@ -231,55 +236,55 @@
             <button class="letter-filter__item-title">б</button>
             <ul class="countries-list letter-filter__item-list">
               <li class="countries-list__item">
-                <button class="countries-list__button">Багамские Острова</button>
+                <a class="countries-list__button">Багамские Острова</a>
               </li>
               <li class="countries-list__item">
-                <button class="countries-list__button">Бангладеш</button>
+                <a class="countries-list__button">Бангладеш</a>
               </li>
               <li class="countries-list__item">
-                <button class="countries-list__button">Барбадос</button>
+                <a class="countries-list__button">Барбадос</a>
               </li>
               <li class="countries-list__item">
-                <button class="countries-list__button">Бахрейн</button>
+                <a class="countries-list__button">Бахрейн</a>
               </li>
               <li class="countries-list__item">
-                <button class="countries-list__button">Белоруссия</button>
+                <a class="countries-list__button">Белоруссия</a>
               </li>
               <li class="countries-list__item">
-                <button class="countries-list__button">Белиз</button>
+                <a class="countries-list__button">Белиз</a>
               </li>
               <li class="countries-list__item">
-                <button class="countries-list__button">Бельгия</button>
+                <a class="countries-list__button">Бельгия</a>
               </li>
               <li class="countries-list__item">
-                <button class="countries-list__button">Бенин</button>
+                <a class="countries-list__button">Бенин</a>
               </li>
               <li class="countries-list__item">
-                <button class="countries-list__button">Болгария</button>
+                <a class="countries-list__button">Болгария</a>
               </li>
               <li class="countries-list__item">
-                <button class="countries-list__button">Боливия</button>
+                <a class="countries-list__button">Боливия</a>
               </li>
               <li class="countries-list__item">
-                <button class="countries-list__button">Босния и Герцеговина</button>
+                <a class="countries-list__button">Босния и Герцеговина</a>
               </li>
               <li class="countries-list__item">
-                <button class="countries-list__button">Ботсвана</button>
+                <a class="countries-list__button">Ботсвана</a>
               </li>
               <li class="countries-list__item">
-                <button class="countries-list__button">Бразилия</button>
+                <a class="countries-list__button">Бразилия</a>
               </li>
               <li class="countries-list__item">
-                <button class="countries-list__button">Бруней</button>
+                <a class="countries-list__button">Бруней</a>
               </li>
               <li class="countries-list__item">
-                <button class="countries-list__button">Буркина-Фасо</button>
+                <a class="countries-list__button">Буркина-Фасо</a>
               </li>
               <li class="countries-list__item">
-                <button class="countries-list__button">Бурунди</button>
+                <a class="countries-list__button">Бурунди</a>
               </li>
               <li class="countries-list__item">
-                <button class="countries-list__button">Бутан</button>
+                <a class="countries-list__button">Бутан</a>
               </li>
             </ul>
           </li>
@@ -287,22 +292,22 @@
             <button class="letter-filter__item-title">в</button>
             <ul class="countries-list letter-filter__item-list">
               <li class="countries-list__item">
-                <button class="countries-list__button">Вануату</button>
+                <a class="countries-list__button">Вануату</a>
               </li>
               <li class="countries-list__item">
-                <button class="countries-list__button">Великобритания</button>
+                <a class="countries-list__button">Великобритания</a>
               </li>
               <li class="countries-list__item">
-                <button class="countries-list__button">Венгрия</button>
+                <a class="countries-list__button">Венгрия</a>
               </li>
               <li class="countries-list__item">
-                <button class="countries-list__button">Венесуэла</button>
+                <a class="countries-list__button">Венесуэла</a>
               </li>
               <li class="countries-list__item">
-                <button class="countries-list__button">Восточный Тимор</button>
+                <a class="countries-list__button">Восточный Тимор</a>
               </li>
               <li class="countries-list__item">
-                <button class="countries-list__button">Вьетнам</button>
+                <a class="countries-list__button">Вьетнам</a>
               </li>
             </ul>
           </li>
@@ -310,43 +315,43 @@
             <button class="letter-filter__item-title">г</button>
             <ul class="countries-list letter-filter__item-list">
               <li class="countries-list__item">
-                <button class="countries-list__button">Габон</button>
+                <a class="countries-list__button">Габон</a>
               </li>
               <li class="countries-list__item">
-                <button class="countries-list__button">Гаити</button>
+                <a class="countries-list__button">Гаити</a>
               </li>
               <li class="countries-list__item">
-                <button class="countries-list__button">Гайана</button>
+                <a class="countries-list__button">Гайана</a>
               </li>
               <li class="countries-list__item">
-                <button class="countries-list__button">Гамбия</button>
+                <a class="countries-list__button">Гамбия</a>
               </li>
               <li class="countries-list__item">
-                <button class="countries-list__button">Гана</button>
+                <a class="countries-list__button">Гана</a>
               </li>
               <li class="countries-list__item">
-                <button class="countries-list__button">Гватемала</button>
+                <a class="countries-list__button">Гватемала</a>
               </li>
               <li class="countries-list__item">
-                <button class="countries-list__button">Гвинея</button>
+                <a class="countries-list__button">Гвинея</a>
               </li>
               <li class="countries-list__item">
-                <button class="countries-list__button">Гвинея-Бисау</button>
+                <a class="countries-list__button">Гвинея-Бисау</a>
               </li>
               <li class="countries-list__item">
-                <button class="countries-list__button">Германия</button>
+                <a class="countries-list__button">Германия</a>
               </li>
               <li class="countries-list__item">
-                <button class="countries-list__button">Гондурас</button>
+                <a class="countries-list__button">Гондурас</a>
               </li>
               <li class="countries-list__item">
-                <button class="countries-list__button">Гренада</button>
+                <a class="countries-list__button">Гренада</a>
               </li>
               <li class="countries-list__item">
-                <button class="countries-list__button">Греция</button>
+                <a class="countries-list__button">Греция</a>
               </li>
               <li class="countries-list__item">
-                <button class="countries-list__button">Грузия</button>
+                <a class="countries-list__button">Грузия</a>
               </li>
             </ul>
           </li>
@@ -354,16 +359,16 @@
             <button class="letter-filter__item-title">д</button>
             <ul class="countries-list letter-filter__item-list">
               <li class="countries-list__item">
-                <button class="countries-list__button">Дания</button>
+                <a class="countries-list__button">Дания</a>
               </li>
               <li class="countries-list__item">
-                <button class="countries-list__button">Джибути</button>
+                <a class="countries-list__button">Джибути</a>
               </li>
               <li class="countries-list__item">
-                <button class="countries-list__button">Доминика</button>
+                <a class="countries-list__button">Доминика</a>
               </li>
               <li class="countries-list__item">
-                <button class="countries-list__button">Доминикана</button>
+                <a class="countries-list__button">Доминикана</a>
               </li>
             </ul>
           </li>
@@ -371,7 +376,7 @@
             <button class="letter-filter__item-title">е</button>
             <ul class="countries-list letter-filter__item-list">
               <li class="countries-list__item">
-                <button class="countries-list__button">Египет</button>
+                <a class="countries-list__button">Египет</a>
               </li>
             </ul>
           </li>
@@ -379,7 +384,7 @@
             <button class="letter-filter__item-title">ё</button>
             <ul class="countries-list letter-filter__item-list">
               <li class="countries-list__item">
-                <button class="countries-list__button">Учите географию :)</button>
+                <a class="countries-list__button">Учите географию :)</a>
               </li>
             </ul>
           </li>
@@ -387,7 +392,7 @@
             <button class="letter-filter__item-title">ж</button>
             <ul class="countries-list letter-filter__item-list">
               <li class="countries-list__item">
-                <button class="countries-list__button">Учите географию :)</button>
+                <a class="countries-list__button">Учите географию :)</a>
               </li>
             </ul>
           </li>
@@ -395,10 +400,10 @@
             <button class="letter-filter__item-title">з</button>
             <ul class="countries-list letter-filter__item-list">
               <li class="countries-list__item">
-                <button class="countries-list__button">Замбия</button>
+                <a class="countries-list__button">Замбия</a>
               </li>
               <li class="countries-list__item">
-                <button class="countries-list__button">Зимбабве</button>
+                <a class="countries-list__button">Зимбабве</a>
               </li>
             </ul>
           </li>
@@ -406,34 +411,34 @@
             <button class="letter-filter__item-title">и</button>
             <ul class="countries-list letter-filter__item-list">
               <li class="countries-list__item">
-                <button class="countries-list__button">Израиль</button>
+                <a class="countries-list__button">Израиль</a>
               </li>
               <li class="countries-list__item">
-                <button class="countries-list__button">Индия</button>
+                <a class="countries-list__button">Индия</a>
               </li>
               <li class="countries-list__item">
-                <button class="countries-list__button">Индонезия</button>
+                <a class="countries-list__button">Индонезия</a>
               </li>
               <li class="countries-list__item">
-                <button class="countries-list__button">Иордания</button>
+                <a class="countries-list__button">Иордания</a>
               </li>
               <li class="countries-list__item">
-                <button class="countries-list__button">Ирак</button>
+                <a class="countries-list__button">Ирак</a>
               </li>
               <li class="countries-list__item">
-                <button class="countries-list__button">Иран</button>
+                <a class="countries-list__button">Иран</a>
               </li>
               <li class="countries-list__item">
-                <button class="countries-list__button">Ирландия</button>
+                <a class="countries-list__button">Ирландия</a>
               </li>
               <li class="countries-list__item">
-                <button class="countries-list__button">Исландия</button>
+                <a class="countries-list__button">Исландия</a>
               </li>
               <li class="countries-list__item">
-                <button class="countries-list__button">Испания</button>
+                <a class="countries-list__button">Испания</a>
               </li>
               <li class="countries-list__item">
-                <button class="countries-list__button">Италия</button>
+                <a class="countries-list__button">Италия</a>
               </li>
             </ul>
           </li>
@@ -441,7 +446,7 @@
             <button class="letter-filter__item-title">й</button>
             <ul class="countries-list letter-filter__item-list">
               <li class="countries-list__item">
-                <button class="countries-list__button">Йемен</button>
+                <a class="countries-list__button">Йемен</a>
               </li>
             </ul>
           </li>
@@ -449,64 +454,64 @@
             <button class="letter-filter__item-title">к</button>
             <ul class="countries-list letter-filter__item-list">
               <li class="countries-list__item">
-                <button class="countries-list__button">Кабо-Верде</button>
+                <a class="countries-list__button">Кабо-Верде</a>
               </li>
               <li class="countries-list__item">
-                <button class="countries-list__button">Казахстан</button>
+                <a class="countries-list__button">Казахстан</a>
               </li>
               <li class="countries-list__item">
-                <button class="countries-list__button">Камбоджа</button>
+                <a class="countries-list__button">Камбоджа</a>
               </li>
               <li class="countries-list__item">
-                <button class="countries-list__button">Камерун</button>
+                <a class="countries-list__button">Камерун</a>
               </li>
               <li class="countries-list__item">
-                <button class="countries-list__button">Канада</button>
+                <a class="countries-list__button">Канада</a>
               </li>
               <li class="countries-list__item">
-                <button class="countries-list__button">Катар</button>
+                <a class="countries-list__button">Катар</a>
               </li>
               <li class="countries-list__item">
-                <button class="countries-list__button">Кения</button>
+                <a class="countries-list__button">Кения</a>
               </li>
               <li class="countries-list__item">
-                <button class="countries-list__button">Кипр</button>
+                <a class="countries-list__button">Кипр</a>
               </li>
               <li class="countries-list__item">
-                <button class="countries-list__button">Киргизия</button>
+                <a class="countries-list__button">Киргизия</a>
               </li>
               <li class="countries-list__item">
-                <button class="countries-list__button">Кирибати</button>
+                <a class="countries-list__button">Кирибати</a>
               </li>
               <li class="countries-list__item">
-                <button class="countries-list__button">Китай</button>
+                <a class="countries-list__button">Китай</a>
               </li>
               <li class="countries-list__item">
-                <button class="countries-list__button">Колумбия</button>
+                <a class="countries-list__button">Колумбия</a>
               </li>
               <li class="countries-list__item">
-                <button class="countries-list__button">Коморы</button>
+                <a class="countries-list__button">Коморы</a>
               </li>
               <li class="countries-list__item">
-                <button class="countries-list__button">Конго</button>
+                <a class="countries-list__button">Конго</a>
               </li>
               <li class="countries-list__item">
-                <button class="countries-list__button">КНДР</button>
+                <a class="countries-list__button">КНДР</a>
               </li>
               <li class="countries-list__item">
-                <button class="countries-list__button">Республика Корея</button>
+                <a class="countries-list__button">Республика Корея</a>
               </li>
               <li class="countries-list__item">
-                <button class="countries-list__button">Коста-Рика</button>
+                <a class="countries-list__button">Коста-Рика</a>
               </li>
               <li class="countries-list__item">
-                <button class="countries-list__button">Кот-д’Ивуар</button>
+                <a class="countries-list__button">Кот-д’Ивуар</a>
               </li>
               <li class="countries-list__item">
-                <button class="countries-list__button">Куба</button>
+                <a class="countries-list__button">Куба</a>
               </li>
               <li class="countries-list__item">
-                <button class="countries-list__button">Кувейт</button>
+                <a class="countries-list__button">Кувейт</a>
               </li>
             </ul>
           </li>
@@ -514,31 +519,31 @@
             <button class="letter-filter__item-title">л</button>
             <ul class="countries-list letter-filter__item-list">
               <li class="countries-list__item">
-                <button class="countries-list__button">Лаос</button>
+                <a class="countries-list__button">Лаос</a>
               </li>
               <li class="countries-list__item">
-                <button class="countries-list__button">Латвия</button>
+                <a class="countries-list__button">Латвия</a>
               </li>
               <li class="countries-list__item">
-                <button class="countries-list__button">Лесото</button>
+                <a class="countries-list__button">Лесото</a>
               </li>
               <li class="countries-list__item">
-                <button class="countries-list__button">Либерия</button>
+                <a class="countries-list__button">Либерия</a>
               </li>
               <li class="countries-list__item">
-                <button class="countries-list__button">Ливан</button>
+                <a class="countries-list__button">Ливан</a>
               </li>
               <li class="countries-list__item">
-                <button class="countries-list__button">Ливия</button>
+                <a class="countries-list__button">Ливия</a>
               </li>
               <li class="countries-list__item">
-                <button class="countries-list__button">Литва</button>
+                <a class="countries-list__button">Литва</a>
               </li>
               <li class="countries-list__item">
-                <button class="countries-list__button">Лихтенштейн</button>
+                <a class="countries-list__button">Лихтенштейн</a>
               </li>
               <li class="countries-list__item">
-                <button class="countries-list__button">Люксембург</button>
+                <a class="countries-list__button">Люксембург</a>
               </li>
             </ul>
           </li>
@@ -546,52 +551,52 @@
             <button class="letter-filter__item-title">м</button>
             <ul class="countries-list letter-filter__item-list">
               <li class="countries-list__item">
-                <button class="countries-list__button">Маврикий</button>
+                <a class="countries-list__button">Маврикий</a>
               </li>
               <li class="countries-list__item">
-                <button class="countries-list__button">Мавритания</button>
+                <a class="countries-list__button">Мавритания</a>
               </li>
               <li class="countries-list__item">
-                <button class="countries-list__button">Мадагаскар</button>
+                <a class="countries-list__button">Мадагаскар</a>
               </li>
               <li class="countries-list__item">
-                <button class="countries-list__button">Малави</button>
+                <a class="countries-list__button">Малави</a>
               </li>
               <li class="countries-list__item">
-                <button class="countries-list__button">Малайзия</button>
+                <a class="countries-list__button">Малайзия</a>
               </li>
               <li class="countries-list__item">
-                <button class="countries-list__button">Мали</button>
+                <a class="countries-list__button">Мали</a>
               </li>
               <li class="countries-list__item">
-                <button class="countries-list__button">Мальдивы</button>
+                <a class="countries-list__button">Мальдивы</a>
               </li>
               <li class="countries-list__item">
-                <button class="countries-list__button">Мальта</button>
+                <a class="countries-list__button">Мальта</a>
               </li>
               <li class="countries-list__item">
-                <button class="countries-list__button">Марокко</button>
+                <a class="countries-list__button">Марокко</a>
               </li>
               <li class="countries-list__item">
-                <button class="countries-list__button">Маршалловы Острова</button>
+                <a class="countries-list__button">Маршалловы Острова</a>
               </li>
               <li class="countries-list__item">
-                <button class="countries-list__button">Мексика</button>
+                <a class="countries-list__button">Мексика</a>
               </li>
               <li class="countries-list__item">
-                <button class="countries-list__button">Мозамбик</button>
+                <a class="countries-list__button">Мозамбик</a>
               </li>
               <li class="countries-list__item">
-                <button class="countries-list__button">Молдавия</button>
+                <a class="countries-list__button">Молдавия</a>
               </li>
               <li class="countries-list__item">
-                <button class="countries-list__button">Монако</button>
+                <a class="countries-list__button">Монако</a>
               </li>
               <li class="countries-list__item">
-                <button class="countries-list__button">Монголия</button>
+                <a class="countries-list__button">Монголия</a>
               </li>
               <li class="countries-list__item">
-                <button class="countries-list__button">Мьянма</button>
+                <a class="countries-list__button">Мьянма</a>
               </li>
             </ul>
           </li>
@@ -599,31 +604,31 @@
             <button class="letter-filter__item-title">н</button>
             <ul class="countries-list letter-filter__item-list">
               <li class="countries-list__item">
-                <button class="countries-list__button">Намибия</button>
+                <a class="countries-list__button">Намибия</a>
               </li>
               <li class="countries-list__item">
-                <button class="countries-list__button">Науру</button>
+                <a class="countries-list__button">Науру</a>
               </li>
               <li class="countries-list__item">
-                <button class="countries-list__button">Непал</button>
+                <a class="countries-list__button">Непал</a>
               </li>
               <li class="countries-list__item">
-                <button class="countries-list__button">Нигер</button>
+                <a class="countries-list__button">Нигер</a>
               </li>
               <li class="countries-list__item">
-                <button class="countries-list__button">Нигерия</button>
+                <a class="countries-list__button">Нигерия</a>
               </li>
               <li class="countries-list__item">
-                <button class="countries-list__button">Нидерланды</button>
+                <a class="countries-list__button">Нидерланды</a>
               </li>
               <li class="countries-list__item">
-                <button class="countries-list__button">Никарагуа</button>
+                <a class="countries-list__button">Никарагуа</a>
               </li>
               <li class="countries-list__item">
-                <button class="countries-list__button">Новая Зеландия</button>
+                <a class="countries-list__button">Новая Зеландия</a>
               </li>
               <li class="countries-list__item">
-                <button class="countries-list__button">Норвегия</button>
+                <a class="countries-list__button">Норвегия</a>
               </li>
             </ul>
           </li>
@@ -631,10 +636,10 @@
             <button class="letter-filter__item-title">о</button>
             <ul class="countries-list letter-filter__item-list">
               <li class="countries-list__item">
-                <button class="countries-list__button">ОАЭ</button>
+                <a class="countries-list__button">ОАЭ</a>
               </li>
               <li class="countries-list__item">
-                <button class="countries-list__button">Оман</button>
+                <a class="countries-list__button">Оман</a>
               </li>
             </ul>
           </li>
@@ -642,28 +647,28 @@
             <button class="letter-filter__item-title">п</button>
             <ul class="countries-list letter-filter__item-list">
               <li class="countries-list__item">
-                <button class="countries-list__button">Пакистан</button>
+                <a class="countries-list__button">Пакистан</a>
               </li>
               <li class="countries-list__item">
-                <button class="countries-list__button">Палау</button>
+                <a class="countries-list__button">Палау</a>
               </li>
               <li class="countries-list__item">
-                <button class="countries-list__button">Панама</button>
+                <a class="countries-list__button">Панама</a>
               </li>
               <li class="countries-list__item">
-                <button class="countries-list__button">Папуа — Новая Гвинея</button>
+                <a class="countries-list__button">Папуа — Новая Гвинея</a>
               </li>
               <li class="countries-list__item">
-                <button class="countries-list__button">Парагвай</button>
+                <a class="countries-list__button">Парагвай</a>
               </li>
               <li class="countries-list__item">
-                <button class="countries-list__button">Перу</button>
+                <a class="countries-list__button">Перу</a>
               </li>
               <li class="countries-list__item">
-                <button class="countries-list__button">Польша</button>
+                <a class="countries-list__button">Польша</a>
               </li>
               <li class="countries-list__item">
-                <button class="countries-list__button">Португалия</button>
+                <a class="countries-list__button">Португалия</a>
               </li>
             </ul>
           </li>
@@ -671,13 +676,13 @@
             <button class="letter-filter__item-title">р</button>
             <ul class="countries-list letter-filter__item-list">
               <li class="countries-list__item">
-                <button class="countries-list__button">Россия</button>
+                <a class="countries-list__button">Россия</a>
               </li>
               <li class="countries-list__item">
-                <button class="countries-list__button">Руанда</button>
+                <a class="countries-list__button">Руанда</a>
               </li>
               <li class="countries-list__item">
-                <button class="countries-list__button">Румыния</button>
+                <a class="countries-list__button">Румыния</a>
               </li>
             </ul>
           </li>
@@ -685,61 +690,61 @@
             <button class="letter-filter__item-title">с</button>
             <ul class="countries-list letter-filter__item-list">
               <li class="countries-list__item">
-                <button class="countries-list__button">Сальвадор</button>
+                <a class="countries-list__button">Сальвадор</a>
               </li>
               <li class="countries-list__item">
-                <button class="countries-list__button">Самоа</button>
+                <a class="countries-list__button">Самоа</a>
               </li>
               <li class="countries-list__item">
-                <button class="countries-list__button">Сан-Марино</button>
+                <a class="countries-list__button">Сан-Марино</a>
               </li>
               <li class="countries-list__item">
-                <button class="countries-list__button">Сан-Томе и Принсипи</button>
+                <a class="countries-list__button">Сан-Томе и Принсипи</a>
               </li>
               <li class="countries-list__item">
-                <button class="countries-list__button">Саудовская Аравия</button>
+                <a class="countries-list__button">Саудовская Аравия</a>
               </li>
               <li class="countries-list__item">
-                <button class="countries-list__button">Северная Македония</button>
+                <a class="countries-list__button">Северная Македония</a>
               </li>
               <li class="countries-list__item">
-                <button class="countries-list__button">Сейшелы</button>
+                <a class="countries-list__button">Сейшелы</a>
               </li>
               <li class="countries-list__item">
-                <button class="countries-list__button">Сенегал</button>
+                <a class="countries-list__button">Сенегал</a>
               </li>
               <li class="countries-list__item">
-                <button class="countries-list__button">Сент-Люсия</button>
+                <a class="countries-list__button">Сент-Люсия</a>
               </li>
               <li class="countries-list__item">
-                <button class="countries-list__button">Сербия</button>
+                <a class="countries-list__button">Сербия</a>
               </li>
               <li class="countries-list__item">
-                <button class="countries-list__button">Сингапур</button>
+                <a class="countries-list__button">Сингапур</a>
               </li>
               <li class="countries-list__item">
-                <button class="countries-list__button">Сирия</button>
+                <a class="countries-list__button">Сирия</a>
               </li>
               <li class="countries-list__item">
-                <button class="countries-list__button">Словакия</button>
+                <a class="countries-list__button">Словакия</a>
               </li>
               <li class="countries-list__item">
-                <button class="countries-list__button">Словения</button>
+                <a class="countries-list__button">Словения</a>
               </li>
               <li class="countries-list__item">
-                <button class="countries-list__button">США</button>
+                <a class="countries-list__button">США</a>
               </li>
               <li class="countries-list__item">
-                <button class="countries-list__button">Сомали</button>
+                <a class="countries-list__button">Сомали</a>
               </li>
               <li class="countries-list__item">
-                <button class="countries-list__button">Судан</button>
+                <a class="countries-list__button">Судан</a>
               </li>
               <li class="countries-list__item">
-                <button class="countries-list__button">Суринам</button>
+                <a class="countries-list__button">Суринам</a>
               </li>
               <li class="countries-list__item">
-                <button class="countries-list__button">Сьерра-Леоне</button>
+                <a class="countries-list__button">Сьерра-Леоне</a>
               </li>
             </ul>
           </li>
@@ -747,34 +752,34 @@
             <button class="letter-filter__item-title">т</button>
             <ul class="countries-list letter-filter__item-list">
               <li class="countries-list__item">
-                <button class="countries-list__button">Таджикистан</button>
+                <a class="countries-list__button">Таджикистан</a>
               </li>
               <li class="countries-list__item">
-                <button class="countries-list__button">Таиланд</button>
+                <a class="countries-list__button">Таиланд</a>
               </li>
               <li class="countries-list__item">
-                <button class="countries-list__button">Танзания</button>
+                <a class="countries-list__button">Танзания</a>
               </li>
               <li class="countries-list__item">
-                <button class="countries-list__button">Того</button>
+                <a class="countries-list__button">Того</a>
               </li>
               <li class="countries-list__item">
-                <button class="countries-list__button">Тонга</button>
+                <a class="countries-list__button">Тонга</a>
               </li>
               <li class="countries-list__item">
-                <button class="countries-list__button">Тринидад и Тобаго</button>
+                <a class="countries-list__button">Тринидад и Тобаго</a>
               </li>
               <li class="countries-list__item">
-                <button class="countries-list__button">Тувалу</button>
+                <a class="countries-list__button">Тувалу</a>
               </li>
               <li class="countries-list__item">
-                <button class="countries-list__button">Тунис</button>
+                <a class="countries-list__button">Тунис</a>
               </li>
               <li class="countries-list__item">
-                <button class="countries-list__button">Туркмения</button>
+                <a class="countries-list__button">Туркмения</a>
               </li>
               <li class="countries-list__item">
-                <button class="countries-list__button">Турция</button>
+                <a class="countries-list__button">Турция</a>
               </li>
             </ul>
           </li>
@@ -782,16 +787,16 @@
             <button class="letter-filter__item-title">у</button>
             <ul class="countries-list letter-filter__item-list">
               <li class="countries-list__item">
-                <button class="countries-list__button">Уганда</button>
+                <a class="countries-list__button">Уганда</a>
               </li>
               <li class="countries-list__item">
-                <button class="countries-list__button">Узбекистан</button>
+                <a class="countries-list__button">Узбекистан</a>
               </li>
               <li class="countries-list__item">
-                <button class="countries-list__button">Украина</button>
+                <a class="countries-list__button">Украина</a>
               </li>
               <li class="countries-list__item">
-                <button class="countries-list__button">Уругвай</button>
+                <a class="countries-list__button">Уругвай</a>
               </li>
             </ul>
           </li>
@@ -799,16 +804,16 @@
             <button class="letter-filter__item-title">ф</button>
             <ul class="countries-list letter-filter__item-list">
               <li class="countries-list__item">
-                <button class="countries-list__button">Фиджи</button>
+                <a class="countries-list__button">Фиджи</a>
               </li>
               <li class="countries-list__item">
-                <button class="countries-list__button">Филиппины</button>
+                <a class="countries-list__button">Филиппины</a>
               </li>
               <li class="countries-list__item">
-                <button class="countries-list__button">Финляндия</button>
+                <a class="countries-list__button">Финляндия</a>
               </li>
               <li class="countries-list__item">
-                <button class="countries-list__button">Франция</button>
+                <a class="countries-list__button">Франция</a>
               </li>
             </ul>
           </li>
@@ -816,7 +821,7 @@
             <button class="letter-filter__item-title">х</button>
             <ul class="countries-list letter-filter__item-list">
               <li class="countries-list__item">
-                <button class="countries-list__button">Хорватия</button>
+                <a class="countries-list__button">Хорватия</a>
               </li>
             </ul>
           </li>
@@ -824,7 +829,7 @@
             <button class="letter-filter__item-title">ц</button>
             <ul class="countries-list letter-filter__item-list">
               <li class="countries-list__item">
-                <button class="countries-list__button">ЦАР</button>
+                <a class="countries-list__button">ЦАР</a>
               </li>
             </ul>
           </li>
@@ -832,16 +837,16 @@
             <button class="letter-filter__item-title">ч</button>
             <ul class="countries-list letter-filter__item-list">
               <li class="countries-list__item">
-                <button class="countries-list__button">Чад</button>
+                <a class="countries-list__button">Чад</a>
               </li>
               <li class="countries-list__item">
-                <button class="countries-list__button">Черногория</button>
+                <a class="countries-list__button">Черногория</a>
               </li>
               <li class="countries-list__item">
-                <button class="countries-list__button">Чехия</button>
+                <a class="countries-list__button">Чехия</a>
               </li>
               <li class="countries-list__item">
-                <button class="countries-list__button">Чили</button>
+                <a class="countries-list__button">Чили</a>
               </li>
             </ul>
           </li>
@@ -849,13 +854,13 @@
             <button class="letter-filter__item-title">ш</button>
             <ul class="countries-list letter-filter__item-list">
               <li class="countries-list__item">
-                <button class="countries-list__button">Швейцария</button>
+                <a class="countries-list__button">Швейцария</a>
               </li>
               <li class="countries-list__item">
-                <button class="countries-list__button">Швеция</button>
+                <a class="countries-list__button">Швеция</a>
               </li>
               <li class="countries-list__item">
-                <button class="countries-list__button">Шри-Ланка</button>
+                <a class="countries-list__button">Шри-Ланка</a>
               </li>
             </ul>
           </li>
@@ -863,7 +868,7 @@
             <button class="letter-filter__item-title">щ</button>
             <ul class="countries-list letter-filter__item-list">
               <li class="countries-list__item">
-                <button class="countries-list__button">Учите географию :)</button>
+                <a class="countries-list__button">Учите географию :)</a>
               </li>
             </ul>
           </li>
@@ -871,19 +876,19 @@
             <button class="letter-filter__item-title">э</button>
             <ul class="countries-list letter-filter__item-list">
               <li class="countries-list__item">
-                <button class="countries-list__button">Эквадор</button>
+                <a class="countries-list__button">Эквадор</a>
               </li>
               <li class="countries-list__item">
-                <button class="countries-list__button">Эритрея</button>
+                <a class="countries-list__button">Эритрея</a>
               </li>
               <li class="countries-list__item">
-                <button class="countries-list__button">Эсватини</button>
+                <a class="countries-list__button">Эсватини</a>
               </li>
               <li class="countries-list__item">
-                <button class="countries-list__button">Эстония</button>
+                <a class="countries-list__button">Эстония</a>
               </li>
               <li class="countries-list__item">
-                <button class="countries-list__button">Эфиопия</button>
+                <a class="countries-list__button">Эфиопия</a>
               </li>
             </ul>
           </li>
@@ -891,10 +896,10 @@
             <button class="letter-filter__item-title">ю</button>
             <ul class="countries-list letter-filter__item-list">
               <li class="countries-list__item">
-                <button class="countries-list__button">ЮАР</button>
+                <a class="countries-list__button">ЮАР</a>
               </li>
               <li class="countries-list__item">
-                <button class="countries-list__button">Южный Судан</button>
+                <a class="countries-list__button">Южный Судан</a>
               </li>
             </ul>
           </li>
@@ -902,10 +907,10 @@
             <button class="letter-filter__item-title">я</button>
             <ul class="countries-list letter-filter__item-list">
               <li class="countries-list__item">
-                <button class="countries-list__button">Ямайка</button>
+                <a class="countries-list__button">Ямайка</a>
               </li>
               <li class="countries-list__item">
-                <button class="countries-list__button">Япония</button>
+                <a class="countries-list__button">Япония</a>
               </li>
             </ul>
           </li>
@@ -914,7 +919,7 @@
 
       </div>
 
-      <button class="close-button close-button--bottom">
+      <button class="close-button close-button--bottom country-filter__button-close-inner">
         <span class="close-button__text close-button__text--bottom">Свернуть</span>
         <svg class="close-button__icon" width="12" height="12">
           <use xlink:href="#close"></use>
@@ -1011,44 +1016,47 @@
                   <use xlink:href="#dropdown"></use>
                 </svg>
               </div>
-              <div class="form-line__wrap-transport">
-                <div class="form-line__wrap-check form-line__wrap-check--transport">
-                  <input class="form-line__checkbox" type="checkbox" name="Plane" id="avia"
-                    checked="">
-                  <label for="avia" class="form-line__transport">
-                    <svg class="form-line__transport-icon" width="14" height="16">
-                      <use xlink:href="#plane"></use>
-                    </svg>
-                    <span class="form-line__transport-text">Авиаперелёт</span>
-                  </label>
-                </div>
-                <div class="form-line__wrap-check form-line__wrap-check--transport">
-                  <input class="form-line__checkbox" type="checkbox" name="Bus" id="bus" checked="">
-                  <label for="bus" class="form-line__transport">
-                    <svg class="form-line__transport-icon" width="13" height="16">
-                      <use xlink:href="#bus"></use>
-                    </svg>
-                    <span class="form-line__transport-text">Автотранспорт</span>
-                  </label>
-                </div>
-                <div class="form-line__wrap-check form-line__wrap-check--transport">
-                  <input class="form-line__checkbox" type="checkbox" name="Cycle" id="cycle">
-                  <label for="cycle" class="form-line__transport">
-                    <svg class="form-line__transport-icon" width="19" height="17">
-                      <use xlink:href="#bike"></use>
-                    </svg>
-                    <span class="form-line__transport-text">Велосипед</span>
-                  </label>
-                </div>
-                <div class="form-line__wrap-check form-line__wrap-check--transport">
-                  <input class="form-line__checkbox" type="checkbox" name="Walk" id="walk"
-                    checked="">
-                  <label for="walk" class="form-line__transport">
-                    <svg class="form-line__transport-icon" width="15" height="17">
-                      <use xlink:href="#run"></use>
-                    </svg>
-                    <span class="form-line__transport-text">Пешком</span>
-                  </label>
+              <div class="form-line__wrap">
+                <div class="form-line__wrap-inner">
+                  <div class="form-line__wrap-check form-line__wrap-check--transport">
+                    <input class="form-line__checkbox" type="checkbox" name="Plane" id="avia"
+                      checked="">
+                    <label for="avia" class="form-line__transport">
+                      <svg class="form-line__transport-icon" width="14" height="16">
+                        <use xlink:href="#plane"></use>
+                      </svg>
+                      <span class="form-line__transport-text">Авиаперелёт</span>
+                    </label>
+                  </div>
+                  <div class="form-line__wrap-check form-line__wrap-check--transport">
+                    <input class="form-line__checkbox" type="checkbox" name="Bus" id="bus"
+                      checked="">
+                    <label for="bus" class="form-line__transport">
+                      <svg class="form-line__transport-icon" width="13" height="16">
+                        <use xlink:href="#bus"></use>
+                      </svg>
+                      <span class="form-line__transport-text">Автотранспорт</span>
+                    </label>
+                  </div>
+                  <div class="form-line__wrap-check form-line__wrap-check--transport">
+                    <input class="form-line__checkbox" type="checkbox" name="Cycle" id="cycle">
+                    <label for="cycle" class="form-line__transport">
+                      <svg class="form-line__transport-icon" width="19" height="17">
+                        <use xlink:href="#bike"></use>
+                      </svg>
+                      <span class="form-line__transport-text">Велосипед</span>
+                    </label>
+                  </div>
+                  <div class="form-line__wrap-check form-line__wrap-check--transport">
+                    <input class="form-line__checkbox" type="checkbox" name="Walk" id="walk"
+                      checked="">
+                    <label for="walk" class="form-line__transport">
+                      <svg class="form-line__transport-icon" width="15" height="17">
+                        <use xlink:href="#run"></use>
+                      </svg>
+                      <span class="form-line__transport-text">Пешком</span>
+                    </label>
+                  </div>
                 </div>
               </div>
             </div>
@@ -1101,7 +1109,7 @@
             </picture>
 
             <h3 class="companion-card__name">
-              <a class="companion-card__link" href="#">Таня Фирсова</a>
+              <a class="companion-card__link" href="/profiles/profile-458.html">Таня Фирсова</a>
             </h3>
 
             <div class="tags companion-card__tags">
@@ -1230,7 +1238,7 @@
             </picture>
 
             <h3 class="companion-card__name">
-              <a class="companion-card__link" href="#">Петя Демин</a>
+              <a class="companion-card__link" href="/profiles/profile-1348.html">Петя Демин</a>
             </h3>
 
             <div class="tags companion-card__tags">
@@ -1349,7 +1357,7 @@
             </picture>
 
             <h3 class="companion-card__name">
-              <a class="companion-card__link" href="#">Марк Смолов</a>
+              <a class="companion-card__link" href="/profiles/profile-2549.html">Марк Смолов</a>
             </h3>
 
             <div class="tags companion-card__tags">
@@ -1476,7 +1484,7 @@
             </picture>
 
             <h3 class="companion-card__name">
-              <a class="companion-card__link companion-card__link--online" href="#">Лариса
+              <a class="companion-card__link companion-card__link--online" href="/profiles/profile-2240.html">Лариса
                 Роговая</a>
             </h3>
 
@@ -1638,8 +1646,8 @@
             srcset="img/logo-desktop-blue@1x.png 1x, img/logo-desktop-blue@2x.png 2x">
           <source media="(min-width: 768px)"
             srcset="img/logo-tablet-blue@1x.png 1x, img/logo-tablet-blue@2x.png 2x">
-          <img class="logo-link__image" src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png 2x"
-            alt="Логотип сайта 'Погнали?'">
+          <img class="logo-link__image" src="img/logo-mobile-blue@1x.png"
+            srcset="img/logo-mobile-blue@2x.png 2x" alt="Логотип сайта 'Погнали?'">
         </picture>
       </a>
 
@@ -1679,6 +1687,7 @@
 
   </footer>
 
+  <script src="js/script.min.js"></script>
 </body>
 
 </html>

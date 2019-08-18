@@ -1,0 +1,170 @@
+.route-events {
+  @include list-reset;
+  max-width: 220px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 75px;
+    border-top: 1px solid #d6d9e6;
+  }
+}
+
+.route-events__item {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    top: 11px;
+    left: -11px;
+    content: "";
+    display: block;
+    width: 15px;
+    height: 2px;
+    background-color: $link-darkblue;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
+}
+
+.route-events__item:not(:first-child) {
+  margin-top: 21px;
+
+  &::after {
+    position: absolute;
+    top: -270px;
+    left: -11px;
+    content: "";
+    display: block;
+    width: 2px;
+    height: 281px;
+    background-color: $link-darkblue;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: -210px;
+      left: auto;
+      right: 209px;
+      display: block;
+      width: 3px;
+      height: 239px;
+    }
+  }
+}
+
+.route-events__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.route-events__country {
+  position: relative;
+  padding-left: 15px;
+
+  @include text ("Blogger Sans Medium", 18px, 18px, $link-darkblue);
+  overflow: hidden;
+  white-space: nowrap;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
+    font-size: 30px;
+    line-height: 30px;
+    text-transform: unset;
+  }
+
+  &::before {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    content: "";
+    display: block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: $link-darkblue;
+    z-index: 5;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
+}
+
+.route-events__flag-wrap {
+  position: relative;
+
+  @media (min-width: $desktop-width) {
+    margin-right: 115px;
+  }
+
+  &::before {
+    position: absolute;
+    top: 50%;
+    left: -33px;
+    transform: translateY(-50%);
+    content: "";
+    display: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: $link-darkblue;
+    z-index: 5;
+
+    @media (min-width: $desktop-width) {
+      display: block;
+    }
+  }
+}
+
+.route-events__flag {
+  box-shadow: -29px 0 15px 10px white;
+  z-index: 1;
+  vertical-align: middle;
+
+  @media (min-width: $tablet-width) {
+    width: 70px;
+    height: 47px;
+  }
+}
+
+.route-events__text {
+  box-sizing: border-box;
+  width: 100%;
+  height: 220px;
+  padding: 15px;
+
+  @include text ("Blogger Sans", 16px, 22px, $text-dark);
+  border: 1px solid #cbced9;
+  border-radius: 4px;
+  overflow-y: scroll;
+  resize: none;
+
+  @media (min-width: $tablet-width) {
+    height: 142px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 730px;
+  }
+
+  &::placeholder {
+    @include text ("Blogger Sans", 16px, 22px, rgba(68, 68, 68, 0.3));
+
+    @media (min-width: $tablet-width) {
+      font-size: 20px;
+      line-height: 24px;
+    }
+  }
+}

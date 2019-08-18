@@ -1,0 +1,36 @@
+.plan-form {
+  max-width: 270px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    max-width: 618px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1320px;
+  }
+}
+
+.plan-form__title {
+  margin-bottom: 30px;
+
+  @include text ("Blogger Sans Bold", 24px, 24px, $link-darkblue);
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 60px;
+    font-size: 36px;
+    line-height: 50px;
+  }
+}
+
+.plan-form__step {
+  position: relative;
+}
+
+.plan-form__step:not(:first-child) {
+  margin-top: 10px;
+
+  @media (min-width: $desktop-width) {
+    margin-top: 45px;
+  }
+}

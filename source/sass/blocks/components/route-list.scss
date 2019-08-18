@@ -1,0 +1,289 @@
+.route-list {
+  @include list-reset;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 40px;
+    border-top: 1px solid #d6d9e6;
+  }
+
+  &::before {
+    @media (min-width: $tablet-width) {
+      position: absolute;
+      top: 0;
+      right: 131px;
+      content: "";
+      display: block;
+      width: 1px;
+      height: 100%;
+      background-color: #d6d9e6;
+    }
+
+    @media (min-width: $desktop-width) {
+      right: 222px;
+    }
+  }
+}
+
+.route-list__item {
+  position: relative;
+  display: flex;
+
+  @media (min-width: $tablet-width) {
+    justify-content: space-between;
+  }
+}
+
+.route-list__item:not(:first-child) {
+  margin-top: 22px;
+
+  &::before {
+    position: absolute;
+    top: -22px;
+    right: 53px;
+    content: url("../img/small-arrow.svg");
+    width: 5px;
+    height: 10px;
+    opacity: 0.3;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
+}
+
+.route-list__item--new {
+  .route-list__country-wrap {
+    overflow: visible;
+
+    &::after {
+      right: 50px;
+      transform: translate(0%, -50%);
+      background-color: $main-white;
+
+      @media (min-width: $tablet-width) {
+        right: -35px;
+        transform: translate(0, -50%);
+      }
+
+      @media (min-width: $desktop-width) {
+        right: -55px;
+      }
+    }
+  }
+}
+
+.route-list__item--add {
+  .route-list__country-wrap {
+    background-color: #edeff6;
+    border: none;
+    border-radius: 4px;
+
+    &::after {
+      right: 50px;
+      transform: translate(0%, -50%);
+      background-color: #edeff6;
+
+      @media (min-width: $tablet-width) {
+        right: -35px;
+        transform: translate(0, -50%);
+      }
+
+      @media (min-width: $desktop-width) {
+        right: -55px;
+      }
+    }
+  }
+}
+
+.route-list__country-wrap {
+  position: relative;
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  padding: 12px 15px 12px 12px;
+  border: 1px solid #cbced9;
+  border-radius: 4px;
+  overflow: hidden;
+
+  @media (min-width: $tablet-width) {
+    box-sizing: border-box;
+    flex-basis: 370px;
+    flex-grow: 0;
+    padding: 27px;
+    overflow: visible;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-basis: 730px;
+  }
+
+  &::after {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(50%, -50%);
+    z-index: 2;
+    content: "";
+    display: block;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    border: 1px solid #cbced9;
+
+    @media (min-width: $tablet-width) {
+      width: 14px;
+      height: 14px;
+      right: -35px;
+      transform: translate(0, -50%);
+    }
+
+    @media (min-width: $desktop-width) {
+      right: -55px;
+    }
+  }
+}
+
+.route-list__country-name {
+  flex-grow: 1;
+
+  @include text ("Blogger Sans Medium", 14px, 18px, $link-darkblue);
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  overflow: hidden;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    letter-spacing: 2px;
+  }
+}
+
+.route-list__button-dropdown {
+  width: 15px;
+  height: 15px;
+  padding: 0;
+  border: none;
+  background-color: white;
+  box-shadow: 0 0 9px 7px white;
+  cursor: pointer;
+}
+
+.route-list__dropdown-icon {
+  opacity: 0.3;
+}
+
+.route-list__flag-wrap {
+  position: relative;
+  padding: 8px 9px;
+  border: 1px solid #cbced9;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+    padding: 0;
+    margin-right: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 115px;
+  }
+
+  &::before {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 50px;
+    z-index: 6;
+    content: "";
+    display: block;
+    width: 7px;
+    height: 7px;
+    background-color: $link-darkblue;
+    border-radius: 50%;
+    border: 1px solid $link-darkblue;
+
+    @media (min-width: $tablet-width) {
+      left: -30px;
+      right: auto;
+      width: 14px;
+      height: 14px;
+    }
+
+    @media (min-width: $desktop-width) {
+      left: -46px;
+    }
+  }
+}
+
+.route-list__flag-icon {
+  @media (min-width: $tablet-width) {
+    width: 70px;
+    height: 47px;
+  }
+}
+
+.route-list__flag-wrap--hide {
+  display: none;
+}
+
+.route-list__button-skip {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  width: 21px;
+  height: 21px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background-color: #edeff6;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    width: 17px;
+    height: 17px;
+    background-color: transparent;
+    opacity: 0.3;
+  }
+}
+
+.route-list__skip-icon {
+  opacity: 0.3;
+
+
+  @media (min-width: $tablet-width) {
+    width: 17px;
+    height: 17px;
+  }
+}
+
+.route-list__button-add {
+  padding: 0;
+  border: none;
+  cursor: pointer;
+}
+
+.route-list__add-icon {
+  opacity: 0.3;
+}
+
+.route-list__item--modal-show {
+  .route-list__button-skip {
+    display: none;
+  }
+
+  .modal-add-country {
+    display: block;
+  }
+}
+
+.route-list__modal-add-country {
+  position: absolute;
+  top: 0;
+  z-index: 15;
+}

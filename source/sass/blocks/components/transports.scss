@@ -1,3 +1,41 @@
+.transports--profile {
+  border: 1px solid #cbced9;
+  border-radius: 10px;
+  padding: 15px;
+
+  @media (min-width: $tablet-width) {
+    box-sizing: border-box;
+    max-width: 300px;
+    padding: 25px;
+  }
+
+  .transports__title {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    margin: 0;
+    padding: 0 15px;
+
+    @include text ("Blogger Sans Bold", 16px, 18px, $main-darkblue);
+    text-align: center;
+    text-transform: uppercase;
+
+    background-color: #edeff6;
+
+    @media (min-width: $tablet-width) {
+      top: auto;
+      bottom: 0;
+      transform: translate(-50%, 50%);
+      display: block;
+
+      @include text ("Blogger Sans Medium", 20px, 18px, $main-darkblue);
+      letter-spacing: 2px;
+    }
+  }
+}
+
 .transports__title {
   margin: 0;
   margin-bottom: 15px;
@@ -27,6 +65,13 @@
   }
 }
 
+.transports__list--profile {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 0;
+}
+
 .transports__item {
   position: relative;
 
@@ -49,6 +94,25 @@
 
   @media (min-width: $tablet-width) {
     background-color: transparent;
+  }
+
+  .transports__image {
+    transform: scale(1.3);
+  }
+}
+
+.transports__item--profile {
+  width: 33px;
+  height: 33px;
+  background-color: $main-white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    width: 43px;
+    height: 43px;
   }
 
   .transports__image {

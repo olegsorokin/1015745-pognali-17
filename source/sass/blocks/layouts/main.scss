@@ -1,6 +1,15 @@
 .main__title {
   position: relative;
-  z-index: 100;
+  z-index: 60;
+}
+
+.main__profile {
+  position: relative;
+}
+
+.main__add-plan {
+  position: relative;
+  margin-top: -25px;
 }
 
 .main__intro {

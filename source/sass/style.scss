@@ -7,6 +7,7 @@
 /*---Страницы---*/
 @import "blocks/layouts/home.scss";
 @import "blocks/layouts/catalog.scss";
+@import "blocks/layouts/form.scss";
 
 /*---Основные разделы страницы---*/
 @import "blocks/layouts/header.scss";
@@ -15,44 +16,57 @@
 
 /*---Глобальные блоки страницы---*/
 @import "blocks/components/about.scss";
+@import "blocks/components/add-plan.scss";
 @import "blocks/components/companions.scss";
 @import "blocks/components/destination.scss";
 @import "blocks/components/intro.scss";
 @import "blocks/components/map.scss";
 @import "blocks/components/prices.scss";
+@import "blocks/components/profile.scss";
 @import "blocks/components/register.scss";
 @import "blocks/components/routes.scss";
 @import "blocks/components/wishes.scss";
 
 /*---Внутренние блоки страницы---*/
+@import "blocks/components/calendar.scss";
 @import "blocks/components/companion.scss";
 @import "blocks/components/companion-card.scss";
 @import "blocks/components/companion-form.scss";
 @import "blocks/components/companions-filter.scss";
 @import "blocks/components/companions-list.scss";
 @import "blocks/components/contact-list.scss";
-@import "blocks/components/countries-list.scss";
+@import "blocks/components/counter.scss";
 @import "blocks/components/country-filter.scss";
+@import "blocks/components/countries-list.scss";
 @import "blocks/components/current-level.scss";
 @import "blocks/components/form-line.scss";
+@import "blocks/components/form-step.scss";
 @import "blocks/components/functions-list.scss";
+@import "blocks/components/indicate-list.scss";
 @import "blocks/components/letter-filter.scss";
 @import "blocks/components/level.scss";
+@import "blocks/components/my-plans.scss";
 @import "blocks/components/nav.scss";
 @import "blocks/components/page-title.scss";
 @import "blocks/components/page-list.scss";
 @import "blocks/components/paginator.scss";
+@import "blocks/components/personal-logo.scss";
+@import "blocks/components/plan-form.scss";
 @import "blocks/components/price-list.scss";
 @import "blocks/components/regions-list.scss";
 @import "blocks/components/register-form.scss";
 @import "blocks/components/reviews.scss";
 @import "blocks/components/route.scss";
+@import "blocks/components/route-events.scss";
+@import "blocks/components/route-list.scss";
 @import "blocks/components/social-list.scss";
 @import "blocks/components/stages-list.scss";
 @import "blocks/components/tags.scss";
+@import "blocks/components/tags-area.scss";
 @import "blocks/components/transports.scss";
 
 /*---Модальные окна---*/
+@import "blocks/modals/modal-add-country.scss";
 @import "blocks/modals/modal-menu.scss";
 @import "blocks/modals/modal-prices.scss";
 @import "blocks/modals/modal-show.scss";
@@ -62,6 +76,8 @@
 @import "blocks/links/call-link.scss";
 @import "blocks/links/contact-link.scss";
 @import "blocks/links/copyright-link.scss";
+@import "blocks/links/form-next-link.scss";
+@import "blocks/links/form-prev-link.scss";
 @import "blocks/links/function-link.scss";
 @import "blocks/links/logo-link.scss";
 @import "blocks/links/more-link.scss";
@@ -78,4 +94,5 @@
 @import "blocks/buttons/menu-button.scss";
 @import "blocks/buttons/register-button.scss";
 @import "blocks/buttons/rollup-button.scss";
+@import "blocks/buttons/show-more-button.scss";
 @import "blocks/buttons/submit-button.scss";

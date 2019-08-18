@@ -1,0 +1,108 @@
+.counter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.counter__title {
+  flex-basis: 150px;
+  flex-grow: 1;
+
+  @include text ("Blogger Sans Medium", 16px, 16px, $link-darkblue);
+  text-transform: uppercase;
+  letter-spacing: 1.6px;
+
+  @media (min-width: $tablet-width) {
+    padding: 25px 0;
+    font-size: 20px;
+    line-height: 18px;
+    letter-spacing: 2px;
+    border-top: 1px solid #d6d9e6;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-basis: 195px;
+    flex-grow: 0;
+    border: none;
+  }
+}
+
+.counter__tip {
+  flex-basis: 35px;
+
+  @include text ("Blogger Sans Medium", 16px, 16px, $link-darkblue);
+  text-transform: uppercase;
+  letter-spacing: 1.6px;
+  opacity: 0.3;
+
+  @media (min-width: $tablet-width) {
+    padding: 25px 0;
+    font-size: 20px;
+    line-height: 18px;
+    letter-spacing: 2px;
+    border-top: 1px solid #d6d9e6;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-basis: 45px;
+    order: 1;
+  }
+}
+
+.counter__wrap {
+  position: relative;
+  flex-basis: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  padding: 15px;
+  border: 1px solid #cbced9;
+  border-radius: 4px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+    padding: 25px 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    box-sizing: border-box;
+    flex-basis: 180px;
+  }
+}
+
+.counter__input {
+  max-width: 130px;
+
+  @include text ("Blogger Sans Medium", 15px, 13.5px, $link-darkblue);
+  letter-spacing: 1.5px;
+  text-align: center;
+  border: none;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 18px;
+    letter-spacing: 2px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 60px;
+  }
+}
+
+.counter__button-minus {
+  padding: 0;
+  background: transparent;
+  border: none;
+  opacity: 0.2;
+  cursor: pointer;
+}
+
+.counter__button-plus {
+  padding: 0;
+  background: transparent;
+  border: none;
+  opacity: 0.2;
+  cursor: pointer;
+}

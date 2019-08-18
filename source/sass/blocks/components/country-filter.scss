@@ -106,3 +106,17 @@
     margin-top: 0;
   }
 }
+
+.country-filter__button-show {
+  @media (min-width: $desktop-width) {
+    margin-left: auto;
+    margin-right: 70px;
+  }
+}
+
+.country-filter__button-close {
+  @media (min-width: $desktop-width) {
+    margin-left: auto;
+    margin-right: 70px;
+  }
+}
