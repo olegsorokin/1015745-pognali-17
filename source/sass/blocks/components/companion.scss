@@ -42,19 +42,24 @@
   border-radius: 0 0 10px 10px;
 
   @media (min-width: $tablet-width) {
-    padding: 30px 30px 25px;
+    padding: 29px 30px 23px;
     border-radius: 0 0 20px 20px;
   }
 }
 
 .companion__level {
   position: absolute;
-  top: 16px;
-  left: 16px;
+  top: 19px;
+  left: 17px;
 
   @media (min-width: $tablet-width) {
     top: 20px;
     left: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 22px;
+    left: 22px;
   }
 }
 
@@ -64,14 +69,13 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 20px;
+    margin-bottom: 21px;
   }
 }
 
 .companion__link {
-  position: relative;
-
   @include link ("Blogger Sans Bold", 21px, 21px, $link-darkblue);
+  position: relative;
 
   &::before {
     content: "";
@@ -90,6 +94,14 @@
     font-size: 24px;
     line-height: 24px;
   }
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .companion__link--online {
@@ -106,9 +118,9 @@
 }
 
 .companion__tags {
-  margin-bottom: 17px;
+  margin-bottom: 13px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 25px;
+    margin-bottom: 20px;
   }
 }

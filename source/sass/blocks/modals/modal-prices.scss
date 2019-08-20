@@ -3,7 +3,7 @@
   display: none;
   width: 270px;
   min-height: 440px;
-  padding: 33px 25px;
+  padding: 30px 25px;
   background-color: $main-white;
   border-radius: 20px;
   box-shadow: 0 20px 50px rgba(29, 46, 91, 0.1);
@@ -11,28 +11,35 @@
   @media (min-width: $tablet-width) {
     width: 690px;
     min-height: 525px;
-    padding: 50px 90px;
+    padding: 47px 92px;
+    border-radius: 30px;
   }
 
   @media (min-width: $desktop-width) {
     width: 750px;
     min-height: 525px;
-    padding: 50px 90px;
+    padding: 50px 58px;
   }
 }
 
 .modal-prices__title {
   @include section-title;
   text-align: center;
+  margin: 0;
   margin-bottom: 30px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 47px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 50px;
+  }
 }
 
 .modal-prices__list {
-  margin-bottom: 30px;
+  margin: 0;
+  // margin-bottom: 30px;
 }
 
 .modal-prices__close {

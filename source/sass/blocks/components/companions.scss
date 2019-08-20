@@ -40,7 +40,7 @@
 }
 
 .companions__item:not(:first-child) {
-  margin-top: 12px;
+  margin-top: 10px;
 
   @media (min-width: $tablet-width) {
     margin-top: 0;
@@ -76,7 +76,7 @@
 .companions__title {
   @include section-title;
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
 
   @media (min-width: $tablet-width) {
     font-size: 45px;
@@ -89,7 +89,7 @@
   width: 215px;
 
   @include text-light;
-  margin: 0 0 20px;
+  margin: 0 0 21px;
 
   @media (min-width: $tablet-width) {
     font-size: 28px;
@@ -123,7 +123,7 @@
 .companions__list {
   @include list-reset;
   margin: 0;
-  margin-bottom: 22px;
+  margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
     display: flex;

@@ -92,6 +92,7 @@ var changeLogoColor = function (currentColor, newColor) {
   /*-Подменяем в каждом источнике путь на новый для img-*/
   var newSrc = logoSrc.src.replace(currentColor, newColor);
   logoSrc.src = newSrc;
+
   var newSrcset = logoSrc.srcset.replace(currentColor, newColor);
   logoSrc.srcset = newSrcset;
 }

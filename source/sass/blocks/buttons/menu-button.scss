@@ -1,24 +1,24 @@
 .menu-button {
   width: 25px;
   height: 19px;
+  padding: 0;
   border: none;
   background-color: transparent;
   cursor: pointer;
 
   &::before,
   &::after {
+    position: absolute;
     content: "";
-    top: 50%;
-    left: 50%;
     display: block;
     width: 25px;
-    height: 2px;
-    transform: translate(-50%, -50%) rotate(45deg);
+    height: 3px;
+    transform: rotate(45deg);
     background-color: #192144;
   }
 
   &::after {
-    transform: translate(-50%, -50%) rotate(-45deg);
+    transform: rotate(-45deg);
   }
 }
 

@@ -156,18 +156,16 @@
 }
 
 .form-step__check-label {
+  @include text ("Blogger Sans", 15px, 15px, $text-dark);
   position: relative;
   display: flex;
   align-items: center;
   padding-left: 40px;
   cursor: pointer;
 
-  @include text ("Blogger Sans", 15px, 15px, $text-dark);
-
   @media (min-width: $tablet-width) {
-    padding-left: 60px;
-
     @include text ("Blogger Sans", 20px, 18px, $link-darkblue);
+    padding-left: 60px;
     letter-spacing: 2px;
     text-transform: uppercase;
   }
@@ -189,11 +187,30 @@
       padding: 8px 10px;
     }
   }
+
+  &:hover {
+    &::before {
+      border-color: #959bb2;
+    }
+  }
+
+  &:active {
+    &::before {
+      border-color: #e2e5f1;
+      background-color: #e2e5f1;
+    }
+  }
 }
 
 .form-step__check:checked + .form-step__check-label {
   &::before {
     content: url("../img/tick.svg");
+  }
+
+  &:active {
+    &::before {
+      opacity: 0.3;
+    }
   }
 }
 

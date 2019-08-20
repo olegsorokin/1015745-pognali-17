@@ -42,14 +42,14 @@
 
   @media (min-width: $desktop-width) {
     display: flex;
-    min-width: 400px;
+    min-width: 402px;
     justify-content: space-between;
     align-items: center;
   }
 }
 
 .nav__link {
-  @include link ("Blogger Sans Bold", 30px, 36px, #192144);
+  @include link ("Blogger Sans Bold", 30px, 30px, #192144);
   text-transform: uppercase;
   display: inline-block;
   overflow: hidden;
@@ -57,7 +57,7 @@
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
-    line-height: 71px;
+    line-height: 70px;
   }
 
   @media (min-width: $desktop-width) {

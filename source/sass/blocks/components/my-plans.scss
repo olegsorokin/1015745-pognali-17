@@ -139,4 +139,12 @@
     line-height: 18px;
     letter-spacing: 2px;
   }
+
+  &:hover {
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  &:active {
+    color: rgba(0, 0, 0, 0.1);
+  }
 }

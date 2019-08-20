@@ -44,10 +44,13 @@
   @media (min-width: $tablet-width) {
     margin-top: 0;
   }
+}
 
+.stages-list__item:first-child {
   @media (min-width: $desktop-width) {
-    margin-top: 0;
-    margin-left: -30px;
+    max-width: 345px;
+    padding-left: 35px;
+    padding-right: 64px;
   }
 }
 
@@ -70,15 +73,38 @@
   }
 }
 
+.stages-list__item:nth-child(2) {
+
+  @media (min-width: $desktop-width) {
+    max-width: 372px;
+    padding-left: 30px;
+    padding-right: 60px;
+  }
+}
+
+.stages-list__item:nth-child(3) {
+
+  @media (min-width: $desktop-width) {
+    max-width: 375px;
+    padding-left: 35px;
+    padding-right: 60px;
+    margin-left: -30px;
+  }
+}
+
 .stages-list__item:not(:last-child) {
   padding-bottom: 30px;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 24px;
   }
+}
 
+.stages-list__item:last-child {
   @media (min-width: $desktop-width) {
-    padding-right: 60px;
+    max-width: 318px;
+    padding-left: 33px;
+    padding-right: 33px;
   }
 }
 

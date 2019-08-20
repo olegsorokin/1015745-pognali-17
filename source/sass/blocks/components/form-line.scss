@@ -49,6 +49,16 @@
       display: none;
     }
   }
+
+  &:hover {
+    .form-line__title-text {
+      opacity: 0.3;
+    }
+
+    .form-line__title-toggle {
+      opacity: 0.3;
+    }
+  }
 }
 
 .form-line__title--close {
@@ -154,7 +164,7 @@
   display: none;
 }
 
-.form-line__checkbox + .form-line__label::before {
+.form-line__checkbox+.form-line__label::before {
   content: "";
   box-sizing: border-box;
   position: absolute;
@@ -173,16 +183,16 @@
   }
 }
 
-.form-line__checkbox:checked + .form-line__label::before {
+.form-line__checkbox:checked+.form-line__label::before {
   content: url("../img/tick.svg");
 }
 
-.form-line__checkbox + .form-line__transport .form-line__transport-icon {
+.form-line__checkbox+.form-line__transport .form-line__transport-icon {
   opacity: 0.15;
 }
 
 
-.form-line__checkbox:checked + .form-line__transport .form-line__transport-icon {
+.form-line__checkbox:checked+.form-line__transport .form-line__transport-icon {
   opacity: 1;
 }
 
@@ -200,25 +210,39 @@
   @media (min-width: $desktop-width) {
     padding-left: 35px;
   }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .form-line__transport {
   position: relative;
-  width: 33px;
-  height: 33px;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 33px;
+  height: 33px;
   background-color: $main-white;
   border-radius: 50%;
-
-  &:hover .form-line__transport-text {
-    display: block;
-  }
 
   @media (min-width: $tablet-width) {
     width: 43px;
     height: 43px;
+  }
+
+  &:hover {
+    .form-line__transport-text {
+      display: block;
+    }
+  }
+
+  &:active {
+    background-color: #e2e5f1;
   }
 }
 
@@ -231,18 +255,19 @@
   }
 
   &:hover {
-    .form-line__transport-text {
-      display: block;
-    }
+    fill: #101e44;
+  }
+
+  &:avtive {
+    opacity: 0.3;
   }
 }
 
 .form-line__transport-text {
+  @include text ("Blogger Sans", 20px, 24px, $main-white);
   position: absolute;
   top: 100%;
   display: none;
-
-  @include text ("Blogger Sans", 20px, 24px, $main-white);
   padding: 20px 25px;
   background-color: $main-darkblue;
 
@@ -285,7 +310,6 @@
   border: 1px solid rgb(203, 206, 217);
 
   &:first-child {
-    border-right: none;
     border-radius: 5px 0 0 5px;
   }
 
@@ -297,11 +321,19 @@
     font-size: 20px;
     line-height: 20px;
   }
+
+  &:hover {
+    border-color: #959bb2;
+  }
+
+  &:focus {
+    border-color: #161c35;
+  }
 }
 
 .form-line__range {
   position: relative;
-  height: 10px;
+  height: 19px;
 
   @media (min-width: $tablet-width) {
     flex-basis: 274px;
@@ -331,6 +363,8 @@
 
 .form-line__range-button {
   position: absolute;
+  top:50%;
+  transform: translateY(-50%);
   display: block;
   width: 10px;
   height: 10px;
@@ -338,6 +372,16 @@
   border: none;
   border-radius: 50%;
   z-index: 2;
+  cursor: pointer;
+
+  &:hover {
+    width: 19px;
+    height: 19px;
+  }
+
+  &:active {
+    box-shadow: 0px 3px 7px 0 rgba(29, 46, 91, 0.35);
+  }
 }
 
 .form-line__range-button--left {

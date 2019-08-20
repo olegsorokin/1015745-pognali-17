@@ -13,6 +13,19 @@
     fill: #f02323;
     opacity: 1;
   }
+
+  &:hover {
+    .like-button__icon-wrap {
+      background-color: #f9d8d8;
+    }
+  }
+
+  &:active {
+    .like-button__icon-wrap {
+      background-color: #f9d8d8;
+      opacity: 0.3;
+    }
+  }
 }
 
 .like-button__icon-wrap {
@@ -28,6 +41,20 @@
   @media (min-width: $tablet-width) {
     width: 50px;
     height: 50px;
+  }
+
+  &:hover {
+    background-color: #e2e5f2;
+
+    .like-button__icon {
+      opacity: 1;
+    }
+  }
+
+  &:active {
+    .like-button__icon {
+      opacity: 0.1;
+    }
   }
 }
 
