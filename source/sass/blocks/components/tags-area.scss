@@ -2,41 +2,43 @@
   width: 100%;
   border: 1px solid #cbced9;
   border-radius: 10px;
+
+  &:hover {
+    border-color: #aeb4cb;
+  }
+
+  &:focus-within {
+    border-color: #161c35;
+  }
 }
 
 .tags-area__title {
+  @include text ("Blogger Sans Bold", 16px, 18px, $main-darkblue);
   position: absolute;
   top: 0;
   left: 50%;
   transform: translate(-50%, -50%);
-
   display: block;
   margin: 0;
   padding: 0 17px;
-
-  @include text ("Blogger Sans Bold", 16px, 18px, $main-darkblue);
   text-align: center;
   text-transform: uppercase;
-
   background-color: #edeff6;
 
   @media (min-width: $tablet-width) {
+    @include text ("Blogger Sans Medium", 20px, 18px, $main-darkblue);
     top: auto;
     bottom: 0;
     transform: translate(-50%, 50%);
-
-    @include text ("Blogger Sans Medium", 20px, 18px, $main-darkblue);
     letter-spacing: 2px;
   }
 }
 
 .tags-area__text {
+  @include text ("Blogger Sans", 16px, 22px, rgba(68, 68, 68, 0.6));
   box-sizing: border-box;
   width: 100%;
   padding: 24px;
-
-  @include text ("Blogger Sans", 16px, 22px, $text-dark);
-
   background-color: transparent;
   border: none;
   resize: none;
@@ -44,5 +46,9 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 24px;
+  }
+
+  &:focus {
+    color: $text-dark;
   }
 }

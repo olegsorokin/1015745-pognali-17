@@ -1,3 +1,9 @@
+.logo-link--header {
+  @media (min-width: $tablet-width) {
+    flex-basis: 190px;
+  }
+}
+
 .logo-link__image {
   vertical-align: bottom;
 }

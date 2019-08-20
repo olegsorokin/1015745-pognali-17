@@ -7,15 +7,9 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="preload" href="fonts/bloggersans-bold.woff2" as="font" type="font/woff2"
     crossorigin="anonymous">
-  <link rel="preload" href="fonts/bloggersans-bold.woff" as="font" type="font/woff"
-    crossorigin="anonymous">
   <link rel="preload" href="fonts/bloggersans-medium.woff2" as="font" type="font/woff2"
     crossorigin="anonymous">
-  <link rel="preload" href="fonts/bloggersans-medium.woff" as="font" type="font/woff"
-    crossorigin="anonymous">
   <link rel="preload" href="fonts/bloggersans.woff2" as="font" type="font/woff2"
-    crossorigin="anonymous">
-  <link rel="preload" href="fonts/bloggersans.woff" as="font" type="font/woff"
     crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.min.css">
   <script src="js/picturefill.min.js" async=""></script>
@@ -919,7 +913,8 @@
 
       </div>
 
-      <button class="close-button close-button--bottom country-filter__button-close-inner">
+      <button
+        class="close-button close-button--bottom close-button--filter country-filter__button-close-inner">
         <span class="close-button__text close-button__text--bottom">Свернуть</span>
         <svg class="close-button__icon" width="12" height="12">
           <use xlink:href="#close"></use>
@@ -1020,7 +1015,7 @@
                 <div class="form-line__wrap-inner">
                   <div class="form-line__wrap-check form-line__wrap-check--transport">
                     <input class="form-line__checkbox" type="checkbox" name="Plane" id="avia"
-                      checked="">
+                      checked>
                     <label for="avia" class="form-line__transport">
                       <svg class="form-line__transport-icon" width="14" height="16">
                         <use xlink:href="#plane"></use>
@@ -1029,9 +1024,9 @@
                     </label>
                   </div>
                   <div class="form-line__wrap-check form-line__wrap-check--transport">
-                    <input class="form-line__checkbox" type="checkbox" name="Bus" id="bus"
-                      checked="">
-                    <label for="bus" class="form-line__transport">
+                    <input class="form-line__checkbox" type="checkbox" name="Bus" id="autobus"
+                      checked>
+                    <label for="autobus" class="form-line__transport">
                       <svg class="form-line__transport-icon" width="13" height="16">
                         <use xlink:href="#bus"></use>
                       </svg>
@@ -1049,7 +1044,7 @@
                   </div>
                   <div class="form-line__wrap-check form-line__wrap-check--transport">
                     <input class="form-line__checkbox" type="checkbox" name="Walk" id="walk"
-                      checked="">
+                      checked>
                     <label for="walk" class="form-line__transport">
                       <svg class="form-line__transport-icon" width="15" height="17">
                         <use xlink:href="#run"></use>
@@ -1173,29 +1168,38 @@
               <div class="transports companion-card__transports">
                 <h4 class="transports__title">транспорт:</h4>
                 <ul class="transports__list transports__list--catalog">
-                  <li class="transports__item transports__item--catalog">
-                    <svg class="transports__image transports__image--active" width="14" height="16">
-                      <use xlink:href="#plane"></use>
-                    </svg>
-                    <span class="transports__popup">Авиаперелёт</span>
+                  <li class="transports__item">
+                    <div class="transports__item-wrap transports__item-wrap--card">
+                      <svg class="transports__button-icon transports__button-icon--active"
+                        width="14" height="16">
+                        <use xlink:href="#plane"></use>
+                      </svg>
+                      <span class="transports__button-popup">Авиаперелёт</span>
+                    </div>
                   </li>
-                  <li class="transports__item transports__item--catalog">
-                    <svg class="transports__image" width="13" height="16">
-                      <use xlink:href="#bus"></use>
-                    </svg>
-                    <span class="transports__popup">Автотранспорт</span>
+                  <li class="transports__item">
+                    <div class="transports__item-wrap transports__item-wrap--card">
+                      <svg class="transports__button-icon" width="13" height="16">
+                        <use xlink:href="#bus"></use>
+                      </svg>
+                      <span class="transports__button-popup">Автотранспорт</span>
+                    </div>
                   </li>
-                  <li class="transports__item transports__item--catalog">
-                    <svg class="transports__image" width="19" height="17">
-                      <use xlink:href="#bike"></use>
-                    </svg>
-                    <span class="transports__popup">Велосипед</span>
+                  <li class="transports__item">
+                    <div class="transports__item-wrap transports__item-wrap--card">
+                      <svg class="transports__button-icon" width="19" height="17">
+                        <use xlink:href="#bike"></use>
+                      </svg>
+                      <span class="transports__button-popup">Велосипед</span>
+                    </div>
                   </li>
-                  <li class="transports__item transports__item--catalog">
-                    <svg class="transports__image" width="15" height="17">
-                      <use xlink:href="#run"></use>
-                    </svg>
-                    <span class="transports__popup">Пешком</span>
+                  <li class="transports__item">
+                    <div class="transports__item-wrap transports__item-wrap--card">
+                      <svg class="transports__button-icon" width="15" height="17">
+                        <use xlink:href="#run"></use>
+                      </svg>
+                      <span class="transports__button-popup">Пешком</span>
+                    </div>
                   </li>
                 </ul>
               </div>
@@ -1292,29 +1296,40 @@
               <div class="transports companion-card__transports">
                 <h4 class="transports__title">транспорт:</h4>
                 <ul class="transports__list transports__list--catalog">
-                  <li class="transports__item transports__item--catalog">
-                    <svg class="transports__image transports__image--active" width="14" height="16">
-                      <use xlink:href="#plane"></use>
-                    </svg>
-                    <span class="transports__popup">Авиаперелёт</span>
+                  <li class="transports__item">
+                    <div class="transports__item-wrap transports__item-wrap--card">
+                      <svg class="transports__button-icon transports__button-icon--active"
+                        width="14" height="16">
+                        <use xlink:href="#plane"></use>
+                      </svg>
+                      <span class="transports__button-popup">Авиаперелёт</span>
+                    </div>
                   </li>
-                  <li class="transports__item transports__item--catalog">
-                    <svg class="transports__image transports__image--active" width="13" height="16">
-                      <use xlink:href="#bus"></use>
-                    </svg>
-                    <span class="transports__popup">Автотранспорт</span>
+                  <li class="transports__item">
+                    <div class="transports__item-wrap transports__item-wrap--card">
+                      <svg class="transports__button-icon transports__button-icon--active"
+                        width="13" height="16">
+                        <use xlink:href="#bus"></use>
+                      </svg>
+                      <span class="transports__button-popup">Автотранспорт</span>
+                    </div>
                   </li>
-                  <li class="transports__item transports__item--catalog">
-                    <svg class="transports__image" width="19" height="17">
-                      <use xlink:href="#bike"></use>
-                    </svg>
-                    <span class="transports__popup">Велосипед</span>
+                  <li class="transports__item">
+                    <div class="transports__item-wrap transports__item-wrap--card">
+                      <svg class="transports__button-icon" width="19" height="17">
+                        <use xlink:href="#bike"></use>
+                      </svg>
+                      <span class="transports__button-popup">Велосипед</span>
+                    </div>
                   </li>
-                  <li class="transports__item transports__item--catalog">
-                    <svg class="transports__image transports__image--active" width="15" height="17">
-                      <use xlink:href="#run"></use>
-                    </svg>
-                    <span class="transports__popup">Пешком</span>
+                  <li class="transports__item">
+                    <div class="transports__item-wrap transports__item-wrap--card">
+                      <svg class="transports__button-icon transports__button-icon--active"
+                        width="15" height="17">
+                        <use xlink:href="#run"></use>
+                      </svg>
+                      <span class="transports__button-popup">Пешком</span>
+                    </div>
                   </li>
                 </ul>
               </div>
@@ -1419,29 +1434,39 @@
               <div class="transports companion-card__transports">
                 <h4 class="transports__title">транспорт:</h4>
                 <ul class="transports__list transports__list--catalog">
-                  <li class="transports__item transports__item--catalog">
-                    <svg class="transports__image transports__image--active" width="14" height="16">
-                      <use xlink:href="#plane"></use>
-                    </svg>
-                    <span class="transports__popup">Авиаперелёт</span>
+                  <li class="transports__item">
+                    <div class="transports__item-wrap transports__item-wrap--card">
+                      <svg class="transports__button-icon transports__button-icon--active"
+                        width="14" height="16">
+                        <use xlink:href="#plane"></use>
+                      </svg>
+                      <span class="transports__button-popup">Авиаперелёт</span>
+                    </div>
                   </li>
-                  <li class="transports__item transports__item--catalog">
-                    <svg class="transports__image" width="13" height="16">
-                      <use xlink:href="#bus"></use>
-                    </svg>
-                    <span class="transports__popup">Автотранспорт</span>
+                  <li class="transports__item">
+                    <div class="transports__item-wrap transports__item-wrap--card">
+                      <svg class="transports__button-icon" width="13" height="16">
+                        <use xlink:href="#bus"></use>
+                      </svg>
+                      <span class="transports__button-popup">Автотранспорт</span>
+                    </div>
                   </li>
-                  <li class="transports__item transports__item--catalog">
-                    <svg class="transports__image transports__image--active" width="19" height="17">
-                      <use xlink:href="#bike"></use>
-                    </svg>
-                    <span class="transports__popup">Велосипед</span>
+                  <li class="transports__item">
+                    <div class="transports__item-wrap transports__item-wrap--card">
+                      <svg class="transports__button-icon transports__button-icon--active"
+                        width="19" height="17">
+                        <use xlink:href="#bike"></use>
+                      </svg>
+                      <span class="transports__button-popup">Велосипед</span>
+                    </div>
                   </li>
-                  <li class="transports__item transports__item--catalog">
-                    <svg class="transports__image" width="15" height="17">
-                      <use xlink:href="#run"></use>
-                    </svg>
-                    <span class="transports__popup">Пешком</span>
+                  <li class="transports__item">
+                    <div class="transports__item-wrap transports__item-wrap--card">
+                      <svg class="transports__button-icon" width="15" height="17">
+                        <use xlink:href="#run"></use>
+                      </svg>
+                      <span class="transports__button-popup">Пешком</span>
+                    </div>
                   </li>
                 </ul>
               </div>
@@ -1484,7 +1509,8 @@
             </picture>
 
             <h3 class="companion-card__name">
-              <a class="companion-card__link companion-card__link--online" href="/profiles/profile-2240.html">Лариса
+              <a class="companion-card__link companion-card__link--online"
+                href="/profiles/profile-2240.html">Лариса
                 Роговая</a>
             </h3>
 
@@ -1538,29 +1564,39 @@
               <div class="transports companion-card__transports">
                 <h4 class="transports__title">транспорт:</h4>
                 <ul class="transports__list transports__list--catalog">
-                  <li class="transports__item transports__item--catalog">
-                    <svg class="transports__image transports__image--active" width="14" height="16">
-                      <use xlink:href="#plane"></use>
-                    </svg>
-                    <span class="transports__popup">Авиаперелёт</span>
+                  <li class="transports__item">
+                    <div class="transports__item-wrap transports__item-wrap--card">
+                      <svg class="transports__button-icon transports__button-icon--active"
+                        width="14" height="16">
+                        <use xlink:href="#plane"></use>
+                      </svg>
+                      <span class="transports__button-popup">Авиаперелёт</span>
+                    </div>
                   </li>
-                  <li class="transports__item transports__item--catalog">
-                    <svg class="transports__image transports__image--active" width="13" height="16">
-                      <use xlink:href="#bus"></use>
-                    </svg>
-                    <span class="transports__popup">Автотранспорт</span>
+                  <li class="transports__item">
+                    <div class="transports__item-wrap transports__item-wrap--card">
+                      <svg class="transports__button-icon transports__button-icon--active"
+                        width="13" height="16">
+                        <use xlink:href="#bus"></use>
+                      </svg>
+                      <span class="transports__button-popup">Автотранспорт</span>
+                    </div>
                   </li>
-                  <li class="transports__item transports__item--catalog">
-                    <svg class="transports__image" width="19" height="17">
-                      <use xlink:href="#bike"></use>
-                    </svg>
-                    <span class="transports__popup">Велосипед</span>
+                  <li class="transports__item">
+                    <div class="transports__item-wrap transports__item-wrap--card">
+                      <svg class="transports__button-icon" width="19" height="17">
+                        <use xlink:href="#bike"></use>
+                      </svg>
+                      <span class="transports__button-popup">Велосипед</span>
+                    </div>
                   </li>
-                  <li class="transports__item transports__item--catalog">
-                    <svg class="transports__image" width="15" height="17">
-                      <use xlink:href="#run"></use>
-                    </svg>
-                    <span class="transports__popup">Пешком</span>
+                  <li class="transports__item">
+                    <div class="transports__item-wrap transports__item-wrap--card">
+                      <svg class="transports__button-icon" width="15" height="17">
+                        <use xlink:href="#run"></use>
+                      </svg>
+                      <span class="transports__button-popup">Пешком</span>
+                    </div>
                   </li>
                 </ul>
               </div>

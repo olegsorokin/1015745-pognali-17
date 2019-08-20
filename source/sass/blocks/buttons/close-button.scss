@@ -9,6 +9,14 @@
   @media (min-width: $tablet-width) {
     flex-basis: 175px;
   }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .close-button--hide {
@@ -21,6 +29,12 @@
   padding: 15px 0;
   border-radius: 20px;
   background-color: #d6daed;
+}
+
+.close-button--filter {
+  &:hover {
+    background-color: #c8cee8;
+  }
 }
 
 .close-button__text {

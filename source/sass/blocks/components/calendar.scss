@@ -20,6 +20,15 @@
   background-color: transparent;
   border: none;
   opacity: 0.3;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.5;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
 }
 
 .calendar__button-icon {
@@ -104,6 +113,8 @@
 
   &:hover {
     outline: 2px solid #ff5c23;
+    background-color: $link-darkblue;
+    color: $main-white;
 
     @media (min-width: $tablet-width) {
       outline: 4px solid #ff5c23;
@@ -111,11 +122,8 @@
   }
 }
 
-.calendar__date-inner {
+.calendar__date-button {
   position: relative;
-  display: flex;
-  justify-content: center;
-  align-content: center;
 
   @media (min-width: $desktop-width) {
     display: block;
@@ -128,6 +136,12 @@
   color: rgba(68, 68, 68, 0.3);
   background-color: $main-white;
   cursor: default;
+
+  &:hover {
+    outline: none;
+    background-color: transparent;
+    color: rgba(68, 68, 68, 0.3);
+  }
 }
 
 .calendar__date--active {
@@ -136,7 +150,7 @@
 }
 
 .calendar__date--in {
-  .calendar__date-inner {
+  .calendar__date-button {
     &::before {
       @media (min-width: $desktop-width) {
         position: absolute;
@@ -149,7 +163,7 @@
 }
 
 .calendar__date--out {
-  .calendar__date-inner {
+  .calendar__date-button {
     &::before {
       @media (min-width: $desktop-width) {
         position: absolute;

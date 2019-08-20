@@ -48,6 +48,15 @@
   background-color: transparent;
   border: none;
   cursor: pointer;
+  opacity: 0.3;
+
+  &:hover {
+    opacity: 1;
+
+    &:active {
+      opacity: 0.1;
+    }
+  }
 }
 
 .modal-add-country__close-icon {
@@ -94,10 +103,10 @@
 }
 
 .modal-add-country__letter-item-button {
+  @include text ("Blogger Sans Medium", 14px, 18px, $link-darkblue);
   width: 44px;
   height: 42px;
-
-  @include text ("Blogger Sans Medium", 14px, 18px, $link-darkblue);
+  padding: 0;
   letter-spacing: 1.4px;
   background-color: $main-white;
   border: 1px solid #cbced9;
@@ -115,15 +124,19 @@
     width: 60px;
     border-radius: 4px;
   }
+
+  &:hover {
+    border-color: #959bb2;
+  }
 }
 
 .modal-add-country__letter-item-button--current {
-  background-color: #edeff6;
+  background-color: #1d2e5b;
+  color: $main-white;
 }
 
 .modal-add-country__country-list {
   @include list-reset;
-  @include text ("Blogger Sans", 16px, 22px, $text-dark);
   padding: 20px;
   background-color: $main-white;
   border: 1px solid #cbced9;
@@ -131,8 +144,23 @@
   @media (min-width: $tablet-width) {
     flex-grow: 1;
     padding: 34px 25px;
+    border: none;
+  }
+}
+
+.modal-add-country__country-link {
+  @include link ("Blogger Sans", 16px, 22px, $text-dark);
+
+  @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
-    border: none;
+  }
+
+  &:hover {
+    color: #1d2e5b;
+  }
+
+  &:active {
+    color: rgba(29, 46, 91, 0.3);
   }
 }

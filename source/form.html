@@ -7,19 +7,11 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="preload" href="fonts/bloggersans-bold.woff2" as="font" type="font/woff2"
     crossorigin="anonymous">
-  <link rel="preload" href="fonts/bloggersans-bold.woff" as="font" type="font/woff"
-    crossorigin="anonymous">
   <link rel="preload" href="fonts/bloggersans-light.woff2" as="font" type="font/woff2"
-    crossorigin="anonymous">
-  <link rel="preload" href="fonts/bloggersans-light.woff" as="font" type="font/woff"
     crossorigin="anonymous">
   <link rel="preload" href="fonts/bloggersans-medium.woff2" as="font" type="font/woff2"
     crossorigin="anonymous">
-  <link rel="preload" href="fonts/bloggersans-medium.woff" as="font" type="font/woff"
-    crossorigin="anonymous">
   <link rel="preload" href="fonts/bloggersans.woff2" as="font" type="font/woff2"
-    crossorigin="anonymous">
-  <link rel="preload" href="fonts/bloggersans.woff" as="font" type="font/woff"
     crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.min.css">
   <script src="js/picturefill.min.js" async=""></script>
@@ -227,30 +219,41 @@
 
         <div class="transports transports--profile profile__transports">
           <h4 class="transports__title">транспорт</h4>
-          <ul class="transports__list transports__list--profile">
-            <li class="transports__item transports__item--profile">
-              <svg class="transports__image transports__image--active" width="14" height="16">
-                <use xlink:href="#plane"></use>
-              </svg>
-              <span class="transports__popup">Авиаперелёт</span>
+          <ul class="transports__list">
+            <li class="transports__item">
+              <button class="transports__button">
+                <svg class="transports__button-icon transports__button-icon--active" width="14"
+                  height="16">
+                  <use xlink:href="#plane"></use>
+                </svg>
+                <span class="transports__button-popup">Авиаперелёт</span>
+              </button>
             </li>
-            <li class="transports__item transports__item--profile">
-              <svg class="transports__image transports__image--active" width="13" height="16">
-                <use xlink:href="#bus"></use>
-              </svg>
-              <span class="transports__popup">Автотранспорт</span>
+            <li class="transports__item">
+              <button class="transports__button">
+                <svg class="transports__button-icon transports__button-icon--active" width="13"
+                  height="16">
+                  <use xlink:href="#bus"></use>
+                </svg>
+                <span class="transports__button-popup">Автотранспорт</span>
+              </button>
             </li>
-            <li class="transports__item transports__item--profile">
-              <svg class="transports__image" width="19" height="17">
-                <use xlink:href="#bike"></use>
-              </svg>
-              <span class="transports__popup">Велосипед</span>
+            <li class="transports__item">
+              <button class="transports__button">
+                <svg class="transports__button-icon" width="19" height="17">
+                  <use xlink:href="#bike"></use>
+                </svg>
+                <span class="transports__button-popup">Велосипед</span>
+              </button>
             </li>
-            <li class="transports__item transports__item--profile">
-              <svg class="transports__image transports__image--active" width="15" height="17">
-                <use xlink:href="#run"></use>
-              </svg>
-              <span class="transports__popup">Пешком</span>
+            <li class="transports__item">
+              <button class="transports__button">
+                <svg class="transports__button-icon transports__button-icon--active" width="15"
+                  height="17">
+                  <use xlink:href="#run"></use>
+                </svg>
+                <span class="transports__button-popup">Пешком</span>
+              </button>
             </li>
           </ul>
         </div>
@@ -402,100 +405,106 @@
               </tr>
               <tr class="calendar__week">
                 <td class="calendar__date calendar__date--disabled"><span
-                    class="calendar__date-inner">24</span>
+                    class="calendar__date-button">24</span>
                 </td>
                 <td class="calendar__date calendar__date--disabled"><span
-                    class="calendar__date-inner">25</span>
+                    class="calendar__date-button">25</span>
                 </td>
                 <td class="calendar__date calendar__date--disabled"><span
-                    class="calendar__date-inner">26</span>
+                    class="calendar__date-button">26</span>
                 </td>
                 <td class="calendar__date calendar__date--disabled"><span
-                    class="calendar__date-inner">27</span>
+                    class="calendar__date-button">27</span>
                 </td>
                 <td class="calendar__date calendar__date--disabled"><span
-                    class="calendar__date-inner">28</span>
+                    class="calendar__date-button">28</span>
                 </td>
                 <td class="calendar__date calendar__date--disabled"><span
-                    class="calendar__date-inner">1 <span
+                    class="calendar__date-button">1<span
                       class="calendar__full-date">мар</span></span>
                 </td>
                 <td class="calendar__date calendar__date--disabled"><span
-                    class="calendar__date-inner">2</span>
+                    class="calendar__date-button">2</span>
                 </td>
               </tr>
               <tr class="calendar__week">
                 <td class="calendar__date calendar__date--disabled"><span
-                    class="calendar__date-inner">3</span></td>
+                    class="calendar__date-button">3</span></td>
                 <td class="calendar__date calendar__date--disabled"><span
-                    class="calendar__date-inner">4</span></td>
+                    class="calendar__date-button">4</span></td>
                 <td class="calendar__date calendar__date--disabled"><span
-                    class="calendar__date-inner">5</span></td>
+                    class="calendar__date-button">5</span></td>
                 <td class="calendar__date calendar__date--disabled"><span
-                    class="calendar__date-inner">6</span></td>
+                    class="calendar__date-button">6</span></td>
                 <td class="calendar__date calendar__date--disabled"><span
-                    class="calendar__date-inner">7</span></td>
+                    class="calendar__date-button">7</span></td>
                 <td class="calendar__date calendar__date--disabled"><span
-                    class="calendar__date-inner">8</span></td>
+                    class="calendar__date-button">8</span></td>
                 <td class="calendar__date calendar__date--disabled"><span
-                    class="calendar__date-inner">9</span></td>
+                    class="calendar__date-button">9</span></td>
               </tr>
               <tr class="calendar__week">
                 <td class="calendar__date calendar__date--disabled"><span
-                    class="calendar__date-inner">10</span></td>
+                    class="calendar__date-button">10</span></td>
                 <td class="calendar__date calendar__date--disabled"><span
-                    class="calendar__date-inner">11</span></td>
+                    class="calendar__date-button">11</span></td>
                 <td class="calendar__date calendar__date--disabled"><span
-                    class="calendar__date-inner">12</span></td>
+                    class="calendar__date-button">12</span></td>
                 <td class="calendar__date calendar__date--disabled"><span
-                    class="calendar__date-inner">13</span></td>
+                    class="calendar__date-button">13</span></td>
                 <td class="calendar__date calendar__date--disabled"><span
-                    class="calendar__date-inner">14</span></td>
+                    class="calendar__date-button">14</span></td>
                 <td class="calendar__date calendar__date--disabled"><span
-                    class="calendar__date-inner">15</span></td>
+                    class="calendar__date-button">15</span></td>
                 <td class="calendar__date calendar__date--disabled"><span
-                    class="calendar__date-inner">16</span></td>
+                    class="calendar__date-button">16</span></td>
               </tr>
               <tr class="calendar__week">
                 <td class="calendar__date calendar__date--disabled"><span
-                    class="calendar__date-inner">17</span></td>
+                    class="calendar__date-button">17</span></td>
                 <td class="calendar__date calendar__date--disabled"><span
-                    class="calendar__date-inner">18</span></td>
+                    class="calendar__date-button">18</span></td>
                 <td class="calendar__date calendar__date--disabled"><span
-                    class="calendar__date-inner">19</span></td>
+                    class="calendar__date-button">19</span></td>
                 <td class="calendar__date calendar__date--disabled"><span
-                    class="calendar__date-inner">20</span></td>
+                    class="calendar__date-button">20</span></td>
                 <td class="calendar__date calendar__date--disabled"><span
-                    class="calendar__date-inner">21</span></td>
+                    class="calendar__date-button">21</span></td>
                 <td class="calendar__date calendar__date--disabled"><span
-                    class="calendar__date-inner">22</span></td>
+                    class="calendar__date-button">22</span></td>
                 <td class="calendar__date calendar__date--disabled"><span
-                    class="calendar__date-inner">23</span></td>
+                    class="calendar__date-button">23</span></td>
               </tr>
               <tr class="calendar__week">
                 <td class="calendar__date calendar__date--disabled"><span
-                    class="calendar__date-inner">24</span></td>
+                    class="calendar__date-button">24</span></td>
                 <td class="calendar__date calendar__date--disabled"><span
-                    class="calendar__date-inner">25</span></td>
+                    class="calendar__date-button">25</span></td>
                 <td class="calendar__date calendar__date--disabled"><span
-                    class="calendar__date-inner">26</span></td>
+                    class="calendar__date-button">26</span></td>
                 <td class="calendar__date calendar__date--active calendar__date--in"><span
-                    class="calendar__date-inner">27</span></td>
+                    class="calendar__date-button ">27</span></td>
                 <td class="calendar__date calendar__date--active"><span
-                    class="calendar__date-inner">28</span></td>
-                <td class="calendar__date calendar__date--active calendar__date--out"><span
-                    class="calendar__date-inner">29</span></td>
-                <td class="calendar__date"><span class="calendar__date-inner">30</span></td>
+                    class="calendar__date-button">28</span></td>
+                <td class="calendar__date calendar__date--active  calendar__date--out"><span
+                    class="calendar__date-button">29</span></td>
+                <td class="calendar__date"><span class="calendar__date-button">30</span></td>
               </tr>
               <tr class="calendar__week">
-                <td class="calendar__date"><span class="calendar__date-inner">31</span></td>
-                <td class="calendar__date"><span class="calendar__date-inner">1 <span
-                      class="calendar__full-date">апр</span></span></td>
-                <td class="calendar__date"><span class="calendar__date-inner">2</span></td>
-                <td class="calendar__date"><span class="calendar__date-inner">3</span></td>
-                <td class="calendar__date"><span class="calendar__date-inner">4</span></td>
-                <td class="calendar__date"><span class="calendar__date-inner">5</span></td>
-                <td class="calendar__date"><span class="calendar__date-inner">6</span></td>
+                <td class="calendar__date"><span class="calendar__date-button" type="span">31</span>
+                </td>
+                <td class="calendar__date"><span class="calendar__date-button" type="span">1
+                    <span class="calendar__full-date">апр</span></span></td>
+                <td class="calendar__date"><span class="calendar__date-button" type="span">2</span>
+                </td>
+                <td class="calendar__date"><span class="calendar__date-button" type="span">3</span>
+                </td>
+                <td class="calendar__date"><span class="calendar__date-button" type="span">4</span>
+                </td>
+                <td class="calendar__date"><span class="calendar__date-button" type="span">5</span>
+                </td>
+                <td class="calendar__date"><span class="calendar__date-button" type="span">6</span>
+                </td>
               </tr>
             </table>
           </div>
@@ -668,15 +677,33 @@
                         class="modal-add-country__letter-item-button" type="button">Я</button></li>
                   </ul>
                   <ul class="modal-add-country__country-list">
-                    <li class="modal-add-country__country-item">Афганистан</li>
-                    <li class="modal-add-country__country-item">Албания</li>
-                    <li class="modal-add-country__country-item">Алжир</li>
-                    <li class="modal-add-country__country-item">Андорра</li>
-                    <li class="modal-add-country__country-item">Аргентина</li>
-                    <li class="modal-add-country__country-item">Армения</li>
-                    <li class="modal-add-country__country-item">Австралия</li>
-                    <li class="modal-add-country__country-item">Австрия</li>
-                    <li class="modal-add-country__country-item">Азербайджан</li>
+                    <li class="modal-add-country__country-item"><a
+                        class="modal-add-country__country-link"
+                        href="/Asia/Afghanistan.html">Афганистан</a></li>
+                    <li class="modal-add-country__country-item"><a
+                        class="modal-add-country__country-link"
+                        href="/Europe/Albania.html">Албания</a></li>
+                    <li class="modal-add-country__country-item"><a
+                        class="modal-add-country__country-link"
+                        href="/Africa/Algeria.html">Алжир</a></li>
+                    <li class="modal-add-country__country-item"><a
+                        class="modal-add-country__country-link"
+                        href="/Europe/Andorra.html">Андорра</a></li>
+                    <li class="modal-add-country__country-item"><a
+                        class="modal-add-country__country-link"
+                        href="/S-America/Argentina.html">Аргентина</a></li>
+                    <li class="modal-add-country__country-item"><a
+                        class="modal-add-country__country-link"
+                        href="/Europe/Armenia.html">Армения</a></li>
+                    <li class="modal-add-country__country-item"><a
+                        class="modal-add-country__country-link"
+                        href="/Oceania/Australia.html">Австралия</a></li>
+                    <li class="modal-add-country__country-item"><a
+                        class="modal-add-country__country-link"
+                        href="/Europe/Austria.html">Австрия</a></li>
+                    <li class="modal-add-country__country-item"><a
+                        class="modal-add-country__country-link"
+                        href="/Asia/Azerbaijan.html">Азербайджан</a></li>
                   </ul>
                 </div>
               </section>
@@ -701,10 +728,10 @@
           </a>
 
           <a class="form-prev-link form-step__button-prev" href="#step-1">
-            <svg class="form-next-link__icon" width="10" height="14">
+            <svg class="form-prev-link__icon" width="10" height="14">
               <use xlink:href="#triangle-arrow-left"></use>
             </svg>
-            <span class="form-next-link__text">На шаг назад</span>
+            <span class="form-prev-link__text">На шаг назад</span>
           </a>
 
         </div>
@@ -745,7 +772,8 @@
                   </svg>
                 </div>
               </div>
-              <textarea class="route-events__text" name="BiG" placeholder="План действий"></textarea>
+              <textarea class="route-events__text" name="BiG"
+                placeholder="План действий" required></textarea>
             </li>
 
             <li class="route-events__item">
@@ -758,7 +786,7 @@
                 </div>
               </div>
               <textarea class="route-events__text" name="Czech"
-                placeholder="План действий">Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
+                placeholder="План действий" required>Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
             </li>
 
           </ul>
@@ -771,10 +799,10 @@
           </button>
 
           <a class="form-prev-link form-step__button-prev" href="#step-2">
-            <svg class="form-next-link__icon" width="10" height="14">
+            <svg class="form-prev-link__icon" width="10" height="14">
               <use xlink:href="#triangle-arrow-left"></use>
             </svg>
-            <span class="form-next-link__text">На шаг назад</span>
+            <span class="form-prev-link__text">На шаг назад</span>
           </a>
 
         </div>

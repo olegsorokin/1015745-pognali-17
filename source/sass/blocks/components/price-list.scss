@@ -34,7 +34,7 @@
   justify-content: space-between;
   width: 200px;
   flex-wrap: wrap;
-  padding: 10px 0;
+  padding: 10px 0 12px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 
   @media (min-width: $tablet-width) {
@@ -79,6 +79,10 @@
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
+    padding: 14px 0;
+  }
+
+  @media (min-width: $desktop-width) {
     padding: 13px 0;
   }
 }

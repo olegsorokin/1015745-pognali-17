@@ -92,6 +92,16 @@
         right: -55px;
       }
     }
+
+    &:hover {
+      border-color: #959bb2;
+      background-color: #dfe3f0;
+    }
+
+    &:active {
+      background-color: #dfe3f0;
+      opacity: 0.3;
+    }
   }
 }
 
@@ -140,6 +150,10 @@
     @media (min-width: $desktop-width) {
       right: -55px;
     }
+  }
+
+  &:hover {
+    border-color: #959bb2;
   }
 }
 
@@ -253,23 +267,29 @@
 }
 
 .route-list__skip-icon {
-  opacity: 0.3;
-
+  opacity: 0.1;
 
   @media (min-width: $tablet-width) {
     width: 17px;
     height: 17px;
   }
+
+
 }
 
 .route-list__button-add {
   padding: 0;
   border: none;
+  background-color: transparent;
   cursor: pointer;
 }
 
 .route-list__add-icon {
-  opacity: 0.3;
+  opacity: 0.2;
+
+  &:hover {
+    opacity: 0.3;
+  }
 }
 
 .route-list__item--modal-show {

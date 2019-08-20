@@ -138,12 +138,11 @@
 }
 
 .route-events__text {
+  @include text ("Blogger Sans", 16px, 22px, $text-dark);
   box-sizing: border-box;
   width: 100%;
   height: 220px;
   padding: 15px;
-
-  @include text ("Blogger Sans", 16px, 22px, $text-dark);
   border: 1px solid #cbced9;
   border-radius: 4px;
   overflow-y: scroll;
@@ -166,5 +165,13 @@
       font-size: 20px;
       line-height: 24px;
     }
+  }
+
+  &:hover {
+    border-color: #959bb2;
+  }
+
+  &:focus-within {
+    border-color: #161c35;
   }
 }
