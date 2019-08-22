@@ -1,6 +1,9 @@
 .companion-form__inner {
+  padding: 0 5px;
+  margin-bottom: 17px;
+
   @media (min-width: $tablet-width) {
-    padding: 35px 0;
+    padding: 31px 0 37px;
     border-top: 1px solid #f3c72b;
     border-bottom: 1px solid #f3c72b;
     margin-bottom: 35px;
@@ -8,30 +11,41 @@
 
   @media (min-width: $desktop-width) {
     padding: 0;
-    margin-bottom: 45px;
+    margin: 0;
     border: none;
   }
 }
 
 .companion-form__item {
   @media (min-width: $tablet-width) {
-    margin-bottom: 25px;
+    margin-bottom: 20px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 35px;
+    margin-bottom: 0;
   }
 }
 
 
 .companion-form__item-transport {
   @media (min-width: $tablet-width) {
-    margin-bottom: 35px;
+    margin-bottom: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
   }
 }
 
 .companion-form__item-level {
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
+  }
+}
+
+
+.companion-form__submit {
+  @media (min-width: $desktop-width) {
+    margin-top: 25px;
   }
 }

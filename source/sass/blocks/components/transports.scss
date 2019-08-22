@@ -1,5 +1,6 @@
 .transports {
   display: flex;
+  flex-direction: column;
   justify-content: center;
 }
 
@@ -38,11 +39,37 @@
 }
 
 .transports__title {
+  position: relative;
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 12px;
+  font-size: 14px;
+  padding: 0 6px;
 
   @media (min-width: $tablet-width) {
     display: none;
+  }
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    display: block;
+    height: 1px;
+    background-color: #edeff6;
+
+  }
+
+  &::before {
+    width: 15px;
+    left: -20px;
+  }
+
+  &::after {
+    width: 90px;
+    left: 45%;
   }
 }
 
@@ -55,6 +82,7 @@
 .transports__list--catalog {
   width: auto;
   justify-content: flex-start;
+  margin-left: 3px;
 
   @media (min-width: $tablet-width) {
     flex-direction: column;

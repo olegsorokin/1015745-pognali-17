@@ -1,13 +1,40 @@
 .wishes__title {
   position: relative;
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
+  padding: 0 6px;
 
   @include text ("Blogger Sans", 15px, 18px, #444444);
 
+  @media (min-width: $tablet-width) {
+    padding: 0 47px;
+  }
 
   @media (min-width: $desktop-width) {
     display: none;
+  }
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    display: block;
+    height: 1px;
+    background-color: #edeff6;
+
+  }
+
+  &::before {
+    width: 15px;
+    left: -20px;
+  }
+
+  &::after {
+    width: 200px;
+    left: 90%;
   }
 }
 
@@ -18,13 +45,18 @@
 
 .wishes__list--catalog {
   flex-direction: column;
+  margin-left: 5px;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
+    margin-left: 0;
   }
 
   @media (min-width: $desktop-width) {
     flex-direction: column;
+    margin-top: 3px;
+    min-height: 135px;
+    margin-left: 9px;
   }
 
   .wishes__item {
@@ -36,13 +68,29 @@
     }
 
     @media (min-width: $desktop-width) {
-      margin-bottom: 10px;
+      margin-bottom: 7px;
+    }
+  }
+
+  .wishes__item:last-child {
+    margin: 0;
+  }
+
+  .wishes__link {
+    @media (min-width: $desktop-width) {
+      margin-right: 0;
     }
   }
 
   .wishes__link-icon {
-    width: 35px;
-    height: 24px;
+    @media (min-width: $tablet-width) {
+      width: 35px;
+      height: 24px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-right: 18px;
+    }
   }
 }
 
@@ -96,7 +144,7 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
-    margin-right: 30px;
+    margin-right: 28px;
   }
 }
 

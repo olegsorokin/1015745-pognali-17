@@ -6,13 +6,15 @@
 
   @media (min-width: $tablet-width) {
     justify-content: space-between;
-    min-height: 460px;
+    min-height: 417px;
     width: 350px;
+    margin: 0;
     padding-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
     width: 100%;
+    margin-top: 56px;
   }
 }
 
@@ -23,7 +25,7 @@
 .letter-filter__item {
   @media (min-width: $desktop-width) {
     flex-basis: 185px;
-    margin-top: 75px;
+    margin-bottom: 67px;
   }
 }
 
@@ -72,7 +74,7 @@
   @media (min-width: $desktop-width) {
     width: auto;
     height: auto;
-    margin-bottom: 35px;
+    margin-bottom: 15px;
     color: $link-darkblue;
   }
 }

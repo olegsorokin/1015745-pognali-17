@@ -4,6 +4,7 @@
   background-color: transparent;
   border: none;
   cursor: pointer;
+  padding: 0;
 
   &:hover {
     opacity: 0.6;
@@ -32,5 +33,10 @@
 .show-more-button__icon {
   @media (min-width: $tablet-width) {
     margin-left: 20px;
+  }
+
+  @media (min-width: $tablet-width) {
+   width: 27px;
+   height: 5px;
   }
 }

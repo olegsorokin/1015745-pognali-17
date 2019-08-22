@@ -21,10 +21,23 @@
   }
 }
 
+.header--catalog {
+  padding: 17px 25px 28px;
+
+  @media (min-width:$tablet-width) {
+    padding: 40px 39px 28px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 49px 60px 25px;
+  }
+}
+
 .header--dark {
   background-color: transparent;
 
   .menu-button {
+
     &::before,
     &::after {
       background-color: $main-white;
