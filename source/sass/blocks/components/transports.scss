@@ -5,14 +5,18 @@
 }
 
 .transports--profile {
-  padding: 15px;
+  padding: 14px 15px;
   border: 1px solid #cbced9;
   border-radius: 10px;
 
   @media (min-width: $tablet-width) {
     box-sizing: border-box;
-    max-width: 300px;
-    padding: 25px;
+    max-width: 308px;
+    padding: 25px 55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 385px;
   }
 
   .transports__title {
@@ -35,6 +39,32 @@
       display: block;
       letter-spacing: 2px;
     }
+
+    &::before,
+    &::after {
+      display: none;
+    }
+  }
+
+  .transports__list {
+    @media (min-width: $tablet-width) {
+      justify-content: space-between;
+    }
+
+    @media (min-width: $desktop-width) {
+      justify-content: center;
+    }
+  }
+
+  .transports__button {
+    @media (min-width: $tablet-width) {
+      width: 43px;
+      height: 43px;
+    }
+  }
+
+  .transports__button-icon {
+    transform: scale(1.3);
   }
 }
 

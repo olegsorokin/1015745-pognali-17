@@ -1,12 +1,12 @@
 .profile {
-  padding: 20px 25px 33px;
+  padding: 22px 24px 33px;
 
   @media (min-width: $tablet-width) {
-    padding: 65px 75px 60px;
+    padding: 63px 75px 60px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 73px 75px 65px 125px;
+    padding: 73px 60px 65px 125px;
   }
 }
 
@@ -91,12 +91,12 @@
 
   @media (min-width: $tablet-width) {
     order: 4;
-    margin-top: 50px;
+    margin-top: 52px;
   }
 
   @media (min-width: $desktop-width) {
     order: 1;
-    flex-basis: 730px;
+    flex-basis: 727px;
     margin-right: auto;
     flex-shrink: 0;
     margin-top: 0;
@@ -107,7 +107,7 @@
   order: 4;
   position: relative;
   flex-basis: 100%;
-  margin-top: 25px;
+  margin-top: 24px;
 
   @media (min-width: $tablet-width) {
     order: 1;

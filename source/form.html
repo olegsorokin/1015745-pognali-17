@@ -18,16 +18,17 @@
   <title>HTML Academy: Погнали - Направления</title>
 </head>
 
+
 <body class="form">
 
   <div style="display: none">
     <include src="build/img/sprite.svg"></include>
   </div>
 
-  <header class="header form__header">
+  <header class="header header--form form__header">
 
-    <a class="logo-link header__logo" href="index.html">
-      <picture>
+    <a class="logo-link logo-link--header header__logo" href="index.html">
+      <picture class="logo-link__wrap-image">
         <source type="image/webp" media="(min-width: 1440px)"
           srcset="img/logo-desktop-blue@1x.webp 1x, img/logo-desktop-blue@2x.webp 2x">
         <source type="image/webp" media="(min-width: 768px)"
@@ -43,12 +44,12 @@
       </picture>
     </a>
 
-    <button class="menu-button header__menu-button"></button>
+    <button class="menu-button header__menu-button menu-button--hide"></button>
 
     <nav class="nav header__nav">
       <ul class="nav__list">
         <li class="nav__item">
-          <a class="nav__link" href="#">
+          <a class="nav__link" href="about.html">
             <span class="nav__link-text" data-hover="О сервисе">О сервисе</span>
           </a>
         </li>
@@ -81,7 +82,7 @@
           почту по адресу
           mail@htmlacademy.ru</span>
       </a>
-      <a class="function-link function-link--singin functions-list__link" href="singin.html">
+      <a class="function-link function-link--singin function-link--header functions-list__link" href="singin.html">
         <svg class="function-link__icon function-link__icon-hide" width="20" height="20">
           <use xlink:href="#user"></use>
         </svg>
@@ -520,7 +521,7 @@
 
         <div class="form-step plan-form__step">
 
-          <div class="form-step__header">
+          <div class="form-step__header form-step__header--step2">
 
             <div class="form-step__header-wrap">
 
@@ -738,7 +739,7 @@
 
         <div class="form-step plan-form__step">
 
-          <div class="form-step__header">
+          <div class="form-step__header form-step__header--step3">
 
             <div class="form-step__header-wrap">
 
