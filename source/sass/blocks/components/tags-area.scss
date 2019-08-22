@@ -32,18 +32,23 @@
     transform: translate(-50%, 50%);
     letter-spacing: 2px;
   }
+
+  @media (min-width: $desktop-width) {
+    left: 8.5%;
+  }
 }
 
 .tags-area__text {
   @include text ("Blogger Sans", 16px, 22px, rgba(68, 68, 68, 0.6));
   box-sizing: border-box;
   width: 100%;
-  padding: 24px;
+  padding: 20px 24px;
   background-color: transparent;
   border: none;
   resize: none;
 
   @media (min-width: $tablet-width) {
+    padding: 32px 38px 10px;
     font-size: 20px;
     line-height: 24px;
   }

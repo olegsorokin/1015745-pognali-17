@@ -33,6 +33,18 @@
   }
 }
 
+.header--form {
+  padding: 16px 24px 0 24px;
+
+  @media (min-width:$tablet-width) {
+    padding: 40px 40px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 48px 60px 0;
+  }
+}
+
 .header--dark {
   background-color: transparent;
 

@@ -9,7 +9,11 @@
 
   @media (min-width: $tablet-width) {
     justify-content: space-between;
-    flex-basis: 185px;
+    flex-basis: 175px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-basis: 182px;
   }
 
   &:hover {

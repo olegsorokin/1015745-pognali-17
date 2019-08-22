@@ -14,7 +14,7 @@
   letter-spacing: 1.6px;
 
   @media (min-width: $tablet-width) {
-    padding: 25px 0;
+    padding: 24px 0;
     font-size: 20px;
     line-height: 18px;
     letter-spacing: 2px;
@@ -29,10 +29,10 @@
 }
 
 .counter__tip {
-  flex-basis: 35px;
-
   @include text ("Blogger Sans Medium", 16px, 16px, $link-darkblue);
+  flex-basis: 35px;
   text-transform: uppercase;
+  text-align: right;
   letter-spacing: 1.6px;
   opacity: 0.3;
 
@@ -47,6 +47,8 @@
   @media (min-width: $desktop-width) {
     flex-basis: 45px;
     order: 1;
+    margin-left: auto;
+    text-align: center;
   }
 }
 
@@ -56,19 +58,20 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 10px;
-  padding: 15px;
+  margin-top: 9px;
+  padding: 12px 15px;
   border: 1px solid #cbced9;
   border-radius: 4px;
 
   @media (min-width: $tablet-width) {
     margin-top: 0;
-    padding: 25px 20px;
+    padding: 23px 20px;
   }
 
   @media (min-width: $desktop-width) {
     box-sizing: border-box;
     flex-basis: 180px;
+    margin-left: 26px;
   }
 
   &:hover {
