@@ -3,6 +3,8 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  padding-top: 14px;
 
   &:hover {
     opacity: 0.6;
@@ -19,6 +21,8 @@
     display: flex;
     align-items: flex-start;
     justify-content: flex-end;
+    padding-top: 0;
+    border: none;
 
     @include link ("Blogger Sans", 20px, 24px, #444444);
   }
