@@ -100,7 +100,7 @@
 
   @media (min-width: $desktop-width) {
     text-align: left;
-    padding-top: 0px;
+    padding-top: 0;
     padding-bottom: 16px;
   }
 }
@@ -131,7 +131,6 @@
 
   @media (min-width: $desktop-width) {
     height: 71px;
-    padding: 15px;
     text-align: left;
     vertical-align: top;
     padding: 12px 15px 14px;

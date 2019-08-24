@@ -162,7 +162,7 @@
 
 .form-line__wrap-check--transport:not(:last-child) {
   @media (min-width: $tablet-width) {
-    margin-right: 0px;
+    margin-right: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -197,7 +197,7 @@
   display: none;
 }
 
-.form-line__checkbox+.form-line__label::before {
+.form-line__checkbox + .form-line__label::before {
   content: "";
   box-sizing: border-box;
   position: absolute;
@@ -216,16 +216,16 @@
   }
 }
 
-.form-line__checkbox:checked+.form-line__label::before {
+.form-line__checkbox:checked + .form-line__label::before {
   content: url("../img/tick.svg");
 }
 
-.form-line__checkbox+.form-line__transport .form-line__transport-icon {
+.form-line__checkbox + .form-line__transport .form-line__transport-icon {
   opacity: 0.15;
 }
 
 
-.form-line__checkbox:checked+.form-line__transport .form-line__transport-icon {
+.form-line__checkbox:checked + .form-line__transport .form-line__transport-icon {
   opacity: 1;
 }
 
@@ -291,7 +291,7 @@
     fill: #101e44;
   }
 
-  &:avtive {
+  &:active {
     opacity: 0.3;
   }
 }
@@ -343,7 +343,7 @@
     width: 16px;
     height: 1px;
     background-color: #cbced9;
-    box-shadow: 0 0 0px 5px white;
+    box-shadow: 0 0 0 5px white;
   }
 }
 
@@ -446,7 +446,7 @@
   }
 
   &:active {
-    box-shadow: 0px 3px 7px 0 rgba(29, 46, 91, 0.35);
+    box-shadow: 0 3px 7px 0 rgba(29, 46, 91, 0.35);
   }
 }
 
