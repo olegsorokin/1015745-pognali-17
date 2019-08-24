@@ -197,6 +197,8 @@
 
   &::before {
     position: absolute;
+    top:50%;
+    transform: translateY(-50%);
     left: 0;
     box-sizing: border-box;
     content: "";

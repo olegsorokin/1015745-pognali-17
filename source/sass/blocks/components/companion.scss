@@ -119,6 +119,7 @@
 
 .companion__tags {
   margin-bottom: 13px;
+  max-width:200px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 20px;

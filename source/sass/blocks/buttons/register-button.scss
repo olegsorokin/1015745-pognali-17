@@ -11,12 +11,13 @@
   text-align: left;
 
   @media (min-width: $tablet-width) {
-    flex-basis: 82px;
+    max-width: 82px;
     padding: 34px 36px;
     border-radius: 0 20px 20px 0;
   }
 
   @media (min-width: $desktop-width) {
+    max-width: none;
     padding: 29px 36px;
     flex-basis: 324px;
     justify-content: space-between;

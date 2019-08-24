@@ -63,7 +63,7 @@
 .stages-list__item:nth-child(2n) {
   @media (min-width: $tablet-width) {
     flex-basis: 50%;
-    margin-left: auto;
+    margin-left: 50%;
     margin-top: -140px;
   }
 

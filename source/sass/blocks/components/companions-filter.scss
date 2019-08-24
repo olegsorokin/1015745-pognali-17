@@ -9,7 +9,7 @@
 
   @media (min-width: $desktop-width) {
     padding: 43px 46px 45px;
-    flex-basis: 285px;
+    max-width: 285px;
     order: 1;
     box-sizing: border-box;
   }

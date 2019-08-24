@@ -3,6 +3,10 @@
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+
+  @media (min-width: $tablet-width) {
+    flex-wrap: nowrap;
+  }
 }
 
 .counter__title {
@@ -22,7 +26,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    flex-basis: 195px;
+    flex-basis: 210px;
     flex-grow: 0;
     border: none;
   }
@@ -47,7 +51,7 @@
   @media (min-width: $desktop-width) {
     flex-basis: 45px;
     order: 1;
-    margin-left: auto;
+    margin-left: 20px;
     text-align: center;
   }
 }
@@ -71,7 +75,7 @@
   @media (min-width: $desktop-width) {
     box-sizing: border-box;
     flex-basis: 180px;
-    margin-left: 26px;
+    margin-left: 22px;
   }
 
   &:hover {

@@ -80,6 +80,18 @@
   top: 0;
 }
 
+.header--scroll-active {
+  padding: 25px;
+
+  @media (min-width:$tablet-width) {
+    padding: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 20px 60px;
+  }
+}
+
 .header__menu-button {
   position: relative;
   margin-left: auto;
