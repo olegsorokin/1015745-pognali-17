@@ -22,29 +22,20 @@
   }
 }
 
-.companion-card__image-wrap {
+.companion-card__image {
   position: absolute;
+  border-radius: 50%;
 
   @media (min-width: $tablet-width) {
     top: 33px;
     left: 35px;
-  }
-
-  @media (min-width: $desktop-width) {
-    top: 0;
-    left: 0;
-  }
-}
-
-.companion-card__image {
-  border-radius: 50%;
-
-  @media (min-width: $tablet-width) {
     width: 190px;
     border-radius: 20px;
   }
 
   @media (min-width: $desktop-width) {
+    top: 0;
+    left: 0;
     width: 285px;
     border-radius: 0;
   }

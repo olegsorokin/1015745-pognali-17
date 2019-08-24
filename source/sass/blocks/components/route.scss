@@ -10,12 +10,6 @@
   }
 }
 
-.route__wrap-image {
-  @media (min-width: $tablet-width) {
-    flex-basis: 186px;
-  }
-}
-
 .route__image {
   width: 100%;
   height: auto;
