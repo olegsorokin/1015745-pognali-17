@@ -15,6 +15,45 @@ var modalShowHide = function (buttonOpen, buttonClose, modalBlock, classToggle) 
   });
 }
 
+/*-----Подмена цвета изображения-----*/
+var changeLogoColor = function (currentColor, newColor) {
+
+  /*-Получаем все source контейнера-*/
+  var logoSources = document.querySelectorAll(".header__logo source");
+  var logoSrc = document.querySelector(".logo-link__image");
+
+  /*-Перебираем в массив-*/
+  var sourceArray = [];
+  for (var i = 0; i < logoSources.length; i++) {
+    sourceArray.push(logoSources[i]);
+  }
+
+  /*-Подменяем в каждом источнике путь на новый-*/
+  for (var j = 0; j < sourceArray.length; j++) {
+    var currentSource = sourceArray[j];
+
+    if (currentSource.srcset) {
+      var newSource = currentSource.srcset.replace(new RegExp(currentColor, 'gi'), newColor);
+      currentSource.srcset = newSource;
+    } else {
+      var newSource = currentSource.outerHTML.replace(new RegExp(currentColor, 'gi'), newColor);
+      currentSource.outerHTML = newSource;
+    }
+  }
+  /*-Подменяем в каждом источнике путь на новый для img-*/
+  if (logoSrc.srcset) {
+    var newSrc = logoSrc.src.replace(new RegExp(currentColor, 'gi'), newColor);
+    logoSrc.src = newSrc;
+
+    var newSrcset = logoSrc.srcset.replace(new RegExp(currentColor, 'gi'), newColor);
+    logoSrc.srcset = newSrcset;
+
+  } else {
+    var newSrc = logoSrc.outerHTML.replace(new RegExp(currentColor, 'gi'), newColor);
+    logoSrc.outerHTML = newSrc;
+  }
+}
+
 /*-----Скрыть/показать элементы header-----*/
 var jsOn = function () {
   /*-Определяем переменные-*/
@@ -45,7 +84,7 @@ var jsOn = function () {
       headerContacts.classList.remove("header__contacts--hide");
       headerSocial.classList.remove("header__socials--hide");
       header.classList.remove("header--dark");
-      changeLogoColor(/white/gi, 'blue');
+      changeLogoColor('white', 'blue');
     } else if (headerMenuButton.classList.contains("menu-button--close")) {
       headerMenuButton.classList.remove("menu-button--close");
       headerNav.classList.remove("nav--hide");
@@ -59,7 +98,7 @@ var jsOn = function () {
       headerContacts.classList.add("header__contacts--hide");
       headerSocial.classList.add("header__socials--hide");
       header.classList.add("header--dark");
-      changeLogoColor(/blue/gi, 'white');
+      changeLogoColor('blue', 'white');
     } else {
       headerMenuButton.classList.add("menu-button--close");
       headerNav.classList.add("nav--hide");
@@ -70,33 +109,6 @@ var jsOn = function () {
   });
 }
 
-/*-----Подмена цвета изображения-----*/
-var changeLogoColor = function (currentColor, newColor) {
-  /*-Получаем все source контейнера-*/
-  var logoSources = document.querySelectorAll(".header__logo source");
-  var logoSrc = document.querySelector(".logo-link__image");
-
-  /*-Перебираем в массив-*/
-  var sourceArray = [];
-  for (var i = 0; i < logoSources.length; i++) {
-    sourceArray.push(logoSources[i]);
-  }
-
-  /*-Подменяем в каждом источнике путь на новый-*/
-  for (var j = 0; j < sourceArray.length; j++) {
-    var currentSource = sourceArray[j];
-    var newSource = currentSource.srcset.replace(currentColor, newColor);
-    currentSource.srcset = newSource;
-  }
-
-  /*-Подменяем в каждом источнике путь на новый для img-*/
-  var newSrc = logoSrc.src.replace(currentColor, newColor);
-  logoSrc.src = newSrc;
-
-  var newSrcset = logoSrc.srcset.replace(currentColor, newColor);
-  logoSrc.srcset = newSrcset;
-}
-
 /*-----Смена цвета при прокрутке-----*/
 var changeHeaderTheme = function () {
   var headerMenuButton = document.querySelector(".header__menu-button");
@@ -104,15 +116,19 @@ var changeHeaderTheme = function () {
 
   window.addEventListener("scroll", function () {
     if (window.pageYOffset > 0) {
-      changeLogoColor(/white/gi, 'blue');
+      changeLogoColor('white', 'blue');
       header.classList.remove("header--dark");
+      header.classList.add("header--scroll-active");
     } else if ((window.pageYOffset == 0) && (headerMenuButton.classList.contains("menu-button--close"))) {
-      changeLogoColor(/blue/gi, 'white');
+      changeLogoColor('blue', 'white');
       header.classList.add("header--dark");
+      header.classList.remove("header--scroll-active");
     } else if ((window.pageYOffset == 0) && (!headerMenuButton.classList.contains("menu-button--close"))) {
-      changeLogoColor(/white/gi, 'blue');
+      changeLogoColor('white', 'blue');
+      header.classList.remove("header--scroll-active");
     } else {
-      changeLogoColor(/blue/gi, 'white');
+      changeLogoColor('blue', 'white');
+      header.classList.add("header--scroll-active");
     }
   });
 }
@@ -175,7 +191,12 @@ var formLinesShowHide = function () {
   }
 
   form.addEventListener("click", function (event) {
-    var target = event.target.closest('.form-line__title');
+    var target;
+    if (Element.prototype.closest) {
+      target = event.target.closest('.form-line__title');
+    } else {
+      target = event.target;
+    }
     if (target.classList.contains('form-line__title')) {
       target.classList.toggle('form-line__title--close');
       target.nextElementSibling.classList.toggle('form-line__wrap--close');
@@ -192,7 +213,14 @@ var changeLetterList = function () {
     var countryListCurrent = document.querySelector(".countries-list--current");
     buttonLetterCurrent.classList.remove("letter-filter__item-title--current");
     countryListCurrent.classList.remove("countries-list--current");
-    var target = event.target.closest(".letter-filter__item-title");
+
+    var target;
+    if (Element.prototype.closest) {
+      target = event.target.closest(".letter-filter__item-title");
+    } else {
+      target = event.target;
+    }
+
     if (target) {
       target.classList.add("letter-filter__item-title--current");
       target.nextElementSibling.classList.add("countries-list--current");
@@ -213,7 +241,13 @@ var formCounterChangeValue = function () {
     var counter = counterArray[j];
 
     counter.addEventListener('click', function () {
-      var target = event.target.closest("button");
+
+      var target;
+      if (Element.prototype.closest) {
+        target = event.target.closest("button");
+      } else {
+        target = event.target;
+      }
       if (!target) return
       if (target.classList.contains("counter__button-plus")) {
         target.previousElementSibling.value++
@@ -243,13 +277,22 @@ var changeFormStage = function () {
     var buttonNext = buttonsNextArray[j];
     buttonNext.addEventListener('click', function (event) {
       formPlan.addEventListener('click', function () {
-        var target = event.target.closest('.form-step');
-        target.classList.remove("form-step--current");
-        target.nextElementSibling.classList.add("form-step--current");
+        if (Element.prototype.closest) {
+          var target = event.target.closest('.form-step');
+          target.classList.remove("form-step--current");
+          target.nextElementSibling.classList.add("form-step--current");
+        } else {
+          var target = event.target;
+          while (!target.classList.contains("form-next-link")) {
+            target = target.parentElement;
+          }
+          var parent = target.parentElement;
+          parent.classList.remove("form-step--current");
+          parent.nextElementSibling.classList.add("form-step--current");
+        }
       });
     });
   }
-
 
   for (var k = 0; k < formPlanButtonsPrev.length; k++) {
     buttonsPrevArray.push(formPlanButtonsPrev[k]);
@@ -259,9 +302,19 @@ var changeFormStage = function () {
     var buttonPrev = buttonsPrevArray[l];
     buttonPrev.addEventListener('click', function (event) {
       formPlan.addEventListener('click', function () {
-        var target = event.target.closest('.form-step');
-        target.classList.remove("form-step--current");
-        target.previousElementSibling.classList.add("form-step--current");
+        if (Element.prototype.closest) {
+          var target = event.target.closest('.form-step');
+          target.classList.remove("form-step--current");
+          target.previousElementSibling.classList.add("form-step--current");
+        } else {
+          var target = event.target;
+          while (!target.classList.contains("form-prev-link")) {
+            target = target.parentElement;
+          }
+          var parent = target.parentElement;
+          parent.classList.remove("form-step--current");
+          parent.previousElementSibling.classList.add("form-step--current");
+        }
       });
     });
   }
@@ -269,7 +322,7 @@ var changeFormStage = function () {
 
 /*-----Базовые вызовы при включённом JS-----*/
 jsOn();
-changeLogoColor(/blue/gi, 'white');
+changeLogoColor('blue', 'white');
 changeHeaderTheme();
 
 /*-----Вызовы модального окна с прайс-листом (index.html)-----*/

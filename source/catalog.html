@@ -12,7 +12,7 @@
   <link rel="preload" href="fonts/bloggersans.woff2" as="font" type="font/woff2"
     crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.min.css">
-  <script src="js/picturefill.min.js" async=""></script>
+  <script src="js/picturefill.min.js" async></script>
   <title>HTML Academy: Погнали - Попутчики</title>
 </head>
 
@@ -80,7 +80,8 @@
           почту по адресу
           mail@htmlacademy.ru</span>
       </a>
-      <a class="function-link function-link--singin function-link--header functions-list__link" href="singin.html">
+      <a class="function-link function-link--singin function-link--header functions-list__link"
+        href="singin.html">
         <svg class="function-link__icon function-link__icon-hide" width="20" height="20">
           <use xlink:href="#user"></use>
         </svg>
@@ -1089,7 +1090,7 @@
 
           <li class="companion-card companions-list__item">
 
-            <picture>
+            <picture class="companion-card__image-wrap">
               <source type="image/webp" media="(min-width: 1440px)"
                 srcset="img/firsova-desktop@1x.webp 1x, img/firsova-desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width: 768px)"
@@ -1104,20 +1105,22 @@
                 srcset="img/firsova-mobile@2x.jpg 2x" alt="Фотография возможного попутчика">
             </picture>
 
-            <h3 class="companion-card__name">
-              <a class="companion-card__link" href="/profiles/profile-458.html">Таня Фирсова</a>
-            </h3>
+            <div class="companion-card__info-wrap">
+              <h3 class="companion-card__name">
+                <a class="companion-card__link" href="/profiles/profile-458.html">Таня Фирсова</a>
+              </h3>
 
-            <div class="tags companion-card__tags">
-              <h4 class="visually-hidden">Сопутствующие теги</h4>
-              <ul class="tags__list tags__list--catalog">
-                <li class="tags__item">ЗОЖ</li>
-                <li class="tags__item">ПП</li>
-                <li class="tags__item">Фитнес</li>
-                <li class="tags__item">пляж</li>
-                <li class="tags__item">авокадо</li>
-                <li class="tags__item">смузи</li>
-              </ul>
+              <div class="tags companion-card__tags">
+                <h4 class="visually-hidden">Сопутствующие теги</h4>
+                <ul class="tags__list tags__list--catalog">
+                  <li class="tags__item">ЗОЖ</li>
+                  <li class="tags__item">ПП</li>
+                  <li class="tags__item">Фитнес</li>
+                  <li class="tags__item">пляж</li>
+                  <li class="tags__item">авокадо</li>
+                  <li class="tags__item">смузи</li>
+                </ul>
+              </div>
             </div>
 
             <div class="companion-card__functions">
@@ -1227,7 +1230,7 @@
 
           <li class="companion-card companions-list__item">
 
-            <picture>
+            <picture class="companion-card__image-wrap">
               <source type="image/webp" media="(min-width: 1440px)"
                 srcset="img/demin-desktop@1x.webp 1x, img/demin-desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width: 768px)"
@@ -1242,19 +1245,23 @@
                 srcset="img/demin-mobile@2x.jpg 2x" alt="Фотография возможного попутчика">
             </picture>
 
-            <h3 class="companion-card__name">
-              <a class="companion-card__link" href="/profiles/profile-1348.html">Петя Демин</a>
-            </h3>
+            <div class="companion-card__info-wrap">
 
-            <div class="tags companion-card__tags">
-              <h4 class="visually-hidden">Сопутствующие теги</h4>
-              <ul class="tags__list tags__list--catalog">
-                <li class="tags__item">бургер</li>
-                <li class="tags__item">бар</li>
-                <li class="tags__item">футбол</li>
-                <li class="tags__item">концерт</li>
-                <li class="tags__item">крафт</li>
-              </ul>
+              <h3 class="companion-card__name">
+                <a class="companion-card__link" href="/profiles/profile-1348.html">Петя Демин</a>
+              </h3>
+
+              <div class="tags companion-card__tags">
+                <h4 class="visually-hidden">Сопутствующие теги</h4>
+                <ul class="tags__list tags__list--catalog">
+                  <li class="tags__item">бургер</li>
+                  <li class="tags__item">бар</li>
+                  <li class="tags__item">футбол</li>
+                  <li class="tags__item">концерт</li>
+                  <li class="tags__item">крафт</li>
+                </ul>
+              </div>
+
             </div>
 
             <div class="companion-card__functions">
@@ -1357,7 +1364,7 @@
 
           <li class="companion-card companions-list__item">
 
-            <picture>
+            <picture class="companion-card__image-wrap">
               <source type="image/webp" media="(min-width: 1440px)"
                 srcset="img/smolov-desktop@1x.webp 1x, img/smolov-desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width: 768px)"
@@ -1372,19 +1379,23 @@
                 srcset="img/smolov-mobile@2x.jpg 2x" alt="Фотография возможного попутчика">
             </picture>
 
-            <h3 class="companion-card__name">
-              <a class="companion-card__link" href="/profiles/profile-2549.html">Марк Смолов</a>
-            </h3>
+            <div class="companion-card__info-wrap">
 
-            <div class="tags companion-card__tags">
-              <h4 class="visually-hidden">Сопутствующие теги</h4>
-              <ul class="tags__list tags__list--catalog">
-                <li class="tags__item">рэп</li>
-                <li class="tags__item">тату</li>
-                <li class="tags__item">хайпбист</li>
-                <li class="tags__item">кроссовки</li>
-                <li class="tags__item">суприм</li>
-              </ul>
+              <h3 class="companion-card__name">
+                <a class="companion-card__link" href="/profiles/profile-2549.html">Марк Смолов</a>
+              </h3>
+
+              <div class="tags companion-card__tags">
+                <h4 class="visually-hidden">Сопутствующие теги</h4>
+                <ul class="tags__list tags__list--catalog">
+                  <li class="tags__item">рэп</li>
+                  <li class="tags__item">тату</li>
+                  <li class="tags__item">хайпбист</li>
+                  <li class="tags__item">кроссовки</li>
+                  <li class="tags__item">суприм</li>
+                </ul>
+              </div>
+
             </div>
 
             <div class="companion-card__functions">
@@ -1494,7 +1505,7 @@
 
           <li class="companion-card companions-list__item">
 
-            <picture>
+            <picture class="companion-card__image-wrap">
               <source type="image/webp" media="(min-width: 1440px)"
                 srcset="img/rogovaya-desktop@1x.webp 1x, img/rogovaya-desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width: 768px)"
@@ -1509,20 +1520,24 @@
                 srcset="img/rogovaya-mobile@2x.jpg 2x" alt="Фотография возможного попутчика">
             </picture>
 
-            <h3 class="companion-card__name">
-              <a class="companion-card__link companion-card__link--online"
-                href="/profiles/profile-2240.html">Лариса
-                Роговая</a>
-            </h3>
+            <div class="companion-card__info-wrap">
 
-            <div class="tags companion-card__tags">
-              <h4 class="visually-hidden">Сопутствующие теги</h4>
-              <ul class="tags__list tags__list--catalog">
-                <li class="tags__item">образование</li>
-                <li class="tags__item">карьера</li>
-                <li class="tags__item">учёба</li>
-                <li class="tags__item">линкедин</li>
-              </ul>
+              <h3 class="companion-card__name">
+                <a class="companion-card__link companion-card__link--online"
+                  href="/profiles/profile-2240.html">Лариса
+                  Роговая</a>
+              </h3>
+
+              <div class="tags companion-card__tags">
+                <h4 class="visually-hidden">Сопутствующие теги</h4>
+                <ul class="tags__list tags__list--catalog">
+                  <li class="tags__item">образование</li>
+                  <li class="tags__item">карьера</li>
+                  <li class="tags__item">учёба</li>
+                  <li class="tags__item">линкедин</li>
+                </ul>
+              </div>
+
             </div>
 
             <div class="companion-card__functions">

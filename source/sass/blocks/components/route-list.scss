@@ -138,6 +138,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    max-width: 730px;
     flex-basis: 730px;
   }
 
@@ -222,6 +223,7 @@
 
   @media (min-width: $desktop-width) {
     margin-right: 115px;
+    margin-left: auto;
   }
 
   &::before {
@@ -326,6 +328,7 @@
 
 .route-list__modal-add-country {
   position: absolute;
+  left:0;
   top: 0;
   z-index: 15;
 }
