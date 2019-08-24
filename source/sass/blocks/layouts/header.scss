@@ -24,7 +24,7 @@
 .header--catalog {
   padding: 17px 25px 28px;
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     padding: 40px 39px 28px;
   }
 
@@ -36,7 +36,7 @@
 .header--form {
   padding: 16px 24px 0 24px;
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     padding: 40px 40px 0;
   }
 
@@ -49,7 +49,6 @@
   background-color: transparent;
 
   .menu-button {
-
     &::before,
     &::after {
       background-color: $main-white;
@@ -83,7 +82,7 @@
 .header--scroll-active {
   padding: 25px;
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     padding: 40px;
   }
 

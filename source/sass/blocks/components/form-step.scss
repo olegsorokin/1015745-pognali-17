@@ -197,7 +197,7 @@
 
   &::before {
     position: absolute;
-    top:50%;
+    top: 50%;
     transform: translateY(-50%);
     left: 0;
     box-sizing: border-box;
@@ -229,7 +229,7 @@
   }
 }
 
-.form-step__check:checked+.form-step__check-label {
+.form-step__check:checked + .form-step__check-label {
   &::before {
     content: url("../img/tick.svg");
   }
