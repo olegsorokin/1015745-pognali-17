@@ -2,15 +2,19 @@
   @include list-reset;
 
   @media (min-width: $tablet-width) {
-    padding-top: 40px;
+    padding-top: 41px;
     border-top: 1px solid #d6d9e6;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 62px;
   }
 
   &::before {
     @media (min-width: $tablet-width) {
       position: absolute;
       top: 0;
-      right: 131px;
+      right: 134px;
       content: "";
       display: block;
       width: 1px;
@@ -19,7 +23,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      right: 222px;
+      right: 224px;
     }
   }
 }
@@ -35,6 +39,10 @@
 
 .route-list__item:not(:first-child) {
   margin-top: 22px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 15px;
+  }
 
   &::before {
     position: absolute;
@@ -74,9 +82,14 @@
 
 .route-list__item--add {
   .route-list__country-wrap {
+    padding: 11px 15px 11px 11px;
     background-color: #edeff6;
     border: none;
     border-radius: 4px;
+
+    @media (min-width: $tablet-width) {
+      padding: 23px 26px;
+    }
 
     &::after {
       right: 50px;
@@ -84,13 +97,23 @@
       background-color: #edeff6;
 
       @media (min-width: $tablet-width) {
-        right: -35px;
+        right: -34px;
         transform: translate(0, -50%);
       }
 
       @media (min-width: $desktop-width) {
         right: -55px;
       }
+    }
+
+    &:hover {
+      border-color: #959bb2;
+      background-color: #dfe3f0;
+    }
+
+    &:active {
+      background-color: #dfe3f0;
+      opacity: 0.3;
     }
   }
 }
@@ -100,7 +123,7 @@
   display: flex;
   flex-grow: 1;
   align-items: center;
-  padding: 12px 15px 12px 12px;
+  padding: 11px 12px 11px 9px;
   border: 1px solid #cbced9;
   border-radius: 4px;
   overflow: hidden;
@@ -109,11 +132,13 @@
     box-sizing: border-box;
     flex-basis: 370px;
     flex-grow: 0;
-    padding: 27px;
+    padding: 25px;
+    padding-right: 29px;
     overflow: visible;
   }
 
   @media (min-width: $desktop-width) {
+    max-width: 730px;
     flex-basis: 730px;
   }
 
@@ -140,6 +165,10 @@
     @media (min-width: $desktop-width) {
       right: -55px;
     }
+  }
+
+  &:hover {
+    border-color: #959bb2;
   }
 }
 
@@ -170,6 +199,11 @@
 
 .route-list__dropdown-icon {
   opacity: 0.3;
+
+  @media (min-width: $tablet-width) {
+    width: 17px;
+    height: 9px;
+  }
 }
 
 .route-list__flag-wrap {
@@ -184,11 +218,12 @@
   @media (min-width: $tablet-width) {
     border: none;
     padding: 0;
-    margin-right: 40px;
+    margin-right: 38px;
   }
 
   @media (min-width: $desktop-width) {
     margin-right: 115px;
+    margin-left: auto;
   }
 
   &::before {
@@ -206,7 +241,7 @@
     border: 1px solid $link-darkblue;
 
     @media (min-width: $tablet-width) {
-      left: -30px;
+      left: -34px;
       right: auto;
       width: 14px;
       height: 14px;
@@ -253,8 +288,7 @@
 }
 
 .route-list__skip-icon {
-  opacity: 0.3;
-
+  opacity: 0.1;
 
   @media (min-width: $tablet-width) {
     width: 17px;
@@ -265,11 +299,21 @@
 .route-list__button-add {
   padding: 0;
   border: none;
+  background-color: transparent;
   cursor: pointer;
 }
 
 .route-list__add-icon {
-  opacity: 0.3;
+  opacity: 0.2;
+
+  @media (min-width: $tablet-width) {
+    width: 20px;
+    height: 20px;
+  }
+
+  &:hover {
+    opacity: 0.3;
+  }
 }
 
 .route-list__item--modal-show {
@@ -284,6 +328,7 @@
 
 .route-list__modal-add-country {
   position: absolute;
+  left: 0;
   top: 0;
   z-index: 15;
 }

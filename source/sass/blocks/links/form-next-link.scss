@@ -5,19 +5,39 @@
   align-items: center;
   max-width: 100%;
   padding: 10px 0;
-
-  @include link ("Blogger Sans Bold", 17px, 20px, #161c35);
-  text-align: center;
-  text-transform: uppercase;
+  text-decoration: none;
   border-radius: 20px;
   background-color: $main-yellow;
 
   @media (min-width: $tablet-width) {
     justify-content: space-between;
+    padding: 30px 35px;
+  }
+
+  &:hover {
+    background-color: #ffbd30;
+  }
+
+  &:active {
+    .form-next-link__text {
+      opacity: 0.3;
+    }
+
+    .form-next-link__icon {
+      opacity: 0.3;
+    }
+  }
+}
+
+.form-next-link__text {
+  @include text ("Blogger Sans Bold", 17px, 20px, #161c35);
+  text-align: center;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
     font-size: 24px;
     line-height: 24px;
     text-transform: unset;
-    padding: 30px 35px;
   }
 }
 

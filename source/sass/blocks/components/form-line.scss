@@ -9,17 +9,18 @@
 
   @media (min-width: $desktop-width) {
     display: block;
+    margin-bottom: 11px;
   }
 }
 
 .form-line__title {
-  margin: 13px 0;
+  padding: 11px 0;
 
   display: flex;
   justify-content: space-between;
   align-items: center;
 
-  @include text ("Blogger Sans Bold", 13px, 18px, $link-darkblue);
+  @include text ("Blogger Sans Bold", 16px, 18px, $link-darkblue);
   text-transform: uppercase;
 
   cursor: pointer;
@@ -29,6 +30,7 @@
     justify-content: flex-start;
     margin: 0;
     margin-right: 20px;
+    padding: 0;
     font-size: 20px;
     line-height: 30px;
   }
@@ -37,7 +39,6 @@
     justify-content: space-between;
     font-family: "Blogger Sans Medium", "arial", sans-serif;
     margin: 0;
-    margin-bottom: 25px;
   }
 
   &::after {
@@ -48,6 +49,26 @@
     @media (min-width: $desktop-width) {
       display: none;
     }
+  }
+
+  &:hover {
+    .form-line__title-text {
+      opacity: 0.3;
+    }
+
+    .form-line__title-toggle {
+      opacity: 0.3;
+    }
+  }
+}
+
+.form-line__title--transport {
+  @media (min-width: $tablet-width) {
+    margin-right: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 0;
   }
 }
 
@@ -74,8 +95,8 @@
 }
 
 .form-line__wrap {
-  margin-top: 5px;
-  margin-bottom: 20px;
+  margin-top: 4px;
+  margin-bottom: 19px;
 
   @media (min-width: $tablet-width) {
     flex-grow: 1;
@@ -86,6 +107,22 @@
 
   @media (min-width: $desktop-width) {
     display: block;
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+}
+
+.form-line__wrap--transport {
+  margin-top: 4px;
+  margin-bottom: 6px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 18px;
+    margin-bottom: 27px;
   }
 }
 
@@ -119,13 +156,13 @@
 
   @media (min-width: $desktop-width) {
     margin: 0;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
   }
 }
 
 .form-line__wrap-check--transport:not(:last-child) {
   @media (min-width: $tablet-width) {
-    margin-right: 15px;
+    margin-right: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -134,8 +171,14 @@
 }
 
 .form-line__wrap--level {
+  margin: 0;
+
   @media (min-width: $tablet-width) {
     justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 17px;
   }
 }
 
@@ -193,32 +236,46 @@
   align-items: center;
 
   @media (min-width: $tablet-width) {
-    padding-left: 40px;
+    padding-left: 35px;
     min-width: 115px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 35px;
+    padding-left: 38px;
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 
 .form-line__transport {
   position: relative;
-  width: 33px;
-  height: 33px;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 33px;
+  height: 33px;
   background-color: $main-white;
   border-radius: 50%;
-
-  &:hover .form-line__transport-text {
-    display: block;
-  }
 
   @media (min-width: $tablet-width) {
     width: 43px;
     height: 43px;
+  }
+
+  &:hover {
+    .form-line__transport-text {
+      display: block;
+    }
+  }
+
+  &:active {
+    background-color: #e2e5f1;
   }
 }
 
@@ -231,18 +288,19 @@
   }
 
   &:hover {
-    .form-line__transport-text {
-      display: block;
-    }
+    fill: #101e44;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 
 .form-line__transport-text {
+  @include text ("Blogger Sans", 20px, 24px, $main-white);
   position: absolute;
   top: 100%;
   display: none;
-
-  @include text ("Blogger Sans", 20px, 24px, $main-white);
   padding: 20px 25px;
   background-color: $main-darkblue;
 
@@ -261,8 +319,9 @@
 }
 
 .form-line__level {
+  position: relative;
   display: flex;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
 
   @media (min-width: $tablet-width) {
     order: 1;
@@ -271,12 +330,25 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 35px;
+    margin-bottom: 0;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    width: 16px;
+    height: 1px;
+    background-color: #cbced9;
+    box-shadow: 0 0 0 5px white;
   }
 }
 
 .form-line__level-input {
-  width: 50%;
+  width: calc(50% - 2px);
   padding: 10px 0;
 
   @include text ("blogger Sans Medium", 15px, 15px, $link-darkblue);
@@ -285,26 +357,39 @@
   border: 1px solid rgb(203, 206, 217);
 
   &:first-child {
-    border-right: none;
     border-radius: 5px 0 0 5px;
   }
 
   &:last-child {
     border-radius: 0 5px 5px 0;
+    margin-left: -1px;
   }
 
   @media (min-width: $tablet-width) {
+    padding: 11px 0;
     font-size: 20px;
     line-height: 20px;
+  }
+
+  &:hover {
+    border-color: #959bb2;
+  }
+
+  &:focus {
+    border-color: #161c35;
   }
 }
 
 .form-line__range {
   position: relative;
-  height: 10px;
+  height: 19px;
 
   @media (min-width: $tablet-width) {
-    flex-basis: 274px;
+    flex-basis: 278px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 28px;
   }
 }
 
@@ -327,10 +412,20 @@
   background-color: $main-darkblue;
   height: 2px;
   z-index: 1;
+
+  @media (min-width: $tablet-width) {
+    left: 23%;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 30%;
+  }
 }
 
 .form-line__range-button {
   position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
   display: block;
   width: 10px;
   height: 10px;
@@ -338,10 +433,33 @@
   border: none;
   border-radius: 50%;
   z-index: 2;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    width: 13px;
+    height: 13px;
+  }
+
+  &:hover {
+    width: 19px;
+    height: 19px;
+  }
+
+  &:active {
+    box-shadow: 0 3px 7px 0 rgba(29, 46, 91, 0.35);
+  }
 }
 
 .form-line__range-button--left {
   left: 30%;
+
+  @media (min-width: $tablet-width) {
+    left: 23%;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 30%;
+  }
 }
 
 .form-line__range-button--right {

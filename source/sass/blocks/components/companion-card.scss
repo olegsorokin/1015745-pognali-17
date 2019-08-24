@@ -3,7 +3,7 @@
   justify-content: space-between;
   flex-wrap: wrap;
 
-  padding: 15px 20px 90px;
+  padding: 14px 20px 73px;
 
   background-color: $main-white;
 
@@ -11,37 +11,47 @@
 
   @media (min-width: $tablet-width) {
     flex-direction: column;
-    align-content: flex-start;
-    max-height: 190px;
-    padding: 35px 35px 105px;
+    align-items: center;
+    padding: 28px 0 0 35px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 50px 45px 40px 345px;
-    overflow: hidden;
-    align-content: space-between;
+    padding: 43px 43px 41px 343px;
+    flex-direction: row;
+    justify-content: space-between;
   }
 }
 
 .companion-card__image {
-  margin-right: 15px;
-  margin-bottom: 15px;
+  position: absolute;
   border-radius: 50%;
 
   @media (min-width: $tablet-width) {
+    top: 33px;
+    left: 35px;
     width: 190px;
-    margin: 0;
-    margin-right: 30px;
     border-radius: 20px;
   }
 
   @media (min-width: $desktop-width) {
-    position: absolute;
     top: 0;
     left: 0;
     width: 285px;
     border-radius: 0;
-    margin: 0;
+  }
+}
+
+.companion-card__info-wrap {
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    max-width: 255px;
+    margin-left: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    order: 0;
+    margin-left: 0;
   }
 }
 
@@ -49,10 +59,12 @@
   position: relative;
   margin: 0;
   flex-grow: 1;
+  padding-left: 85px;
 
   @media (min-width: $tablet-width) {
     flex-grow: 0;
-    margin-bottom: 20px;
+    margin-bottom: 18px;
+    padding-left: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -79,8 +91,8 @@
     content: "";
 
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 9px;
+    right: 2px;
 
     display: block;
     width: 6px;
@@ -103,6 +115,14 @@
       left: -50px;
     }
   }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .companion-card__link--online {
@@ -113,25 +133,46 @@
 
 .companion-card__tags {
   width: 170px;
-  margin-bottom: 20px;
+  margin: 45px 5px 13px;
   text-align: left;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    margin-bottom: 46px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 89px;
+    margin: 0 5px 0;
+  }
 }
 
 .companion-card__functions {
   @media (min-width: $tablet-width) {
     display: flex;
-    margin-top: auto;
+    margin-left: 35px;
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    order: 2;
+    margin: 0;
   }
 }
 
 .companion-card__wishes {
+  margin-bottom: 9px;
+  min-height: 87px;
+
   @media (min-width: $tablet-width) {
-    position: absolute;
-    bottom: 25px;
+    align-self: flex-start;
+    margin-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
     position: static;
+    order: 1;
+    min-width: 242px;
   }
 }
 
@@ -139,10 +180,12 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
 
   @media (min-width: $tablet-width) {
     position: absolute;
-    right: 35px;
+    top: 25px;
+    right: 24px;
     width: auto;
     flex-direction: column;
     align-items: center;
@@ -151,7 +194,8 @@
   @media (min-width: $desktop-width) {
     position: static;
     flex-direction: row;
-    min-width: 230px;
+    min-width: 242px;
+    order: 3;
   }
 }
 
@@ -165,7 +209,7 @@
 
 .companion-card__level {
   @media (min-width: $tablet-width) {
-    margin-top: 13px;
+    margin-top: 5px;
   }
 
   @media (min-width: $desktop-width) {

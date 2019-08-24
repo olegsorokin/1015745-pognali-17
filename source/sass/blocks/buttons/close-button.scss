@@ -5,9 +5,23 @@
   border: none;
   background-color: transparent;
   cursor: pointer;
+  padding: 0 12px;
 
   @media (min-width: $tablet-width) {
     flex-basis: 175px;
+    padding: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    flex-basis: 172px;
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 
@@ -18,9 +32,21 @@
 .close-button--bottom {
   width: 100%;
   justify-content: center;
-  padding: 15px 0;
+  padding: 11px 0;
   border-radius: 20px;
   background-color: #d6daed;
+}
+
+.close-button--filter {
+  padding: 35px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 37px 0;
+  }
+
+  &:hover {
+    background-color: #c8cee8;
+  }
 }
 
 .close-button__text {
@@ -39,5 +65,12 @@
 .close-button__text--bottom {
   display: block;
   order: 1;
-  margin-left: 10px;
+  margin-left: 20px;
+}
+
+.close-button__icon {
+  @media (min-width: $tablet-width) {
+    width: 19px;
+    height: 19px;
+  }
 }

@@ -10,12 +10,6 @@
   }
 }
 
-.route__wrap-image {
-  @media (min-width: $tablet-width) {
-    flex-basis: 186px;
-  }
-}
-
 .route__image {
   width: 100%;
   height: auto;
@@ -113,10 +107,12 @@
 .route__flag {
   position: absolute;
   top: -12px;
+  left: 24px;
 
   @media (min-width: $tablet-width) {
     top: 17px;
     right: -35px;
+    left: auto;
     width: 70px;
     height: 47px;
   }

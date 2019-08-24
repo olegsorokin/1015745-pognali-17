@@ -12,14 +12,19 @@
 }
 
 .plan-form__title {
+  margin: 0;
   margin-bottom: 30px;
 
   @include text ("Blogger Sans Bold", 24px, 24px, $link-darkblue);
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 60px;
+    margin-bottom: 54px;
     font-size: 36px;
     line-height: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 69px;
   }
 }
 

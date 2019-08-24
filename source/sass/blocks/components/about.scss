@@ -7,7 +7,8 @@
   background-repeat: no-repeat;
   background-position: bottom;
 
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+  @media (min-resolution: $retina-dpi),
+    (min-resolution: $retina-dppx) {
     background-image: url("../img/about-mobile@2x.png");
   }
 

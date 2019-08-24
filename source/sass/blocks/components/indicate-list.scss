@@ -9,6 +9,10 @@
 
   @media (min-width: $desktop-width) {
     display: flex;
+    flex-basis: 186px;
+    height: 108%;
+    justify-content: space-around;
+    align-self: flex-start;
   }
 }
 

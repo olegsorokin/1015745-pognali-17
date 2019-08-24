@@ -6,26 +6,55 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 15px;
-  padding: 13px 0;
+  margin-bottom: 20px;
+  padding: 11px 0;
   border-top: 1px solid #d4d9eb;
   border-bottom: 1px solid #d4d9eb;
 
   @media (min-width: $tablet-width) {
-    padding: 30px 0;
+    margin-bottom: 15px;
+    padding: 27px 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 25px 0;
+    margin-bottom: 8px;
   }
 }
 
 .calendar__button {
+  padding: 0;
   background-color: transparent;
   border: none;
   opacity: 0.3;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 18px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
+
+  &:hover {
+    opacity: 0.5;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
 }
 
 .calendar__button-icon {
   @media (min-width: $tablet-width) {
     width: 15px;
     height: 28px;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 18px;
+    height: 34px;
   }
 }
 
@@ -59,16 +88,20 @@
 
 .calendar__day {
   @include text ("Blogger Sans", 14px, 18px, $text-dark);
+  padding-bottom: 8px;
 
   @media (min-width: $tablet-width) {
     font-size: 18px;
     line-height: 30px;
     letter-spacing: 1.8px;
     padding: 15px;
+    padding-bottom: 4px;
   }
 
   @media (min-width: $desktop-width) {
     text-align: left;
+    padding-top: 0;
+    padding-bottom: 16px;
   }
 }
 
@@ -79,7 +112,7 @@
 .calendar__date {
   box-sizing: border-box;
   width: 30px;
-  height: 30px;
+  height: 31px;
   text-align: center;
   vertical-align: middle;
   cursor: pointer;
@@ -90,20 +123,23 @@
 
   @media (min-width: $tablet-width) {
     width: 77px;
-    height: 70px;
+    height: 69px;
     font-size: 20px;
     line-height: 18px;
     letter-spacing: 2px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 15px;
+    height: 71px;
     text-align: left;
     vertical-align: top;
+    padding: 12px 15px 14px;
   }
 
   &:hover {
     outline: 2px solid #ff5c23;
+    background-color: $link-darkblue;
+    color: $main-white;
 
     @media (min-width: $tablet-width) {
       outline: 4px solid #ff5c23;
@@ -111,11 +147,8 @@
   }
 }
 
-.calendar__date-inner {
+.calendar__date-button {
   position: relative;
-  display: flex;
-  justify-content: center;
-  align-content: center;
 
   @media (min-width: $desktop-width) {
     display: block;
@@ -128,6 +161,12 @@
   color: rgba(68, 68, 68, 0.3);
   background-color: $main-white;
   cursor: default;
+
+  &:hover {
+    outline: none;
+    background-color: transparent;
+    color: rgba(68, 68, 68, 0.3);
+  }
 }
 
 .calendar__date--active {
@@ -136,7 +175,7 @@
 }
 
 .calendar__date--in {
-  .calendar__date-inner {
+  .calendar__date-button {
     &::before {
       @media (min-width: $desktop-width) {
         position: absolute;
@@ -149,7 +188,7 @@
 }
 
 .calendar__date--out {
-  .calendar__date-inner {
+  .calendar__date-button {
     &::before {
       @media (min-width: $desktop-width) {
         position: absolute;

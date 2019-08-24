@@ -1,47 +1,55 @@
 .my-plans {
-  padding: 30px 25px 55px;
+  padding: 27px 24px 55px;
   background-color: #dfe3f0;
   border-radius: 25px 25px 0 0;
 
   @media (min-width: $tablet-width) {
-    padding: 60px 75px 120px;
+    padding: 45px 75px 98px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 45px 60px 90px 125px;
+    border-radius: 60px 60px 0 0;
   }
 }
 
 .my-plans__title {
-  margin: 0;
-  margin-bottom: 35px;
-
   @include text ("Blogger Sans Bold", 24px, 24px, $main-darkblue);
+  margin: 0;
+  margin-bottom: 32px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 55px;
+    margin-bottom: 46px;
     font-size: 36px;
     line-height: 50px;
   }
 }
 
 .my-plans__list {
-  margin: 0;
-
   @include list-reset;
+  margin: 0;
   counter-reset: num;
 }
 
 .my-plans__item {
-  padding: 0 24px;
+  @include text ("Blogger Sans Medium", 14px, 14px, $main-darkblue);
+  padding: 22px 25px 24px;
   background-color: $main-white;
   border-radius: 10px;
-
-  @include text ("Blogger Sans Medium", 14px, 14px, $main-darkblue);
   text-transform: uppercase;
   letter-spacing: 1.4px;
 
   @media (min-width: $tablet-width) {
+    padding: 25px 0 16px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 23px 40px;
+    justify-content: flex-start;
   }
 }
 
@@ -52,19 +60,27 @@
   @media (min-width: $tablet-width) {
     font-size: 24px;
     line-height: 50px;
+    margin-right: 28px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 31px;
   }
 }
 
 .my-plans__item:not(:first-child) {
   margin-top: 10px;
+
+  @media (min-width: $desktop-width) {
+    margin-top: 15px;
+  }
 }
 
 .my-plans__item-title {
-  padding: 24px 0;
+  @include text ("Blogger Sans Bold", 16px, 16px, $main-darkblue);
   display: inline-block;
   margin: 0;
-
-  @include text ("Blogger Sans Bold", 16px, 16px, $main-darkblue);
+  margin-bottom: 20px;
   text-transform: capitalize;
   letter-spacing: normal;
 
@@ -73,18 +89,19 @@
     margin: 0;
     font-size: 24px;
     line-height: 50px;
+    margin-left: 36px;
   }
 
   @media (min-width: $desktop-width) {
     order: 0;
+    margin: 0;
   }
 }
 
 .my-plans__item-wrap {
-  padding-bottom: 24px;
-
   @media (min-width: $tablet-width) {
-    padding: 20px 0;
+    margin-top: 23px;
+    padding: 19px 33px 0;
     flex-basis: 100%;
     display: flex;
     justify-content: space-between;
@@ -94,6 +111,9 @@
   @media (min-width: $desktop-width) {
     flex-basis: 50%;
     border: none;
+    margin: 0;
+    margin-left: auto;
+    padding: 0;
   }
 }
 
@@ -101,6 +121,7 @@
   margin: 0;
 
   @media (min-width: $tablet-width) {
+    flex-basis: 150px;
     margin: 0;
     font-size: 20px;
     line-height: 18px;
@@ -110,33 +131,47 @@
 
 .my-plans__item-dates {
   margin: 0;
-  margin-top: 7px;
+  margin-top: 5px;
 
   @media (min-width: $tablet-width) {
     margin: 0;
+    margin-left: 37px;
     font-size: 20px;
     line-height: 18px;
     letter-spacing: 2px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 25px;
   }
 }
 
 .my-plans__item-dates-to {
   &::before {
     content: "-";
-    margin-right: 5px;
+    margin-right: 8px;
   }
 }
 
 .my-plans__item-change-plan {
   display: block;
-  margin-top: 27px;
+  margin-top: 25px;
   color: rgba(0, 0, 0, 0.3);
   text-decoration: none;
 
   @media (min-width: $tablet-width) {
     margin: 0;
+    margin-left: auto;
     font-size: 20px;
     line-height: 18px;
     letter-spacing: 2px;
+  }
+
+  &:hover {
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  &:active {
+    color: rgba(0, 0, 0, 0.1);
   }
 }

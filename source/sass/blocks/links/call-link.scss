@@ -10,7 +10,15 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
-    padding: 10px 32px;
+    padding: 12px 32px;
     border-radius: 25px;
+  }
+
+  &:hover {
+    background-color: #ffbd30;
+  }
+
+  &:active {
+    color: rgba(22, 28, 53, 0.3);
   }
 }
