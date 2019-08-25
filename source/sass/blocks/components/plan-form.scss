@@ -11,21 +11,58 @@
   }
 }
 
-.plan-form__title {
-  margin: 0;
+.plan-form__head {
+  display: flex;
   margin-bottom: 30px;
-
-  @include text ("Blogger Sans Bold", 24px, 24px, $link-darkblue);
 
   @media (min-width: $tablet-width) {
     margin-bottom: 54px;
-    font-size: 36px;
-    line-height: 50px;
   }
 
   @media (min-width: $desktop-width) {
     padding: 0 69px;
   }
+}
+
+.plan-form__title {
+  margin: 0;
+
+  @include text ("Blogger Sans Bold", 24px, 24px, $link-darkblue);
+
+  @media (min-width: $tablet-width) {
+
+    font-size: 36px;
+    line-height: 50px;
+  }
+}
+
+.plan-form__dots {
+  @include list-reset;
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 75px;
+    margin-left: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.plan-form__dots-item {
+  display: block;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #808285;
+}
+
+.plan-form__dots-item--current {
+  background-color: #1d2e5b;
 }
 
 .plan-form__step {

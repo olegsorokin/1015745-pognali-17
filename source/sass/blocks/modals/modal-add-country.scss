@@ -32,6 +32,7 @@
 }
 
 .modal-add-country__title {
+  margin: 0;
   @include text ("Blogger Sans Medium", 14px, 18px, $main-white);
   letter-spacing: 1.4px;
   text-transform: uppercase;
