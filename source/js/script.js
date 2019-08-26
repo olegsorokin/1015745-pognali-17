@@ -33,23 +33,23 @@ var changeLogoColor = function (currentColor, newColor) {
     var currentSource = sourceArray[j];
 
     if (currentSource.srcset) {
-      var newSource = currentSource.srcset.replace(new RegExp(currentColor, 'gi'), newColor);
+      var newSource = currentSource.srcset.replace(new RegExp(currentColor, "gi"), newColor);
       currentSource.srcset = newSource;
     } else {
-      var newSource = currentSource.outerHTML.replace(new RegExp(currentColor, 'gi'), newColor);
+      var newSource = currentSource.outerHTML.replace(new RegExp(currentColor, "gi"), newColor);
       currentSource.outerHTML = newSource;
     }
   }
   /*-Подменяем в каждом источнике путь на новый для img-*/
   if (logoSrc.srcset) {
-    var newSrc = logoSrc.src.replace(new RegExp(currentColor, 'gi'), newColor);
+    var newSrc = logoSrc.src.replace(new RegExp(currentColor, "gi"), newColor);
     logoSrc.src = newSrc;
 
-    var newSrcset = logoSrc.srcset.replace(new RegExp(currentColor, 'gi'), newColor);
+    var newSrcset = logoSrc.srcset.replace(new RegExp(currentColor, "gi"), newColor);
     logoSrc.srcset = newSrcset;
 
   } else {
-    var newSrc = logoSrc.outerHTML.replace(new RegExp(currentColor, 'gi'), newColor);
+    var newSrc = logoSrc.outerHTML.replace(new RegExp(currentColor, "gi"), newColor);
     logoSrc.outerHTML = newSrc;
   }
 }
@@ -84,7 +84,7 @@ var jsOn = function () {
       headerContacts.classList.remove("header__contacts--hide");
       headerSocial.classList.remove("header__socials--hide");
       header.classList.remove("header--dark");
-      changeLogoColor('white', 'blue');
+      changeLogoColor("white", "blue");
     } else if (headerMenuButton.classList.contains("menu-button--close")) {
       headerMenuButton.classList.remove("menu-button--close");
       headerNav.classList.remove("nav--hide");
@@ -98,7 +98,7 @@ var jsOn = function () {
       headerContacts.classList.add("header__contacts--hide");
       headerSocial.classList.add("header__socials--hide");
       header.classList.add("header--dark");
-      changeLogoColor('blue', 'white');
+      changeLogoColor("blue", "white");
     } else {
       headerMenuButton.classList.add("menu-button--close");
       headerNav.classList.add("nav--hide");
@@ -116,18 +116,18 @@ var changeHeaderTheme = function () {
 
   window.addEventListener("scroll", function () {
     if (window.pageYOffset > 0) {
-      changeLogoColor('white', 'blue');
+      changeLogoColor("white", "blue");
       header.classList.remove("header--dark");
       header.classList.add("header--scroll-active");
     } else if ((window.pageYOffset == 0) && (headerMenuButton.classList.contains("menu-button--close"))) {
-      changeLogoColor('blue', 'white');
+      changeLogoColor("blue", "white");
       header.classList.add("header--dark");
       header.classList.remove("header--scroll-active");
     } else if ((window.pageYOffset == 0) && (!headerMenuButton.classList.contains("menu-button--close"))) {
-      changeLogoColor('white', 'blue');
+      changeLogoColor("white", "blue");
       header.classList.remove("header--scroll-active");
     } else {
-      changeLogoColor('blue', 'white');
+      changeLogoColor("blue", "white");
       header.classList.add("header--scroll-active");
     }
   });
@@ -186,20 +186,20 @@ var formLinesShowHide = function () {
   }
 
   for (var j = 0; j < labelsArray.length; j++) {
-    labelsArray[j].classList.add('form-line__title--close');
-    labelsArray[j].nextElementSibling.classList.add('form-line__wrap--close');
+    labelsArray[j].classList.add("form-line__title--close");
+    labelsArray[j].nextElementSibling.classList.add("form-line__wrap--close");
   }
 
   form.addEventListener("click", function (event) {
     var target;
     if (Element.prototype.closest) {
-      target = event.target.closest('.form-line__title');
+      target = event.target.closest(".form-line__title");
     } else {
       target = event.target;
     }
-    if (target.classList.contains('form-line__title')) {
-      target.classList.toggle('form-line__title--close');
-      target.nextElementSibling.classList.toggle('form-line__wrap--close');
+    if (target.classList.contains("form-line__title")) {
+      target.classList.toggle("form-line__title--close");
+      target.nextElementSibling.classList.toggle("form-line__wrap--close");
     }
   });
 }
@@ -240,7 +240,7 @@ var formCounterChangeValue = function () {
   for (var j = 0; j < counterArray.length; j++) {
     var counter = counterArray[j];
 
-    counter.addEventListener('click', function () {
+    counter.addEventListener("click", function () {
 
       var target;
       if (Element.prototype.closest) {
@@ -275,20 +275,20 @@ var changeFormStage = function () {
 
   for (var j = 0; j < buttonsNextArray.length; j++) {
     var buttonNext = buttonsNextArray[j];
-    buttonNext.addEventListener('click', function (event) {
-      formPlan.addEventListener('click', function () {
+    buttonNext.addEventListener("click", function (event) {
+      formPlan.addEventListener("click", function () {
         if (Element.prototype.closest) {
-          var target = event.target.closest('.form-step');
-          target.classList.remove("form-step--current");
-          target.nextElementSibling.classList.add("form-step--current");
+          var target = event.target.closest(".form-step");
+          target.classList.add("form-step--hide");
+          target.nextElementSibling.classList.remove("form-step--hide");
         } else {
           var target = event.target;
           while (!target.classList.contains("form-next-link")) {
             target = target.parentElement;
           }
           var parent = target.parentElement;
-          parent.classList.remove("form-step--current");
-          parent.nextElementSibling.classList.add("form-step--current");
+          parent.classList.add("form-step--hide");
+          parent.nextElementSibling.classList.remove("form-step--hide");
         }
       });
     });
@@ -300,29 +300,45 @@ var changeFormStage = function () {
 
   for (var l = 0; l < buttonsPrevArray.length; l++) {
     var buttonPrev = buttonsPrevArray[l];
-    buttonPrev.addEventListener('click', function (event) {
-      formPlan.addEventListener('click', function () {
+    buttonPrev.addEventListener("click", function (event) {
+      formPlan.addEventListener("click", function () {
         if (Element.prototype.closest) {
-          var target = event.target.closest('.form-step');
-          target.classList.remove("form-step--current");
-          target.previousElementSibling.classList.add("form-step--current");
+          var target = event.target.closest(".form-step");
+          target.classList.add("form-step--hide");
+          target.previousElementSibling.classList.remove("form-step--hide");
         } else {
           var target = event.target;
           while (!target.classList.contains("form-prev-link")) {
             target = target.parentElement;
           }
           var parent = target.parentElement;
-          parent.classList.remove("form-step--current");
-          parent.previousElementSibling.classList.add("form-step--current");
+          parent.classList.add("form-step--hide");
+          parent.previousElementSibling.classList.remove("form-step--hide");
         }
       });
     });
   }
 }
 
+/*-----Скрытие этапов формы добавления плана (form.html)-----*/
+var hideFormSteps = function () {
+  var formSteps = document.querySelectorAll(".form-step");
+
+  var stepsArray = [];
+
+  for (var i = 0; i < formSteps.length; i++) {
+    stepsArray.push(formSteps[i]);
+  }
+
+  for (var j = 1; j < stepsArray.length; j++) {
+    var step = stepsArray[j];
+    step.classList.add("form-step--hide");
+  }
+}
+
 /*-----Базовые вызовы при включённом JS-----*/
 jsOn();
-changeLogoColor('blue', 'white');
+changeLogoColor("blue", "white");
 changeHeaderTheme();
 
 /*-----Вызовы модального окна с прайс-листом (index.html)-----*/
@@ -358,4 +374,5 @@ if (document.querySelector(".counter") !== null) {
 /*----- Вызов переключения этапов формы при добавлении плана (form.html)-----*/
 if (document.querySelector(".plan-form") !== null) {
   changeFormStage();
+  hideFormSteps();
 }

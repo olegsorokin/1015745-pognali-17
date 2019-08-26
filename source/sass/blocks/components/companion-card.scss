@@ -162,6 +162,7 @@
 
 .companion-card__wishes {
   margin-bottom: 9px;
+  width: 100%;
   min-height: 87px;
 
   @media (min-width: $tablet-width) {
@@ -172,7 +173,7 @@
   @media (min-width: $desktop-width) {
     position: static;
     order: 1;
-    min-width: 242px;
+    max-width: 242px;
   }
 }
 

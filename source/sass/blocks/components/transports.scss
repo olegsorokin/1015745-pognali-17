@@ -151,6 +151,14 @@
   }
 }
 
+.transports__checkbox {
+  display: none;
+}
+
+.transports__checkbox:checked + .transports__button .transports__button-icon {
+  opacity: 1;
+}
+
 .transports__button {
   position: relative;
   display: flex;

@@ -3,6 +3,7 @@
   margin: 0;
   margin-bottom: 16px;
   padding: 0 6px;
+  background-color: #ffffff;
 
   @include text ("Blogger Sans", 15px, 18px, #444444);
 
@@ -28,11 +29,21 @@
   &::before {
     width: 15px;
     left: -20px;
+
+    @media (min-width: $tablet-width) {
+      width: 80px;
+      left: -40px;
+    }
   }
 
   &::after {
-    width: 200px;
-    left: 90%;
+    width: 135px;
+    right: -20px;
+
+    @media (min-width: $tablet-width) {
+      width: 500px;
+      right: 0;
+    }
   }
 }
 

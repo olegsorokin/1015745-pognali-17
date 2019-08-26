@@ -82,7 +82,8 @@
           почту по адресу
           mail@htmlacademy.ru</span>
       </a>
-      <a class="function-link function-link--singin function-link--header functions-list__link" href="singin.html">
+      <a class="function-link function-link--singin function-link--header functions-list__link"
+        href="singin.html">
         <svg class="function-link__icon function-link__icon-hide" width="20" height="20">
           <use xlink:href="#user"></use>
         </svg>
@@ -219,42 +220,43 @@
         </div>
 
         <div class="transports transports--profile profile__transports">
-          <h4 class="transports__title">транспорт</h4>
+          <span class="transports__title">транспорт</span>
           <ul class="transports__list">
             <li class="transports__item">
-              <button class="transports__button">
-                <svg class="transports__button-icon transports__button-icon--active" width="14"
-                  height="16">
+              <input class="transports__checkbox" type="checkbox" name="Plane" id="avia" checked>
+              <label for="avia" class="transports__button">
+                <svg class="transports__button-icon" width="14" height="16">
                   <use xlink:href="#plane"></use>
                 </svg>
                 <span class="transports__button-popup">Авиаперелёт</span>
-              </button>
+              </label>
             </li>
             <li class="transports__item">
-              <button class="transports__button">
-                <svg class="transports__button-icon transports__button-icon--active" width="13"
-                  height="16">
+              <input class="transports__checkbox" type="checkbox" name="Plane" id="autobus" checked>
+              <label for="autobus" class="transports__button">
+                <svg class="transports__button-icon" width="14" height="16">
                   <use xlink:href="#bus"></use>
                 </svg>
                 <span class="transports__button-popup">Автотранспорт</span>
-              </button>
+              </label>
             </li>
             <li class="transports__item">
-              <button class="transports__button">
-                <svg class="transports__button-icon" width="19" height="17">
+              <input class="transports__checkbox" type="checkbox" name="Plane" id="cycle">
+              <label for="cycle" class="transports__button">
+                <svg class="transports__button-icon" width="14" height="16">
                   <use xlink:href="#bike"></use>
                 </svg>
                 <span class="transports__button-popup">Велосипед</span>
-              </button>
+              </label>
             </li>
             <li class="transports__item">
-              <button class="transports__button">
-                <svg class="transports__button-icon transports__button-icon--active" width="15"
-                  height="17">
+              <input class="transports__checkbox" type="checkbox" name="Plane" id="walk" checked>
+              <label for="walk" class="transports__button">
+                <svg class="transports__button-icon" width="14" height="16">
                   <use xlink:href="#run"></use>
                 </svg>
                 <span class="transports__button-popup">Пешком</span>
-              </button>
+              </label>
             </li>
           </ul>
         </div>
@@ -295,9 +297,17 @@
 
       <form class="plan-form add-plan__form" action="https://echo.htmlacademy.ru" method="get">
 
-        <h2 class="plan-form__title">Добавить план:</h2>
+        <div class="plan-form__head">
+          <h2 class="plan-form__title">Добавить план:</h2>
 
-        <div class="form-step plan-form__step form-step--current">
+          <ul class="plan-form__dots">
+            <li class="plan-form__dots-item plan-form__dots-item--current"></li>
+            <li class="plan-form__dots-item"></li>
+            <li class="plan-form__dots-item"></li>
+          </ul>
+        </div>
+
+        <div class="form-step plan-form__step">
 
           <div class="form-step__header">
 
@@ -406,6 +416,9 @@
               </tr>
               <tr class="calendar__week">
                 <td class="calendar__date calendar__date--disabled"><span
+                    class="calendar__date-button">23</span>
+                </td>
+                <td class="calendar__date calendar__date--disabled"><span
                     class="calendar__date-button">24</span>
                 </td>
                 <td class="calendar__date calendar__date--disabled"><span
@@ -424,11 +437,10 @@
                     class="calendar__date-button">1<span
                       class="calendar__full-date">мар</span></span>
                 </td>
-                <td class="calendar__date calendar__date--disabled"><span
-                    class="calendar__date-button">2</span>
-                </td>
               </tr>
               <tr class="calendar__week">
+                <td class="calendar__date calendar__date--disabled"><span
+                    class="calendar__date-button">2</span></td>
                 <td class="calendar__date calendar__date--disabled"><span
                     class="calendar__date-button">3</span></td>
                 <td class="calendar__date calendar__date--disabled"><span
@@ -441,10 +453,10 @@
                     class="calendar__date-button">7</span></td>
                 <td class="calendar__date calendar__date--disabled"><span
                     class="calendar__date-button">8</span></td>
-                <td class="calendar__date calendar__date--disabled"><span
-                    class="calendar__date-button">9</span></td>
               </tr>
               <tr class="calendar__week">
+                <td class="calendar__date calendar__date--disabled"><span
+                    class="calendar__date-button">9</span></td>
                 <td class="calendar__date calendar__date--disabled"><span
                     class="calendar__date-button">10</span></td>
                 <td class="calendar__date calendar__date--disabled"><span
@@ -457,10 +469,10 @@
                     class="calendar__date-button">14</span></td>
                 <td class="calendar__date calendar__date--disabled"><span
                     class="calendar__date-button">15</span></td>
-                <td class="calendar__date calendar__date--disabled"><span
-                    class="calendar__date-button">16</span></td>
               </tr>
               <tr class="calendar__week">
+                <td class="calendar__date calendar__date--disabled"><span
+                    class="calendar__date-button">16</span></td>
                 <td class="calendar__date calendar__date--disabled"><span
                     class="calendar__date-button">17</span></td>
                 <td class="calendar__date calendar__date--disabled"><span
@@ -473,38 +485,37 @@
                     class="calendar__date-button">21</span></td>
                 <td class="calendar__date calendar__date--disabled"><span
                     class="calendar__date-button">22</span></td>
-                <td class="calendar__date calendar__date--disabled"><span
-                    class="calendar__date-button">23</span></td>
               </tr>
               <tr class="calendar__week">
+                <td class="calendar__date calendar__date--disabled"><span
+                    class="calendar__date-button">23</span></td>
                 <td class="calendar__date calendar__date--disabled"><span
                     class="calendar__date-button">24</span></td>
                 <td class="calendar__date calendar__date--disabled"><span
                     class="calendar__date-button">25</span></td>
-                <td class="calendar__date calendar__date--disabled"><span
-                    class="calendar__date-button">26</span></td>
                 <td class="calendar__date calendar__date--active calendar__date--in"><span
-                    class="calendar__date-button ">27</span></td>
+                    class="calendar__date-button">26</span></td>
                 <td class="calendar__date calendar__date--active"><span
-                    class="calendar__date-button">28</span></td>
+                    class="calendar__date-button">27</span></td>
                 <td class="calendar__date calendar__date--active  calendar__date--out"><span
-                    class="calendar__date-button">29</span></td>
-                <td class="calendar__date"><span class="calendar__date-button">30</span></td>
+                    class="calendar__date-button">28</span></td>
+                <td class="calendar__date"><span class="calendar__date-button">29</span></td>
               </tr>
               <tr class="calendar__week">
-                <td class="calendar__date"><span class="calendar__date-button" type="span">31</span>
+                <td class="calendar__date"><span class="calendar__date-button">30</span>
                 </td>
-                <td class="calendar__date"><span class="calendar__date-button" type="span">1
-                    <span class="calendar__full-date">апр</span></span></td>
-                <td class="calendar__date"><span class="calendar__date-button" type="span">2</span>
+                <td class="calendar__date"><span class="calendar__date-button">31
+                  </span></td>
+                <td class="calendar__date"><span class="calendar__date-button">1 <span
+                      class="calendar__full-date">апр</span></span>
                 </td>
-                <td class="calendar__date"><span class="calendar__date-button" type="span">3</span>
+                <td class="calendar__date"><span class="calendar__date-button">2</span>
                 </td>
-                <td class="calendar__date"><span class="calendar__date-button" type="span">4</span>
+                <td class="calendar__date"><span class="calendar__date-button">3</span>
                 </td>
-                <td class="calendar__date"><span class="calendar__date-button" type="span">5</span>
+                <td class="calendar__date"><span class="calendar__date-button">4</span>
                 </td>
-                <td class="calendar__date"><span class="calendar__date-button" type="span">6</span>
+                <td class="calendar__date"><span class="calendar__date-button">5</span>
                 </td>
               </tr>
             </table>
@@ -585,14 +596,14 @@
                 </svg>
               </button>
             </li>
-            <li class="route-list__item route-list__item--new route-list__item--modal-show">
+            <li class="route-list__item route-list__item--new">
               <div class="route-list__country-wrap">
                 <span class="route-list__country-name">Выберите страну</span>
-                <button class="route-list__button-dropdown" type="button">
+                <a class="route-list__button-dropdown" href="choose-country.html">
                   <svg class="route-list__dropdown-icon" width="12" height="7">
                     <use xlink:href="#dropdown-form"></use>
                   </svg>
-                </button>
+                </a>
               </div>
               <div class="route-list__flag-wrap route-list__flag-wrap--hide">
                 <svg class="route-list__flag-icon" width="35" height="24">
@@ -606,7 +617,7 @@
               </button>
               <section class="modal-add-country route-list__modal-add-country">
                 <header class="modal-add-country__header">
-                  <span class="modal-add-country__title">Выберите страну</span>
+                  <h4 class="modal-add-country__title">Выберите страну</h4>
                   <button class="modal-add-country__close-button" type="button">
                     <svg class="modal-add-country__close-icon" width="9" height="9">
                       <use xlink:href="#close"></use>
@@ -773,8 +784,8 @@
                   </svg>
                 </div>
               </div>
-              <textarea class="route-events__text" name="BiG"
-                placeholder="План действий" required></textarea>
+              <textarea class="route-events__text" name="BiG" placeholder="План действий"
+                required></textarea>
             </li>
 
             <li class="route-events__item">
@@ -786,8 +797,8 @@
                   </svg>
                 </div>
               </div>
-              <textarea class="route-events__text" name="Czech"
-                placeholder="План действий" required>Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
+              <textarea class="route-events__text" name="Czech" placeholder="План действий"
+                required>Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
             </li>
 
           </ul>

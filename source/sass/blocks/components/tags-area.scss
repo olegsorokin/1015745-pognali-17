@@ -46,6 +46,7 @@
   background-color: transparent;
   border: none;
   resize: none;
+  outline: none;
 
   @media (min-width: $tablet-width) {
     padding: 32px 38px 10px;
