@@ -8,7 +8,7 @@
   background-position: bottom;
 
   @media (min-resolution: $retina-dpi),
-  (min-resolution: $retina-dppx) {
+    (min-resolution: $retina-dppx) {
     background-image: url("../img/about-mobile@2x.png");
   }
 
@@ -23,7 +23,7 @@
   }
 
   @media (min-width: $tablet-width) and (min-resolution: $retina-dpi),
-  (min-width: $tablet-width) and (min-resolution: $retina-dppx) {
+    (min-width: $tablet-width) and (min-resolution: $retina-dppx) {
     background-image: url("../img/about-tablet@2x.png"), url("../img/blue-back-tablet.png");
   }
 
@@ -37,7 +37,7 @@
   }
 
   @media (min-width: $desktop-width) and (min-resolution: $retina-dpi),
-  (min-width: $desktop-width) and (min-resolution: $retina-dppx) {
+    (min-width: $desktop-width) and (min-resolution: $retina-dppx) {
     background-image: url("../img/about-desktop@2x.png"), url("../img/blue-back.png");
   }
 }

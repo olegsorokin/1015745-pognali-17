@@ -156,7 +156,7 @@
   display: none;
 }
 
-.transports__checkbox:checked+.transports__button .transports__button-icon {
+.transports__checkbox:checked + .transports__button .transports__button-icon {
   opacity: 1;
 }
 
