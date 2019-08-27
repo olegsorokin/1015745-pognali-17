@@ -21,7 +21,7 @@
   display: block;
   height: 195px;
   width: 100%;
-  overflow: scroll;
+  overflow-y: scroll;
 
   @media (min-width: $tablet-width) {
     top: 0;

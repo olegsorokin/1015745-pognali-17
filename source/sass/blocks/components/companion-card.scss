@@ -2,29 +2,52 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-
-  padding: 14px 20px 73px;
-
+  padding: 12px 19px 73px;
   background-color: $main-white;
-
   border-radius: 20px;
 
   @media (min-width: $tablet-width) {
     flex-direction: column;
     align-items: center;
-    padding: 28px 0 0 35px;
+    padding: 30px 0 0 35px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 43px 43px 41px 343px;
+    padding: 43px 43px 43px 340px;
     flex-direction: row;
     justify-content: space-between;
+  }
+
+  &:first-child {
+    .companion-card__functions {
+      @media (min-width: $tablet-width) {
+        margin-left: 40px;
+      }
+
+      @media (min-width: $desktop-width) {
+        margin-left: 0;
+      }
+    }
+  }
+
+  &:last-child {
+    .companion-card__functions {
+      @media (min-width: $tablet-width) {
+        margin-left: 13px;
+      }
+
+      @media (min-width: $desktop-width) {
+        margin-left: 0;
+      }
+    }
   }
 }
 
 .companion-card__image {
   position: absolute;
   border-radius: 50%;
+  top: 15px;
+  left: 18px;
 
   @media (min-width: $tablet-width) {
     top: 33px;
@@ -51,7 +74,8 @@
 
   @media (min-width: $desktop-width) {
     order: 0;
-    margin-left: 0;
+    margin-left: 3px;
+    margin-right: auto;
   }
 }
 
@@ -91,8 +115,8 @@
     content: "";
 
     position: absolute;
-    top: 9px;
-    right: 2px;
+    top: 10px;
+    right: 5px;
 
     display: block;
     width: 6px;
@@ -132,13 +156,13 @@
 }
 
 .companion-card__tags {
-  width: 170px;
+  width: 180px;
   margin: 45px 5px 13px;
   text-align: left;
 
   @media (min-width: $tablet-width) {
-    margin: 0;
-    margin-bottom: 46px;
+    margin: 0 0 46px 4px;
+    width: 100%;
   }
 
   @media (min-width: $desktop-width) {
@@ -150,7 +174,7 @@
 .companion-card__functions {
   @media (min-width: $tablet-width) {
     display: flex;
-    margin-left: 35px;
+    margin-left: 22px;
     margin-bottom: 20px;
   }
 
@@ -163,7 +187,7 @@
 .companion-card__wishes {
   margin-bottom: 9px;
   width: 100%;
-  min-height: 87px;
+  min-height: 88px;
 
   @media (min-width: $tablet-width) {
     align-self: flex-start;
@@ -185,8 +209,8 @@
 
   @media (min-width: $tablet-width) {
     position: absolute;
-    top: 25px;
-    right: 24px;
+    top: 30px;
+    right: 25px;
     width: auto;
     flex-direction: column;
     align-items: center;
@@ -195,7 +219,7 @@
   @media (min-width: $desktop-width) {
     position: static;
     flex-direction: row;
-    min-width: 242px;
+    min-width: 239px;
     order: 3;
   }
 }

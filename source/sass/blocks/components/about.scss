@@ -8,7 +8,7 @@
   background-position: bottom;
 
   @media (min-resolution: $retina-dpi),
-    (min-resolution: $retina-dppx) {
+  (min-resolution: $retina-dppx) {
     background-image: url("../img/about-mobile@2x.png");
   }
 
@@ -23,7 +23,7 @@
   }
 
   @media (min-width: $tablet-width) and (min-resolution: $retina-dpi),
-    (min-width: $tablet-width) and (min-resolution: $retina-dppx) {
+  (min-width: $tablet-width) and (min-resolution: $retina-dppx) {
     background-image: url("../img/about-tablet@2x.png"), url("../img/blue-back-tablet.png");
   }
 
@@ -37,17 +37,17 @@
   }
 
   @media (min-width: $desktop-width) and (min-resolution: $retina-dpi),
-    (min-width: $desktop-width) and (min-resolution: $retina-dppx) {
+  (min-width: $desktop-width) and (min-resolution: $retina-dppx) {
     background-image: url("../img/about-desktop@2x.png"), url("../img/blue-back.png");
   }
 }
 
 .about__inner {
-  padding: 123px 29px 80px;
+  padding: 123px 29px 82px;
 
   @media (min-width: $tablet-width) {
     padding-top: 40px;
-    padding-left: 33px;
+    padding-left: 34px;
     padding-bottom: 0;
   }
 
@@ -73,7 +73,7 @@
 .about__text {
   width: 210px;
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 19px;
 
   @include text-light;
 
@@ -122,5 +122,13 @@
   @media (min-width: $desktop-width) {
     width: 410px;
     margin-bottom: 87px;
+  }
+}
+
+.about__pasting-text {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: inline;
   }
 }

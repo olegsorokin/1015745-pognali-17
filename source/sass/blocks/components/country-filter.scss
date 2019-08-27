@@ -1,5 +1,5 @@
 .country-filter {
-  padding: 30px 20px 15px 25px;
+  padding: 30px 25px 15px 25px;
   background-color: #e2e5f2;
   border-radius: 0 0 25px 25px;
 
@@ -9,7 +9,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 73px 61px 78px 65px;
+    padding: 73px 61px 58px 65px
   }
 }
 
@@ -70,11 +70,11 @@
   @media (min-width: $tablet-width) {
     order: 0;
     margin: 0;
-    flex-basis: 350px;
+    min-width: 362px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 25px;
+    margin-left: 35px;
     flex-basis: 365px;
   }
 }
@@ -82,7 +82,7 @@
 .country-filter__inner {
   position: relative;
   margin: 20px 25px 0;
-  padding-bottom: 223px;
+  padding-bottom: 230px;
 
   @media (min-width: $tablet-width) {
     margin: 0;
@@ -92,7 +92,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 20px 25px 60px;
+    margin: 0 18px 25px 60px;;
   }
 }
 
@@ -109,6 +109,12 @@
 }
 
 .country-filter__button-show {
+  margin-right: 5px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 0;
+  }
+
   @media (min-width: $desktop-width) {
     margin-left: auto;
     margin-right: 70px;
@@ -119,5 +125,11 @@
   @media (min-width: $desktop-width) {
     margin-left: auto;
     margin-right: 65px;
+  }
+}
+
+.country-filter__button-close-inner {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
   }
 }

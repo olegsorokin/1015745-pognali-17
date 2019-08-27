@@ -7,14 +7,16 @@
   @media (min-width: $tablet-width) {
     justify-content: space-between;
     min-height: 417px;
-    width: 350px;
+    width: 380px;
     margin: 0;
+    margin-left: -18px;
     padding-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
     width: 100%;
     margin-top: 56px;
+    margin-left: 0;
   }
 }
 
@@ -42,29 +44,23 @@
 }
 
 .letter-filter__item-title {
-
   box-sizing: border-box;
   width: 44px;
-  height: 42px;
+  height: 41px;
   padding: 0;
-
   display: flex;
   justify-content: center;
   align-items: center;
 
   @include text ("Blogger Sans Medium", 14px, 18px, $link-darkblue);
   text-transform: uppercase;
-
   background-color: $main-white;
-
   border: 1px solid #cbced9;
-
   cursor: pointer;
 
   @media (min-width: $tablet-width) {
-    width: 60px;
+    width: 70px;
     height: 60px;
-
     background-color: transparent;
     border: none;
 

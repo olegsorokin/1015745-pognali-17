@@ -1,10 +1,10 @@
 .prices {
-  padding: 80px 25px 40px;
+  padding: 81px 25px 40px;
   background-image: url("../img/rates@1x.png");
   background-size: 99px 99px;
   background-origin: content-box;
   background-repeat: no-repeat;
-  background-position: 100% -4%;
+  background-position: 100% -5%;
   background-color: $main-grey;
   border-radius: 0 0 30px 30px;
 
@@ -29,7 +29,7 @@
   @media (min-width: $desktop-width) {
     padding: 182px 60px 190px;
     background-image: url("../img/rates@1x.png"), url("../img/light-back-desktop.png");
-    background-position: 93.5% 70%, 78% 80%;
+    background-position: 93.5% 70%, 79% 82%;
     background-size: auto, auto;
   }
 }
@@ -58,6 +58,7 @@
   @media (min-width: $tablet-width) {
     text-align: center;
     width: auto;
+    margin-left: 10px;
     margin-bottom: 76px;
   }
 

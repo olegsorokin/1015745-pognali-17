@@ -4,7 +4,7 @@
   background-color: #f3f4f8;
   border: none;
   border-radius: 0 0 20px 20px;
-  padding: 16px 0;
+  padding: 14px 0;
 
   @include text ("Blogger Sans Bold", 16px, 24px, $main-darkblue);
   text-transform: uppercase;
@@ -15,6 +15,7 @@
     line-height: 24px;
     text-transform: unset;
     padding: 43px 0;
+    border-radius: 0 0 30px 30px;
   }
 
   &:hover {

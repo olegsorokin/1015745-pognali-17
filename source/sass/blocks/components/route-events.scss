@@ -4,21 +4,30 @@
 
   @media (min-width: $tablet-width) {
     max-width: 100%;
+    border-top: 1px solid #d6d9e6;
+    padding-top: 25px
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 69px;
-    border-top: 1px solid #d6d9e6;
   }
 }
 
 .route-events__item {
   position: relative;
 
+  @media (min-width: $tablet-width) {
+    max-width: 94%;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 100%;
+  }
+
   &::before {
     position: absolute;
-    top: 11px;
-    left: -11px;
+    top: 12px;
+    left: -14px;
     content: "";
     display: block;
     width: 15px;
@@ -32,16 +41,20 @@
 }
 
 .route-events__item:not(:first-child) {
-  margin-top: 21px;
+  margin-top: 18px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 38px;
+  }
 
   @media (min-width: $desktop-width) {
-    margin-top: 40px;
+    margin-top: 34px;
   }
 
   &::after {
     position: absolute;
-    top: -270px;
-    left: -11px;
+    top: -268px;
+    left: -15px;
     content: "";
     display: block;
     width: 2px;
@@ -49,14 +62,17 @@
     background-color: $link-darkblue;
 
     @media (min-width: $tablet-width) {
-      display: none;
+      display: block;
+      left: auto;
+      top: -243px;
+      right: -28px;
+      width: 3px;
+      height: 265px;
     }
 
     @media (min-width: $desktop-width) {
       top: -230px;
-      left: auto;
       right: 224px;
-      display: block;
       width: 3px;
       height: 250px;
     }
@@ -69,24 +85,27 @@
   align-items: center;
   margin-bottom: 13px;
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     margin-bottom: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 27px;
   }
 }
 
 .route-events__country {
   position: relative;
-  padding-left: 15px;
+  padding-left: 11px;
 
   @include text ("Blogger Sans Medium", 18px, 18px, $link-darkblue);
   overflow: hidden;
   white-space: nowrap;
 
   @media (min-width: $tablet-width) {
-    padding-left: 0;
-    font-size: 30px;
-    line-height: 30px;
+    @include text ("Blogger Sans Bold", 30px, 30px, $link-darkblue);
     text-transform: unset;
+    padding-left: 0;
   }
 
   &::before {
@@ -113,6 +132,7 @@
 
   @media (min-width: $desktop-width) {
     margin-right: 115px;
+    margin-top: 5px;
   }
 
   &::before {
@@ -127,6 +147,12 @@
     border-radius: 50%;
     background-color: $link-darkblue;
     z-index: 5;
+
+    @media (min-width: $tablet-width) {
+      display: block;
+      left: auto;
+      right: -34px;
+    }
 
     @media (min-width: $desktop-width) {
       display: block;
@@ -151,16 +177,16 @@
   box-sizing: border-box;
   width: 100%;
   height: 220px;
-  padding: 8px 15px;
+  padding: 9px 13px;
   border: 1px solid #cbced9;
   border-radius: 4px;
-  overflow-y: scroll;
   resize: none;
 
   @media (min-width: $tablet-width) {
     height: 142px;
     font-size: 20px;
     line-height: 24px;
+    padding: 15px 18px;
   }
 
   @media (min-width: $desktop-width) {

@@ -6,11 +6,40 @@
 
 .tags__list--centered {
   justify-content: center;
+
+  .tags__item:not(:first-child) {
+    margin-left: 4px;
+  }
+}
+
+.tags__list--centered-right {
+  justify-content: center;
+  margin-left: 13px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 0;
+  }
+
+  .tags__item:not(:first-child) {
+    margin-left: 4px;
+  }
 }
 
 .tags__list--catalog {
   @media (min-width: $tablet-width) {
-    width: 215px;
+    width: 100%;
+  }
+
+  .tags__item:not(:first-child) {
+    margin-left: 0;
+  }
+
+  .tags__item:not(:last-child) {
+    margin-right: 2px;
+
+    @media (min-width: $tablet-width) {
+      margin-right: 6px;
+    }
   }
 }
 
@@ -25,8 +54,4 @@
     font-size: 20px;
     line-height: 24px;
   }
-}
-
-.tags__item:not(:first-child) {
-  margin-left: 2px;
 }

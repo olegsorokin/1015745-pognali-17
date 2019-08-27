@@ -14,7 +14,7 @@
     @media (min-width: $tablet-width) {
       position: absolute;
       top: 0;
-      right: 134px;
+      right: 137px;
       content: "";
       display: block;
       width: 1px;
@@ -61,7 +61,12 @@
 
 .route-list__item--new {
   .route-list__country-wrap {
+    padding: 9px 15px 9px 9px;
     overflow: visible;
+
+    @media (min-width: $tablet-width) {
+      padding: 22px 27px 22px 25px;
+    }
 
     &::after {
       right: 50px;
@@ -217,7 +222,7 @@
   @media (min-width: $tablet-width) {
     border: none;
     padding: 0;
-    margin-right: 38px;
+    margin-right: 42px;
   }
 
   @media (min-width: $desktop-width) {
@@ -247,7 +252,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      left: -46px;
+      left: -48px;
     }
   }
 }

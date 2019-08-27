@@ -75,7 +75,7 @@
   margin: 0;
   margin-bottom: 15px;
   font-size: 14px;
-  padding: 0 6px;
+  padding: 0 8px;
 
   @media (min-width: $tablet-width) {
     display: none;
@@ -116,6 +116,7 @@
 
   @media (min-width: $tablet-width) {
     flex-direction: column;
+    margin: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -155,7 +156,7 @@
   display: none;
 }
 
-.transports__checkbox:checked + .transports__button .transports__button-icon {
+.transports__checkbox:checked+.transports__button .transports__button-icon {
   opacity: 1;
 }
 
@@ -175,6 +176,7 @@
   &:hover {
     .transports__button-icon {
       fill: #101e44;
+      opacity: 0.3;
     }
 
     .transports__button-popup {

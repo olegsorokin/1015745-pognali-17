@@ -57,7 +57,7 @@
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
-    line-height: 70px;
+    line-height: 65px;
   }
 
   @media (min-width: $desktop-width) {
@@ -76,6 +76,7 @@
   position: relative;
   display: inline-block;
   transition: transform 0.3s;
+  pointer-events: none;
 
   &::before {
     position: absolute;

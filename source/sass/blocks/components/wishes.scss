@@ -1,13 +1,13 @@
 .wishes__title {
   position: relative;
-  margin: 0;
-  margin-bottom: 16px;
-  padding: 0 6px;
+  margin: 0 0 18px;
+  padding: 0 8px;
   background-color: #ffffff;
 
   @include text ("Blogger Sans", 15px, 18px, #444444);
 
   @media (min-width: $tablet-width) {
+    margin: 0 0 17px;
     padding: 0 47px;
   }
 
@@ -112,6 +112,10 @@
       display: block;
     }
   }
+}
+
+.wishes__image {
+  vertical-align: middle;
 }
 
 .wishes__popup {

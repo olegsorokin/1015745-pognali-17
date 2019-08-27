@@ -1,5 +1,5 @@
 .register {
-  padding: 127px 25px 30px;
+  padding: 128px 25px 30px;
   background-color: $main-darkblue;
   border-radius: 0 0 30px 30px;
 
@@ -33,7 +33,7 @@
 .register__title {
   @include section-title;
   margin: 0;
-  margin-bottom: 18px;
+  margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 58px;
@@ -81,7 +81,7 @@
 
 .register__form {
   position: relative;
-  margin-bottom: 27px;
+  margin-bottom: 29px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 55px;

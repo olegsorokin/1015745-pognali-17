@@ -5,7 +5,6 @@
   border: none;
   background-color: transparent;
   cursor: pointer;
-  padding: 0 12px;
 
   @media (min-width: $tablet-width) {
     flex-basis: 175px;
@@ -13,7 +12,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    flex-basis: 172px;
+    flex-basis: 175px;
   }
 
   &:hover {
@@ -54,7 +53,7 @@
 .close-button__text {
   display: none;
 
-  @include text ("Blogger Sans Bold", 16px, 16px, $main-darkblue);
+  @include text ("Blogger Sans Bold", 17px, 17px, $main-darkblue);
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
@@ -67,7 +66,11 @@
 .close-button__text--bottom {
   display: block;
   order: 1;
-  margin-left: 20px;
+  margin-left: 12px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 20px;
+  }
 }
 
 .close-button__icon {

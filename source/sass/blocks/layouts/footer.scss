@@ -9,7 +9,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 50px 60px;
+    padding: 49px 60px;
   }
 }
 
@@ -18,11 +18,11 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  min-height: 187px;
+  height: 187px;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
-    min-height: auto;
+    height: auto;
   }
 }
 
@@ -30,7 +30,7 @@
   display: flex;
   justify-content: center;
   margin: 0;
-  margin-top: 40px;
+  margin-top: 38px;
 
   @media (min-width: $tablet-width) {
     margin-top: 0;

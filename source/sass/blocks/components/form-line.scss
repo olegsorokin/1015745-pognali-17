@@ -26,10 +26,10 @@
   cursor: pointer;
 
   @media (min-width: $tablet-width) {
-    flex-basis: 110px;
+    min-width: 110px;
     justify-content: flex-start;
     margin: 0;
-    margin-right: 20px;
+    margin-right: 17px;
     padding: 0;
     font-size: 20px;
     line-height: 30px;
@@ -349,7 +349,7 @@
 
 .form-line__level-input {
   width: calc(50% - 2px);
-  padding: 10px 0;
+  padding: 8px 0;
 
   @include text ("blogger Sans Medium", 15px, 15px, $link-darkblue);
   text-align: center;
@@ -385,11 +385,12 @@
   height: 19px;
 
   @media (min-width: $tablet-width) {
-    flex-basis: 278px;
+    width: 280px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 28px;
+    width: 100%;
+    margin-top: 24px;
   }
 }
 
@@ -414,7 +415,7 @@
   z-index: 1;
 
   @media (min-width: $tablet-width) {
-    left: 23%;
+    left: 24%;
   }
 
   @media (min-width: $desktop-width) {
@@ -454,7 +455,7 @@
   left: 30%;
 
   @media (min-width: $tablet-width) {
-    left: 23%;
+    left: 24%;
   }
 
   @media (min-width: $desktop-width) {

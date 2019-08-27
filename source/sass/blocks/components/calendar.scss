@@ -13,12 +13,12 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 15px;
-    padding: 27px 0;
+    padding: 24px 0;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     padding: 25px 0;
-    margin-bottom: 8px;
+    margin-bottom: 11px;
   }
 }
 
@@ -30,10 +30,10 @@
   cursor: pointer;
 
   @media (min-width: $tablet-width) {
-    padding: 0 18px;
+    padding: 0 16px;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     padding: 0;
   }
 
@@ -93,7 +93,6 @@
   @media (min-width: $tablet-width) {
     font-size: 18px;
     line-height: 30px;
-    letter-spacing: 1.8px;
     padding: 15px;
     padding-bottom: 4px;
   }
@@ -101,7 +100,7 @@
   @media (min-width: $desktop-width) {
     text-align: left;
     padding-top: 0;
-    padding-bottom: 16px;
+    padding-bottom: 13px;
   }
 }
 

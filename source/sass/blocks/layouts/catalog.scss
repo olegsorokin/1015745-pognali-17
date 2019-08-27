@@ -26,7 +26,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 75px 60px;
+    padding: 75px 60px 78px;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -34,7 +34,7 @@
 }
 
 .catalog__filter {
-  margin-bottom: 25px;
+  margin-bottom: 27px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 40px;

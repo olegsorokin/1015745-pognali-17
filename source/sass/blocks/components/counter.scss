@@ -54,7 +54,7 @@
   @media (min-width: $desktop-width) {
     flex-basis: 45px;
     order: 1;
-    margin-left: 20px;
+    margin-left: 23px;
     text-align: center;
   }
 }
@@ -66,19 +66,18 @@
   justify-content: space-between;
   align-items: center;
   margin-top: 9px;
-  padding: 12px 15px;
+  padding: 11px 15px;
   border: 1px solid #cbced9;
   border-radius: 4px;
 
   @media (min-width: $tablet-width) {
     margin-top: 0;
-    padding: 23px 20px;
+    padding: 21px 20px 21px 25px;
   }
 
   @media (min-width: $desktop-width) {
     box-sizing: border-box;
-    flex-basis: 180px;
-    margin-left: 22px;
+    max-width: 180px;
   }
 
   &:hover {
@@ -110,11 +109,20 @@
 }
 
 .counter__button-minus {
+  display: flex;
+  align-items: center;
+  width: 14px;
+  height: 2px;
   padding: 0;
   background: transparent;
   border: none;
   opacity: 0.2;
   cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    width: 20px;
+    height: 2px;
+  }
 
   &:hover {
     opacity: 0.6;
@@ -122,15 +130,31 @@
 
   &:active {
     opacity: 0.1;
+  }
+
+  .counter__button-icon {
+    @media (min-width: $tablet-width) {
+      width: 20px;
+      height: 2px;
+    }
   }
 }
 
 .counter__button-plus {
+  display: flex;
+  align-items: center;
   padding: 0;
+  width: 14px;
+  height: 14px;
   background: transparent;
   border: none;
   opacity: 0.2;
   cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    width: 20px;
+    height: 20px;
+  }
 
   &:hover {
     opacity: 0.6;
@@ -138,5 +162,12 @@
 
   &:active {
     opacity: 0.1;
+  }
+
+  .counter__button-icon {
+    @media (min-width: $tablet-width) {
+      width: 20px;
+      height: 20px;
+    }
   }
 }

@@ -13,10 +13,11 @@
 
 .plan-form__head {
   display: flex;
-  margin-bottom: 30px;
+  align-items: center;
+  margin-bottom: 21px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 54px;
+    margin-bottom: 53px;
   }
 
   @media (min-width: $desktop-width) {
@@ -38,14 +39,17 @@
 
 .plan-form__dots {
   @include list-reset;
-  display: none;
+  padding: 2px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 50px;
+  margin-left: auto;
+  margin-right: 17px;
 
   @media (min-width: $tablet-width) {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     min-width: 75px;
-    margin-left: auto;
+    margin-right: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -71,6 +75,10 @@
 
 .plan-form__step:not(:first-child) {
   margin-top: 10px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 45px;
+  }
 
   @media (min-width: $desktop-width) {
     margin-top: 45px;

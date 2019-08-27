@@ -9,14 +9,14 @@
 
 .reviews__item {
   margin: 0;
-  margin-top: 30px;
+  margin-top: 28px;
 }
 
 .reviews__item-text {
   margin: 0;
   width: 170px;
 
-  @include text ("Blogger Sans Light", 16px, 19px, #ffffff);
+  @include text ("Blogger Sans Light", 16px, 21px, #ffffff);
 
   &::before {
     content: "«";
@@ -36,7 +36,7 @@
 
 .reviews__item-description {
   margin: 0;
-  margin-top: 21px;
+  margin-top: 19px;
   width: 165px;
 
   @include text ("Blogger Sans Bold", 16px, 22px, #ffffff);
